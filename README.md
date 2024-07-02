@@ -1,7 +1,7 @@
 # St Sedge Product
 
 ## Requirements
-- PHP >= 8.2
+- PHP >= 8.1
 - Node >= v20.13.1
 ## Usage
 - In root path project, run command:

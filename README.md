@@ -13,12 +13,6 @@
 ``` bash
 APP_DEBUG=false
 APP_URL=domain
-DB_CONNECTION=mysql
-DB_HOST=database_server_ip
-DB_PORT=3306
-DB_DATABASE=database_name
-DB_USERNAME=username
-DB_PASSWORD=password
 ```
 - Run
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b398cc70c8bcc2246f88cf3293ccb5ad",
+    "content-hash": "c1f31717ca84e9e639167f181e5afb92",
     "packages": [
         {
             "name": "brick/math",
@@ -6349,6 +6349,64 @@
             "time": "2022-02-21T01:04:05+00:00"
         },
         {
+            "name": "phpstan/phpstan",
+            "version": "1.11.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "6ac78f1165346c83b4a753f7e4186d969c6ad0ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/6ac78f1165346c83b4a753f7e4186d969c6ad0ee",
+                "reference": "6ac78f1165346c83b4a753f7e4186d969c6ad0ee",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan-shim": "*"
+            },
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "keywords": [
+                "dev",
+                "static analysis"
+            ],
+            "support": {
+                "docs": "https://phpstan.org/user-guide/getting-started",
+                "forum": "https://github.com/phpstan/phpstan/discussions",
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "security": "https://github.com/phpstan/phpstan/security/policy",
+                "source": "https://github.com/phpstan/phpstan-src"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/phpstan",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-07-01T15:33:06+00:00"
+        },
+        {
             "name": "phpunit/php-code-coverage",
             "version": "10.1.15",
             "source": {
@@ -6769,6 +6827,59 @@
                 }
             ],
             "time": "2024-06-20T13:09:54+00:00"
+        },
+        {
+            "name": "rector/type-perfect",
+            "version": "0.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rectorphp/type-perfect.git",
+                "reference": "f06d35fdc78d3927635b2f67f7a9867efac85bec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rectorphp/type-perfect/zipball/f06d35fdc78d3927635b2f67f7a9867efac85bec",
+                "reference": "f06d35fdc78d3927635b2f67f7a9867efac85bec",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0",
+                "phpstan/phpstan": "^1.11",
+                "webmozart/assert": "^1.11"
+            },
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "config/extension.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rector\\TypePerfect\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Next level type declaration checks",
+            "support": {
+                "issues": "https://github.com/rectorphp/type-perfect/issues",
+                "source": "https://github.com/rectorphp/type-perfect/tree/0.1.6"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/rectorphp",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tomasvotruba",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-06-18T12:50:30+00:00"
         },
         {
             "name": "sebastian/cli-parser",

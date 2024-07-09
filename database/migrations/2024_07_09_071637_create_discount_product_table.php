@@ -12,15 +12,10 @@ return new class () extends Migration {
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table): void {
+        Schema::create('discount_product', function (Blueprint $table): void {
             $table->id();
-            $table->string('username');
-            $table->string('email');
-            $table->string('fullname');
-            $table->string('phoneNumber');
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->integer('discount_id');
+            $table->integer('product_id');
             $table->timestamps();
         });
     }
@@ -30,6 +25,6 @@ return new class () extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('discount_product');
     }
 };

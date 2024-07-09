@@ -6,23 +6,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class OrderProduct extends Model
+class Galery extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'orderId',
-        'productId',
-        'quantity',
+        'product_id',
+        'thumbnail'
     ];
 
-    public function order()
-    {
-        return $this->belongsTo(Order::class);
-    }
-
-    public function product()
+    public function product(): BelongsTo
     {
         return $this->belongsTo(Product::class);
     }

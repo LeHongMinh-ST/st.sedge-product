@@ -6,20 +6,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Post extends Model
+class Discount extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'title',
-        'content',
-        'user_id',
+        'description',
+        'percentage',
+        'start_date',
+        'end_date',
     ];
-
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
 }

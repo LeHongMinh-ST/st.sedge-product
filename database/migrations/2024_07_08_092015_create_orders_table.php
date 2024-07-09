@@ -15,15 +15,14 @@ return new class () extends Migration {
     {
         Schema::create('orders', function (Blueprint $table): void {
             $table->id();
-            $table->string('nameCustomer')->unique();
-            $table->string('emailCustomer')->nullable();
-            $table->text('address')->unique();
+            $table->string('fullname');
+            $table->string('email')->nullable();
+            $table->text('address');
             $table->enum('status', array_map(fn ($status) => $status->value, OrderStatus::cases()))->default(OrderStatus::Pending->value);
-            $table->string('phoneNumber')->unique();
+            $table->string('phone_number');
             $table->text('note')->nullable();
-            $table->string('discountCode')->nullable();
             $table->integer('total');
-            $table->timestamps();
+            $table->datetime('order_date');
         });
     }
 

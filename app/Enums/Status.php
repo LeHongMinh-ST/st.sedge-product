@@ -6,8 +6,8 @@ namespace App\Enums;
 
 enum Status: string
 {
-    case InStock = 'inStock';
-    case OutOfStock = 'outOfStock';
+    case InStock = 'in_stock';
+    case OutOfStock = 'out_of_stock';
 
     public function description(): string
     {

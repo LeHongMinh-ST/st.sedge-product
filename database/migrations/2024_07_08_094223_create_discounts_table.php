@@ -18,6 +18,7 @@ return new class () extends Migration {
             $table->text('description')->nullable();
             $table->string('code');
             $table->integer('percent')->default(0);
+            $table->integer('quantity')->default(0);
             $table->dateTime('start_date');
             $table->dateTime('end_date');
             $table->timestamps();

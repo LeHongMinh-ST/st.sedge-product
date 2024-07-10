@@ -2,10 +2,39 @@
     <div class="main-wrap">
         <ul class="main-menu">
             <li class="menu-link">
-                <a href="#" class="link-title">
-                    <span class="sp-link-title">Trang chủ</span>
-                    {{-- <span class="menu-arrow"><i class="fa fa-angle-down"></i></span> --}}
+                <a href="index2.html" class="link-title">
+                    <span class="sp-link-title">Home</span>
+                    <span class="menu-arrow"><i class="fa fa-angle-down"></i></span>
                 </a>
+                <div class="menu-dropdown menu-single collapse" id="collapse-Home">
+                    <ul class="ul">
+                        <li class="menusingle-li">
+                            <a href="index.html" class="menusingle-title">
+                                <span class="sp-link-title">Live plants</span>
+                            </a>
+                        </li>
+                        <li class="menusingle-li">
+                            <a href="index2.html" class="menusingle-title">
+                                <span class="sp-link-title">Organic food</span>
+                            </a>
+                        </li>
+                        <li class="menusingle-li">
+                            <a href="index3.html" class="menusingle-title">
+                                <span class="sp-link-title">Restaurants</span>
+                            </a>
+                        </li>
+                        <li class="menusingle-li">
+                            <a href="index4.html" class="menusingle-title">
+                                <span class="sp-link-title">Plants & trees</span>
+                            </a>
+                        </li>
+                        <li class="menusingle-li">
+                            <a href="index5.html" class="menusingle-title">
+                                <span class="sp-link-title">Juice & drink</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li class="menu-link">
                 <a href="collection.html" class="link-title">
@@ -107,8 +136,8 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="product-template.html" class="pro-img">
-                                                        <img class="img-fluid img1" src="assets/img/menu/home1-pro-banner1.jpg" alt="menupro-1">
-                                                        <img class="img-fluid img2" src="assets/img/menu/home1-pro-banner2.jpg" alt="menupro-2">
+                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner1.jpg" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner2.jpg" alt="menupro-2">
                                                     </a>
                                                 </div>
                                                 <div class="product-content">
@@ -126,8 +155,8 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="product-template.html" class="pro-img">
-                                                        <img class="img-fluid img1" src="assets/img/menu/home1-pro-banner3.jpg" alt="menupro-1">
-                                                        <img class="img-fluid img2" src="assets/img/menu/home1-pro-banner4.jpg" alt="menupro-2">
+                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner3.jpg" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner4.jpg" alt="menupro-2">
                                                     </a>
                                                 </div>
                                                 <div class="product-content">
@@ -154,8 +183,8 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="product-template.html" class="pro-img">
-                                                        <img class="img-fluid img1" src="assets/img/menu/home1-pro-banner5.jpg" alt="menupro-1">
-                                                        <img class="img-fluid img2" src="assets/img/menu/home1-pro-banner6.jpg" alt="menupro-2">
+                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner5.jpg" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner6.jpg" alt="menupro-2">
                                                     </a>
                                                 </div>
                                                 <div class="product-content">
@@ -173,8 +202,8 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="product-template.html" class="pro-img">
-                                                        <img class="img-fluid img1" src="assets/img/menu/home1-pro-banner7.jpg" alt="menupro-1">
-                                                        <img class="img-fluid img2" src="assets/img/menu/home1-pro-banner8.jpg" alt="menupro-2">
+                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner7.jpg" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner8.jpg" alt="menupro-2">
                                                     </a>
                                                 </div>
                                                 <div class="product-content">
@@ -206,7 +235,7 @@
                         <li class="menubanner-li">
                             <div class="menubanner-img">
                                 <a href="collection.html" class="banner-hover">
-                                    <img src="assets/img/menu/home1-menu-banner1.jpg"  class="img-fluid" alt="menu-banner1">
+                                    <img src="img/menu/home1-menu-banner1.jpg"  class="img-fluid" alt="menu-banner1">
                                 </a>
                                 <a href="collection.html" class="collection-title">
                                     <span>New product</span>
@@ -216,7 +245,7 @@
                         <li class="menubanner-li">
                             <div class="menubanner-img">
                                 <a href="collection.html" class="banner-hover">
-                                    <img src="assets/img/menu/home1-menu-banner2.jpg" class="img-fluid" alt="menu-banner2">
+                                    <img src="img/menu/home1-menu-banner2.jpg" class="img-fluid" alt="menu-banner2">
                                 </a>
                                 <a href="collection.html" class="collection-title">
                                     <span>Featured product</span>
@@ -226,7 +255,7 @@
                         <li class="menubanner-li">
                             <div class="menubanner-img">
                                 <a href="collection.html" class="banner-hover">
-                                    <img src="assets/img/menu/home1-menu-banner3.jpg" class="img-fluid" alt="menu-banner3">
+                                    <img src="img/menu/home1-menu-banner3.jpg" class="img-fluid" alt="menu-banner3">
                                 </a>
                                 <a href="collection.html" class="collection-title">
                                     <span>Best seller</span>
@@ -236,7 +265,7 @@
                         <li class="menubanner-li">
                             <div class="menubanner-img">
                                 <a href="collection.html" class="banner-hover">
-                                    <img src="assets/img/menu/home1-menu-banner4.jpg" class="img-fluid" alt="menu-banner4">
+                                    <img src="img/menu/home1-menu-banner4.jpg" class="img-fluid" alt="menu-banner4">
                                 </a>
                                 <a href="collection.html" class="collection-title">
                                     <span>Super sale</span>

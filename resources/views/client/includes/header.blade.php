@@ -7,13 +7,13 @@
                         <div class="header-element header-logo">
                             <div class="header-theme-logo">
                                 <a href="index.html" class="theme-logo">
-                                    <img src="assets/client/img/logo/logo.png" class="img-fluid" alt="logo"> 
+                                    <img src="img/logo/logo.png" class="img-fluid" alt="logo">
                                 </a>
                             </div>
                         </div>
                         <div class="header-element header-menu">
                             <!-- header-menu start -->
-                            @include('client.includes.header_menu')
+                            @include('client/includes/header_menu')
                             <!-- header-menu end -->
                         </div>
                         <div class="header-element header-icon">

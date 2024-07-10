@@ -4,7 +4,7 @@
     home
 @endsection
 
-{{-- @section('content')
+@section('content')
     <main id="main-content">
         <!-- offer-text start -->
         <section class="offer-text-area">
@@ -2088,4 +2088,4 @@
         @include('client.includes.quickview_modal')
     <!-- quickview modal end -->
 
-@endsection --}}
+@endsection

@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from spacingtech.com/html/panno/panno/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Jul 2024 17:06:58 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
+    <head>
         <meta charset="utf-8">
         <meta name="description" content="A best stylish, creative, modern responsive template for different eCommerce business or industries." />
         <meta name="keywords" content="food template, bakery products, html, eCommerce html template,plants, organic food, restaurant, live tree, responsive, pizza, burger, furniture, mobile, watches, electronics, computers accessories, toys, jewellery, restaurant accessories" />
         <meta name="author" content="spacingtech_webify">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- title -->
-        {{-- <title>Panno - The Plants & Organic Food eCommerce HTML5 template</title>                           --}}
         <title>@yield('title')</title>                          
         <!-- favicon -->
         @include('client.includes.style')
@@ -49,6 +47,4 @@
         <!-- jquery js -->
         @include('client.includes.script')'
     </body>
-
-<!-- Mirrored from spacingtech.com/html/panno/panno/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Jul 2024 17:08:03 GMT -->
 </html>

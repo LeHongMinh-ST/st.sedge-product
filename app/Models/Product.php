@@ -32,4 +32,20 @@ class Product extends Model
     {
         return $this->hasMany(Galery::class);
     }
+
+    public function orders()
+    {
+        return $this->belongsToMany(Order::class, 'order_product')->withPivot([
+            'quantity',
+            'price',
+            'total',
+        ]);
+    }
+
+    public function discounts()
+    {
+        return $this->belongsToMany(Discount::class, 'discount_product')->withPivot([
+            'discount_price',
+        ]);
+    }
 }

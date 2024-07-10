@@ -16,6 +16,7 @@ return new class () extends Migration {
             $table->id();
             $table->integer('discount_id');
             $table->integer('product_id');
+            $table->integer('discount_price');
             $table->timestamps();
         });
     }

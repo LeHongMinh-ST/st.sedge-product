@@ -18,4 +18,11 @@ class Discount extends Model
         'start_date',
         'end_date',
     ];
+
+    public function products()
+    {
+        return $this->belongsToMany(Product::class, 'product_discount')->withPivot([
+            'discount_price',
+        ]);
+    }
 }

@@ -18,7 +18,7 @@ class OrderContext
     public static function makeByOrderStatus(OrderStatus $orderStatus): self
     {
         $instance = new self();
-        $instance->setState(app()->make($orderStatus));
+        $instance->setState(app()->make($orderStatus->getClassOrderState()));
         return $instance;
     }
 
@@ -26,6 +26,7 @@ class OrderContext
     {
         $this->state = $state;
     }
+
     public function toApproved(): void
     {
         $this->state->toApproved($this);

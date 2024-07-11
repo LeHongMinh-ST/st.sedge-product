@@ -4,7 +4,6 @@
 {{--<!-- /core JS files -->--}}
 
 {{--<!-- Theme JS files -->--}}
-<script src="{{ asset('assets/admin/js/jquery/jquery.min.js') }}"></script>
 <script src="{{ asset('assets/admin/js/noty/noty.min.js') }}"></script>
 <script src="{{ asset('assets/admin/js/vendor/notifications/sweet_alert.min.js') }}"></script>
 <script src="{{ asset('vendor/laravel-filemanager/js/stand-alone-button.js') }}"></script>

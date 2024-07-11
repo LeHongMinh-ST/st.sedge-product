@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+<<<<<<< HEAD
 
 Route::get('/login', fn () => view('login.login'));
 Route::get('/admin', fn () => view('admin.pages.dashboard.index'));
+=======
+Route::get('/', fn () => view('admin.pages.dashboard.index'));
+Route::get('/admin', fn () => view('admin.pages.dashboard.index'));
+
+>>>>>>> 24e866e (refactor: [SSP-6] delete file JS unnecessaryè)

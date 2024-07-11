@@ -8,8 +8,8 @@
 
         <div class="navbar-brand flex-1 flex-lg-0">
             <a href="index.html" class="d-inline-flex align-items-center">
-                <img src="https://demo.interface.club/limitless/demo/template/assets/images/logo_icon.svg" alt="">
-                <img src="https://demo.interface.club/limitless/demo/template/assets/images/logo_text_light.svg" class="d-none d-sm-inline-block h-16px ms-3" alt="">
+                <img src="{{ asset('assets/admin/images/logo_light.png') }}" alt="" >
+                <!-- <img src="{{ asset('assets/admin/images/logo_light.png') }}" class="d-none d-sm-inline-block h-16px ms-3" alt=""> -->
             </a>
         </div>
 
@@ -17,7 +17,7 @@
                 <li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2">
                     <a href="#" class="navbar-nav-link align-items-center rounded-pill p-1" data-bs-toggle="dropdown">
                         <div class="status-indicator-container">
-                            <img src="" class="w-32px h-32px rounded-pill" alt="">
+                            <img src="{{ asset('assets/admin/images/avatar.jpg') }}" class="w-32px h-32px rounded-pill" alt="">
                             <span class="status-indicator bg-success"></span>
                         </div>
                         <span class="d-none d-lg-inline-block mx-lg-2"></span>

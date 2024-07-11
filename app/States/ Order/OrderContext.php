@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\States\Order;
 
+use App\Enums\OrderStatus;
+
 class OrderContext
 {
     private OrderState $state;
@@ -11,6 +13,13 @@ class OrderContext
     public function __construct()
     {
         $this->state = new OrderPendingState();
+    }
+
+    public static function makeByOrderStatus(OrderStatus $orderStatus): self
+    {
+        $instance = new self();
+        $instance->setState(app()->make($orderStatus));
+        return $instance;
     }
 
     public function setState(OrderState $state): void

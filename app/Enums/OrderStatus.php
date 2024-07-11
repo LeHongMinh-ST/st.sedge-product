@@ -4,6 +4,13 @@ declare(strict_types=1);
 
 namespace App\Enums;
 
+use App\States\Order\OrderApprovedState;
+use App\States\Order\OrderCanceledState;
+use App\States\Order\OrderCompletedState;
+use App\States\Order\OrderPendingState;
+use App\States\Order\OrderRefundedState;
+use App\States\Order\OrderShippingState;
+
 enum OrderStatus: string
 {
     case Pending = 'pending';
@@ -22,6 +29,18 @@ enum OrderStatus: string
             self::Completed => 'Đã hoàn thành',
             self::Refunded => 'Đã hoàn tiền',
             self::Canceled => 'Đã hủy',
+        };
+    }
+
+    public function getClassOrderState(): string
+    {
+        return match ($this) {
+            self::Pending => OrderPendingState::class,
+            self::Approved => OrderApprovedState::class,
+            self::Shipping => OrderShippingState::class,
+            self::Completed => OrderCompletedState::class,
+            self::Refunded => OrderRefundedState::class,
+            self::Canceled => OrderCanceledState::class,
         };
     }
 }

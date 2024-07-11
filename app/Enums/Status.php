@@ -11,7 +11,7 @@ enum Status: string
 
     public function description(): string
     {
-        match ($this) {
+        return match ($this) {
             self::InStock => 'Còn hàng',
             self::OutOfStock => 'Hết hàng',
         };

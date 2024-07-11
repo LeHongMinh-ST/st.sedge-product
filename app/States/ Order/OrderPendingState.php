@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\States\Order;
 
+use App\Enums\OrderStatus;
+
 class OrderPendingState implements OrderState
 {
     public function toShipping(OrderContext $context): void
@@ -28,6 +30,6 @@ class OrderPendingState implements OrderState
 
     public function availableTransitions(): array
     {
-        return ['shipped', 'refunded', 'canceled'];
+        return [OrderStatus::Shipped, OrderStatus::Refunded, OrderStatus::Canceled];
     }
 }

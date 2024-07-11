@@ -13,10 +13,6 @@ class OrderContext
         $this->state = new OrderPendingState();
     }
 
-    public function __toString(): string
-    {
-        return (string) $this->state;
-    }
 
     public function setState(OrderState $state): void
     {

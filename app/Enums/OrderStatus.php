@@ -14,7 +14,7 @@ enum OrderStatus: string
 
     public function description(): string
     {
-        match ($this) {
+        return match ($this) {
             self::Pending => 'Đang chờ xử lý',
             self::Shipped => 'Đã giao hàng',
             self::Completed => 'Đã hoàn thành',

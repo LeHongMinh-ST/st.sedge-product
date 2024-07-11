@@ -6,9 +6,10 @@ namespace App\States\Order;
 
 interface OrderState
 {
-    public function toShipping(OrderContext $context);
-    public function toCompleted(OrderContext $context);
-    public function toRefunded(OrderContext $context);
-    public function toCanceled(OrderContext $context);
+    public function toApproved(OrderContext $context): void;
+    public function toShipping(OrderContext $context): void;
+    public function toCompleted(OrderContext $context): void;
+    public function toRefunded(OrderContext $context): void;
+    public function toCanceled(OrderContext $context): void;
     public function availableTransitions(): array;
 }

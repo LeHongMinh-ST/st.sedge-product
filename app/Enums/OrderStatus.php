@@ -7,7 +7,8 @@ namespace App\Enums;
 enum OrderStatus: string
 {
     case Pending = 'pending';
-    case Shipped = 'shipped';
+    case Approved = 'approved';
+    case Shipping = 'shipping';
     case Completed = 'completed';
     case Refunded = 'refunded';
     case Canceled = 'canceled';
@@ -16,7 +17,8 @@ enum OrderStatus: string
     {
         return match ($this) {
             self::Pending => 'Đang chờ xử lý',
-            self::Shipped => 'Đã giao hàng',
+            self::Approved => 'Đã xác nhận',
+            self::Shipping => 'Đang giao hàng',
             self::Completed => 'Đã hoàn thành',
             self::Refunded => 'Đã hoàn tiền',
             self::Canceled => 'Đã hủy',

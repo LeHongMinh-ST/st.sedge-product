@@ -8,9 +8,14 @@ use App\Enums\OrderStatus;
 
 class OrderPendingState implements OrderState
 {
-    public function toShipping(OrderContext $context): void
+    public function toApproved(OrderContext $context): void
     {
         $context->setState(new OrderShippingState());
+    }
+
+    public function toShipping(OrderContext $context): void
+    {
+
     }
 
     public function toCompleted(OrderContext $context): void
@@ -30,6 +35,6 @@ class OrderPendingState implements OrderState
 
     public function availableTransitions(): array
     {
-        return [OrderStatus::Shipped, OrderStatus::Refunded, OrderStatus::Canceled];
+        return [OrderStatus::Shipping, OrderStatus::Refunded, OrderStatus::Canceled];
     }
 }

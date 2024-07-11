@@ -6,8 +6,14 @@ namespace App\States\Order;
 
 class OrderCanceledState implements OrderState
 {
+    public function toApproved(OrderContext $context): void
+    {
+
+    }
+
     public function toShipping(OrderContext $context): void
     {
+
     }
 
     public function toCompleted(OrderContext $context): void

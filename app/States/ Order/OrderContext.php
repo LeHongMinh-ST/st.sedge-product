@@ -13,13 +13,16 @@ class OrderContext
         $this->state = new OrderPendingState();
     }
 
-
     public function setState(OrderState $state): void
     {
         $this->state = $state;
     }
+    public function toApproved(): void
+    {
+        $this->state->toApproved($this);
+    }
 
-    public function toShipped(): void
+    public function toShipping(): void
     {
         $this->state->toShipping($this);
     }

@@ -6,6 +6,11 @@ namespace App\States\Order;
 
 class OrderRefundedState implements OrderState
 {
+    public function toApproved(OrderContext $context): void
+    {
+
+    }
+
     public function toShipping(OrderContext $context): void
     {
     }

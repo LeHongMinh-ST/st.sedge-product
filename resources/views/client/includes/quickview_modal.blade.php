@@ -10,9 +10,9 @@
                     <!-- quickview-sliderstart -->
                     <div class="quickview-slider">
                         <div class="quick-view-tab">
-                            <div class="quick-block ">
+                            <div class="quick-block">
                                 <div class="quick-image">
-                                    <a href="product-template.html"><img src="assets/img/product/home1-pro-1.jpg" class="img-fluid" alt="p-1"></a>
+                                    <a href="product-template.html"><img src="img/product/home4-pro-5.jpg" class="img-fluid" alt="p-1"></a>
                                 </div>
                             </div>
                         </div>
@@ -24,25 +24,25 @@
                             <div class="product-ratting">
                                 <span class="spr-badge">
                                     <span class="pro-ratting">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
                                     </span>
                                     <span class="spr-badge-caption">No reviews</span>
                                 </span>
                             </div>
                             <!-- product-title start -->
                             <div class="product-title">
-                                <h6>Strelitzia nicolai</h6>
+                                <h6>Bird of paradise</h6>
                             </div>
                             <!-- product-title end -->
                             <!-- product-price start -->
                             <div class="product-price">
                                 <div class="price-box">
-                                    <span class="new-price">Rs. 22.00</span>
-                                    <span class="old-price">Rs. 35.00</span>
+                                    <span class="new-price">$79.00</span>
+                                    <span class="old-price">$89.00</span>
                                 </div>
                             </div>
                             <!-- product-price end -->
@@ -56,10 +56,10 @@
                                     <div class="quick-view-text">
                                         <div class="selector-wrapper">
                                             <label>Color:</label>
-                                            <select class="single-option-selector" data-option="option2" id="product-color">
-                                                <option value="Black">Black</option>
-                                                <option value="Gray">Gray</option>
-                                                <option value="Brown">Brown</option>
+                                            <select class="single-option-selector" data-option="option1" id="product-color">
+                                                <option value="Green">Green</option>
+                                                <option value="Olive">Olive</option>
+                                                <option value="Silver">Silver</option>
                                             </select>
                                         </div>
                                         <div class="selector-wrapper">
@@ -77,9 +77,9 @@
                                     </div>
                                 </div>
                                 <div class="quickview-buttons">
-                                    <button type="button" onclick="location.href='cart-page.html'" class="btn btn-style2">Add to Cart</button>
+                                    <button type="button" onclick="location.href='cart-page.html'" class="btn btn-style">Add to Cart</button>
                                     <a href="cart-empty.html">
-                                        <span class="icon"><i class="fa-regular fa-heart"></i></span>
+                                        <span class="icon"><i class="feather-heart"></i></span>
                                         <span class="wishlist-text">Wishlist</span>
                                     </a>
                                 </div>

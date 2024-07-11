@@ -2,15 +2,26 @@
     <div class="mobile-contents">
         <div class="menu-close">
             <button class="menu-close-btn">
-            <span class="menu-close-icon"><i class="feather-x"></i></span>
+            <span class="menu-close-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
             </button>
+        </div>
+        <div class="info-wrap">
+            <div class="info-wrapper">
+                <span class="icon">
+                    <i class="feather-headphones"></i>
+                </span>
+                <div class="info-text">
+                    <span class="label">Hot line</span>
+                    <p><a href="tel:(021)245368" class="info-link">(021) 247 3650</a></p>
+                </div>
+            </div>
         </div>
         <div class="mobilemenu-content">
             <div class="main-wrap">
                 <ul class="main-menu">
                     <li class="menu-link">
                         <a href="#menu-single" class="link-title" data-bs-toggle="collapse" aria-expanded="false">
-                            <span class="sp-link-title">Trang chủ</span>
+                            <span class="sp-link-title">Home</span>
                             <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
                         <div class="menu-dropdown menu-single collapse" id="menu-single">
@@ -143,12 +154,12 @@
                                                     <div class="single-product-wrap">
                                                         <div class="product-image">
                                                             <a href="product-template.html" class="pro-img">
-                                                                <img class="img-fluid img1" src="assets/img/menu/home1-pro-banner1.jpg" alt="menupro-1">
-                                                                <img class="img-fluid img2" src="assets/img/menu/home1-pro-banner2.jpg" alt="menupro-2">
+                                                                <img class="img-fluid img1" src="img/menu/home1-pro-banner1.jpg" alt="menupro-1">
+                                                                <img class="img-fluid img2" src="img/menu/home1-pro-banner2.jpg.html" alt="menupro-2">
                                                             </a>
                                                         </div>
                                                         <div class="product-content">
-                                                            <h6><a href="product-template.html">Philodendron birkin</a></h6>
+                                                            <h6><a href="product-template.html">Submarine sandwich</a></h6>
                                                             <div class="price-box">
                                                                 <span class="new-price">$25.00</span>
                                                                 <span class="old-price">$45.00</span>
@@ -162,15 +173,15 @@
                                                     <div class="single-product-wrap">
                                                         <div class="product-image">
                                                             <a href="product-template.html" class="pro-img">
-                                                                <img class="img-fluid img1" src="assets/img/menu/home1-pro-banner3.jpg" alt="menupro-3">
-                                                                <img class="img-fluid img2" src="assets/img/menu/home1-pro-banner4.jpg" alt="menupro-4">
+                                                                <img class="img-fluid img1" src="img/menu/home1-pro-banner3.jpg" alt="menupro-3">
+                                                                <img class="img-fluid img2" src="img/menu/home1-pro-banner4.jpg" alt="menupro-4">
                                                             </a>
                                                         </div>
                                                         <div class="product-content">
-                                                            <h6><a href="product-template.html">Majesty palm</a></h6>
+                                                            <h6><a href="product-template.html">Hara bhara kabab</a></h6>
                                                             <div class="price-box">
-                                                                <span class="new-price">$11.00</span>
-                                                                <span class="old-price">$19.00</span>
+                                                                <span class="new-price">$54.00</span>
+                                                                <span class="old-price">$89.00</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -190,15 +201,15 @@
                                                     <div class="single-product-wrap">
                                                         <div class="product-image">
                                                             <a href="product-template.html" class="pro-img">
-                                                                <img class="img-fluid img1" src="assets/img/menu/home1-pro-banner5.jpg" alt="menupro-1">
-                                                                <img class="img-fluid img2" src="assets/img/menu/home1-pro-banner6.jpg" alt="menupro-2">
+                                                                <img class="img-fluid img1" src="img/menu/home1-pro-banner5.jpg" alt="menupro-1">
+                                                                <img class="img-fluid img2" src="img/menu/home1-pro-banner6.jpg" alt="menupro-2">
                                                             </a>
                                                         </div>
                                                         <div class="product-content">
-                                                            <h6><a href="product-template.html">Wheat grass</a></h6>
+                                                            <h6><a href="product-template.html">Submarine sandwich</a></h6>
                                                             <div class="price-box">
-                                                                <span class="new-price">$21.00</span>
-                                                                <span class="old-price">$25.00</span>
+                                                                <span class="new-price">$65.00</span>
+                                                                <span class="old-price">$69.00</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -209,15 +220,15 @@
                                                     <div class="single-product-wrap">
                                                         <div class="product-image">
                                                             <a href="product-template.html" class="pro-img">
-                                                                <img class="img-fluid img1" src="assets/img/menu/home1-pro-banner7.jpg" alt="menupro-3">
-                                                                <img class="img-fluid img2" src="assets/img/menu/home1-pro-banner8.jpg" alt="menupro-4">
+                                                                <img class="img-fluid img1" src="img/menu/home1-pro-banner7.jpg" alt="menupro-3">
+                                                                <img class="img-fluid img2" src="img/menu/home1-pro-banner8.jpg" alt="menupro-4">
                                                             </a>
                                                         </div>
                                                         <div class="product-content">
-                                                            <h6><a href="product-template.html">Ears cactus</a></h6>
+                                                            <h6><a href="product-template.html">Orange cocktail</a></h6>
                                                             <div class="price-box">
-                                                                <span class="new-price">$69.00</span>
-                                                                <span class="old-price">$89.00</span>
+                                                                <span class="new-price">$75.00</span>
+                                                                <span class="old-price">$90.00</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -242,7 +253,7 @@
                                 <li class="menubanner-li">
                                     <div class="menubanner-img">
                                         <a href="collection.html" class="collection-img banner-hover">
-                                            <img src="assets/img/menu/home1-menu-banner1.jpg"  class="img-fluid" alt="menu-banner1">
+                                            <img src="img/menu/home4-menu-banner1.jpg"  class="img-fluid" alt="menu-banner1">
                                         </a>
                                         <a href="collection.html" class="collection-title">
                                             <span>New product</span>
@@ -252,7 +263,7 @@
                                 <li class="menubanner-li">
                                     <div class="menubanner-img">
                                         <a href="collection.html" class="collection-img banner-hover">
-                                            <img src="assets/img/menu/home1-menu-banner2.jpg" class="img-fluid" alt="menu-banner2">
+                                            <img src="img/menu/home4-menu-banner2.jpg" class="img-fluid" alt="menu-banner2">
                                         </a>
                                         <a href="collection.html" class="collection-title">
                                             <span>Featured product</span>
@@ -262,7 +273,7 @@
                                 <li class="menubanner-li">
                                     <div class="menubanner-img">
                                         <a href="collection.html" class="collection-img banner-hover">
-                                            <img src="assets/img/menu/home1-menu-banner3.jpg" class="img-fluid" alt="menu-banner3">
+                                            <img src="img/menu/home4-menu-banner3.jpg" class="img-fluid" alt="menu-banner3">
                                         </a>
                                         <a href="collection.html" class="collection-title">
                                             <span>Best seller</span>
@@ -272,7 +283,7 @@
                                 <li class="menubanner-li">
                                     <div class="menubanner-img">
                                         <a href="collection.html" class="collection-img banner-hover">
-                                            <img src="assets/img/menu/home1-menu-banner4.jpg" class="img-fluid" alt="menu-banner4">
+                                            <img src="img/menu/home4-menu-banner4.jpg" class="img-fluid" alt="menu-banner4">
                                         </a>
                                         <a href="collection.html" class="collection-title">
                                             <span>Super sale</span>
@@ -284,7 +295,7 @@
                     </li>
                     <li class="menu-link">
                         <a href="#menu-blog" class="link-title" data-bs-toggle="collapse" aria-expanded="false">
-                            <span class="sp-link-title">Blogs</span>
+                            <span class="sp-link-title">Blog</span>
                             <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
                         <div class="menu-dropdown menu-single collapse" id="menu-blog">
@@ -324,7 +335,7 @@
                     </li>
                     <li class="menu-link">
                         <a href="#menu-sub" class="link-title" data-bs-toggle="collapse" aria-expanded="false">
-                            <span class="sp-link-title">Pages</span>
+                            <span class="sp-link-title">Page</span>
                             <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
                         <div class="menu-dropdown menu-sub collapse" id="menu-sub">
@@ -405,6 +416,26 @@
                                     </div>
                                 </li>
                                 <li class="menusub-li">
+                                    <a href="#menu-sup-contact" class="menusub-title" data-bs-toggle="collapse" aria-expanded="false">
+                                        <span class="sp-link-title">Contact us</span>
+                                        <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                                    </a>
+                                    <div class="menusup-dropdown collapse" id="menu-sup-contact">
+                                        <ul class="menusup-ul">
+                                            <li class="menusup-li">
+                                                <a href="contact-us.html" class="menusup-title">
+                                                    <span class="sp-link-title">Contact us</span>
+                                                </a>
+                                            </li>
+                                            <li class="menusup-li">
+                                                <a href="contact-us-2.html" class="menusup-title">
+                                                    <span class="sp-link-title">Contact us 2</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menusub-li">
                                     <a href="#desk-checkout" class="menusub-title" data-bs-toggle="collapse" aria-expanded="false">
                                         <span class="sp-link-title">Checkout</span>
                                         <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span>
@@ -424,26 +455,6 @@
                                             <li class="menusup-li">
                                                 <a href="checkout-style3.html" class="menusup-title">
                                                     <span class="sp-link-title">Checkout style 3</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="menusub-li">
-                                    <a href="#menu-sup-contact" class="menusub-title" data-bs-toggle="collapse" aria-expanded="false">
-                                        <span class="sp-link-title">Contact us</span>
-                                        <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                                    </a>
-                                    <div class="menusup-dropdown collapse" id="menu-sup-contact">
-                                        <ul class="menusup-ul">
-                                            <li class="menusup-li">
-                                                <a href="contact-us.html" class="menusup-title">
-                                                    <span class="sp-link-title">Contact us</span>
-                                                </a>
-                                            </li>
-                                            <li class="menusup-li">
-                                                <a href="contact-us-2.html" class="menusup-title">
-                                                    <span class="sp-link-title">Contact us 2</span>
                                                 </a>
                                             </li>
                                         </ul>

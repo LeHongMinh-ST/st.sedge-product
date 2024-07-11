@@ -1,4 +1,4 @@
-<link rel="icon" type="image/x-icon" href="{{ asset('./assets/client/img/favicon/favicon.png') }}">
+<link rel="icon" type="image/x-icon" href="{{ asset('./assets/client/img/favicon/favicon4.png') }}">
 <!-- bootstrap css -->
 <link rel="stylesheet" type="text/css" href="{{ asset('./assets/client/css/bootstrap.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('./assets/client/css/bootstrap-icons.css') }}">
@@ -26,7 +26,7 @@
 <!-- product-page css -->
 <link rel="stylesheet" type="text/css" href="{{ asset('./assets/client/css/product-page.css') }}">
 <!-- style css -->
-<link rel="stylesheet" type="text/css" href="{{ asset('./assets/client/css/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('./assets/client/css/style4.css') }}">
 
 {{-- css custom --}}
 @yield('style)_custom')

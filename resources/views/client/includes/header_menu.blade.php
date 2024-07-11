@@ -235,7 +235,7 @@
                         <li class="menubanner-li">
                             <div class="menubanner-img">
                                 <a href="collection.html" class="banner-hover">
-                                    <img src="img/menu/home1-menu-banner1.jpg"  class="img-fluid" alt="menu-banner1">
+                                    <img src="img/menu/home4-menu-banner1.jpg" class="img-fluid" alt="menu-banner1">
                                 </a>
                                 <a href="collection.html" class="collection-title">
                                     <span>New product</span>
@@ -245,7 +245,7 @@
                         <li class="menubanner-li">
                             <div class="menubanner-img">
                                 <a href="collection.html" class="banner-hover">
-                                    <img src="img/menu/home1-menu-banner2.jpg" class="img-fluid" alt="menu-banner2">
+                                    <img src="img/menu/home4-menu-banner2.jpg" class="img-fluid" alt="menu-banner2">
                                 </a>
                                 <a href="collection.html" class="collection-title">
                                     <span>Featured product</span>
@@ -255,7 +255,7 @@
                         <li class="menubanner-li">
                             <div class="menubanner-img">
                                 <a href="collection.html" class="banner-hover">
-                                    <img src="img/menu/home1-menu-banner3.jpg" class="img-fluid" alt="menu-banner3">
+                                    <img src="img/menu/home4-menu-banner3.jpg" class="img-fluid" alt="menu-banner3">
                                 </a>
                                 <a href="collection.html" class="collection-title">
                                     <span>Best seller</span>
@@ -265,7 +265,7 @@
                         <li class="menubanner-li">
                             <div class="menubanner-img">
                                 <a href="collection.html" class="banner-hover">
-                                    <img src="img/menu/home1-menu-banner4.jpg" class="img-fluid" alt="menu-banner4">
+                                    <img src="img/menu/home4-menu-banner4.jpg" class="img-fluid" alt="menu-banner4">
                                 </a>
                                 <a href="collection.html" class="collection-title">
                                     <span>Super sale</span>
@@ -276,8 +276,8 @@
                 </div>
             </li>
             <li class="menu-link">
-                <a href="blog-grid.html" class="link-title">
-                    <span class="sp-link-title">Blogs</span>
+                <a href="index2.html" class="link-title">
+                    <span class="sp-link-title">Blog</span>
                     <span class="menu-arrow"><i class="fa fa-angle-down"></i></span>
                 </a>
                 <div class="menu-dropdown menu-single collapse" id="blogs">
@@ -426,17 +426,17 @@
                                 <ul class="menusup-ul">
                                     <li class="menusup-li">
                                         <a href="checkout-style1.html" class="menusup-title">
-                                            <span class="sp-link-title">Checkout style 1</span>
+                                            <span class="sp-link-title">Contact us</span>
                                         </a>
                                     </li>
                                     <li class="menusup-li">
                                         <a href="checkout-style2.html" class="menusup-title">
-                                            <span class="sp-link-title">Checkout style 2</span>
+                                            <span class="sp-link-title">Contact us 2</span>
                                         </a>
                                     </li>
                                     <li class="menusup-li">
                                         <a href="checkout-style3.html" class="menusup-title">
-                                            <span class="sp-link-title">Checkout style 3</span>
+                                            <span class="sp-link-title">Contact us 3</span>
                                         </a>
                                     </li>
                                 </ul>

@@ -14,6 +14,9 @@
         @include('client.includes.style')
     </head>
     <body>
+        <!-- notification-bar start -->
+        @include('client.includes.notification_bar')
+        <!-- notification-bar end -->
         <!-- header start -->
         @include('client.includes.header')
         <!-- header end -->

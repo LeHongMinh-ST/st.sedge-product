@@ -15,13 +15,13 @@ return new class () extends Migration {
     {
         Schema::create('orders', function (Blueprint $table): void {
             $table->id();
-            $table->string('fullname');
-            $table->string('email')->nullable();
+            $table->string('fullname', 255);
+            $table->string('email', 255)->nullable();
             $table->text('address');
             $table->enum('status', array_map(fn ($status) => $status->value, OrderStatus::cases()))->default(OrderStatus::Pending->value);
-            $table->string('phone_number');
+            $table->string('phone_number', 255);
             $table->text('note')->nullable();
-            $table->integer('total');
+            $table->bigInteger('total');
             $table->datetime('order_date');
         });
     }

@@ -15,13 +15,13 @@ return new class () extends Migration {
     {
         Schema::create('products', function (Blueprint $table): void {
             $table->id();
-            $table->string('name');
+            $table->string('name', 255);
             $table->text('description');
-            $table->integer('price');
-            $table->string('thumbnail');
+            $table->bigInteger('price');
+            $table->string('thumbnail', 255);
             $table->integer('quantity');
             $table->enum('status', array_map(fn ($status) => $status->value, Status::cases()))->default(Status::InStock->value);
-            $table->integer('category_id');
+            $table->bigInteger('category_id');
             $table->timestamps();
         });
     }

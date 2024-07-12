@@ -14,8 +14,8 @@ return new class () extends Migration {
     {
         Schema::create('galeries', function (Blueprint $table): void {
             $table->id();
-            $table->integer('product_id');
-            $table->string('thumbnail');
+            $table->bigInteger('product_id');
+            $table->string('thumbnail', 255);
             $table->timestamps();
         });
     }

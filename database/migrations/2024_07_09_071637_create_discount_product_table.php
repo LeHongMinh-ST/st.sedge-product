@@ -14,8 +14,8 @@ return new class () extends Migration {
     {
         Schema::create('discount_product', function (Blueprint $table): void {
             $table->id();
-            $table->integer('discount_id');
-            $table->integer('product_id');
+            $table->bigInteger('discount_id');
+            $table->bigInteger('product_id');
             $table->integer('discount_price');
             $table->timestamps();
         });

@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<main id="main-content">
+{{-- <main id="main-content">
     <!-- home-slider start -->
     <section class="home-slider-area section-ptb" style="background-image: url('img/slider/home4-bg.jpg');">
         <div class="container">
@@ -1101,7 +1101,7 @@
         </div>
     </section>
     <!-- instagram end -->
-</main>
+</main> --}}
 
     <!-- newsletter start -->
         @include('client.includes.newsletter')

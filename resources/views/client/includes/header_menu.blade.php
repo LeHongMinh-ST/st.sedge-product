@@ -2,129 +2,40 @@
     <div class="main-wrap">
         <ul class="main-menu">
             <li class="menu-link">
-                <a href="index2.html" class="link-title">
-                    <span class="sp-link-title">Home</span>
-                    <span class="menu-arrow"><i class="fa fa-angle-down"></i></span>
+                <a href="#" class="link-title">
+                    <span class="sp-link-title">Trang chủ</span>
                 </a>
-                <div class="menu-dropdown menu-single collapse" id="collapse-Home">
-                    <ul class="ul">
-                        <li class="menusingle-li">
-                            <a href="index.html" class="menusingle-title">
-                                <span class="sp-link-title">Live plants</span>
-                            </a>
-                        </li>
-                        <li class="menusingle-li">
-                            <a href="index2.html" class="menusingle-title">
-                                <span class="sp-link-title">Organic food</span>
-                            </a>
-                        </li>
-                        <li class="menusingle-li">
-                            <a href="index3.html" class="menusingle-title">
-                                <span class="sp-link-title">Restaurants</span>
-                            </a>
-                        </li>
-                        <li class="menusingle-li">
-                            <a href="index4.html" class="menusingle-title">
-                                <span class="sp-link-title">Plants & trees</span>
-                            </a>
-                        </li>
-                        <li class="menusingle-li">
-                            <a href="index5.html" class="menusingle-title">
-                                <span class="sp-link-title">Juice & drink</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </li>
             <li class="menu-link">
                 <a href="collection.html" class="link-title">
-                    <span class="sp-link-title">Product<span class="header-sale-lable">Sale</span></span>
+                    <span class="sp-link-title">Sản phẩm<span class="header-sale-lable">Sale</span></span>
                     <span class="menu-arrow"><i class="fa fa-angle-down"></i></span>
                 </a>
                 <div class="menu-dropdown menu-mega collapse" id="colection">
                     <ul class="ul container p-0">
                         <li class="menumega-li">
                             <a href="javascript:void(0)" class="menumega-title">
-                                <span class="sp-link-title">Shop page</span>
+                                <span class="sp-link-title">Danh mục sản phẩm</span>
                                 <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span>
                             </a>
                             <div class="menumegasup-dropdown collapse">
                                 <ul class="menumegasup-ul">
                                     <li class="menumegasup-li">
                                         <a href="collection-without.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Collection</span>
+                                            <span class="sp-link-title"><i class="fa fa-angle-right"></i> Danh mục 1</span>
                                         </a>
                                     </li>
                                     <li class="menumegasup-li">
-                                        <a href="collection.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Collection left</span>
+                                        <a href="collection-without.html" class="menumegasup-title">
+                                            <span class="sp-link-title"><i class="fa fa-angle-right"></i> Danh mục 2</span>
                                         </a>
                                     </li>
                                     <li class="menumegasup-li">
-                                        <a href="collection-right.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Collection right</span>
+                                        <a href="collection-without.html" class="menumegasup-title">
+                                            <span class="sp-link-title"><i class="fa fa-angle-right"></i> Danh mục 3</span>
                                         </a>
                                     </li>
-                                    <li class="menumegasup-li">
-                                        <a href="collection-list-without.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Collection list</span>
-                                        </a>
-                                    </li>
-                                    <li class="menumegasup-li">
-                                        <a href="collection-list.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Collection list left</span>
-                                        </a>
-                                    </li>
-                                    <li class="menumegasup-li">
-                                        <a href="collection-list-right.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Collection list right</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="menumega-li">
-                            <a href="javascript:void(0)" class="menumega-title">
-                                <span class="sp-link-title">Product page</span>
-                                <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                            </a>
-                            <div class="menumegasup-dropdown collapse">
-                                <ul class="menumegasup-ul">
-                                    <li class="menumegasup-li">
-                                        <a href="product-template.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Product layout</span>
-                                        </a>
-                                    </li>
-                                    <li class="menumegasup-li">
-                                        <a href="product-template2.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Product tab</span>
-                                        </a>
-                                    </li>
-                                    <li class="menumegasup-li">
-                                        <a href="product-template3.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Product advance</span>
-                                        </a>
-                                    </li>
-                                    <li class="menumegasup-li">
-                                        <a href="product-template4.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Product accordion</span>
-                                        </a>
-                                    </li>
-                                    <li class="menumegasup-li">
-                                        <a href="product-template5.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Product center</span>
-                                        </a>
-                                    </li>
-                                    <li class="menumegasup-li">
-                                        <a href="product-template6.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Product sticky</span>
-                                        </a>
-                                    </li>
-                                    <li class="menumegasup-li">
-                                        <a href="product-template7.html" class="menumegasup-title">
-                                            <span class="sp-link-title">Product side</span>
-                                        </a>
-                                    </li>
+
                                 </ul>
                             </div>
                         </li>
@@ -222,61 +133,63 @@
                                 </div>
                             </div>
                         </li>
+                        <li class="menumega-li">
+                            <div class="menu-product">
+                                <ul class="menumegasup-ul">
+                                    <li class="menumegasup-li">
+                                        <div class="product-menu-list">
+                                            <div class="single-product-wrap">
+                                                <div class="product-image">
+                                                    <a href="product-template.html" class="pro-img">
+                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner5.jpg" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner6.jpg" alt="menupro-2">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h6><a href="product-template.html">Wheat grass</a></h6>
+                                                    <div class="price-box">
+                                                        <span class="new-price">Rs. 21.00</span>
+                                                        <span class="old-price">Rs. 25.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menumegasup-li">
+                                        <div class="product-menu-list">
+                                            <div class="single-product-wrap">
+                                                <div class="product-image">
+                                                    <a href="product-template.html" class="pro-img">
+                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner7.jpg" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner8.jpg" alt="menupro-2">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h6><a href="product-template.html">Ears cactus</a></h6>
+                                                    <div class="price-box">
+                                                        <span class="new-price">Rs. 69.00</span>
+                                                        <span class="old-price">Rs. 89.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="menu-product-btn">
+                                    <a href="collection.html" class="menu-pro-link">See more<i class="bi bi-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </li>
             <li class="menu-link">
-                <a href="collection.html" class="link-title">
-                    <span class="sp-link-title">Collection</span>
-                    <span class="menu-arrow"><i class="fa fa-angle-down"></i></span>
+                <a href="#" class="link-title">
+                    <span class="sp-link-title">Thông báo</span>
                 </a>
-                <div class="menu-dropdown menu-banner collapse" id="collapse-shop">
-                    <ul class="container ul">
-                        <li class="menubanner-li">
-                            <div class="menubanner-img">
-                                <a href="collection.html" class="banner-hover">
-                                    <img src="img/menu/home4-menu-banner1.jpg" class="img-fluid" alt="menu-banner1">
-                                </a>
-                                <a href="collection.html" class="collection-title">
-                                    <span>New product</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="menubanner-li">
-                            <div class="menubanner-img">
-                                <a href="collection.html" class="banner-hover">
-                                    <img src="img/menu/home4-menu-banner2.jpg" class="img-fluid" alt="menu-banner2">
-                                </a>
-                                <a href="collection.html" class="collection-title">
-                                    <span>Featured product</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="menubanner-li">
-                            <div class="menubanner-img">
-                                <a href="collection.html" class="banner-hover">
-                                    <img src="img/menu/home4-menu-banner3.jpg" class="img-fluid" alt="menu-banner3">
-                                </a>
-                                <a href="collection.html" class="collection-title">
-                                    <span>Best seller</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="menubanner-li">
-                            <div class="menubanner-img">
-                                <a href="collection.html" class="banner-hover">
-                                    <img src="img/menu/home4-menu-banner4.jpg" class="img-fluid" alt="menu-banner4">
-                                </a>
-                                <a href="collection.html" class="collection-title">
-                                    <span>Super sale</span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </li>
             <li class="menu-link">
-                <a href="index2.html" class="link-title">
+                <a href="#" class="link-title">
                     <span class="sp-link-title">Blog</span>
                     <span class="menu-arrow"><i class="fa fa-angle-down"></i></span>
                 </a>
@@ -317,10 +230,10 @@
             </li>
             <li class="menu-link">
                 <a href="about-us.html" class="link-title">
-                    <span class="sp-link-title">Pages</span>
-                    <span class="menu-arrow"><i class="fa fa-angle-down"></i></span>
+                    <span class="sp-link-title">Liên hệ</span>
+                    {{-- <span class="menu-arrow"><i class="fa fa-angle-down"></i></span> --}}
                 </a>
-                <div class="menu-dropdown menu-sub collapse" id="page">
+                {{-- <div class="menu-dropdown menu-sub collapse" id="page">
                     <ul class="ul">
                         <li class="menusub-li">
                             <a href="about-us.html" class="menusub-title">
@@ -508,7 +421,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> --}}
             </li>
         </ul>
     </div>

@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', fn () => view('client.pages.index'));
-Route::get('/storage/{extra}', function ($extra) {
-    return redirect('/public/storage/$extra');
-}
-)->where('extra', '.*');
+
+Route::get('link-storage', function (): void {
+    $targetFolder = storage_path('app/public');
+    $link = $_SERVER['DOCUMENT_ROOT'] . '/storage';
+    symlink($targetFolder, $link);
+});

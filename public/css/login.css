@@ -1,0 +1,248 @@
+body {
+    color: rgba(58, 53, 65, 0.87);
+    font-family: Inter, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    background-image: url('/images/img1.jpg');
+    background-size: cover;
+}
+
+.app-content {
+    min-height: 100vh;
+    position: relative;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    backdrop-filter: blur(5px); 
+}
+
+.content-center {
+    width: 1325.5px;
+    height: 720.72px;
+    padding: 25px 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.login-container {
+    width: 500px;
+    height: 740px;
+    box-shadow: 0px 2px 10px 0px rgba(58, 53, 65, 0.1);
+    border-radius: 6px;
+    padding: 0 30px;
+    background: rgba(255, 255, 255, 0.584); 
+    backdrop-filter: blur(4px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+.login-logo {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    width: 35px;
+    height: 29px;
+    margin-top: 50px;
+}
+
+.login-logo h6 {
+    color: rgb(5, 63, 13);
+    margin: 0;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.login-header{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.login-header i {
+    color: rgba(8, 11, 201, 0.811);
+}
+
+.login-header h1 {
+    font-size: 24px;
+    line-height: 1.334;
+    letter-spacing: 0;
+    color:rgb(5, 63, 13);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: rgba(226, 8, 8, 0.858);
+    margin-top: 10px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin: 0 18px;
+}
+
+.login-form input {
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 30px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.3); 
+    color: rgba(58, 53, 65, 0.87); 
+}
+
+.login-form label {
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 16.5px; 
+    color: rgba(58, 53, 65, 0.87);
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px 0;
+    margin-top: -10px;
+}
+
+.login-options label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #666;font-family: Inter, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.login-options input {
+    margin-right: 10px;
+    width: 16px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: rgba(58, 53, 65, 0.68);
+}
+
+.login-options a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #9155FD;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+button[type="submit"] {
+    background: #7367f0;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 55px;
+}
+
+button[type="submit"]:hover {
+    background: #5a54e7;
+}
+
+.login-footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.footer:before, .footer:after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid rgba(58, 53, 65, 0.12);
+    margin: 15px;
+}
+
+.login-footer p {
+    color: #666;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: rgba(58, 53, 65, 0.68);
+    margin-right: 0.5rem;
+}
+
+.login-footer a {
+    color: #7367f0;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-login a {
+    font-size: 20px;
+    color: #666;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px;
+    height: 46px;
+    width: 20px ;
+}
+
+.social-login a:hover {
+    color: #333;
+}
+
+.item-fb i {
+    color: #497ce2;
+}
+
+.item-tw i {
+    color: #497ce2;
+}
+
+.item-insta i {
+    color: #7f0848;
+}
+
+.item-gg i {
+    color: #db4437
+}
+
+

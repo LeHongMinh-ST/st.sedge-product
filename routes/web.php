@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', fn () => view('client.pages.index'));
+Route::get('/storage/{extra}', function ($extra) {
+    return redirect('/public/storage/$extra');
+}
+)->where('extra', '.*');

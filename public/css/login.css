@@ -41,7 +41,7 @@ body {
 
 .login-container {
     width: 500px;
-    height: 740px;
+    height: 600px;
     box-shadow: 0px 2px 10px 0px rgba(58, 53, 65, 0.1);
     border-radius: 6px;
     padding: 0 30px;
@@ -74,7 +74,7 @@ body {
 
 .login-header{
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .login-header i {
@@ -85,9 +85,9 @@ body {
     font-size: 24px;
     line-height: 1.334;
     letter-spacing: 0;
-    color:rgb(5, 63, 13);
+    color:rgb(4, 67, 15);
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .login-header p {
@@ -129,7 +129,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 2px 0;
-    margin-top: -10px;
+    margin-top: -1px;
 }
 
 .login-options label {
@@ -142,7 +142,7 @@ body {
 .login-options input {
     margin-right: 10px;
     width: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 16px;
     color: rgba(58, 53, 65, 0.68);
 }
@@ -164,96 +164,10 @@ button[type="submit"] {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
     height: 55px;
 }
 
 button[type="submit"]:hover {
     background: #5a54e7;
 }
-
-.login-footer {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.login {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 20px 0;
-}
-
-.footer:before, .footer:after {
-    content: "";
-    flex: 1;
-    border-bottom: 1px solid rgba(58, 53, 65, 0.12);
-    margin: 15px;
-}
-
-.login-footer p {
-    color: #666;
-    margin: 10px 0;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    letter-spacing: 0.15px;
-    color: rgba(58, 53, 65, 0.68);
-    margin-right: 0.5rem;
-}
-
-.login-footer a {
-    color: #7367f0;
-    text-decoration: none;
-    font-size: 0.875rem;
-}
-
-.login-footer a:hover {
-    text-decoration: underline;
-}
-
-.social-login {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.social-login a {
-    font-size: 20px;
-    color: #666;
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: 8px;
-    height: 46px;
-    width: 20px ;
-}
-
-.social-login a:hover {
-    color: #333;
-}
-
-.item-fb i {
-    color: #497ce2;
-}
-
-.item-tw i {
-    color: #497ce2;
-}
-
-.item-insta i {
-    color: #7f0848;
-}
-
-.item-gg i {
-    color: #db4437
-}
-
-

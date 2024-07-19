@@ -5,8 +5,18 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.15px;
-    background-image: url('/images/img1.jpg');
+    background-image: url('/images/backgroud.jpg');
     background-size: cover;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); 
+    z-index: -1;
 }
 
 .app-content {
@@ -17,6 +27,7 @@ body {
     align-items: center;
     display: flex;
     backdrop-filter: blur(5px); 
+    width: 100%;
 }
 
 .content-center {
@@ -34,8 +45,8 @@ body {
     box-shadow: 0px 2px 10px 0px rgba(58, 53, 65, 0.1);
     border-radius: 6px;
     padding: 0 30px;
-    background: rgba(255, 255, 255, 0.584); 
-    backdrop-filter: blur(4px); 
+    background: rgba(255, 255, 255, 0.813); 
+    backdrop-filter: blur(6px); 
     border: 1px solid rgba(255, 255, 255, 0.3); 
 }
 

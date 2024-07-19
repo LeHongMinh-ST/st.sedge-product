@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <div class="app-content">
         <div class="content-center">
             <div class="login-container">
@@ -32,7 +33,7 @@
                     <div class="login-options">
                         <label class="remember-me">
                             <input type="checkbox">
-                            Ghi nhớ tôi
+                            Ghi nhớ mật khẩu
                         </label>
                         <a href="#">Quên mật khẩu?</a>
                     </div>

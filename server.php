@@ -10,4 +10,8 @@ if ('/' !== $uri && file_exists(__DIR__ . '/public' . $uri)) {
 }
 
 require_once __DIR__ . '/public/index.php';
+<<<<<<< HEAD
 //require_once __DIR__ . '/index.php';
+=======
+// require_once __DIR__ . '/index.php';
+>>>>>>> 3f1f8ac (feat: [SSP-5] base layout_home)

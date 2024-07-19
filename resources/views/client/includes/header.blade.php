@@ -6,8 +6,8 @@
                     <div class="header-area">
                         <div class="header-element header-logo">
                             <div class="header-theme-logo">
-                                <a href="index4.html" class="theme-logo">
-                                    <img src="img/logo/logo4.png" class="img-fluid" alt="logo">
+                                <a href="#" class="theme-logo">
+                                    <img src="{{asset("assets/client/img/logo/logo.png")}}" class="img-fluid" alt="logo">
                                 </a>
                             </div>
                         </div>

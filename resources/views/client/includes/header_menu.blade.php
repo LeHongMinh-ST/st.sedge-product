@@ -7,7 +7,7 @@
                 </a>
             </li>
             <li class="menu-link">
-                <a href="collection.html" class="link-title">
+                <a href="{{route('todo.collection')}}" class="link-title">
                     <span class="sp-link-title">Sản phẩm<span class="header-sale-lable">Sale</span></span>
                     <span class="menu-arrow"><i class="fa fa-angle-down"></i></span>
                 </a>
@@ -21,17 +21,17 @@
                             <div class="menumegasup-dropdown collapse">
                                 <ul class="menumegasup-ul">
                                     <li class="menumegasup-li">
-                                        <a href="collection-without.html" class="menumegasup-title">
+                                        <a href="{{route('todo.collection')}}" class="menumegasup-title">
                                             <span class="sp-link-title"><i class="fa fa-angle-right"></i> Danh mục 1</span>
                                         </a>
                                     </li>
                                     <li class="menumegasup-li">
-                                        <a href="collection-without.html" class="menumegasup-title">
+                                        <a href="{{route('todo.collection')}}" class="menumegasup-title">
                                             <span class="sp-link-title"><i class="fa fa-angle-right"></i> Danh mục 2</span>
                                         </a>
                                     </li>
                                     <li class="menumegasup-li">
-                                        <a href="collection-without.html" class="menumegasup-title">
+                                        <a href="{{route('todo.collection')}}" class="menumegasup-title">
                                             <span class="sp-link-title"><i class="fa fa-angle-right"></i> Danh mục 3</span>
                                         </a>
                                     </li>
@@ -47,15 +47,15 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="product-template.html" class="pro-img">
-                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner1.jpg" alt="menupro-1">
-                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner2.jpg" alt="menupro-2">
+                                                        <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-2">
                                                     </a>
                                                 </div>
                                                 <div class="product-content">
-                                                    <h6><a href="product-template.html">Philodendron birkin</a></h6>
+                                                    <h6><a href="product-template.html">Sản phẩm cói 1</a></h6>
                                                     <div class="price-box">
-                                                        <span class="new-price">Rs. 25.00</span>
-                                                        <span class="old-price">Rs. 45.00</span>
+                                                        <span class="new-price">125.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">145.00 <u>đ</u></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -66,15 +66,15 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="product-template.html" class="pro-img">
-                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner3.jpg" alt="menupro-1">
-                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner4.jpg" alt="menupro-2">
+                                                        <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-2">
                                                     </a>
                                                 </div>
                                                 <div class="product-content">
-                                                    <h6><a href="product-template.html">Majesty palm</a></h6>
+                                                    <h6><a href="product-template.html">Sản phẩm cói 2</a></h6>
                                                     <div class="price-box">
-                                                        <span class="new-price">Rs. 11.00</span>
-                                                        <span class="old-price">Rs. 19.00</span>
+                                                        <span class="new-price">125.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">145.00 <u>đ</u></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -82,7 +82,7 @@
                                     </li>
                                 </ul>
                                 <div class="menu-product-btn">
-                                    <a href="collection.html" class="menu-pro-link">See more<i class="bi bi-chevron-right"></i></a>
+                                    <a href="collection.html" class="menu-pro-link">Xem thêm<i class="bi bi-chevron-right"></i></a>
                                 </div>
                             </div>
                         </li>
@@ -94,15 +94,15 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="product-template.html" class="pro-img">
-                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner5.jpg" alt="menupro-1">
-                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner6.jpg" alt="menupro-2">
+                                                        <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-2">
                                                     </a>
                                                 </div>
                                                 <div class="product-content">
-                                                    <h6><a href="product-template.html">Wheat grass</a></h6>
+                                                    <h6><a href="product-template.html">Sản phẩm cói 1</a></h6>
                                                     <div class="price-box">
-                                                        <span class="new-price">Rs. 21.00</span>
-                                                        <span class="old-price">Rs. 25.00</span>
+                                                        <span class="new-price">125.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">145.00 <u>đ</u></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -113,15 +113,15 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="product-template.html" class="pro-img">
-                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner7.jpg" alt="menupro-1">
-                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner8.jpg" alt="menupro-2">
+                                                        <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-2">
                                                     </a>
                                                 </div>
                                                 <div class="product-content">
-                                                    <h6><a href="product-template.html">Ears cactus</a></h6>
+                                                    <h6><a href="product-template.html">Sản phẩm cói 2</a></h6>
                                                     <div class="price-box">
-                                                        <span class="new-price">Rs. 69.00</span>
-                                                        <span class="old-price">Rs. 89.00</span>
+                                                        <span class="new-price">125.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">145.00 <u>đ</u></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -129,7 +129,7 @@
                                     </li>
                                 </ul>
                                 <div class="menu-product-btn">
-                                    <a href="collection.html" class="menu-pro-link">See more<i class="bi bi-chevron-right"></i></a>
+                                    <a href="collection.html" class="menu-pro-link">Xem thêm<i class="bi bi-chevron-right"></i></a>
                                 </div>
                             </div>
                         </li>
@@ -141,15 +141,15 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="product-template.html" class="pro-img">
-                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner5.jpg" alt="menupro-1">
-                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner6.jpg" alt="menupro-2">
+                                                        <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-2">
                                                     </a>
                                                 </div>
                                                 <div class="product-content">
-                                                    <h6><a href="product-template.html">Wheat grass</a></h6>
+                                                    <h6><a href="product-template.html">Sản phẩm cói 1</a></h6>
                                                     <div class="price-box">
-                                                        <span class="new-price">Rs. 21.00</span>
-                                                        <span class="old-price">Rs. 25.00</span>
+                                                        <span class="new-price">125.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">145.00 <u>đ</u></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -160,15 +160,15 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="product-template.html" class="pro-img">
-                                                        <img class="img-fluid img1" src="img/menu/home1-pro-banner7.jpg" alt="menupro-1">
-                                                        <img class="img-fluid img2" src="img/menu/home1-pro-banner8.jpg" alt="menupro-2">
+                                                        <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-1">
+                                                        <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-2">
                                                     </a>
                                                 </div>
                                                 <div class="product-content">
-                                                    <h6><a href="product-template.html">Ears cactus</a></h6>
+                                                    <h6><a href="product-template.html">Sản phẩm cói 2</a></h6>
                                                     <div class="price-box">
-                                                        <span class="new-price">Rs. 69.00</span>
-                                                        <span class="old-price">Rs. 89.00</span>
+                                                        <span class="new-price">125.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">145.00 <u>đ</u></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -176,7 +176,7 @@
                                     </li>
                                 </ul>
                                 <div class="menu-product-btn">
-                                    <a href="collection.html" class="menu-pro-link">See more<i class="bi bi-chevron-right"></i></a>
+                                    <a href="collection.html" class="menu-pro-link">Xem thêm<i class="bi bi-chevron-right"></i></a>
                                 </div>
                             </div>
                         </li>

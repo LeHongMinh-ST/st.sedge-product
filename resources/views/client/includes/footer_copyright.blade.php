@@ -7,13 +7,13 @@
                         <li class="footer-li footer-logo">
                             <h6 class="ftlist-title">Về chúng tôi</h6>
                             <div class="footer-content">
-                                <a href="index4.html" class="theme-logo">
-                                    <img src="img/logo/logo4.png" class="img-fluid" alt="footer-logo">
+                                <a href="#" class="theme-logo">
+                                    <img src="{{asset("assets/client/img/logo/logo.png")}}" class="img-fluid" alt="footer-logo">
                                 </a>
                                 <ul class="ftcontact-ul">
                                     <li class="ftcontact-li">
                                         <div class="footer-desc">
-                                            <p class="desc">It is a long established looking at its layout.</p>
+                                            <p class="desc">Mô tả...</p>
                                         </div>
                                     </li>
                                 </ul>

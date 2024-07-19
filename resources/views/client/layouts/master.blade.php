@@ -45,7 +45,7 @@
         </div>
         <!-- preloader end -->
         <!-- bottom-menu start -->
-        @include('client.includes.bottom_menu')'
+        {{-- @include('client.includes.bottom_menu')' --}}
         <!-- bottom-menu end -->
         <!-- jquery js -->
         @include('client.includes.script')'

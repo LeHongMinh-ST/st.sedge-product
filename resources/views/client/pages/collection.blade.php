@@ -1,7 +1,7 @@
 @extends('client.layouts.master')
 
 @section('title')
-    collection
+    Product List
 @endsection
 
 @section('content')
@@ -15,9 +15,9 @@
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-ul">
                             <li class="breadcrumb-li">
-                                <a class="breadcrumb-link" href="index.html">Home</a>
+                                <a class="breadcrumb-link" href="{{route('todo.home')}}">Home</a>
                             </li>
-                            <li class="breadcrumb-li">
+                            <li class="breadcrumb-li"> 
                                 <span class="breadcrumb-text">Collection</span>
                             </li>
                         </ul>
@@ -35,7 +35,7 @@
                 <div class="col">
                     <div class="pro-grli-wrapper left-side-wrap">
                         <div class="pro-grli-wrap product-grid">
-                            <div class="collection-img-wrap">
+                            {{-- <div class="collection-img-wrap">
                                 <h6 class="st-title">Collection (23)</h6>
                                 <!-- collection info start -->
                                 <div class="collection-info">
@@ -44,7 +44,7 @@
                                     </div>
                                 </div>
                                 <!-- collection info end -->
-                            </div>
+                            </div> --}}
                             <!-- shop-top-bar start -->
                             <div class="shop-top-bar">
                                 <div class="product-filter without-sidebar">
@@ -455,7 +455,7 @@
                                                                 <div class="product-content">
                                                                     <div class="product-title">
                                                                         <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Castle cactus</a></h6>
+                                                                            <h6><a href="product-template.html">Danh mục 2</a></h6>
                                                                             <div class="product-price">
                                                                                 <div class="price-box">
                                                                                     <span class="new-price">Rs. 25.00</span>
@@ -1098,14 +1098,14 @@
                                                 <div class="facets-wrapper">
                                                     <!-- Product-Categories start -->
                                                     <div class="shop-sidebar">
-                                                        <h6 class="shop-title">Categories</h6>
+                                                        <h6 class="shop-title">Danh mục</h6>
                                                         <a href="#collapse-5" data-bs-toggle="collapse" class="shop-title shop-title-lg">Categories<i class="fa fa-angle-down"></i></a>
                                                         <div class="collapse show shop-element" id="collapse-5">
                                                             <ul class="brand-ul scrollbar">
                                                                 <li class="cat-checkbox">
                                                                     <label class="checkbox-label">
                                                                         <input type="checkbox" class="cust-checkbox">
-                                                                        <span class="check-name">Wheat grass</span>
+                                                                        <span class="check-name">Danh mục 1</span>
                                                                         <span class="count-check">(12)</span>
                                                                         <span class="cust-check"></span>
                                                                     </label>
@@ -1113,314 +1113,16 @@
                                                                 <li class="cat-checkbox">
                                                                     <label class="checkbox-label">
                                                                         <input type="checkbox" class="cust-checkbox">
-                                                                        <span class="check-name">Castle cactus</span>
-                                                                        <span class="count-check">(12)</span>
+                                                                        <span class="check-name">Danh mục 2</span>
+                                                                        <span class="count-check">(09)</span>
                                                                         <span class="cust-check"></span>
                                                                     </label>
                                                                 </li>
                                                                 <li class="cat-checkbox">
                                                                     <label class="checkbox-label 64gb">
                                                                         <input type="checkbox" value="64gb" class="cust-checkbox">
-                                                                        <span class="check-name">Areca palm</span>
-                                                                        <span class="count-check">(12)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                                <li class="cat-checkbox">
-                                                                    <label class="checkbox-label 500gb">
-                                                                        <input type="checkbox" value="500gb" class="cust-checkbox">
-                                                                        <span class="check-name">Collection</span>
-                                                                        <span class="count-check">(12)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                                <li class="cat-checkbox">
-                                                                    <label class="checkbox-label 1tb">
-                                                                        <input type="checkbox" value="1tb" class="cust-checkbox">
-                                                                        <span class="check-name">Collection left</span>
-                                                                        <span class="count-check">(12)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                                <li class="cat-checkbox">
-                                                                    <label class="checkbox-label 2tb">
-                                                                        <input type="checkbox" value="2tb" class="cust-checkbox">
-                                                                        <span class="check-name">Collection list</span>
-                                                                        <span class="count-check">(12)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                                <li class="cat-checkbox">
-                                                                    <label class="checkbox-label 3tb">
-                                                                        <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                        <span class="check-name">Collection list left</span>
-                                                                        <span class="count-check">(12)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                                <li class="cat-checkbox">
-                                                                    <label class="checkbox-label 3tb">
-                                                                        <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                        <span class="check-name">Collection right</span>
-                                                                        <span class="count-check">(12)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                                <li class="cat-checkbox">
-                                                                    <label class="checkbox-label 3tb">
-                                                                        <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                        <span class="check-name">Snake plant</span>
-                                                                        <span class="count-check">(12)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                                <li class="cat-checkbox">
-                                                                    <label class="checkbox-label 3tb">
-                                                                        <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                        <span class="check-name">Strelitzia nicolai</span>
-                                                                        <span class="count-check">(12)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                                <li class="cat-checkbox">
-                                                                    <label class="checkbox-label 3tb">
-                                                                        <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                        <span class="check-name">Nicolai plant</span>
-                                                                        <span class="count-check">(12)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                                <li class="cat-checkbox">
-                                                                    <label class="checkbox-label 3tb">
-                                                                        <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                        <span class="check-name">Aloe vera plant</span>
-                                                                        <span class="count-check">(12)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Product-Categories end -->
-                                                    <div class="shop-sidebar sidebar-filter">
-                                                        <h6 class="shop-title">Filter</h6>
-                                                        <a href="javascript:void(0)" class="shop-title shop-title-lg">Filter</a>
-                                                        <div class="filter-info">
-                                                            <span class="filter-count-text">23 products</span>
-                                                            <span class="loading-spinner"><svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle></svg></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="shop-sidebar sidebar-price">
-                                                        <h6 class="shop-title">Price</h6>
-                                                        <a href="#collapse-3" data-bs-toggle="collapse" class="shop-title shop-title-lg">Price</a>
-                                                        <div class="filter-info">
-                                                            <span class="shop-price">The highest price is $89.00</span>
-                                                            <facet-remove><a href="collection.html" class="reset-text">Reset</a></facet-remove>
-                                                        </div>
-                                                        <!-- Product-price start -->
-                                                        <div class="collapse price-wrap" id="collapse-3">
-                                                            <price-range class="price-range">
-                                                                <div class="price-range-group group-range">
-                                                                    <input type="range" class="range" min="0" max="89" value="0" id="range1">
-                                                                    <input type="range" class="range" min="0" max="89" value="89" id="range2">
-                                                                </div>
-                                                                <div class="price-input-group group-input">
-                                                                    <div class="price-range-input input-price">
-                                                                        <label class="label-text">From</label>
-                                                                        <span class="price-value">$</span>
-                                                                        <span id="demo1" class="price-field">0</span>
-                                                                    </div>
-                                                                    <span class="price-range-delimeter">-</span>
-                                                                    <div class="price-range-input input-price">
-                                                                        <label class="label-text">To</label>
-                                                                        <span class="price-value">$</span>
-                                                                        <span id="demo2" class="price-field">89</span>
-                                                                    </div>
-                                                                </div>
-                                                            </price-range>
-                                                        </div>
-                                                        <!-- Product-price end -->
-                                                        <!-- product-type start -->
-                                                        <div class="shop-sidebar sidebar-open">
-                                                            <h6 class="shop-title">Color</h6>
-                                                            <a href="#collapse-6" data-bs-toggle="collapse" class="shop-title shop-title-lg">Color<i class="fa fa-angle-down"></i></a>
-                                                            <div class="filter-info">
-                                                                <span class="shop-price">0 selected</span>
-                                                                <facet-remove>
-                                                                <a href="collection-list-right.html" class="reset-text">Reset</a>
-                                                                </facet-remove>
-                                                            </div>
-                                                            <div class="collapse shop-element shop-flavor" id="collapse-6">
-                                                                <ul class="brand-ul scrollbar">
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 16gb">
-                                                                            <input type="checkbox" value="16gb" class="cust-checkbox">
-                                                                            <span class="check-name">Wheat grass</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 32gb">
-                                                                            <input type="checkbox" value="32gb" class="cust-checkbox">
-                                                                            <span class="check-name">Castle cactus</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 64gb">
-                                                                            <input type="checkbox" value="64gb" class="cust-checkbox">
-                                                                            <span class="check-name">Areca palm</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 500gb">
-                                                                            <input type="checkbox" value="500gb" class="cust-checkbox">
-                                                                            <span class="check-name">Collection</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 1tb">
-                                                                            <input type="checkbox" value="1tb" class="cust-checkbox">
-                                                                            <span class="check-name">Collection left</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 2tb">
-                                                                            <input type="checkbox" value="2tb" class="cust-checkbox">
-                                                                            <span class="check-name">Collection list</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 3tb">
-                                                                            <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                            <span class="check-name">Collection list left</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 3tb">
-                                                                            <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                            <span class="check-name">Collection right</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 3tb">
-                                                                            <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                            <span class="check-name">Snake plant</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 3tb">
-                                                                            <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                            <span class="check-name">Nicolai plant</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 3tb">
-                                                                            <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                            <span class="check-name">Strelitzia nicolai</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                    <li class="cat-checkbox">
-                                                                        <label class="checkbox-label 3tb">
-                                                                            <input type="checkbox" value="3tb" class="cust-checkbox">
-                                                                            <span class="check-name">Aloe vera plant</span>
-                                                                            <span class="count-check">(12)</span>
-                                                                            <span class="cust-check"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <!-- product-type end -->
-                                                    </div>
-                                                    <div class="shop-sidebar sidebar-product">
-                                                        <h6 class="shop-title">Product type</h6>
-                                                        <a href="#reset" data-bs-toggle="collapse" class="shop-title shop-title-lg">Product type</a>
-                                                        <div class="filter-info">
-                                                            <span class="shop-price no-js-hidden">0 selected</span>
-                                                            <facet-remove>
-                                                            <a href="collection.html" class="reset-text">Reset</a>
-                                                            </facet-remove>
-                                                        </div>
-                                                        <div class="collapse filter-element" id="reset">
-                                                            <ul class="brand-ul scrollbar">
-                                                                <li class="brand-li">
-                                                                    <label class="cust-checkbox-label">
-                                                                        <input type="checkbox" name="cust-checkbox" class="cust-checkbox">
-                                                                        <span class="filter-name">plant</span>
-                                                                        <span class="count-check">(23)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="shop-sidebar sidebar-wedget">
-                                                        <h6 class="shop-title">Availability</h6>
-                                                        <a href="#collapse-1" class="shop-title shop-title-lg" data-bs-toggle="collapse">Availability</a>
-                                                        <div class="filter-info">
-                                                            <span class="shop-price no-js-hidden">0 selected</span>
-                                                            <facet-remove>
-                                                            <a href="collection.html" class="reset-text">Reset</a>
-                                                            </facet-remove>
-                                                        </div>
-                                                        <div class="collapse filter-element" id="collapse-1">
-                                                            <ul class="brnad-ul scrollbar">
-                                                                <li class="availability">
-                                                                    <label class="cust-checkbox-label availability in-stock">
-                                                                        <input type="checkbox" name="filter.v.availability" value="1" class="cust-checkbox">
-                                                                        <span class="filter-name">In stock</span>
-                                                                        <span class="count-check">(23)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                                <li class="availability">
-                                                                    <label class="cust-checkbox-label availability in-stock">
-                                                                        <input type="checkbox" name="filter.v.availability" value="1" class="cust-checkbox">
-                                                                        <span class="filter-name">Out of stock</span>
-                                                                        <span class="count-check">(1)</span>
-                                                                        <span class="cust-check"></span>
-                                                                    </label>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="shop-sidebar sidebar-wedget">
-                                                        <h6 class="shop-title">Brand</h6>
-                                                        <a href="#collapse-2" data-bs-toggle="collapse" class="shop-title shop-title-lg">Brand</a>
-                                                        <div class="filter-info">
-                                                            <span class="shop-price no-js-hidden">0 selected</span>
-                                                            <facet-remove>
-                                                            <a href="collection.html" class="reset-text">Reset</a>
-                                                            </facet-remove>
-                                                        </div>
-                                                        <div class="collapse filter-element" id="collapse-2">
-                                                            <ul class="brand-ul scrollbar">
-                                                                <li class="brand-li">
-                                                                    <label class="cust-checkbox-label">
-                                                                        <input type="checkbox" name="cust-checkbox" class="cust-checkbox">
-                                                                        <span class="filter-name">Panno</span>
-                                                                        <span class="count-check">(23)</span>
+                                                                        <span class="check-name">Danh mục 3</span>
+                                                                        <span class="count-check">(11)</span>
                                                                         <span class="cust-check"></span>
                                                                     </label>
                                                                 </li>

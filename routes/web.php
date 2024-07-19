@@ -15,10 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Route::get('/login', fn () => view('login.login'));
 Route::get('/admin', fn () => view('admin.pages.dashboard.index'));
 =======
+=======
+
+>>>>>>> 2e4fa1d (refactor: [SSP-6] fix conflictè)
 Route::get('/', fn () => view('admin.pages.dashboard.index'));
 Route::get('/admin', fn () => view('admin.pages.dashboard.index'));
 

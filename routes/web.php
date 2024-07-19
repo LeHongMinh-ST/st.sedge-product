@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/login', fn () => view('login.login'));
+Route::get('/admin', fn () => view('admin.pages.dashboard.index'));

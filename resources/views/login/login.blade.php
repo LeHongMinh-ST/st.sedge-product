@@ -23,15 +23,27 @@
                 <div class="login-header">
                     <h1>Chào mừng đến bạn với CÓINCIDENCE <i class="fa-solid fa-check"></i></h1>
                 </div>
+                @if (session('error'))
+                <div class="error-center">
+                    {{ session('error') }}
+                </div>
+                @endif
                 <!-- form  -->
-                <form class="login-form">
-                    <label for="email">Tài khoản/Email</label>
-                    <input type="email" id="email" placeholder="Email" required>
+                <form class="login-form" action="{{ route('login.post') }}" method="POST">
+                    @csrf
+                    <label for="username">Tài khoản:</label>
+                    <input type="text" id="username" name="username" placeholder="Tài khoản" value="{{ old('username') }}" class="{{ $errors->has('username') || session('error') ? 'input-error' : '' }}">
+                    @if ($errors->has('username'))
+                        <span class="error">{{ $errors->first('username') }}</span>
+                    @endif
                     <label for="password">Mật khẩu:</label>
-                    <input type="password" id="password" placeholder="Mật khẩu" required>
+                    <input type="password" id="password" name="password" placeholder="Mật khẩu"  value="{{ old('password') }}" class="{{ $errors->has('password') || session('error') ? 'input-error' : '' }}">
+                    @if ($errors->has('password'))
+                        <span class="error">{{ $errors->first('password') }}</span>
+                    @endif
                     <div class="login-options">
                         <label class="remember-me">
-                            <input type="checkbox">
+                            <input type="checkbox" name="remember">
                             Ghi nhớ mật khẩu
                         </label>
                         <a href="#">Quên mật khẩu?</a>

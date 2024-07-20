@@ -7,7 +7,7 @@
                 </a>
             </li>
             <li class="menu-link">
-                <a href="{{route('todo.collection')}}" class="link-title">
+                <a href="{{ route('todo.collection') }}" class="link-title">
                     <span class="sp-link-title">Sản phẩm<span class="header-sale-lable">Sale</span></span>
                     <span class="menu-arrow"><i class="fa fa-angle-down"></i></span>
                 </a>
@@ -21,7 +21,7 @@
                             <div class="menumegasup-dropdown collapse">
                                 <ul class="menumegasup-ul">
                                     <li class="menumegasup-li">
-                                        <a href="{{route('todo.collection')}}" class="menumegasup-title">
+                                        <a href="{{ route('todo.collection') }}" class="menumegasup-title">
                                             <span class="sp-link-title"><i class="fa fa-angle-right"></i> Danh mục 1</span>
                                         </a>
                                     </li>

@@ -459,8 +459,8 @@ product-template
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-26.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-27.jpg")}}" class="img-fluid img2" alt="p-2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-26.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-27.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -536,8 +536,8 @@ product-template
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-18.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-19.jpg")}}" class="img-fluid img2" alt="p-2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-18.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-19.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -613,8 +613,8 @@ product-template
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-16.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-31.jpg")}}" class="img-fluid img2" alt="p-2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-16.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-31.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -689,8 +689,8 @@ product-template
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img2" alt="p-2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -765,8 +765,8 @@ product-template
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-5.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-fluid img2" alt="p-2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-5.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -834,7 +834,82 @@ product-template
                                         <!-- product end -->
                                     </div>
                                     <!-- end sp6 -->
-
+                                    <!-- sp7 -->
+                                    <div class="swiper-slide">
+                                        <!-- product start -->
+                                        <div class="single-product-wrap">
+                                            <!-- product-img start -->
+                                            <div class="product-image">
+                                                <a href="product-template.html" class="pro-img">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-21.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-22.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
+                                                </a>
+                                                <!-- product-action start -->
+                                                <div class="product-action pro-quiqview">
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="product-cart">
+                                                    <div class="product-action cart-wishlist">
+                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-shopping-bag"></i>
+                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                        </a>
+                                                        <a href="wishlist.html" class="wishlist">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-img end -->
+                                            <!-- product-content start -->
+                                            <div class="product-content">
+                                                <div class="product-info">
+                                                    <!-- product-title start -->
+                                                    <h6><a href="product-template.html">Giỏ đựng đồ màu sắc</a></h6>
+                                                    <!-- product-title end -->
+                                                    <!-- product-price start -->
+                                                    <div class="price-box">
+                                                        <span class="new-price">Giá 100.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">Giá cũ 110.000 <u>đ</u></span>
+                                                    </div>
+                                                    <!-- product-price end -->
+                                                    <!-- product-rating start -->
+                                                    <div class="product-ratting">
+                                                        <span class="star-rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                        </span>
+                                                    </div>
+                                                    <!-- product-rating end -->
+                                                </div>
+                                                <!-- product-action start -->
+                                                <div class="product-action">
+                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                        <i class="feather-shopping-bag"></i>
+                                                    </a>
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="wishlist.html" class="wishlist">
+                                                        <i class="feather-heart"></i>
+                                                    </a>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-content end -->
+                                        </div>
+                                        <!-- product end -->
+                                    </div>
+                                    <!-- end sp7 -->
                                 </div>
                                 <div class="collection-button">
                                     <a href="collection.html" class="btn btn-style">Xem sản phẩm</a>

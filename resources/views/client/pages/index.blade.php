@@ -454,7 +454,7 @@
                                         <div class="single-product-wrap">
                                             <!-- product-img start -->
                                             <div class="product-image">
-                                                <a href="product-template.html" class="pro-img">
+                                                <a href="#" class="pro-img">
                                                     <img src="{{asset("assets/client/img/product/home-pro-3.jpg")}}" class="img-fluid img1" alt="p-1">
                                                     <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-fluid img2" alt="p-2">
                                                 </a>
@@ -1065,8 +1065,8 @@
     <!-- instagram end -->
 </main>
 
-    <!-- quickview modal start -->
-        @include('client.includes.quickview_modal')
-    <!-- quickview modal end -->
+<!-- quickview modal start -->
+    @include('client.includes.quickview_modal')
+<!-- quickview modal end -->
 
 @endsection

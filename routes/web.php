@@ -28,6 +28,13 @@ Route::get('contact', fn () => view('client.pages.contact'))->name('todo.contact
 // });
 
 // Clear application cache:
+Route::get('/op-cache', function () {
+    Artisan::call('op:clear');
+
+    return 'Application op cache has been cleared';
+});
+
+// Clear application cache:
 Route::get('/clear-cache', function () {
     Artisan::call('cache:clear');
 

@@ -459,8 +459,13 @@ product-template
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
+<<<<<<< HEAD
                                                     <img src="{{asset("assets/client/img/product/home-pro-26.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
                                                     <img src="{{asset("assets/client/img/product/home-pro-27.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
+=======
+                                                    <img src="{{asset("assets/client/img/product/home-pro-26.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-27.jpg")}}" class="img-fluid img2" alt="p-2">
+>>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -536,8 +541,13 @@ product-template
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
+<<<<<<< HEAD
                                                     <img src="{{asset("assets/client/img/product/home-pro-18.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
                                                     <img src="{{asset("assets/client/img/product/home-pro-19.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
+=======
+                                                    <img src="{{asset("assets/client/img/product/home-pro-18.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-19.jpg")}}" class="img-fluid img2" alt="p-2">
+>>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -613,8 +623,13 @@ product-template
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
+<<<<<<< HEAD
                                                     <img src="{{asset("assets/client/img/product/home-pro-16.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
                                                     <img src="{{asset("assets/client/img/product/home-pro-31.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
+=======
+                                                    <img src="{{asset("assets/client/img/product/home-pro-16.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-31.jpg")}}" class="img-fluid img2" alt="p-2">
+>>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -689,8 +704,13 @@ product-template
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
+<<<<<<< HEAD
                                                     <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
                                                     <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
+=======
+                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img2" alt="p-2">
+>>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -765,8 +785,13 @@ product-template
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
+<<<<<<< HEAD
                                                     <img src="{{asset("assets/client/img/product/home-pro-5.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
                                                     <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
+=======
+                                                    <img src="{{asset("assets/client/img/product/home-pro-5.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-fluid img2" alt="p-2">
+>>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -814,6 +839,7 @@ product-template
                                                         </span>
                                                     </div>
                                                     <!-- product-rating end -->
+<<<<<<< HEAD
                                                 </div>
                                                 <!-- product-action start -->
                                                 <div class="product-action">
@@ -891,6 +917,9 @@ product-template
                                                     </div>
                                                     <!-- product-rating end -->
                                                 </div>
+=======
+                                                </div>
+>>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
                                                 <!-- product-action start -->
                                                 <div class="product-action">
                                                     <a href="javascript:void(0)" class="add-to-cart">
@@ -909,7 +938,12 @@ product-template
                                         </div>
                                         <!-- product end -->
                                     </div>
+<<<<<<< HEAD
                                     <!-- end sp7 -->
+=======
+                                    <!-- end sp6 -->
+
+>>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
                                 </div>
                                 <div class="collection-button">
                                     <a href="collection.html" class="btn btn-style">Xem sản phẩm</a>

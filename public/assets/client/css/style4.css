@@ -422,7 +422,7 @@ textarea:active {
     section padding css
 ======================================*/
 .section-ptb {
-    padding: 100px 0px;
+    padding: 60px 0px;
 }
 .section-pt {
     padding: 100px 0px 0px;
@@ -860,6 +860,8 @@ textarea:active {
 }
 .menu-product ul.menumegasup-ul li.menumegasup-li .product-menu-list .single-product-wrap .product-content {
     width: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding: 0px 0px 0px 15px;
@@ -3716,20 +3718,36 @@ span.header-sale-lable::before {
     single-product-wrap css
 =====================================*/
 .single-product-wrap {
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
 }
-
+.product-description{
+    display: block;
+    margin: 14px 0px 0px;
+}
+.single-product-wrap .product-content .product-description {
+    display: none;
+}
 /*====================================
     product-img css
 =====================================*/
+.product-image .img-height{
+    min-height: 100px !important;
+}
 .single-product-wrap .product-image {
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius);
+
 }
 .single-product-wrap .product-image a.pro-img {
     position: relative;
     display: block;
+    min-height: 402px;
+    background-color: #cececec0;
+    display: flex;
+    /* justify-content: center; */
+
 }
 .single-product-wrap .product-image a.pro-img::after {
     content: "";
@@ -3741,9 +3759,9 @@ span.header-sale-lable::before {
     background-color: var(--background-color-body);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+    transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
 }
 .single-product-wrap:hover .product-image a.pro-img::after {
     opacity: .5;
@@ -3771,8 +3789,20 @@ span.header-sale-lable::before {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
+    display: block;
+    margin: auto
 }
 
+@media (max-width: 1199px) {
+    .single-product-wrap:hover .product-image a.pro-img img.img1.mobile-img1 {
+        opacity: 1;
+        visibility: visible;
+    }
+    .single-product-wrap:hover .product-image a.pro-img img.img2.mobile-img2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 /*====================================
     product-image-action css
 =====================================*/
@@ -3848,6 +3878,9 @@ span.header-sale-lable::before {
     line-height: 1;
     text-transform: uppercase;
     border: 1px solid var(--border-color);
+}
+.single-product-wrap .product-action a.add-to-cart{
+    width: 220px;
 }
 .single-product-wrap .product-action a:last-child {
     margin: 0px;
@@ -3927,15 +3960,17 @@ span.header-sale-lable::before {
 =====================================*/
 .single-product-wrap .product-content {
     display: flex;
+    /* width: calc(50% + 15px); */
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 25px 0px 0px;
+    padding: 0px 0px 0px 30px;
+    margin-top: 15px;
 }
 .single-product-wrap .product-content h6 {
     width: 100%;
     font-size: 16px;
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 .single-product-wrap .product-content .product-ratting {
     display: none;
@@ -3944,7 +3979,7 @@ span.header-sale-lable::before {
     margin: 13px 0px 0px;
 }
 .single-product-wrap .product-content .price-box {
-    justify-content: center;
+    /* justify-content: center; */
     margin: 13px 0px 0px;
 }
 .single-product-wrap .product-content .product-action {
@@ -4014,10 +4049,9 @@ span.header-sale-lable::before {
     product-label css
 =====================================*/
 .single-product-wrap .product-image .product-label {
-    position: absolute; 
-    top: 5px; 
-    left: 5px; 
-    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 30px;
 }
 .single-product-wrap .product-label span.new-sale-title {
     color: var(--background-color-body);

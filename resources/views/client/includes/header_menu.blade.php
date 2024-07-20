@@ -2,7 +2,7 @@
     <div class="main-wrap">
         <ul class="main-menu">
             <li class="menu-link">
-                <a href="#" class="link-title">
+                <a href="{{route('todo.home')}}" class="link-title">
                     <span class="sp-link-title">Trang chủ</span>
                 </a>
             </li>
@@ -46,7 +46,7 @@
                                         <div class="product-menu-list">
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
-                                                    <a href="product-template.html" class="pro-img">
+                                                    <a href="product-template.html" class="pro-img img-height">
                                                         <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-1">
                                                         <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-2">
                                                     </a>
@@ -65,7 +65,7 @@
                                         <div class="product-menu-list">
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
-                                                    <a href="product-template.html" class="pro-img">
+                                                    <a href="product-template.html" class="pro-img img-height">
                                                         <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-1">
                                                         <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-2">
                                                     </a>
@@ -93,7 +93,7 @@
                                         <div class="product-menu-list">
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
-                                                    <a href="product-template.html" class="pro-img">
+                                                    <a href="product-template.html" class="pro-img img-height">
                                                         <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-1">
                                                         <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-2">
                                                     </a>
@@ -112,7 +112,7 @@
                                         <div class="product-menu-list">
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
-                                                    <a href="product-template.html" class="pro-img">
+                                                    <a href="product-template.html" class="pro-img img-height">
                                                         <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-1">
                                                         <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-2">
                                                     </a>
@@ -140,7 +140,7 @@
                                         <div class="product-menu-list">
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
-                                                    <a href="product-template.html" class="pro-img">
+                                                    <a href="product-template.html" class="pro-img img-height">
                                                         <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-1">
                                                         <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner1.jpg")}}" alt="menupro-2">
                                                     </a>
@@ -159,7 +159,7 @@
                                         <div class="product-menu-list">
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
-                                                    <a href="product-template.html" class="pro-img">
+                                                    <a href="product-template.html" class="pro-img img-height">
                                                         <img class="img-fluid img1" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-1">
                                                         <img class="img-fluid img2" src="{{asset("assets/client/img/menu/home1-pro-banner2.jpg")}}" alt="menupro-2">
                                                     </a>
@@ -229,7 +229,7 @@
                 </div>
             </li>
             <li class="menu-link">
-                <a href="about-us.html" class="link-title">
+                <a href="{{route('todo.contact')}}" class="link-title">
                     <span class="sp-link-title">Liên hệ</span>
                     {{-- <span class="menu-arrow"><i class="fa fa-angle-down"></i></span> --}}
                 </a>

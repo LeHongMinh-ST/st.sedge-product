@@ -1294,7 +1294,7 @@ ul.help-wrap {
     margin: -100px 0px 0px -30px;
 }
 ul.help-wrap li.desk-wrap {
-    width: calc(50% - 30px);
+    width: calc(33% - 30px);
     margin: 100px 0px 0px 30px;
 }
 @media (max-width: 1199px) {

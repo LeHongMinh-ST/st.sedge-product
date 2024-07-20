@@ -928,15 +928,15 @@
 }
 
 /* product-content css */
-.special-product.grid-1 ul.product-view-ul li.pro-item-li .single-product-wrap .product-caption {
+.special-product.grid-1 ul.product-view-ul li.pro-item-li .single-product-wrap .product-content {
     width: calc(50% + 15px);
     align-items: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: left;
     padding: 0px 0px 0px 30px;
-    margin: 0;
+    margin-top: 15px;
 }
-.special-product.grid-1 ul.product-view-ul li.coll-li .single-product-wrap .product-caption {
+.special-product.grid-1 ul.product-view-ul li.coll-li .single-product-wrap .product-content {
     width: calc(66.67% + 20px);
 }
 .special-product.grid-1 .single-product-wrap .product-content .product-description {

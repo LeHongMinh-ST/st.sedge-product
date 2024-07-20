@@ -35,16 +35,6 @@
                 <div class="col">
                     <div class="pro-grli-wrapper left-side-wrap">
                         <div class="pro-grli-wrap product-grid">
-                            {{-- <div class="collection-img-wrap">
-                                <h6 class="st-title">Collection (23)</h6>
-                                <!-- collection info start -->
-                                <div class="collection-info">
-                                    <div class="collection-image">
-                                        <img src="assets/img/banner/sall-banner.jpg" class="img-fluid" alt="sall-banner">
-                                    </div>
-                                </div>
-                                <!-- collection info end -->
-                            </div> --}}
                             <!-- shop-top-bar start -->
                             <div class="shop-top-bar">
                                 <div class="product-filter without-sidebar">
@@ -58,34 +48,32 @@
                                 </div>
                                 <!-- product-short start -->
                                 <div class="product-short">
-                                    <label for="SortBy">Sort by:</label>
+                                    <label for="SortBy">Sắp xếp:</label>
                                     <select class="nice-select" name="sortby" id="SortBy">
-                                        <option value="manual">Featured</option>
-                                        <option value="best-selling">Best Selling</option>
-                                        <option value="title-ascending">Alphabetically, A-Z</option>
-                                        <option value="title-descending">Alphabetically, Z-A</option>
-                                        <option value="price-ascending">Price, low to high</option>
-                                        <option value="price-descending">Price, high to low</option>
-                                        <option value="created-descending">Date, new to old</option>
-                                        <option value="created-ascending">Date, old to new</option>
+                                        <option value="best-selling">Bán chạy</option>
+                                        <option value="created-descending">Sản phẩm mới</option>
+                                        <option value="created-ascending">Sản phẩm cũ</option>
+                                        <option value="title-ascending">Tên sản phẩm A đến Z</option>
+                                        <option value="title-descending">Tên sản phẩm Z đến A</option>
+                                        <option value="price-ascending">Giá từ thấp đến cao</option>
+                                        <option value="price-descending">Giá từ cao đến thấp</option>
                                     </select>
                                     <a href="javascript:void(0)" class="short-title">
-                                        <span class="sort-title">Best Selling</span>
+                                        <span class="sort-title">Bán chạy</span>
                                         <span class="sort-icon"><i class="bi bi-chevron-down"></i></span>
                                     </a>
                                     <a href="javascript:void(0)" class="short-title short-title-lg">
-                                        <span class="sort-title">Best Selling</span>
+                                        <span class="sort-title">Bán chạy</span>
                                         <span class="sort-icon"><i class="bi bi-chevron-down"></i></span>
                                     </a>
                                     <ul class="pro-ul collapse">
-                                        <li class="pro-li"><a href="javascript:void(0)">Featured</a></li>
-                                        <li class="pro-li selected"><a href="javascript:void(0)">Best Selling</a></li>
-                                        <li class="pro-li"><a href="javascript:void(0)">Alphabetically, A-Z</a></li>
-                                        <li class="pro-li"><a href="javascript:void(0)">Alphabetically, Z-A</a></li>
-                                        <li class="pro-li"><a href="javascript:void(0)">Price, low to high</a></li>
-                                        <li class="pro-li"><a href="javascript:void(0)">Price, high to low</a></li>
-                                        <li class="pro-li"><a href="javascript:void(0)">Date, new to old</a></li>
-                                        <li class="pro-li"><a href="javascript:void(0)">Date, old to new</a></li>
+                                        <li class="pro-li selected"><a href="javascript:void(0)">Bán chạy</a></li>
+                                        <li class="pro-li"><a href="javascript:void(0)">Sản phẩm mới</a></li>
+                                        <li class="pro-li"><a href="javascript:void(0)">Sản phẩm cũ</a></li>
+                                        <li class="pro-li"><a href="javascript:void(0)">Tên sản phẩm A đến Z</a></li>
+                                        <li class="pro-li"><a href="javascript:void(0)">Tên sản phẩm Z đến A</a></li>
+                                        <li class="pro-li"><a href="javascript:void(0)">Giá từ thấp đến cao</a></li>
+                                        <li class="pro-li"><a href="javascript:void(0)">Giá từ cao đến thấp</a></li>
                                     </ul>
                                 </div>
                                 <!-- product-short end -->
@@ -100,975 +88,753 @@
                                                 <ul class="product-view-ul">
                                                     <li class="pro-item-li">
                                                         <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-1.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-2.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                            <!-- product-img start -->
+                                                            <div class="product-image">
+                                                                <a href="#" class="pro-img">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
                                                                 </a>
-                                                                <div class="product-action product-cart-btn">
-                                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                                        <span class="cart-title">
-                                                                            <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
-                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
-                                                                            </span>
-                                                                        </span>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action pro-quiqview">
+                                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                                        <i class="feather-eye"></i>
                                                                     </a>
                                                                 </div>
-                                                                <div class="product-action">
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
+                                                                <div class="product-cart">
+                                                                    <div class="product-action cart-wishlist">
+                                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
+                                                                            <i class="feather-shopping-bag"></i>
+                                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                        </a>
+                                                                        <a href="wishlist.html" class="wishlist">
+                                                                            <span class="tooltip-text">Yêu thích</span>
+                                                                            <i class="feather-heart"></i>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- product-action end -->
                                                             </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Strelitzia nicolai</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 44.00</span>
-                                                                                    <span class="old-price">Rs. 49.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Strelitzia</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
+                                                            <!-- product-img end -->
+                                                            <!-- product-content start -->
+                                                            <div class="product-content">
+                                                                <div class="product-info">
+                                                                    <!-- product-title start -->
+                                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                                    <!-- product-title end -->
+                                                                    <!-- product-price start -->
+                                                                    <div class="price-box">
+                                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
                                                                     </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
+                                                                    <!-- product-price end -->
                                                                     <div class="product-description">
                                                                         <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
                                                                     </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
+                                                                    <!-- product-rating start -->
+                                                                    <div class="product-ratting">
+                                                                        <span class="star-rating">
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star-half-alt"></i>
+                                                                        </span>
                                                                     </div>
+                                                                    <!-- product-rating end -->
                                                                 </div>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action">
+                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
+                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
+                                                                    </a>
+                                                                    <a href="#add-to-cart" class="add-to-cart">
+                                                                        <span class="cart-title">
+                                                                            <span class="add-c-title">
+                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
+                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
+                                                                                <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="wishlist-product.html" class="wishlist">
+                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- product-action end -->
                                                             </div>
+                                                            <!-- product-content end -->
                                                         </div>
                                                     </li>
                                                     <li class="pro-item-li">
                                                         <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-3.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-4.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                            <!-- product-img start -->
+                                                            <div class="product-image">
+                                                                <a href="#" class="pro-img">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-5.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-6.jpg")}}" class="img-fluid img2" alt="p-2">
                                                                 </a>
-                                                                <div class="product-action product-cart-btn">
-                                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                                        <span class="cart-title">
-                                                                            <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
-                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
-                                                                            </span>
-                                                                        </span>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action pro-quiqview">
+                                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                                        <i class="feather-eye"></i>
                                                                     </a>
                                                                 </div>
-                                                                <div class="product-action">
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
+                                                                <div class="product-cart">
+                                                                    <div class="product-action cart-wishlist">
+                                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
+                                                                            <i class="feather-shopping-bag"></i>
+                                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                        </a>
+                                                                        <a href="wishlist.html" class="wishlist">
+                                                                            <span class="tooltip-text">Yêu thích</span>
+                                                                            <i class="feather-heart"></i>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- product-action end -->
                                                             </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Aloe vera plant</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 61.00</span>
-                                                                                    <span class="old-price">Rs. 69.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Aloe vera</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
+                                                            <!-- product-img end -->
+                                                            <!-- product-content start -->
+                                                            <div class="product-content">
+                                                                <div class="product-info">
+                                                                    <!-- product-title start -->
+                                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                                    <!-- product-title end -->
+                                                                    <!-- product-price start -->
+                                                                    <div class="price-box">
+                                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
                                                                     </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
+                                                                    <!-- product-price end -->
                                                                     <div class="product-description">
                                                                         <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
                                                                     </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
+                                                                    <!-- product-rating start -->
+                                                                    <div class="product-ratting">
+                                                                        <span class="star-rating">
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star-half-alt"></i>
+                                                                        </span>
                                                                     </div>
+                                                                    <!-- product-rating end -->
                                                                 </div>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action">
+                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
+                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
+                                                                    </a>
+                                                                    <a href="#add-to-cart" class="add-to-cart">
+                                                                        <span class="cart-title">
+                                                                            <span class="add-c-title">
+                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
+                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
+                                                                                <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="wishlist-product.html" class="wishlist">
+                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- product-action end -->
                                                             </div>
+                                                            <!-- product-content end -->
                                                         </div>
                                                     </li>
                                                     <li class="pro-item-li">
                                                         <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-5.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-6.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                            <!-- product-img start -->
+                                                            <div class="product-image">
+                                                                <a href="#" class="pro-img">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
                                                                 </a>
-                                                                <div class="product-action product-cart-btn">
-                                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                                        <span class="cart-title">
-                                                                            <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
-                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
-                                                                            </span>
-                                                                        </span>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action pro-quiqview">
+                                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                                        <i class="feather-eye"></i>
                                                                     </a>
                                                                 </div>
-                                                                <div class="product-action">
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
+                                                                <div class="product-cart">
+                                                                    <div class="product-action cart-wishlist">
+                                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
+                                                                            <i class="feather-shopping-bag"></i>
+                                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                        </a>
+                                                                        <a href="wishlist.html" class="wishlist">
+                                                                            <span class="tooltip-text">Yêu thích</span>
+                                                                            <i class="feather-heart"></i>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- product-action end -->
                                                             </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Chinese evergreen</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 24.00</span>
-                                                                                    <span class="old-price">Rs. 29.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Evergreen</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
+                                                            <!-- product-img end -->
+                                                            <!-- product-content start -->
+                                                            <div class="product-content">
+                                                                <div class="product-info">
+                                                                    <!-- product-title start -->
+                                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                                    <!-- product-title end -->
+                                                                    <!-- product-price start -->
+                                                                    <div class="price-box">
+                                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
                                                                     </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
+                                                                    <!-- product-price end -->
                                                                     <div class="product-description">
                                                                         <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
                                                                     </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
+                                                                    <!-- product-rating start -->
+                                                                    <div class="product-ratting">
+                                                                        <span class="star-rating">
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star-half-alt"></i>
+                                                                        </span>
                                                                     </div>
+                                                                    <!-- product-rating end -->
                                                                 </div>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action">
+                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
+                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
+                                                                    </a>
+                                                                    <a href="#add-to-cart" class="add-to-cart">
+                                                                        <span class="cart-title">
+                                                                            <span class="add-c-title">
+                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
+                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
+                                                                                <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="wishlist-product.html" class="wishlist">
+                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- product-action end -->
                                                             </div>
+                                                            <!-- product-content end -->
                                                         </div>
                                                     </li>
                                                     <li class="pro-item-li">
                                                         <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-7.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-8.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                            <!-- product-img start -->
+                                                            <div class="product-image">
+                                                                <a href="#" class="pro-img">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
                                                                 </a>
-                                                                <div class="product-action product-cart-btn">
-                                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                                        <span class="cart-title">
-                                                                            <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
-                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
-                                                                            </span>
-                                                                        </span>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action pro-quiqview">
+                                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                                        <i class="feather-eye"></i>
                                                                     </a>
                                                                 </div>
-                                                                <div class="product-action">
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
+                                                                <div class="product-cart">
+                                                                    <div class="product-action cart-wishlist">
+                                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
+                                                                            <i class="feather-shopping-bag"></i>
+                                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                        </a>
+                                                                        <a href="wishlist.html" class="wishlist">
+                                                                            <span class="tooltip-text">Yêu thích</span>
+                                                                            <i class="feather-heart"></i>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- product-action end -->
                                                             </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Wheat grass</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 21.00</span>
-                                                                                    <span class="old-price">Rs. 25.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Grass</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
+                                                            <!-- product-img end -->
+                                                            <!-- product-content start -->
+                                                            <div class="product-content">
+                                                                <div class="product-info">
+                                                                    <!-- product-title start -->
+                                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                                    <!-- product-title end -->
+                                                                    <!-- product-price start -->
+                                                                    <div class="price-box">
+                                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
                                                                     </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
+                                                                    <!-- product-price end -->
                                                                     <div class="product-description">
                                                                         <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
                                                                     </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
+                                                                    <!-- product-rating start -->
+                                                                    <div class="product-ratting">
+                                                                        <span class="star-rating">
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star-half-alt"></i>
+                                                                        </span>
                                                                     </div>
+                                                                    <!-- product-rating end -->
                                                                 </div>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action">
+                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
+                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
+                                                                    </a>
+                                                                    <a href="#add-to-cart" class="add-to-cart">
+                                                                        <span class="cart-title">
+                                                                            <span class="add-c-title">
+                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
+                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
+                                                                                <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="wishlist-product.html" class="wishlist">
+                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- product-action end -->
                                                             </div>
+                                                            <!-- product-content end -->
                                                         </div>
                                                     </li>
                                                     <li class="pro-item-li">
                                                         <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-9.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-10.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                            <!-- product-img start -->
+                                                            <div class="product-image">
+                                                                <a href="#" class="pro-img">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
                                                                 </a>
-                                                                <div class="product-action product-cart-btn">
-                                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                                        <span class="cart-title">
-                                                                            <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
-                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
-                                                                            </span>
-                                                                        </span>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action pro-quiqview">
+                                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                                        <i class="feather-eye"></i>
                                                                     </a>
                                                                 </div>
-                                                                <div class="product-action">
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
+                                                                <div class="product-cart">
+                                                                    <div class="product-action cart-wishlist">
+                                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
+                                                                            <i class="feather-shopping-bag"></i>
+                                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                        </a>
+                                                                        <a href="wishlist.html" class="wishlist">
+                                                                            <span class="tooltip-text">Yêu thích</span>
+                                                                            <i class="feather-heart"></i>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- product-action end -->
                                                             </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Danh mục 2</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 25.00</span>
-                                                                                    <span class="old-price">Rs. 35.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Castle</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
+                                                            <!-- product-img end -->
+                                                            <!-- product-content start -->
+                                                            <div class="product-content">
+                                                                <div class="product-info">
+                                                                    <!-- product-title start -->
+                                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                                    <!-- product-title end -->
+                                                                    <!-- product-price start -->
+                                                                    <div class="price-box">
+                                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
                                                                     </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
+                                                                    <!-- product-price end -->
                                                                     <div class="product-description">
                                                                         <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
                                                                     </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
+                                                                    <!-- product-rating start -->
+                                                                    <div class="product-ratting">
+                                                                        <span class="star-rating">
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star-half-alt"></i>
+                                                                        </span>
                                                                     </div>
+                                                                    <!-- product-rating end -->
                                                                 </div>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action">
+                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
+                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
+                                                                    </a>
+                                                                    <a href="#add-to-cart" class="add-to-cart">
+                                                                        <span class="cart-title">
+                                                                            <span class="add-c-title">
+                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
+                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
+                                                                                <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="wishlist-product.html" class="wishlist">
+                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- product-action end -->
                                                             </div>
+                                                            <!-- product-content end -->
                                                         </div>
                                                     </li>
                                                     <li class="pro-item-li">
                                                         <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-11.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-12.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                            <!-- product-img start -->
+                                                            <div class="product-image">
+                                                                <a href="#" class="pro-img">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
                                                                 </a>
-                                                                <div class="product-action product-cart-btn">
-                                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                                        <span class="cart-title">
-                                                                            <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
-                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
-                                                                            </span>
-                                                                        </span>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action pro-quiqview">
+                                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                                        <i class="feather-eye"></i>
                                                                     </a>
                                                                 </div>
-                                                                <div class="product-action">
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
+                                                                <div class="product-cart">
+                                                                    <div class="product-action cart-wishlist">
+                                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
+                                                                            <i class="feather-shopping-bag"></i>
+                                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                        </a>
+                                                                        <a href="wishlist.html" class="wishlist">
+                                                                            <span class="tooltip-text">Yêu thích</span>
+                                                                            <i class="feather-heart"></i>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- product-action end -->
                                                             </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Bird of paradise</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 21.00</span>
-                                                                                    <span class="old-price">Rs. 25.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Paradise</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
+                                                            <!-- product-img end -->
+                                                            <!-- product-content start -->
+                                                            <div class="product-content">
+                                                                <div class="product-info">
+                                                                    <!-- product-title start -->
+                                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                                    <!-- product-title end -->
+                                                                    <!-- product-price start -->
+                                                                    <div class="price-box">
+                                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
                                                                     </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
+                                                                    <!-- product-price end -->
                                                                     <div class="product-description">
                                                                         <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
                                                                     </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
+                                                                    <!-- product-rating start -->
+                                                                    <div class="product-ratting">
+                                                                        <span class="star-rating">
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star-half-alt"></i>
+                                                                        </span>
                                                                     </div>
+                                                                    <!-- product-rating end -->
                                                                 </div>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action">
+                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
+                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
+                                                                    </a>
+                                                                    <a href="#add-to-cart" class="add-to-cart">
+                                                                        <span class="cart-title">
+                                                                            <span class="add-c-title">
+                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
+                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
+                                                                                <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="wishlist-product.html" class="wishlist">
+                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- product-action end -->
                                                             </div>
+                                                            <!-- product-content end -->
                                                         </div>
                                                     </li>
                                                     <li class="pro-item-li">
                                                         <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-13.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-14.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                            <!-- product-img start -->
+                                                            <div class="product-image">
+                                                                <a href="#" class="pro-img">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
                                                                 </a>
-                                                                <div class="product-action product-cart-btn">
-                                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                                        <span class="cart-title">
-                                                                            <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
-                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
-                                                                            </span>
-                                                                        </span>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action pro-quiqview">
+                                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                                        <i class="feather-eye"></i>
                                                                     </a>
                                                                 </div>
-                                                                <div class="product-action">
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
+                                                                <div class="product-cart">
+                                                                    <div class="product-action cart-wishlist">
+                                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
+                                                                            <i class="feather-shopping-bag"></i>
+                                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                        </a>
+                                                                        <a href="wishlist.html" class="wishlist">
+                                                                            <span class="tooltip-text">Yêu thích</span>
+                                                                            <i class="feather-heart"></i>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- product-action end -->
                                                             </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Snake plant</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 54.00</span>
-                                                                                    <span class="old-price">Rs. 65.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Snake</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
+                                                            <!-- product-img end -->
+                                                            <!-- product-content start -->
+                                                            <div class="product-content">
+                                                                <div class="product-info">
+                                                                    <!-- product-title start -->
+                                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                                    <!-- product-title end -->
+                                                                    <!-- product-price start -->
+                                                                    <div class="price-box">
+                                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
                                                                     </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
+                                                                    <!-- product-price end -->
                                                                     <div class="product-description">
                                                                         <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
                                                                     </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
+                                                                    <!-- product-rating start -->
+                                                                    <div class="product-ratting">
+                                                                        <span class="star-rating">
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star-half-alt"></i>
+                                                                        </span>
                                                                     </div>
+                                                                    <!-- product-rating end -->
                                                                 </div>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action">
+                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
+                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
+                                                                    </a>
+                                                                    <a href="#add-to-cart" class="add-to-cart">
+                                                                        <span class="cart-title">
+                                                                            <span class="add-c-title">
+                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
+                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
+                                                                                <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="wishlist-product.html" class="wishlist">
+                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- product-action end -->
                                                             </div>
+                                                            <!-- product-content end -->
                                                         </div>
                                                     </li>
                                                     <li class="pro-item-li">
                                                         <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-15.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-16.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                            <!-- product-img start -->
+                                                            <div class="product-image">
+                                                                <a href="#" class="pro-img">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
                                                                 </a>
-                                                                <div class="product-action product-cart-btn">
-                                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                                        <span class="cart-title">
-                                                                            <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
-                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
-                                                                            </span>
-                                                                        </span>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action pro-quiqview">
+                                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                                        <i class="feather-eye"></i>
                                                                     </a>
                                                                 </div>
-                                                                <div class="product-action">
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
+                                                                <div class="product-cart">
+                                                                    <div class="product-action cart-wishlist">
+                                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
+                                                                            <i class="feather-shopping-bag"></i>
+                                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                        </a>
+                                                                        <a href="wishlist.html" class="wishlist">
+                                                                            <span class="tooltip-text">Yêu thích</span>
+                                                                            <i class="feather-heart"></i>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- product-action end -->
                                                             </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Areca palm</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 61.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Palm</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
+                                                            <!-- product-img end -->
+                                                            <!-- product-content start -->
+                                                            <div class="product-content">
+                                                                <div class="product-info">
+                                                                    <!-- product-title start -->
+                                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                                    <!-- product-title end -->
+                                                                    <!-- product-price start -->
+                                                                    <div class="price-box">
+                                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
                                                                     </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
+                                                                    <!-- product-price end -->
                                                                     <div class="product-description">
                                                                         <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
                                                                     </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
+                                                                    <!-- product-rating start -->
+                                                                    <div class="product-ratting">
+                                                                        <span class="star-rating">
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star-half-alt"></i>
+                                                                        </span>
                                                                     </div>
+                                                                    <!-- product-rating end -->
                                                                 </div>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action">
+                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
+                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
+                                                                    </a>
+                                                                    <a href="#add-to-cart" class="add-to-cart">
+                                                                        <span class="cart-title">
+                                                                            <span class="add-c-title">
+                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
+                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
+                                                                                <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="wishlist-product.html" class="wishlist">
+                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- product-action end -->
                                                             </div>
+                                                            <!-- product-content end -->
                                                         </div>
                                                     </li>
                                                     <li class="pro-item-li">
                                                         <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-17.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-18.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                            <!-- product-img start -->
+                                                            <div class="product-image">
+                                                                <a href="#" class="pro-img">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
                                                                 </a>
-                                                                <div class="product-action product-cart-btn">
-                                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                                        <span class="cart-title">
-                                                                            <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
-                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
-                                                                            </span>
-                                                                        </span>
+                                                                <!-- product-action start -->
+                                                                <div class="product-action pro-quiqview">
+                                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                                        <i class="feather-eye"></i>
                                                                     </a>
                                                                 </div>
-                                                                <div class="product-action">
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
+                                                                <div class="product-cart">
+                                                                    <div class="product-action cart-wishlist">
+                                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
+                                                                            <i class="feather-shopping-bag"></i>
+                                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                                        </a>
+                                                                        <a href="wishlist.html" class="wishlist">
+                                                                            <span class="tooltip-text">Yêu thích</span>
+                                                                            <i class="feather-heart"></i>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- product-action end -->
                                                             </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Howea forsteriana</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 22.00</span>
-                                                                                    <span class="old-price">Rs. 45.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Howea</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
+                                                            <!-- product-img end -->
+                                                            <!-- product-content start -->
+                                                            <div class="product-content">
+                                                                <div class="product-info">
+                                                                    <!-- product-title start -->
+                                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                                    <!-- product-title end -->
+                                                                    <!-- product-price start -->
+                                                                    <div class="price-box">
+                                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
                                                                     </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
+                                                                    <!-- product-price end -->
                                                                     <div class="product-description">
                                                                         <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
                                                                     </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
+                                                                    <!-- product-rating start -->
+                                                                    <div class="product-ratting">
+                                                                        <span class="star-rating">
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star-half-alt"></i>
+                                                                        </span>
                                                                     </div>
+                                                                    <!-- product-rating end -->
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="pro-item-li">
-                                                        <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-3.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-4.jpg" class="img-fluid img2 mobile-img2" alt="p2">
-                                                                </a>
-                                                                <div class="product-action product-cart-btn">
+                                                                <!-- product-action start -->
+                                                                <div class="product-action">
+                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
+                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
+                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
+                                                                    </a>
                                                                     <a href="#add-to-cart" class="add-to-cart">
                                                                         <span class="cart-title">
                                                                             <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
+                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
                                                                                 <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
+                                                                                <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
                                                                         </span>
                                                                     </a>
-                                                                </div>
-                                                                <div class="product-action">
                                                                     <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
+                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
                                                                         <span class="pro-action-icon"><i class="feather-heart"></i></span>
                                                                     </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
                                                                 </div>
+                                                                <!-- product-action end -->
                                                             </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Aloe vera plant</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 61.00</span>
-                                                                                    <span class="old-price">Rs. 69.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Aloe vera</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="product-description">
-                                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                                    </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <!-- product-content end -->
                                                         </div>
                                                     </li>
-                                                    <li class="pro-item-li">
-                                                        <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-5.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-6.jpg" class="img-fluid img2 mobile-img2" alt="p2">
-                                                                </a>
-                                                                <div class="product-action product-cart-btn">
-                                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                                        <span class="cart-title">
-                                                                            <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
-                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
-                                                                            </span>
-                                                                        </span>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="product-action">
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Chinese evergreen</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 24.00</span>
-                                                                                    <span class="old-price">Rs. 29.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Evergreen</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="product-description">
-                                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                                    </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="pro-item-li">
-                                                        <div class="single-product-wrap">
-                                                            <div class="product-image banner-hover">
-                                                                <a href="product-template.html" class="pro-img">
-                                                                    <img src="assets/img/product/home1-pro-19.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                                    <img src="assets/img/product/home1-pro-20.jpg" class="img-fluid img2 mobile-img2" alt="p2">
-                                                                </a>
-                                                                <div class="product-action product-cart-btn">
-                                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                                        <span class="cart-title">
-                                                                            <span class="add-c-title">
-                                                                                <span class="tooltip-text">Add to cart</span>
-                                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                <span class="add-title">Add to cart</span>
-                                                                            </span>
-                                                                        </span>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="product-action">
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        <span class="tooltip-text">Wishlist</span>
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
-                                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        <span class="tooltip-text">Quickview</span>
-                                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <div class="product-content">
-                                                                    <div class="product-title">
-                                                                        <div class="pro-title-price">
-                                                                            <h6><a href="product-template.html">Wheat grass</a></h6>
-                                                                            <div class="product-price">
-                                                                                <div class="price-box">
-                                                                                    <span class="new-price">Rs. 21.00</span>
-                                                                                    <span class="old-price">Rs. 25.00</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-name">
-                                                                            <a class="product-type" href="collection.html">Grass</a>
-                                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="product-ratting">
-                                                                        <span class="pro-ratting">
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                            <i class="fa-regular fa-star"></i>
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="product-description">
-                                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                                    </div>
-                                                                    <div class="product-action">
-                                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                            <span class="tooltip-text">Quickview</span>
-                                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                                        </a>
-                                                                        <a href="#add-to-cart" class="add-to-cart">
-                                                                            <span class="cart-title">
-                                                                                <span class="add-c-title">
-                                                                                    <span class="tooltip-text">Add to cart</span>
-                                                                                    <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                                    <span class="add-title">Add to cart</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </a>
-                                                                        <a href="wishlist-product.html" class="wishlist">
-                                                                            <span class="tooltip-text">Wishlist</span>
-                                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+
+                                                    
                                                 </ul>
                                             </div>
                                             <div class="paginatoin-area">
@@ -1135,16 +901,6 @@
                                         <!-- filter-form end -->
                                     </div>
                                 </div>
-                                <!-- sidebar img start -->
-                                <div class="sidebar-banner banner-hover">
-                                    <a href="collection.html" class="sidebar-img banner-img">
-                                        <span class="sidebar-banner-image">
-                                            <img src="assets/img/banner/side-banner.jpg" class="img-fluid" alt="side-banner">
-                                        </span>
-                                        <span class="sidebar-banner-icon"><i class="bi bi-arrow-right-short"></i></span>
-                                    </a>
-                                </div>
-                                <!-- sidebar img start -->
                             </div>
                         </div>
                     </div>
@@ -1154,4 +910,8 @@
     </section>
     <!-- collection end -->
 </main>
+
+<!-- quickview modal start -->
+@include('client.includes.quickview_modal')
+<!-- quickview modal end -->
 @endsection

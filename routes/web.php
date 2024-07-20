@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< HEAD
 Route::get('/admin', fn () => view('admin.pages.dashboard.index'));
-=======
 Route::get('/', fn () => view('client.pages.index'))->name('todo.home');
 Route::get('collection', fn () => view('client.pages.collection'))->name('todo.collection');
 
@@ -26,4 +24,3 @@ Route::get('collection', fn () => view('client.pages.collection'))->name('todo.c
 //     $link = $_SERVER['DOCUMENT_ROOT'] . '/storage';
 //     symlink($targetFolder, $link);
 // });
->>>>>>> 3f1f8ac (feat: [SSP-5] base layout_home)

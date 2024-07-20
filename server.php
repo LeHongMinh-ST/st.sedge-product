@@ -9,7 +9,7 @@ if ('/' !== $uri && file_exists(__DIR__ . '/public' . $uri)) {
     return false;
 }
 
-if(app()->isLocal()) {
+if('local' === getenv('APP_ENV')) {
     require_once __DIR__ . '/public/index.php';
 } else {
     require_once __DIR__ . '/index.php';

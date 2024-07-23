@@ -42,6 +42,16 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a href="{{ route('admin.products.index') }}" class="nav-link active">
+                        <i class="ph-tote-simple"></i>
+                        <span>
+                            Sản phẩm
+                            <span class="d-block fw-normal opacity-50">No pending orders</span>
+                        </span>
+                    </a>
+                </li>
+
             </ul>
         </div>
         <!-- /main navigation -->

@@ -20,11 +20,11 @@
             <div class="main-wrap">
                 <ul class="main-menu">
                     <li class="menu-link">
-                        <a href="#menu-single" class="link-title" data-bs-toggle="collapse" aria-expanded="false">
+                        <a href="{{route('todo.home')}}" class="link-title" >
                             <span class="sp-link-title">Trang chủ</span>
                             {{-- <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span> --}}
                         </a>
-                    </li> 
+                    </li>
                     <li class="menu-link">
                         <a href="#menu-mega" class="link-title" data-bs-toggle="collapse" aria-expanded="false">
                             <span class="sp-link-title">Sản phẩm</span>
@@ -203,97 +203,13 @@
                         </div>
                     </li>
                     <li class="menu-link">
-                        <a href="#menu-shop-banner" class="link-title" data-bs-toggle="collapse" aria-expanded="false">
-                            <span class="sp-link-title">Thông báo</span>
-                            {{-- <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span> --}}
-                        </a>
-                        {{-- <div class="menu-dropdown menu-banner collapse" id="menu-shop-banner">
-                            <ul class="container ul p-0">
-                                <li class="menubanner-li">
-                                    <div class="menubanner-img">
-                                        <a href="collection.html" class="collection-img banner-hover">
-                                            <img src="img/menu/home4-menu-banner1.jpg"  class="img-fluid" alt="menu-banner1">
-                                        </a>
-                                        <a href="collection.html" class="collection-title">
-                                            <span>New product</span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="menubanner-li">
-                                    <div class="menubanner-img">
-                                        <a href="collection.html" class="collection-img banner-hover">
-                                            <img src="img/menu/home4-menu-banner2.jpg" class="img-fluid" alt="menu-banner2">
-                                        </a>
-                                        <a href="collection.html" class="collection-title">
-                                            <span>Featured product</span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="menubanner-li">
-                                    <div class="menubanner-img">
-                                        <a href="collection.html" class="collection-img banner-hover">
-                                            <img src="img/menu/home4-menu-banner3.jpg" class="img-fluid" alt="menu-banner3">
-                                        </a>
-                                        <a href="collection.html" class="collection-title">
-                                            <span>Best seller</span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="menubanner-li">
-                                    <div class="menubanner-img">
-                                        <a href="collection.html" class="collection-img banner-hover">
-                                            <img src="img/menu/home4-menu-banner4.jpg" class="img-fluid" alt="menu-banner4">
-                                        </a>
-                                        <a href="collection.html" class="collection-title">
-                                            <span>Super sale</span>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div> --}}
-                    </li>
-                    <li class="menu-link">
-                        <a href="#menu-blog" class="link-title" data-bs-toggle="collapse" aria-expanded="false">
+                        <a href="{{route('todo.blog')}}" class="link-title" >
                             <span class="sp-link-title">Blog</span>
-                            <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span>
+{{--                            <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span>--}}
                         </a>
-                        <div class="menu-dropdown menu-single collapse" id="menu-blog">
-                            <ul class="ul">
-                                <li class="menusingle-li">
-                                    <a href="blog-grid-without.html" class="menusingle-title">
-                                        <span class="sp-link-title">Blog grid</span>
-                                    </a>
-                                </li>
-                                <li class="menusingle-li">
-                                    <a href="blog-grid.html" class="menusingle-title">
-                                        <span class="sp-link-title">Blog grid left</span>
-                                    </a>
-                                </li>
-                                <li class="menusingle-li">
-                                    <a href="blog-grid-right.html" class="menusingle-title">
-                                        <span class="sp-link-title">Blog grid right</span>
-                                    </a>
-                                </li>
-                                <li class="menusingle-li">
-                                    <a href="article-post-without.html" class="menusingle-title">
-                                        <span class="sp-link-title">Article post</span>
-                                    </a>
-                                </li>
-                                <li class="menusingle-li">
-                                    <a href="article-post.html" class="menusingle-title">
-                                        <span class="sp-link-title">Article post left</span>
-                                    </a>
-                                </li>
-                                <li class="menusingle-li">
-                                    <a href="article-post-right.html" class="menusingle-title">
-                                        <span class="sp-link-title">Article post right</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </li>
                     <li class="menu-link">
-                        <a href="#menu-sub" class="link-title" data-bs-toggle="collapse" aria-expanded="false">
+                        <a href="{{route('todo.contact')}}" class="link-title" >
                             <span class="sp-link-title">Liên hệ</span>
                             {{-- <span class="m enu-arrow"><i class="fa-solid fa-angle-down"></i></span> --}}
                         </a>

@@ -25,6 +25,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', fn () => view('client.pages.index'))->name('todo.home');
 Route::get('collection', fn () => view('client.pages.collection'))->name('todo.collection');
 Route::get('contact', fn () => view('client.pages.contact'))->name('todo.contact');
+Route::get('blog', fn () => view('client.pages.blog'))->name('todo.blog');
 
 // Route::get('link-storage', function (): void {
 //     $targetFolder = storage_path('app/public');

@@ -2,9 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashbroadController;
+=======
+use App\Http\Controllers\ProductController;
+>>>>>>> a6ba8d4 (feat: [SSP-13] crud product)
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +22,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/admin', fn () => view('admin.pages.dashboard.index'));
 Route::get('/', fn () => view('client.pages.index'))->name('todo.home');
 Route::get('collection', fn () => view('client.pages.collection'))->name('todo.collection');
 Route::get('contact', fn () => view('client.pages.contact'))->name('todo.contact');
@@ -73,4 +76,15 @@ Route::prefix('login')->group(function (): void {
 
 Route::prefix('admin')->middleware('auth')->group(function (): void {
     Route::get('/', [DashbroadController::class, 'index'])->name('admin.dashboard');
+});
+Route::prefix('admin')->group(function (): void {
+    Route::get('/', fn () => view('admin.pages.dashboard.index'));
+    Route::prefix('product')->group(function (): void {
+        Route::get('/', [ProductController::class, 'index'])->name('admin.products.index');
+        Route::get('/create', [ProductController::class, 'create'])->name('admin.products.create');
+        Route::post('/store', [ProductController::class, 'store'])->name('admin.products.store');
+        Route::get('/{id}/edit', [ProductController::class, 'edit'])->name('admin.products.edit');
+        Route::put('/{id}/update', [ProductController::class, 'update'])->name('admin.products.update');
+        Route::delete('/{id}/delete', [ProductController::class, 'delete'])->name('admin.products.delete');
+    });
 });

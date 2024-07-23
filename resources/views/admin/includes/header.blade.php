@@ -9,7 +9,6 @@
         <div class="navbar-brand flex-1 flex-lg-0">
             <a href="index.html" class="d-inline-flex align-items-center">
                 <img src="{{ asset('assets/admin/images/coi4.jpg') }}" alt="" style="width:180px">
-                <!-- <img src="{{ asset('assets/admin/images/logo_light.png') }}" class="d-none d-sm-inline-block h-16px ms-3" alt=""> -->
             </a>
         </div>
 

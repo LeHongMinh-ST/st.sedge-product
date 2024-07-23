@@ -75,10 +75,7 @@ Route::prefix('login')->group(function (): void {
 
 Route::prefix('admin')->middleware('auth')->group(function (): void {
     Route::get('/', [DashbroadController::class, 'index'])->name('admin.dashboard');
-});
-Route::prefix('admin')->group(function (): void {
-    Route::get('/', fn () => view('admin.pages.dashboard.index'));
-    Route::prefix('product')->group(function (): void {
+    Route::prefix('/product')->group(function (): void {
         Route::get('/', [ProductController::class, 'index'])->name('admin.products.index');
         Route::get('/create', [ProductController::class, 'create'])->name('admin.products.create');
         Route::post('/store', [ProductController::class, 'store'])->name('admin.products.store');
@@ -87,3 +84,4 @@ Route::prefix('admin')->group(function (): void {
         Route::delete('/{id}/delete', [ProductController::class, 'delete'])->name('admin.products.delete');
     });
 });
+

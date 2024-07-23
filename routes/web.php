@@ -84,4 +84,3 @@ Route::prefix('admin')->middleware('auth')->group(function (): void {
         Route::delete('/{id}/delete', [ProductController::class, 'delete'])->name('admin.products.delete');
     });
 });
-

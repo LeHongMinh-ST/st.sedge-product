@@ -15,10 +15,10 @@
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-ul">
                             <li class="breadcrumb-li">
-                                <a class="breadcrumb-link" href="{{route('todo.home')}}">Home</a>
+                                <a class="breadcrumb-link" href="{{route('todo.home')}}">Trang chủ</a>
                             </li>
-                            <li class="breadcrumb-li"> 
-                                <span class="breadcrumb-text">Collection</span>
+                            <li class="breadcrumb-li">
+                                <span class="breadcrumb-text">Sản phẩm</span>
                             </li>
                         </ul>
                         <!-- breadcrumb-list end -->
@@ -834,7 +834,7 @@
                                                         </div>
                                                     </li>
 
-                                                    
+
                                                 </ul>
                                             </div>
                                             <div class="paginatoin-area">

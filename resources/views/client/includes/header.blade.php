@@ -6,7 +6,7 @@
                     <div class="header-area">
                         <div class="header-element header-logo">
                             <div class="header-theme-logo">
-                                <a href="#" class="theme-logo">
+                                <a href="{{route('todo.home')}}" class="theme-logo">
                                     <img src="{{asset("assets/client/img/logo/logo.png")}}" class="img-fluid" alt="logo">
                                 </a>
                             </div>
@@ -49,7 +49,7 @@
                                                 </span>
                                             </a>
                                         </div>
-                                    </li> 
+                                    </li>
                                     <li class="side-wrap cart-wrap">
                                         <div class="cart-wrapper">
                                             <a href="javascript:void(0)" class="js-cart-drawer">

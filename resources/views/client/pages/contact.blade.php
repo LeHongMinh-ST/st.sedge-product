@@ -14,10 +14,10 @@
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-ul">
                             <li class="breadcrumb-li">
-                                <a class="breadcrumb-link" href="{{route('todo.home')}}">Home</a>
+                                <a class="breadcrumb-link" href="{{route('todo.home')}}">Trang chủ</a>
                             </li>
                             <li class="breadcrumb-li">
-                                <span class="breadcrumb-text">Faq's</span>
+                                <span class="breadcrumb-text">Liên hệ</span>
                             </li>
                         </ul>
                         <!-- breadcrumb-list end -->
@@ -116,7 +116,7 @@
                             <div class="help-desk-info">
                                 <a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
                                 <div class="help-desk-text">
-                                    <h6>fanpage</h6>
+                                    <h6>Fanpage</h6>
                                     <p>fb.com/abcxyz</p>
                                 </div>
                             </div>

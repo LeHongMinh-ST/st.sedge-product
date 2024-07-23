@@ -1,7 +1,7 @@
 @extends('client.layouts.master')
 
 @section('title')
-    home
+    cóincidence
 @endsection
 
 @section('content')
@@ -285,7 +285,7 @@
                                                 </div>
                                                 <!-- product-action start -->
                                                 <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
                                                         <i class="feather-shopping-bag"></i>
                                                     </a>
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
@@ -359,7 +359,7 @@
                                                 </div>
                                                 <!-- product-action start -->
                                                 <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
                                                         <i class="feather-shopping-bag"></i>
                                                     </a>
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
@@ -433,7 +433,7 @@
                                                 </div>
                                                 <!-- product-action start -->
                                                 <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
                                                         <i class="feather-shopping-bag"></i>
                                                     </a>
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
@@ -507,7 +507,7 @@
                                                 </div>
                                                 <!-- product-action start -->
                                                 <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
                                                         <i class="feather-shopping-bag"></i>
                                                     </a>
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
@@ -581,7 +581,7 @@
                                                 </div>
                                                 <!-- product-action start -->
                                                 <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
                                                         <i class="feather-shopping-bag"></i>
                                                     </a>
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
@@ -655,7 +655,7 @@
                                                 </div>
                                                 <!-- product-action start -->
                                                 <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
                                                         <i class="feather-shopping-bag"></i>
                                                     </a>
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
@@ -808,14 +808,14 @@
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
     </section>
     <!-- offer-text end -->
     <!-- test-area start -->
     {{-- <section class="deal-test section-ptb">
         <div class="container">
-            <div class="row"> 
+            <div class="row">
                 <div class="col">
                     <div class="deal-test-block">
                         <div class="section-capture">

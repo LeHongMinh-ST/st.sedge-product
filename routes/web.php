@@ -2,13 +2,11 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-use Illuminate\Support\Facades\Artisan;
+
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashbroadController;
-=======
 use App\Http\Controllers\ProductController;
->>>>>>> a6ba8d4 (feat: [SSP-13] crud product)
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*

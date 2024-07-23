@@ -3,6 +3,8 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Artisan;
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\DashbroadController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -60,4 +62,15 @@ Route::get('/view-clear', function () {
     Artisan::call('view:clear');
 
     return 'View cache has been cleared';
+});
+
+Route::prefix('login')->group(function (): void {
+    Route::get('/', [AuthController::class, 'showLoginForm'])->name('login');
+    Route::post('/post', [AuthController::class, 'login'])->name('login.post');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+});
+
+
+Route::prefix('admin')->middleware('auth')->group(function (): void {
+    Route::get('/', [DashbroadController::class, 'index'])->name('admin.dashboard');
 });

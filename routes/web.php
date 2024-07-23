@@ -84,3 +84,4 @@ Route::prefix('admin')->middleware('auth')->group(function (): void {
     });
 });
 Route::get('/product', fn () => view('client.pages.product_template'))->name('todo.product');
+Route::get('/checkout', fn () => view('client.pages.checkout'))->name('todo.checkout');

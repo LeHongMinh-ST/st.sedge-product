@@ -22,12 +22,11 @@
 <!-- blog css -->
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/client/css/blog.css') }}">
 <!-- other-pages css -->
-<link rel="stylesheet" type="text/css" href= "{{ asset('assets/client/css/other-pages.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/client/css/other-pages.css') }}">
 <!-- product-page css -->
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/client/css/product-page.css') }}">
 <!-- style css -->
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/client/css/style4.css') }}">
-
 {{-- css custom --}}
 @yield('style_custom')
 {{-- css custom --}}

@@ -3371,6 +3371,10 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
     margin: 7px 0px 0px 3px;
 }
 
+.check {
+    margin-left: -1px;
+}
+
 /* order-history css */
 .checkout-area .order-area ul.order-history {
     padding: 0px 20px;
@@ -3579,7 +3583,7 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
     margin: 0px 0px 0px -30px;
 }
 .check-3 ul.check-3-ul li.check-3-li {
-    width: calc(33.33% - 30px);
+    width: calc(50% - 30px);
     margin: 0px 0px 0px 30px;
     border: 1px solid var(--border-color);
 }
@@ -3613,6 +3617,11 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
     padding: 20px;
 }
 
+.img-fix {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
 /* shipping-info css */
 .check-3 ul.check-3-ul li.check-3-li .check-pro form ul.shipping-info li label {
     color: var(--heading-font-color);
@@ -3701,6 +3710,16 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
     border-radius: var(--border-radius);
 }
 
+/* Form address client */
+.select {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.section {
+    margin-top: -5px;
+}
+
 /* check-3 payment css */
 .check-3 ul.check-3-ul li.check-3-li .pay-method .pay-pro ul li {
     border-bottom: 1px solid var(--border-color);
@@ -3752,6 +3771,16 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
 .check-3 ul.check-3-ul li.check-3-li .check-pro .quick-pay a.pay-link.btn-style:hover,
 .check-3 ul.check-3-ul li.check-3-li .pay-method .order-summary .check-btn a.btn-style:hover {
     color: var(--heading-font-color);
+}
+
+.enter {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.btn-style {
+    width: 90%;
 }
 
 /*==============================

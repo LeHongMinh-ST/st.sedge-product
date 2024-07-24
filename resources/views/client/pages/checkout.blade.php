@@ -29,31 +29,25 @@
             <div class="row">
                 <div class="col">
                     <h2 class="check-3-title">Thông tin thanh toán sản phẩm</h2>
-                    <!-- 2-ul-->
                     <ul class="check-3-ul">
-                        <!-- form 1 -->
                         <li class="check-3-li ck-cat">
                             <div class="check-pro">
                                 <h2>1. Sản phẩm có trong giỏ hàng (4)</h2>
-                                <ul class="check-ul">
-                                    <!-- sp1 -->
+                                <ul class="check-ul font-size">
                                     <li>
                                         <div class="check-pro-img">
                                             <a href="product-template.html">
-                                                <img src="assets/client/img/product/home-pro-1.jpg" class="img-fluid img-fix" alt="cart-1">
+                                                <img src="assets/client/img/product/home-pro-1.jpg" class="img-fluid" alt="cart-1">
                                             </a>
                                         </div>
                                         <div class="check-content">
                                             <a href="product-template.html">Dép cói</a>
-                                            <!-- <span class="check-code">
-                                                <span>Mã sản phẩm:</span>
-                                                <span>CA70051541B</span>
-                                            </span> -->
+
                                             <div class="check-qty-pric">
                                                 <span class="check-qty">Số lượng: X1</span>
                                             </div>
                                             <div class="check-qty-pric">
-                                                <span class="check">Giá: 125.000đ</span>
+                                                <span class="check-price check">Giá: 125.000<u>đ</u></span>
                                             </div>
                                         </div>
                                     </li>
@@ -62,20 +56,17 @@
                                     <li>
                                         <div class="check-pro-img">
                                             <a href="product-template.html">
-                                                <img src="assets/client/img/product/home-pro-4.jpg" class="img-fluid img-fix" alt="cart-2">
+                                                <img src="assets/client/img/product/home-pro-4.jpg" class="img-fluid" alt="cart-1">
                                             </a>
                                         </div>
                                         <div class="check-content">
                                             <a href="product-template.html">Túi cói</a>
-                                            <!-- <span class="check-code">
-                                                <span>Mã sản phẩm:</span>
-                                                <span>CA70051541B</span>
-                                            </span> -->
+
                                             <div class="check-qty-pric">
                                                 <span class="check-qty">Số lượng: X2</span>
                                             </div>
                                             <div class="check-qty-pric">
-                                                <span class="check">Giá: 380.000đ</span>
+                                                <span class="check-price check">Giá: 380.000<u>đ</u></span>
                                             </div>
                                         </div>
                                     </li>
@@ -84,20 +75,17 @@
                                     <li>
                                         <div class="check-pro-img">
                                             <a href="product-template.html">
-                                                <img src="assets/client/img/product/home-pro-1.jpg" class="img-fluid img-fix" alt="cart-2">
+                                                <img src="assets/client/img/product/home-pro-1.jpg" class="img-fluid" alt="cart-1">
                                             </a>
                                         </div>
                                         <div class="check-content">
                                             <a href="product-template.html">Dép cói</a>
-                                            <!-- <span class="check-code">
-                                                <span>Mã sản phẩm:</span>
-                                                <span>CA70051541B</span>
-                                            </span> -->
+
                                             <div class="check-qty-pric">
                                                 <span class="check-qty">Số lượng: X1</span>
                                             </div>
                                             <div class="check-qty-pric">
-                                                <span class="check">Giá: 125.000đ</span>
+                                                <span class="check-price check">Giá: 125.000<u>đ</u></span>
                                             </div>
                                         </div>
                                     </li>
@@ -106,55 +94,24 @@
                                     <li>
                                         <div class="check-pro-img">
                                             <a href="product-template.html">
-                                                <img src="assets/client/img/product/home-pro-4.jpg" class="img-fluid img-fix" alt="cart-2">
+                                                <img src="assets/client/img/product/home-pro-4.jpg" class="img-fluid" alt="cart-1">
                                             </a>
                                         </div>
                                         <div class="check-content">
                                             <a href="product-template.html">Túi cói</a>
-                                            <!-- <span class="check-code">
-                                                <span>Mã sản phẩm:</span>
-                                                <span>CA70051541B</span>
-                                            </span> -->
+
                                             <div class="check-qty-pric">
                                                 <span class="check-qty">Số lượng: X2</span>
                                             </div>
                                             <div class="check-qty-pric">
-                                                <span class="check">Giá: 380.000đ</span>
+                                                <span class="check-price check">Giá: 380.000<u>đ</u></span>
                                             </div>
                                         </div>
                                     </li>
                                     <!-- end sp4 -->
                                 </ul>
-                                <form>
-                                    <ul class="delivery-info pro-submit">
-                                        <li><span>Chọn phương thức thanh toán</span></li>
-                                        <li class="label-info">
-                                            <label class="box-area">
-                                                <span class="text">Thông thường</span>
-                                                <input type="checkbox" class="cust-checkbox">
-                                                <span class="cust-check"></span>
-                                            </label>
-                                        </li>
-                                        <li class="label-info">
-                                            <label class="box-area">
-                                                <span class="text">Nhanh</span>
-                                                <input type="checkbox" class="cust-checkbox">
-                                                <span class="cust-check"></span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </form>
-                                <div class="quick-pay">
-                                    <span>Thanh toán nhanh</span>
-                                    <a href="javascript:void(0)" class="pay-link btn-style2">
-                                        Thanh toán với :
-                                        <i class="fa-brands fa-paypal"></i>
-                                    </a>
-                                    <a href="javascript:void(0)" class="pay-link btn-style2">
-                                        Thanh toán với :
-                                        <i class="fa-brands fa-google"></i>
-                                    </a>
-                                </div>
+                                <span class="total1 ms-4">Tổng tiền: </span>
+                                <span class="total1 ms-2">900.000 <u>đ</u></?u></span>
                             </div>
                         </li>
                         <!-- form 2 -->

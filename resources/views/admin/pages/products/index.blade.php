@@ -34,7 +34,12 @@
             text: "{{ session('success') }}",
             timeout: 2000,
             progressBar: true,
-            theme: 'mint',
+            callbacks: {
+                onTemplate: function() {
+                    this.barDom.innerHTML = '<div class="noty_body" style="background: #188251; color: #ffffff;">' + this.options.text + '</div>';
+                    this.barDom.style.backgroundColor = 'transparent';
+                }
+            }
         }).show();
     </script>
     @endif

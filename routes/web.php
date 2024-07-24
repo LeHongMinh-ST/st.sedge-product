@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashbroadController;
-<<<<<<< HEAD
 use App\Http\Controllers\Admin\ProductController;
-=======
-use App\Http\Controllers\ProductController;
->>>>>>> b2c3210 (refactor: [SSP-14] add UI checkout)
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', fn () => view('client.pages.index'))->name('todo.home');
 Route::get('collection', fn () => view('client.pages.collection'))->name('todo.collection');
 Route::get('contact', fn () => view('client.pages.contact'))->name('todo.contact');
+// Route::get('/product', fn () => view('client.pages.product'))->name('todo.product');
 Route::get('blog', fn () => view('client.pages.blog'))->name('todo.blog');
 
 // Route::get('link-storage', function (): void {

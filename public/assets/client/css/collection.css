@@ -2,7 +2,7 @@
     collection-left/right css
 ==============================*/
 /* collection-template css */
-.main-content-wrap .pro-grli-wrapper.left-side-wrap, 
+.main-content-wrap .pro-grli-wrapper.left-side-wrap,
 .main-content-wrap .pro-grli-wrapper.right-side-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -15,25 +15,25 @@
 .main-content-wrap .pro-grli-wrapper.right-side-wrap {
     flex-direction: row;
 }
-.main-content-wrap .pro-grli-wrapper.left-side-wrap .pro-grli-wrap, 
+.main-content-wrap .pro-grli-wrapper.left-side-wrap .pro-grli-wrap,
 .main-content-wrap .pro-grli-wrapper.right-side-wrap .pro-grli-wrap {
     margin: 30px 0px 0px;
     padding: 0px 15px;
 }
-.main-content-wrap .pro-grli-wrapper.left-side-wrap .pro-grli-wrap.product-grid, 
+.main-content-wrap .pro-grli-wrapper.left-side-wrap .pro-grli-wrap.product-grid,
 .main-content-wrap .pro-grli-wrapper.right-side-wrap .pro-grli-wrap.product-grid {
     width: 75%;
 }
-.main-content-wrap .pro-grli-wrapper.left-side-wrap .pro-grli-wrap.product-sidebar, 
+.main-content-wrap .pro-grli-wrapper.left-side-wrap .pro-grli-wrap.product-sidebar,
 .main-content-wrap .pro-grli-wrapper.right-side-wrap .pro-grli-wrap.product-sidebar {
     width: 25%;
 }
 @media (max-width: 1199px) {
-    .main-content-wrap .pro-grli-wrapper.left-side-wrap .pro-grli-wrap.product-grid, 
+    .main-content-wrap .pro-grli-wrapper.left-side-wrap .pro-grli-wrap.product-grid,
     .main-content-wrap .pro-grli-wrapper.right-side-wrap .pro-grli-wrap.product-grid {
         width: 66.67%;
     }
-    .main-content-wrap .pro-grli-wrapper.left-side-wrap .pro-grli-wrap.product-sidebar, 
+    .main-content-wrap .pro-grli-wrapper.left-side-wrap .pro-grli-wrap.product-sidebar,
     .main-content-wrap .pro-grli-wrapper.right-side-wrap .pro-grli-wrap.product-sidebar {
         width: 33.33%;
     }
@@ -121,7 +121,7 @@
         display: none;
     }
 }
-  
+
 /*==============================
     shop-element css css
 ==============================*/
@@ -159,7 +159,7 @@
     white-space: nowrap;
     overflow: hidden;
 }
-.shop-sidebar .shop-element ul.brand-ul li.cat-checkbox input.cust-checkbox, 
+.shop-sidebar .shop-element ul.brand-ul li.cat-checkbox input.cust-checkbox,
 .shop-sidebar .shop-element ul.brand-ul li.cat-checkbox .checkbox-label input.cust-checkbox {
     position: absolute;
     opacity: 0;
@@ -189,7 +189,7 @@
     color: var(--font-color-header);
     font-size: 16px;
 }
-.shop-sidebar .shop-element ul.brand-ul li.cat-checkbox:hover .checkbox-label span.cust-check::after, 
+.shop-sidebar .shop-element ul.brand-ul li.cat-checkbox:hover .checkbox-label span.cust-check::after,
 .shop-sidebar .shop-element ul.brand-ul li.cat-checkbox .checkbox-label input.cust-checkbox:checked ~ span.cust-check::after {
     display: block;
 }
@@ -252,7 +252,7 @@
     white-space: nowrap;
     overflow: hidden;
 }
-.shop-sidebar .filter-element ul.scrollbar li input.cust-checkbox, 
+.shop-sidebar .filter-element ul.scrollbar li input.cust-checkbox,
 .shop-sidebar .filter-element ul.scrollbar li .cust-checkbox-label input.cust-checkbox  {
     position: absolute;
     opacity: 0;
@@ -280,7 +280,7 @@
     color: var(--font-color-header);
     font-size: 16px;
 }
-.shop-sidebar .filter-element ul.scrollbar li:hover .cust-checkbox-label span.cust-check::after, 
+.shop-sidebar .filter-element ul.scrollbar li:hover .cust-checkbox-label span.cust-check::after,
 .shop-sidebar .filter-element ul.scrollbar li .cust-checkbox-label input.cust-checkbox:checked ~ span.cust-check::after {
     display: block;
 }
@@ -305,7 +305,7 @@
 }
 .shop-sidebar.sidebar-filter .filter-info {
     margin: 22px 0px 0px;
-}   
+}
 .shop-sidebar .filter-info span {
     color: var(--paragraph-font-color);
 }
@@ -338,7 +338,7 @@
 }
 .shop-sidebar .filter-info a:hover {
     opacity: 1;
-} 
+}
 
 /*=====================================
    sidebar price css
@@ -591,7 +591,7 @@
 }
 @media (max-width: 991px) {
     .shop-sidebar-inner .filter-sidebar .close-sidebar {
-        display: flex; 
+        display: flex;
     }
     .shop-sidebar-inner .filter-sidebar {
         position: fixed;
@@ -649,7 +649,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: space-between;
     margin: 27px 0px 0px;
     padding: 0px 0px 28px;
     border-bottom: 1px solid var(--border-color);
@@ -860,7 +860,7 @@
 }
 
 /*====================================
-    product-view grid css 
+    product-view grid css
  ====================================*/
 .special-product ul.product-view-ul {
     display: flex;
@@ -869,15 +869,15 @@
 }
 .special-product ul.product-view-ul li.pro-item-li {
     margin: 30px 0px 0px 30px;
-}    
+}
 @media (max-width: 767px) {
         .special-product ul.product-view-ul {
         margin: 0px 0px 0px -12px;
     }
     .special-product ul.product-view-ul li.pro-item-li {
         margin: 30px 0px 0px 12px;
-    } 
-} 
+    }
+}
 
 /*====================================
     single-product grid-3 css
@@ -972,6 +972,9 @@
 @media (max-width: 600px) {
     .special-product.grid-1 ul.product-view-ul li.pro-item-li .single-product-wrap .product-image {
         width: 100%;
+    }
+    .special-product.grid-1 ul.product-view-ul li.pro-item-li .single-product-wrap .product-content{
+        width:100%;
     }
     .special-product.grid-1 ul.product-view-ul li.pro-item-li .single-product-wrap .product-caption {
         width: 100%;

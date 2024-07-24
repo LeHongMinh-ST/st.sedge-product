@@ -131,7 +131,7 @@
 @media (max-width: 600px) {
     .abt-vision ul.abt-vision-ul li.abt-vision-li {
         width: calc(100% - 12px);
-    }   
+    }
 }
 
 /* abt vision content css */
@@ -214,7 +214,7 @@
     position: relative;
     z-index: 1;
 }
-.project-count .single-count ul li .count-info::before, 
+.project-count .single-count ul li .count-info::before,
 .project-count .single-count ul li .count-info::after {
     content: "";
     position: absolute;
@@ -279,7 +279,7 @@
 }
 
 /*==============================
-    about-team css 
+    about-team css
 ==============================*/
 .about-team {
     background-color: var(--body-bgcolor);
@@ -316,14 +316,14 @@
         width: calc(50% - 12px);
         margin: 30px 0px 0px 12px;
     }
-}  
+}
 
 /* team content css */
 .about-team .our-team .team-wrap ul.team-ul li.team-li .team-info {
     padding: 23px 0px 0px;
 }
 .about-team .our-team .team-wrap ul.team-ul li.team-li .team-info h6 {
-    font-size: 18px;    
+    font-size: 18px;
 }
 .about-team .our-team .team-wrap ul.team-ul li.team-li .team-info span {
     display: block;
@@ -375,7 +375,7 @@
     .about-area-2 .about-content .about-banner-area:first-child {
         margin: 0px;
     }
-    .about-area-2 .about-content .about-banner-area, 
+    .about-area-2 .about-content .about-banner-area,
     .about-area-2 .about-content .about-banner-area:nth-of-type(even) {
         flex-direction: column;
     }
@@ -383,11 +383,11 @@
     .about-area-2 .about-content .about-banner-area .abt-banner-desc {
         width: 100%;
     }
-    .about-area-2 .about-content .about-banner-area:nth-of-type(odd) .abt-banner-desc,    
+    .about-area-2 .about-content .about-banner-area:nth-of-type(odd) .abt-banner-desc,
     .about-area-2 .about-content .about-banner-area:nth-of-type(even) .abt-banner-desc {
         padding: 30px 0px 0px;
     }
-} 
+}
 
 /* single-banner css */
 .about-area-2 .about-content .about-banner-area .single-banner a.banner-img span {
@@ -418,7 +418,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 100%;    
+    border-radius: 100%;
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
 }
 .about-area-2 .about-content .about-banner-area .single-banner a.banner-img span::before {
@@ -523,7 +523,7 @@
     display: block;
     color: var(--paragraph-font-color);
     line-height: 0;
-} 
+}
 .project-count-area .single-count ul.count-ul li.count-li .count-info span.count-title {
     color: var(--paragraph-font-color);
     font-size: 18px;
@@ -540,7 +540,7 @@
     .project-count-area .single-count ul.count-ul li.count-li .count-info span.count-title {
         font-size: 16px;
         margin: 23px 0px 0px;
-    } 
+    }
 }
 
 /*==============================
@@ -712,7 +712,7 @@
     margin: 0px;
 }
 .billing-area .billing-title h6 {
-    font-size: 24px; 
+    font-size: 24px;
 }
 .billing-area .billing-address-1 {
     padding: 15px 0px 0px;
@@ -753,7 +753,7 @@
 }
 .billing-area .billing-button button.btn-style2 {
     padding: 12px 50px;
-}  
+}
 @media (max-width: 767px) {
     .billing-area .billing-address-1 ul.add-name {
         margin: -15px 0px 0px -12px;
@@ -1108,7 +1108,7 @@ ul.get-info-ul li.get-info-li a.get-add:first-child {
         padding: 0px 0px 5px 0px;
     }
 }
-    
+
 /* acc link */
 .customer-page .log-acc-page .acc-wrapper {
     display: flex;
@@ -1243,7 +1243,7 @@ ul.get-info-ul li.get-info-li a.get-add:first-child {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;      
+    position: relative;
 }
 .que-ans ul.accordian-ul li.accordian-li a.accordian h6.acco-text {
     display: block;
@@ -1252,7 +1252,7 @@ ul.get-info-ul li.get-info-li a.get-add:first-child {
 .que-ans ul.accordian-ul li.accordian-li a.accordian[aria-expanded=true] h6.acco-text {
     color: var(--primary-font-color);
 }
-.que-ans ul.accordian-ul li.accordian-li a.accordian h6.acco-text, 
+.que-ans ul.accordian-ul li.accordian-li a.accordian h6.acco-text,
 .que-ans ul.accordian-ul li.accordian-li a.accordian[aria-expanded=false] h6.acco-text {
     color: var(--heading-font-color);
 }
@@ -1437,7 +1437,7 @@ ul.help-wrap li.desk-wrap .help-desk-info .help-desk-text p {
 .order-area .order-delivery ul.delivery-payment li {
     width: calc(50% - 30px);
     margin: 30px 0px 0px 30px;
-    border-right: 1px solid var(--border-color); 
+    border-right: 1px solid var(--border-color);
 }
 .order-area .order-delivery ul.delivery-payment li:last-child {
     border-right: none;
@@ -1627,7 +1627,7 @@ ul.sit-map-ul li.site-map-li .site-main-title ul.site-sub-link li.site-title a::
 
 /*==============================
     track page css
-==============================*/   
+==============================*/
 .track-area .track-price ul.track-order {
     display: flex;
     align-items: center;
@@ -1845,7 +1845,7 @@ ul.sit-map-ul li.site-map-li .site-main-title ul.site-sub-link li.site-title a::
     .pro-address-area .profile-address form ul.pro-submit li a.btn-style2 {
         width: 100%;
     }
-} 
+}
 
 /*==============================
     wishlist page css
@@ -2014,7 +2014,7 @@ ul.sit-map-ul li.site-map-li .site-main-title ul.site-sub-link li.site-title a::
     flex-wrap: wrap;
     align-items: center;
     line-height: 1;
-} 
+}
 .wishlist-page .wishlist-area .wishlist-all-pro .all-pro-price span.new-price {
     color: var(--primary-font-color);
     font-weight: 600;
@@ -2051,7 +2051,7 @@ ul.sit-map-ul li.site-map-li .site-main-title ul.site-sub-link li.site-title a::
     .wishlist-page .wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro .pro-details h6,
     .wishlist-page .wishlist-area .wishlist-details .wishlist-all-pro .qty-item a.add-wishlist {
         font-size: 14px;
-    } 
+    }
     .wishlist-page .wishlist-area .wishlist-details .wishlist-all-pro .qty-item a.add-wishlist {
         margin: 0px;
     }
@@ -2198,7 +2198,7 @@ ul.sit-map-ul li.site-map-li .site-main-title ul.site-sub-link li.site-title a::
         width: calc(100% - 12px);
         margin: 22px 0px 0px 12px;
     }
-} 
+}
 
 /* condition text content css */
 .temrs-condition .t-condition-block ul.condition-ul li h6 {
@@ -2608,7 +2608,7 @@ ul.sit-map-ul li.site-map-li .site-main-title ul.site-sub-link li.site-title a::
 }
 .cart-page .empty-cart-page .section-capture {
     margin: 0px;
-}   
+}
 .cart-page .empty-cart-page p a {
     color: var(--heading-font-color);
     border-bottom: 1px solid var(--heading-font-color);
@@ -2633,11 +2633,17 @@ ul.sit-map-ul li.site-map-li .site-main-title ul.site-sub-link li.site-title a::
     padding: 0px 15px;
 }
 .cart-page .cart-page-wrap .cart-wrap-info {
-    width: 75%;
+    width: 60%;
 }
 .cart-page .cart-page-wrap .cart-info-wrap {
-    width: 25%;
+    width: 40%;
 }
+.cart-info-title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
 @media (max-width: 1199px) {
     .cart-page .cart-page-wrap .cart-wrap-info {
         width: 66.67%;
@@ -2709,9 +2715,12 @@ ul.sit-map-ul li.site-map-li .site-main-title ul.site-sub-link li.site-title a::
     .cart-page .cart-item-wrap .item-wrap ul.cart-wrap li.item-info {
         width: 100%;
     }
-    .cart-page .cart-item-wrap .item-wrap ul.cart-wrap li.item-qty,
+    .cart-page .cart-item-wrap .item-wrap ul.cart-wrap li.item-qty{
+        width: 60%;
+        margin: 15px 0px 0px;
+    }
     .cart-page .cart-item-wrap .item-wrap ul.cart-wrap li.item-price {
-        width: 50%;
+        width: 40%;
         margin: 15px 0px 0px;
     }
 }
@@ -2749,7 +2758,7 @@ ul.sit-map-ul li.site-map-li .site-main-title ul.site-sub-link li.site-title a::
 }
 .cart-page .cart-item-wrap .item-wrap ul.cart-wrap li.item-info .item-text span.item-option:last-child {
     margin: 12px 0px 0px;
-} 
+}
 .cart-page .cart-item-wrap .item-wrap ul.cart-wrap li.item-info .item-text span.item-option span {
     display: block;
     color: var(--paragraph-font-color);
@@ -2899,11 +2908,15 @@ ul.sit-map-ul li.site-map-li .site-main-title ul.site-sub-link li.site-title a::
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 6px;
 }
 .cart-page .cart-total-wrap .cart-total .total-amount h6.total-title,
 .cart-page .cart-total-wrap .cart-total .total-amount span.amount {
     color: var(--heading-font-color);
     font-weight: 600;
+}
+.cart-page .cart-total-wrap .cart-total .total-amount h6{
+    font-weight: 400!important;
 }
 .cart-page .cart-info-wrap .cart-total .proceed-to-discount {
     margin: 23px 0px 0px;
@@ -3082,7 +3095,7 @@ ul.sit-map-ul li.site-map-li .site-main-title ul.site-sub-link li.site-title a::
     padding: 0px 0px 12px;
     border-bottom: 1px solid var(--border-color);
     line-height: 1;
-} 
+}
 .password-area .password-block .profile-form form ul.pro-input-label {
     display: flex;
     flex-wrap: wrap;
@@ -3219,7 +3232,7 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
         margin: 0px 0px 0px 12px;
     }
     .checkout-area .order-area {
-        border-top: none;  
+        border-top: none;
     }
 }
 
@@ -3239,7 +3252,7 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
 .billing-area form .billing-form {
     margin: 0px 0px 10px;
 }
-.billing-area form .billing-form ul.billing-ul li.billing-li {   
+.billing-area form .billing-form ul.billing-ul li.billing-li {
     margin: 15px 0px 0px;
 }
 .billing-area form .billing-form ul.billing-ul li.billing-li:last-child {
@@ -3280,7 +3293,7 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
 }
 @media (max-width: 767px) {
     .billing-area form .billing-form ul.input-2 {
-        margin: -15px 0px 0px -12px; 
+        margin: -15px 0px 0px -12px;
     }
     .billing-area form .billing-form ul.input-2 li.billing-li,
     .checkout-style-2 .billing-area form .billing-form ul.input-2 li.billing-li {
@@ -3564,7 +3577,7 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
 /*==============================
     checkout style-3 css
 ==============================*/
-/* check-3- title */ 
+/* check-3- title */
 .check-3 h2.check-3-title {
     font-size: 30px;
     margin: 0px 0px 30px;
@@ -3776,7 +3789,7 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
 }
 .coming-soon-area .customer-area .customer-content .comming-wrap .acc-form .image {
     display: none;
-}  
+}
 .coming-soon-area .customer-area::after {
     content: "";
     position: absolute;
@@ -3969,4 +3982,4 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
 }
 .shipping .shipping-content p:first-child {
     margin: 0px;
-} 
+}

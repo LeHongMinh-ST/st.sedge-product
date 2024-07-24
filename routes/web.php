@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashbroadController;
-<<<<<<< HEAD
 use App\Http\Controllers\Admin\ProductController;
-=======
-use App\Http\Controllers\ProductController;
->>>>>>> b2c3210 (refactor: [SSP-14] add UI checkout)
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 

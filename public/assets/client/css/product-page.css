@@ -1113,6 +1113,7 @@
 .product-form-list .single-product-wrap .product-image {
     width: 150px;
 }
+
 .product-form-list .single-product-wrap .product-content {
     width: calc(100% - 150px);
     display: flex;
@@ -1652,6 +1653,7 @@
 }
 .product-detail-slider .pro-slider .pro-detail-slider .slick-list .slick-slide a img {
     backface-visibility: hidden;
+    height: 120px;
 }
 @media (max-width: 767px) {
     .product-detail-slider .pro-slider .pro-detail-slider .slick-list .slick-slide {

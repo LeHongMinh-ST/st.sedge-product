@@ -318,6 +318,15 @@
     }
 }
 
+
+
+.total1{ 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+} 
+
 /* team content css */
 .about-team .our-team .team-wrap ul.team-ul li.team-li .team-info {
     padding: 23px 0px 0px;
@@ -3362,6 +3371,7 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
 .check-pro ul.check-ul li .check-content a {
     display: block;
     font-weight: 600;
+    font-size: 18px;
 }
 .check-pro ul.check-ul li .check-content span.check-code {
     display: block;
@@ -3376,12 +3386,16 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
 .check-pro ul.check-ul li .check-content .check-qty-pric span {
     display: block;
     color: var(--paragraph-font-color);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     margin: 7px 0px 0px;
 }
 .check-pro ul.check-ul li .check-content .check-qty-pric span.check-price {
     margin: 7px 0px 0px 3px;
+}
+
+.check {
+    margin-left: 1.2px !important;
 }
 
 /* order-history css */
@@ -3592,7 +3606,7 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
     margin: 0px 0px 0px -30px;
 }
 .check-3 ul.check-3-ul li.check-3-li {
-    width: calc(33.33% - 30px);
+    width: calc(50% - 30px);
     margin: 0px 0px 0px 30px;
     border: 1px solid var(--border-color);
 }
@@ -3714,6 +3728,16 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
     border-radius: var(--border-radius);
 }
 
+/* Form address client */
+.select {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.section {
+    margin-top: -5px;
+}
+
 /* check-3 payment css */
 .check-3 ul.check-3-ul li.check-3-li .pay-method .pay-pro ul li {
     border-bottom: 1px solid var(--border-color);
@@ -3765,6 +3789,16 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
 .check-3 ul.check-3-ul li.check-3-li .check-pro .quick-pay a.pay-link.btn-style:hover,
 .check-3 ul.check-3-ul li.check-3-li .pay-method .order-summary .check-btn a.btn-style:hover {
     color: var(--heading-font-color);
+}
+
+.enter {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.btn-style {
+    width: 90%;
 }
 
 /*==============================

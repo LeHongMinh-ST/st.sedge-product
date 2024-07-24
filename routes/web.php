@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashbroadController;
+<<<<<<< HEAD
 use App\Http\Controllers\Admin\ProductController;
+=======
+use App\Http\Controllers\ProductController;
+>>>>>>> b2c3210 (refactor: [SSP-14] add UI checkout)
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -84,3 +88,5 @@ Route::prefix('admin')->middleware('auth')->group(function (): void {
         Route::delete('/{id}/delete', [ProductController::class, 'delete'])->name('admin.products.delete');
     });
 });
+Route::get('/product', fn () => view('client.pages.product_template'))->name('todo.product');
+Route::get('/checkout', fn () => view('client.pages.checkout'))->name('todo.checkout');

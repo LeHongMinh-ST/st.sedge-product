@@ -7,7 +7,7 @@
 @section('content')
 <main id="main-content">
     <!-- home-slider start -->
-    <section class="home-slider-area section-ptb" style="background-image: url('{{asset("assets/client/img/slider/home-bg.jpg")}}");">
+    <section class="home-slider-area section-ptb" style="background-image: url('{{asset("assets/client/img/slider/home-bg.jpg")}}" );">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -32,41 +32,41 @@
                                     <div class="slider-main">
                                         {{-- <div class="slider-icon-img">
                                             <img src="{{asset("assets/client/img/slider/home-icon1.png")}}" class="img-fluid" alt="slider-icon1">
-                                        </div> --}}
-                                        <div class="service-title">
-                                            <h6>Nguyên liệu thiên nhiên</h6>
-                                            <p>Cói là một loại cây cỏ mọc ở các vùng đất ngập nước. Nguyên liệu này hoàn toàn từ thiên nhiên, thân thiện với môi trường và có khả năng phân hủy sinh học.</p>
-                                        </div>
+                                    </div> --}}
+                                    <div class="service-title">
+                                        <h6>Nguyên liệu thiên nhiên</h6>
+                                        <p>Cói là một loại cây cỏ mọc ở các vùng đất ngập nước. Nguyên liệu này hoàn toàn từ thiên nhiên, thân thiện với môi trường và có khả năng phân hủy sinh học.</p>
                                     </div>
-                                </li>
-                                <li class="slider-li">
-                                    <div class="slider-main">
-                                        {{-- <div class="slider-icon-img">
-                                            <img src="{{asset("assets/client/img/slider/home-icon2.png")}}" class="img-fluid" alt="slider-icon2">
-                                        </div> --}}
-                                        <div class="service-title">
-                                            <h6>Độ bền cao</h6>
-                                            <p>Các sản phẩm từ cói thường có độ bền cao, chịu được tải trọng lớn. Nhờ có cấu trúc sợi chắc chắn, chúng có thể sử dụng trong thời gian dài mà không bị hỏng hóc.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="slider-li">
-                                    <div class="slider-main">
-                                        {{-- <div class="slider-icon-img">
-                                            <img src="{{asset("assets/client/img/slider/home-icon3.png")}}" class="img-fluid" alt="slider-icon3">
-                                        </div> --}}
-                                        <div class="service-title">
-                                            <h6>Giá trị truyền thống</h6>
-                                            <p>Sản xuất các sản phẩm từ cói thường gắn liền với các làng nghề truyền thống, góp phần bảo tồn và phát triển văn hóa dân tộc.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
+                        </li>
+                        <li class="slider-li">
+                            <div class="slider-main">
+                                {{-- <div class="slider-icon-img">
+                                            <img src="{{asset("assets/client/img/slider/home-icon2.png")}}" class="img-fluid" alt="slider-icon2">
+                            </div> --}}
+                            <div class="service-title">
+                                <h6>Độ bền cao</h6>
+                                <p>Các sản phẩm từ cói thường có độ bền cao, chịu được tải trọng lớn. Nhờ có cấu trúc sợi chắc chắn, chúng có thể sử dụng trong thời gian dài mà không bị hỏng hóc.</p>
+                            </div>
                     </div>
+                    </li>
+                    <li class="slider-li">
+                        <div class="slider-main">
+                            {{-- <div class="slider-icon-img">
+                                            <img src="{{asset("assets/client/img/slider/home-icon3.png")}}" class="img-fluid" alt="slider-icon3">
+                        </div> --}}
+                        <div class="service-title">
+                            <h6>Giá trị truyền thống</h6>
+                            <p>Sản xuất các sản phẩm từ cói thường gắn liền với các làng nghề truyền thống, góp phần bảo tồn và phát triển văn hóa dân tộc.</p>
+                        </div>
                 </div>
+                </li>
+                </ul>
             </div>
-            </div>
+        </div>
+        </div>
+        </div>
+        </div>
     </section>
     <!-- home-slider end -->
     <!-- banner-grid start -->
@@ -155,7 +155,9 @@
                             <li class="service-li">
                                 <div class="service-block">
                                     <a href="javascript:void(0)">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14.178 9.76602C16.0334 9.35487 17.695 8.4283 19.0049 7.14424V4.00281H5.00488V7.14424C6.31472 8.4283 7.97632 9.35487 9.83175 9.76602C10.2621 9.01149 11.0741 8.50281 12.0049 8.50281C12.9357 8.50281 13.7477 9.01149 14.178 9.76602ZM14.3861 11.7666C14.0633 12.7737 13.1192 13.5028 12.0049 13.5028C10.8905 13.5028 9.94648 12.7737 9.6237 11.7666C7.92722 11.425 6.36024 10.7257 5.00488 9.75071V20.0028H19.0049V9.75071C17.6495 10.7257 16.0825 11.425 14.3861 11.7666ZM4.00488 2.00281H20.0049C20.5572 2.00281 21.0049 2.45052 21.0049 3.00281V21.0028C21.0049 21.5551 20.5572 22.0028 20.0049 22.0028H4.00488C3.4526 22.0028 3.00488 21.5551 3.00488 21.0028V3.00281C3.00488 2.45052 3.4526 2.00281 4.00488 2.00281Z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M14.178 9.76602C16.0334 9.35487 17.695 8.4283 19.0049 7.14424V4.00281H5.00488V7.14424C6.31472 8.4283 7.97632 9.35487 9.83175 9.76602C10.2621 9.01149 11.0741 8.50281 12.0049 8.50281C12.9357 8.50281 13.7477 9.01149 14.178 9.76602ZM14.3861 11.7666C14.0633 12.7737 13.1192 13.5028 12.0049 13.5028C10.8905 13.5028 9.94648 12.7737 9.6237 11.7666C7.92722 11.425 6.36024 10.7257 5.00488 9.75071V20.0028H19.0049V9.75071C17.6495 10.7257 16.0825 11.425 14.3861 11.7666ZM4.00488 2.00281H20.0049C20.5572 2.00281 21.0049 2.45052 21.0049 3.00281V21.0028C21.0049 21.5551 20.5572 22.0028 20.0049 22.0028H4.00488C3.4526 22.0028 3.00488 21.5551 3.00488 21.0028V3.00281C3.00488 2.45052 3.4526 2.00281 4.00488 2.00281Z" />
+                                        </svg>
                                     </a>
                                     <div class="service-text">
                                         <h6>Đóng gói cẩn thận</h6>
@@ -166,7 +168,9 @@
                             <li class="service-li">
                                 <div class="service-block">
                                     <a href="javascript:void(0)">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 17.0022C21.999 19.8731 19.9816 22.2726 17.2872 22.8616L16.6492 20.9476C17.8532 20.7511 18.8765 20.0171 19.4649 19H17C15.8954 19 15 18.1046 15 17V13C15 11.8954 15.8954 11 17 11H19.9381C19.446 7.05369 16.0796 4 12 4C7.92038 4 4.55399 7.05369 4.06189 11H7C8.10457 11 9 11.8954 9 13V17C9 18.1046 8.10457 19 7 19H4C2.89543 19 2 18.1046 2 17V12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12V12.9987V13V17V17.0013V17.0022ZM20 17V13H17V17H20ZM4 13V17H7V13H4Z"></path></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M22 17.0022C21.999 19.8731 19.9816 22.2726 17.2872 22.8616L16.6492 20.9476C17.8532 20.7511 18.8765 20.0171 19.4649 19H17C15.8954 19 15 18.1046 15 17V13C15 11.8954 15.8954 11 17 11H19.9381C19.446 7.05369 16.0796 4 12 4C7.92038 4 4.55399 7.05369 4.06189 11H7C8.10457 11 9 11.8954 9 13V17C9 18.1046 8.10457 19 7 19H4C2.89543 19 2 18.1046 2 17V12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12V12.9987V13V17V17.0013V17.0022ZM20 17V13H17V17H20ZM4 13V17H7V13H4Z"></path>
+                                        </svg>
                                     </a>
                                     <div class="service-text">
                                         <h6>Hỗ trợ trực tuyến 24/7</h6>
@@ -182,7 +186,7 @@
     </section>
     <!-- our-service end -->
     <!-- home-about start -->
-    <section class="about-area" style="background-image: url('{{asset("assets/client/img/banner/home-about-bg.jpg")}}");">
+    <section class="about-area" style="background-image: url('{{asset("assets/client/img/banner/home-about-bg.jpg")}}" );">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -206,7 +210,7 @@
                                 <a href="#" class="btn btn-style">Xem thêm</a>
                             </div>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -784,165 +788,165 @@
                                             <div class="testi-img-author">
                                                 <span class="testi-img">
                                                     <img class="img-fluid" src="{{asset("assets/client/img/testi/test-1.jpg")}}" alt="test-1">
-                                                </span>
-                                                <div class="testi-review-block">
-                                                    <span class="testi-review">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="test-img-text">
-                                                <div class="test-des">
-                                                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
-                                                </div>
-                                                <div class="testi-block-author">
-                                                    <div class="testi-author">
-                                                        <h2>Lisa resnick</h2>
-                                                        <p class="author-bio">Company ceo</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testi-info">
-                                            <div class="testi-img-author">
-                                                <span class="testi-img">
-                                                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-2.jpg")}}" alt="test-2">
-                                                </span>
-                                                <div class="testi-review-block">
-                                                    <span class="testi-review">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="test-img-text">
-                                                <div class="test-des">
-                                                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
-                                                </div>
-                                                <div class="testi-block-author">
-                                                    <div class="testi-author">
-                                                        <h2>Audie dewey</h2>
-                                                        <p class="author-bio">Company ceo</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testi-info">
-                                            <div class="testi-img-author">
-                                                <span class="testi-img">
-                                                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-3.jpg")}}" alt="test-3">
-                                                </span>
-                                                <div class="testi-review-block">
-                                                    <span class="testi-review">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="test-img-text">
-                                                <div class="test-des">
-                                                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
-                                                </div>
-                                                <div class="testi-block-author">
-                                                    <div class="testi-author">
-                                                        <h2>Natosha jacobs</h2>
-                                                        <p class="author-bio">Company ceo</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testi-info">
-                                            <div class="testi-img-author">
-                                                <span class="testi-img">
-                                                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-4.jpg")}}" alt="test-4">
-                                                </span>
-                                                <div class="testi-review-block">
-                                                    <span class="testi-review">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="test-img-text">
-                                                <div class="test-des">
-                                                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
-                                                </div>
-                                                <div class="testi-block-author">
-                                                    <div class="testi-author">
-                                                        <h2>Robert smith</h2>
-                                                        <p class="author-bio">Company ceo</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testi-info">
-                                            <div class="testi-img-author">
-                                                <span class="testi-img">
-                                                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-5.jpg")}}" alt="test-5">
-                                                </span>
-                                                <div class="testi-review-block">
-                                                    <span class="testi-review">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="test-img-text">
-                                                <div class="test-des">
-                                                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
-                                                </div>
-                                                <div class="testi-block-author">
-                                                    <div class="testi-author">
-                                                        <h2>Robert smith</h2>
-                                                        <p class="author-bio">Company ceo</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-buttons-wrap">
-                                <div class="swiper-buttons">
-                                    <div class="swiper-buttons-wrap">
-                                        <button class="swiper-prev swiper-prev-test4">
-                                            <span><i class="fa-solid fa-arrow-left"></i></span>
-                                        </button>
-                                        <button class="swiper-next swiper-next-test4">
-                                            <span><i class="fa-solid fa-arrow-right"></i></span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    </span>
+    <div class="testi-review-block">
+        <span class="testi-review">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </span>
+    </div>
+    </div>
+    <div class="test-img-text">
+        <div class="test-des">
+            <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
+        </div>
+        <div class="testi-block-author">
+            <div class="testi-author">
+                <h2>Lisa resnick</h2>
+                <p class="author-bio">Company ceo</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="testi-info">
+            <div class="testi-img-author">
+                <span class="testi-img">
+                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-2.jpg")}}" alt="test-2">
+                </span>
+                <div class="testi-review-block">
+                    <span class="testi-review">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="test-img-text">
+                <div class="test-des">
+                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
+                </div>
+                <div class="testi-block-author">
+                    <div class="testi-author">
+                        <h2>Audie dewey</h2>
+                        <p class="author-bio">Company ceo</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="testi-info">
+            <div class="testi-img-author">
+                <span class="testi-img">
+                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-3.jpg")}}" alt="test-3">
+                </span>
+                <div class="testi-review-block">
+                    <span class="testi-review">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="test-img-text">
+                <div class="test-des">
+                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
+                </div>
+                <div class="testi-block-author">
+                    <div class="testi-author">
+                        <h2>Natosha jacobs</h2>
+                        <p class="author-bio">Company ceo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="testi-info">
+            <div class="testi-img-author">
+                <span class="testi-img">
+                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-4.jpg")}}" alt="test-4">
+                </span>
+                <div class="testi-review-block">
+                    <span class="testi-review">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="test-img-text">
+                <div class="test-des">
+                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
+                </div>
+                <div class="testi-block-author">
+                    <div class="testi-author">
+                        <h2>Robert smith</h2>
+                        <p class="author-bio">Company ceo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="testi-info">
+            <div class="testi-img-author">
+                <span class="testi-img">
+                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-5.jpg")}}" alt="test-5">
+                </span>
+                <div class="testi-review-block">
+                    <span class="testi-review">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="test-img-text">
+                <div class="test-des">
+                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
+                </div>
+                <div class="testi-block-author">
+                    <div class="testi-author">
+                        <h2>Robert smith</h2>
+                        <p class="author-bio">Company ceo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="swiper-buttons-wrap">
+        <div class="swiper-buttons">
+            <div class="swiper-buttons-wrap">
+                <button class="swiper-prev swiper-prev-test4">
+                    <span><i class="fa-solid fa-arrow-left"></i></span>
+                </button>
+                <button class="swiper-next swiper-next-test4">
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </section> --}}
     <!-- test-area end -->
     <!-- instagram start -->
@@ -1018,7 +1022,7 @@
 </main>
 
 <!-- quickview modal start -->
-    @include('client.includes.quickview_modal')
+@include('client.includes.quickview_modal')
 <!-- quickview modal end -->
 
 @endsection

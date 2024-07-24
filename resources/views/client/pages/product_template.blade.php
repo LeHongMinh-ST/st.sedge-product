@@ -15,10 +15,10 @@ product-template
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-ul">
                             <li class="breadcrumb-li">
-                                <a class="breadcrumb-link" href="index.html">Home</a>
+                                <a class="breadcrumb-link" href="index.html">Trang chủ</a>
                             </li>
                             <li class="breadcrumb-li">
-                                <span class="breadcrumb-text">Stripping pliers</span>
+                                <span class="breadcrumb-text">Các sản phẩm từ cói</span>
                             </li>
                         </ul>
                         <!-- breadcrumb-list end -->
@@ -43,98 +43,86 @@ product-template
                                     <button class="full-view"><i class="bi bi-arrows-fullscreen"></i></button>
                                     <div class="slider-big slick-slider">
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-1.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-1.jpg');">
-                                                    <img src="assets/img/product/home1-pro-1.jpg" class="img-fluid" alt="pro-1">
+                                            <a href="assets/client/img/product/home-pro-1.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-1.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-1.jpg" class="img-fluid" alt="pro-1">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-2.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-2.jpg');">
-                                                    <img src="assets/img/product/home1-pro-2.jpg" class="img-fluid" alt="pro-2">
+                                            <a href="assets/client/img/product/home-pro-2.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-2.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-2.jpg" class="img-fluid" alt="pro-2">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-3.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-3.jpg');">
-                                                    <img src="assets/img/product/home1-pro-3.jpg" class="img-fluid" alt="pro-3">
+                                            <a href="assets/client/img/product/home-pro-3.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-3.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-3.jpg" class="img-fluid" alt="pro-3">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-4.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-4.jpg');">
-                                                    <img src="assets/img/product/home1-pro-4.jpg" class="img-fluid" alt="pro-4">
+                                            <a href="assets/client/img/product/home-pro-4.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-4.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-4.jpg" class="img-fluid" alt="pro-4">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-5.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-5.jpg');">
-                                                    <img src="assets/img/product/home1-pro-5.jpg" class="img-fluid" alt="pro-5">
+                                            <a href="assets/client/img/product/home-pro-5.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-5.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-5.jpg" class="img-fluid" alt="pro-5">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-6.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-6.jpg');">
-                                                    <img src="assets/img/product/home1-pro-6.jpg" class="img-fluid" alt="p-6">
+                                            <a href="assets/client/img/product/home-pro-6.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-6.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-6.jpg" class="img-fluid" alt="p-6">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-7.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-7.jpg');">
-                                                    <img src="assets/img/product/home1-pro-7.jpg" class="img-fluid" alt="p-7">
+                                            <a href="assets/client/img/product/home-pro-7.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-7.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-7.jpg" class="img-fluid" alt="p-7">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-8.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-8.jpg');">
-                                                    <img src="assets/img/product/home1-pro-8.jpg" class="img-fluid" alt="pro-8">
+                                            <a href="assets/client/img/product/home-pro-8.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-8.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-8.jpg" class="img-fluid" alt="pro-8">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-9.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-9.jpg');">
-                                                    <img src="assets/img/product/home1-pro-9.jpg" class="img-fluid" alt="pro-9">
+                                            <a href="assets/client/img/product/home-pro-9.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-9.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-9.jpg" class="img-fluid" alt="pro-9">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-10.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-10.jpg');">
-                                                    <img src="assets/img/product/home1-pro-10.jpg" class="img-fluid" alt="pro-10">
+                                            <a href="assets/client/img/product/home-pro-10.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-10.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-10.jpg" class="img-fluid" alt="pro-10">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-11.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-11.jpg');">
-                                                    <img src="assets/img/product/home1-pro-11.jpg" class="img-fluid" alt="pro-11">
+                                            <a href="assets/client/img/product/home-pro-11.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-11.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-11.jpg" class="img-fluid" alt="pro-11">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
-                                            <a href="assets/img/product/home1-pro-12.jpg" class="product-single">
-                                                <figure class="zoom" onmousemove="zoom(event)"
-                                                    style="background-image: url('assets/img/product/home1-pro-12.jpg');">
-                                                    <img src="assets/img/product/home1-pro-12.jpg" class="img-fluid" alt="pro-12">
+                                            <a href="assets/client/img/product/home-pro-12.jpg" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('assets/client/img/product/home-pro-12.jpg');">
+                                                    <img src="assets/client/img/product/home-pro-12.jpg" class="img-fluid" alt="pro-12">
                                                 </figure>
                                             </a>
                                         </div>
@@ -146,62 +134,62 @@ product-template
                                     <div class="slider-small pro-detail-slider small-slider">
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-1.jpg" class="img-fluid" alt="pro-1">
+                                                <img src="assets/client/img/product/home-pro-1.jpg" class="img-fluid" alt="pro-1">
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-2.jpg" class="img-fluid" alt="pro-2">
+                                                <img src="assets/client/img/product/home-pro-2.jpg" class="img-fluid" alt="pro-2">
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-3.jpg" class="img-fluid" alt="pro-3">
+                                                <img src="assets/client/img/product/home-pro-3.jpg" class="img-fluid" alt="pro-3">
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-4.jpg" class="img-fluid" alt="pro-4">
+                                                <img src="assets/client/img/product/home-pro-4.jpg" class="img-fluid" alt="pro-4">
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-6.jpg" class="img-fluid" alt="pro-5">
+                                                <img src="assets/client/img/product/home-pro-6.jpg" class="img-fluid" alt="pro-5">
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-6.jpg" class="img-fluid" alt="pro-6">
+                                                <img src="assets/client/img/product/home-pro-6.jpg" class="img-fluid" alt="pro-6">
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-7.jpg" class="img-fluid" alt="pro-7">
+                                                <img src="assets/client/img/product/home-pro-7.jpg" class="img-fluid" alt="pro-7">
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-8.jpg" class="img-fluid" alt="pro-8">
+                                                <img src="assets/client/img/product/home-pro-8.jpg" class="img-fluid" alt="pro-8">
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-9.jpg" class="img-fluid" alt="pro-9">
+                                                <img src="assets/client/img/product/home-pro-9.jpg" class="img-fluid" alt="pro-9">
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-10.jpg" class="img-fluid" alt="pro-10">
+                                                <img src="assets/client/img/product/home-pro-10.jpg" class="img-fluid" alt="pro-10">
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-11.jpg" class="img-fluid" alt="pro-11">
+                                                <img src="assets/client/img/product/home-pro-11.jpg" class="img-fluid" alt="pro-11">
                                             </a>
                                         </div>
                                         <div class="slick-slide ">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="assets/img/product/home1-pro-12.jpg" class="img-fluid" alt="pro-12">
+                                                <img src="assets/client/img/product/home-pro-12.jpg" class="img-fluid" alt="pro-12">
                                             </a>
                                         </div>
                                     </div>
@@ -224,22 +212,22 @@ product-template
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star-half-alt"></i>
                                             </span>
-                                            <span class="spr-badge-caption">3 Reviews</span>
+                                            <span class="spr-badge-caption">3 Đánh giá</span>
                                         </div>
                                         <!--  product-ratting end -->
                                     </div>
                                     <div class="product-info">
                                         <!-- product-title start -->
                                         <div class="product-title">
-                                            <h2>Stripping pliers</h2>
+                                            <h2>Dép</h2>
                                         </div>
                                         <!-- product-title end -->
                                     </div>
                                     <div class="product-info">
                                         <div class="pro-prlb pro-sale">
                                             <div class="price-box">
-                                                <span class="new-price">Rs. 21.00</span>
-                                                <span class="old-price">Rs. 25.00</span>
+                                                <span class="new-price">Giá 21.00</span>
+                                                <span class="old-price">Giá cũ 25.00</span>
                                                 <span class="percent-count">16</span>
                                             </div>
                                         </div>
@@ -247,18 +235,18 @@ product-template
                                     <div class="product-info">
                                         <div class="product-inventory">
                                             <div class="stock-inventory stock-more">
-                                                <p class="text-success">Hurry up! only
+                                                <p class="text-success">Bạn hãy nhanh tay! còn lại
                                                     <span class="available-stock bg-success">4</span>
-                                                    <span>products left in stock!</span>
+                                                    <span>sản phẩm trong kho!</span>
                                                 </p>
                                             </div>
                                             <div class="product-variant">
-                                                <h6>Availability:</h6>
+                                                <h6>Tình trạng:</h6>
                                                 <span class="stock-qty in-stock text-success">
-                                                    <span>In stock<i class="bi bi-check2"></i></span>
+                                                    <span>Còn hàng<i class="bi bi-check2"></i></span>
                                                 </span>
                                                 <span class="stock-qty out-stock text-danger collapse" style="display:none;">
-                                                    <span>Out of stock</span>
+                                                    <span>Hết hàng</span>
                                                 </span>
                                             </div>
                                         </div>
@@ -270,21 +258,21 @@ product-template
                                                     <div class="swatch-variant">
                                                         <div class="swatch clearfix Color">
                                                             <div class="header">
-                                                                <h6><span>Color</span></h6>
+                                                                <h6><span>Màu sắc</span></h6>
                                                             </div>
                                                             <div class="variant-wrap">
                                                                 <div class="variant-property">
                                                                     <div class="swatch-element Black first-variant">
                                                                         <input type="radio" name="option-0" value="Black" checked>
-                                                                        <label>Black</label>
+                                                                        <label>Đen</label>
                                                                     </div>
                                                                     <div class="swatch-element Red">
                                                                         <input type="radio" name="option-0" value="Red">
-                                                                        <label>Red</label>
+                                                                        <label>Đỏ</label>
                                                                     </div>
                                                                     <div class="swatch-element Green">
                                                                         <input type="radio" name="option-0" value="Green">
-                                                                        <label>Green</label>
+                                                                        <label>Xanh lá</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -297,7 +285,7 @@ product-template
                                     <div class="product-info">
                                         <form method="post" class="cart">
                                             <div class="product-quantity-action">
-                                                <h6>Quantity:</h6>
+                                                <h6>Số lượng:</h6>
                                                 <div class="product-quantity">
                                                     <div class="cart-plus-minus">
                                                         <button class="dec qtybutton minus"><i class="fa-solid fa-minus"></i></button>
@@ -313,10 +301,10 @@ product-template
                                             <!-- pro-deatail button start -->
                                             <div class="pro-detail-button">
                                                 <button type="button" onclick="location. href='cart-page.html'" class="btn add-to-cart ajax-spin-cart">
-                                                <span class="cart-title">Add to cart</span>
+                                                    <span class="cart-title">THÊM VÀO GIỎ HÀNG</span>
                                                 </button>
                                                 <a href="cart-empty.html" class="btn btn-cart btn-theme">
-                                                    <span>Buy now</span>
+                                                    <span>MUA NGAY</span>
                                                 </a>
                                             </div>
                                             <!-- pro-deatail button start -->
@@ -326,7 +314,7 @@ product-template
                                                     <span class="wishlist-icon action-wishlist tile-actions--btn wishlist-btn">
                                                         <span class="add-wishlist"><i class="bi bi-heart"></i></span>
                                                     </span>
-                                                    <span class="wishlist-text">Wishlist</span>
+                                                    <span class="wishlist-text">Thêm vào danh sách yêu thích</span>
                                                 </a>
                                             </div>
                                             <!-- pro-deatail wishlist end -->
@@ -334,36 +322,34 @@ product-template
                                     </div>
                                     <div class="product-info">
                                         <div class="form-group">
-                                            <a href="#deliver-modal" data-bs-toggle="modal">Delivery &amp; return</a>
-                                            <a href="#que-modal" data-bs-toggle="modal">Ask a question</a>
+                                            <a href="#deliver-modal" data-bs-toggle="modal">Giao hàng &amp; Hoàn hàng</a>
+                                            <a href="#que-modal" data-bs-toggle="modal">Đặt câu hỏi</a>
                                         </div>
                                     </div>
-                                    <div class="modal fade deliver-modal" id="deliver-modal" tabindex="-1" style="display: none;"
-                                        aria-hidden="true">
+                                    <div class="modal fade deliver-modal" id="deliver-modal" tabindex="-1" style="display: none;" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-body">
-                                                    <button type="button" class="pop-close" data-bs-dismiss="modal" aria-label="Close"><i
-                                                    class="feather-x"></i></button>
+                                                    <button type="button" class="pop-close" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x"></i></button>
                                                     <div class="delivery-block">
                                                         <div class="space-block">
-                                                            <h4>Delivery</h4>
-                                                            <p>All orders shipped with UPS Express.</p>
-                                                            <p>Always free shipping for orders over US $250.</p>
-                                                            <p>All orders are shipped with a UPS tracking number.</p>
+                                                            <h4>Giao hàng</h4>
+                                                            <p>Tất cả các đơn hàng được vận chuyển bằng UPS Express.</p>
+                                                            <p>Luôn miễn phí vận chuyển cho các đơn hàng trên 100.000</p>
+                                                            <p>Tất cả các đơn hàng đều được vận chuyển kèm theo số theo dõi của UPS.</p>
                                                         </div>
                                                         <div class="space-block">
-                                                            <h4>Returns</h4>
-                                                            <p>Items returned within 14 days of their original shipment date in same as new
-                                                            condition will be eligible for a full refund or store credit.</p>
-                                                            <p>Refunds will be charged back to the original form of payment used for purchase.</p>
-                                                            <p>Customer is responsible for shipping charges when making returns and
-                                                            shipping/handling fees of original purchase is non-refundable.</p>
-                                                            <p>All sale items are final purchases.</p>
+                                                            <h4>Hoàn hàng</h4>
+                                                            <p>Các mặt hàng được trả lại trong vòng 14 ngày kể từ ngày giao hàng ban đầu giống như hàng mới
+                                                                điều kiện sẽ đủ điều kiện để được hoàn tiền đầy đủ hoặc nhận tín dụng của cửa hàng</p>
+                                                            <p>Tiền hoàn lại sẽ được tính trở lại hình thức thanh toán ban đầu được sử dụng để mua hàng.</p>
+                                                            <p>Khách hàng chịu trách nhiệm thanh toán phí vận chuyển khi thực hiện trả lại hàng và
+                                                                Phí vận chuyển/xử lý của giao dịch mua ban đầu sẽ không được hoàn lại.</p>
+                                                            <p>Tất cả các mặt hàng bán đều là giao dịch mua cuối cùng.</p>
                                                         </div>
                                                         <div class="space-block">
-                                                            <h4>Help</h4>
-                                                            <p>Give us a shout if you have any other questions and/or concerns.</p>
+                                                            <h4>Hỗ trợ</h4>
+                                                            <p>Hãy liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi hoặc thắc mắc nào khác.</p>
                                                             <p>Email:<a href="mailto:contact@domain.com">demo@gmail.com</a></p>
                                                             <p>Phone:<a href="tel:+1(23)456789">+1 (23) 456 789</a></p>
                                                         </div>
@@ -377,25 +363,22 @@ product-template
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-body">
-                                                    <button type="button" class="pop-close" data-bs-dismiss="modal" aria-label="Close"><i
-                                                    class="feather-x"></i></button>
+                                                    <button type="button" class="pop-close" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x"></i></button>
                                                     <div class="product-form-list">
                                                         <div class="single-product-wrap">
                                                             <div class="product-image">
                                                                 <a class="pro-img" href="collection.html">
-                                                                    <img class="img-fluid img1 resp-img1" src="assets/img/product/home1-pro-12.jpg"
-                                                                    alt="p-1">
-                                                                    <img class="img-fluid img2 resp-img2" src="assets/img/product/home1-pro-13.jpg"
-                                                                    alt="p-2">
+                                                                    <img class="img-fluid img1 resp-img1" src="assets/client/img/product/home-pro-12.jpg" alt="p-1">
+                                                                    <img class="img-fluid img2 resp-img2" src="assets/client/img/product/home-pro-13.jpg" alt="p-2">
                                                                 </a>
                                                             </div>
                                                             <div class="product-content">
                                                                 <div class="pro-title-price">
-                                                                    <h6><a href="product-template.html">Strelitzia nicolai</a></h6>
+                                                                    <h6><a href="product-template.html">Nón</a></h6>
                                                                     <div class="product-price">
                                                                         <div class="price-box">
-                                                                            <span class="new-price">Rs. 44.00</span>
-                                                                            <span class="old-price">Rs. 49.00</span>
+                                                                            <span class="new-price">Giá 44.00</span>
+                                                                            <span class="old-price">Giá cũ 49.00</span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -403,17 +386,16 @@ product-template
                                                         </div>
                                                     </div>
                                                     <div class="ask-form">
-                                                        <h6>Ask a question</h6>
+                                                        <h6>Đặt câu hỏi</h6>
                                                         <form method="post" class="contact-form">
                                                             <input type="hidden" name="contact[product url]" value="">
                                                             <div class="form-grp">
                                                                 <input type="text" name="contact[name]" required="" placeholder="Your name*">
                                                                 <input type="text" name="contact[phone]" placeholder="Your phone number">
                                                                 <input type="email" name="contact[email]" required="" placeholder="Your email*">
-                                                                <textarea name="contact[question]" rows="4" required=""
-                                                                placeholder="Your message*"></textarea>
-                                                                <p>* Required fields</p>
-                                                                <button type="submit" class="btn-style2">Submit Now</button>
+                                                                <textarea name="contact[question]" rows="4" required="" placeholder="Your message*"></textarea>
+                                                                <p>* Phần bắt buộc</p>
+                                                                <button type="submit" class="btn-style2">Xác nhận ngay bây giờ</button>
                                                             </div>
                                                         </form>
                                                     </div>
@@ -423,17 +405,12 @@ product-template
                                     </div>
                                     <!-- que-modal end -->
                                     <div class="product-info">
-                                        <p><span>🚚</span> Item will be delivered on or before <span id="ten-days-ahead">Mar 3 2024</span></p>
+                                        <p><span>🚚</span> Mặt hàng sẽ được giao vào hoặc trước <span id="ten-days-ahead">ngày 3 tháng 3 năm 2024</span></p>
                                     </div>
-                                    <div class="product-info">
-                                        <div class="product-sku">
-                                            <h6>SKU:</h6>
-                                            <span class="variant-sku">abccd-13</span>
-                                        </div>
-                                    </div>
+
                                     <div class="product-info">
                                         <div class="share-icons">
-                                            <h6>Share:</h6>
+                                            <h6>Chia sẻ qua:</h6>
                                             <div class="pro-social">
                                                 <ul class="social-icon">
                                                     <li>
@@ -452,32 +429,12 @@ product-template
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="product-info">
-                                        <div class="product-payment-image">
-                                           <ul class="payment-icon">
-                                                <li>
-                                                    <a href="index.html"><svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg></a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html"><svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master"><title id="master">Mastercard</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path></svg></a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-american-express" viewBox="0 0 38 24" width="38" height="24"><title id="american-express">American Express</title><path fill="#000" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3Z" opacity=".07"></path><path fill="#006FCF" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32Z"></path><path fill="#FFF" d="M22.012 19.936v-8.421L37 11.528v2.326l-1.732 1.852L37 17.573v2.375h-2.766l-1.47-1.622-1.46 1.628-9.292-.02Z"></path><path fill="#006FCF" d="M23.013 19.012v-6.57h5.572v1.513h-3.768v1.028h3.678v1.488h-3.678v1.01h3.768v1.531h-5.572Z"></path><path fill="#006FCF" d="m28.557 19.012 3.083-3.289-3.083-3.282h2.386l1.884 2.083 1.89-2.082H37v.051l-3.017 3.23L37 18.92v.093h-2.307l-1.917-2.103-1.898 2.104h-2.321Z"></path><path fill="#FFF" d="M22.71 4.04h3.614l1.269 2.881V4.04h4.46l.77 2.159.771-2.159H37v8.421H19l3.71-8.421Z"></path><path fill="#006FCF" d="m23.395 4.955-2.916 6.566h2l.55-1.315h2.98l.55 1.315h2.05l-2.904-6.566h-2.31Zm.25 3.777.875-2.09.873 2.09h-1.748Z"></path><path fill="#006FCF" d="M28.581 11.52V4.953l2.811.01L32.84 9l1.456-4.046H37v6.565l-1.74.016v-4.51l-1.644 4.494h-1.59L30.35 7.01v4.51h-1.768Z"></path></svg></a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html"><svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"></path><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"></path><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"></path></svg></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+
+                                    <!-- peoduct detail end -->
                                 </div>
                             </div>
                         </div>
-                        <!-- peoduct detail end -->
                     </div>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- pro-detail-page end -->
     <!-- product start -->
@@ -488,704 +445,484 @@ product-template
                     <div class="col">
                         <div class="section-capture tab">
                             <div class="section-title">
-                                <h2><span>Popular product</span></h2>
+                                <h2><span>Sản phẩm phổ biến</span></h2>
                             </div>
                         </div>
                         <div class="collection-wrap">
                             <div class="collection-slider swiper" id="new-product">
                                 <div class="swiper-wrapper">
+                                    <!-- ******************************************************************* -->
+                                    <!-- sp1 -->
                                     <div class="swiper-slide">
+                                        <!-- product start -->
                                         <div class="single-product-wrap">
-                                            <div class="product-image banner-hover">
+                                            <!-- product-img start -->
+                                            <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="assets/img/product/home1-pro-1.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="assets/img/product/home1-pro-2.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-26.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-27.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
                                                 </a>
-                                                <div class="product-action product-cart-btn">
-                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                        <span class="cart-title">
-                                                            <span class="add-c-title">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                <span class="add-title">Add to cart</span>
-                                                            </span>
-                                                        </span>
+                                                <!-- product-action start -->
+                                                <div class="product-action pro-quiqview">
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                        <i class="feather-eye"></i>
                                                     </a>
                                                 </div>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-content">
-                                                    <div class="product-title">
-                                                        <div class="pro-title-price">
-                                                            <h6><a href="product-template.html">Strelitzia nicolai</a></h6>
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">Rs. 44.00</span>
-                                                                    <span class="old-price">Rs. 49.00</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a class="product-type" href="collection.html">Strelitzia</a>
-                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                        </div>
+                                                <div class="product-cart">
+                                                    <div class="product-action cart-wishlist">
+                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-shopping-bag"></i>
+                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                        </a>
+                                                        <a href="wishlist.html" class="wishlist">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-heart"></i>
+                                                        </a>
                                                     </div>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-img end -->
+                                            <!-- product-content start -->
+                                            <div class="product-content">
+                                                <div class="product-info">
+                                                    <!-- product-title start -->
+                                                    <h6><a href="product-template.html">Túi xách thời trang nữ</a></h6>
+                                                    <!-- product-title end -->
+                                                    <!-- product-price start -->
+                                                    <div class="price-box">
+                                                        <span class="new-price">Giá 99.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">Giá cũ 125.000 <u>đ</u></span>
+                                                    </div>
+                                                    <!-- product-price end -->
+                                                    <!-- product-rating start -->
                                                     <div class="product-ratting">
-                                                        <span class="pro-ratting">
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
+                                                        <span class="star-rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
                                                         </span>
                                                     </div>
-                                                    <div class="product-description">
-                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                    </div>
-                                                    <div class="product-action">
-                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                            <span class="tooltip-text">Quickview</span>
-                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                        </a>
-                                                        <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                            <span class="tooltip-text">Add to cart</span>
-                                                            <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                        </a>
-                                                        <a href="wishlist-product.html" class="wishlist">
-                                                            <span class="tooltip-text">Wishlist</span>
-                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                        </a>
-                                                    </div>
+                                                    <!-- product-rating end -->
                                                 </div>
+                                                <!-- product-action start -->
+                                                <div class="product-action">
+                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                        <i class="feather-shopping-bag"></i>
+                                                    </a>
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="wishlist.html" class="wishlist">
+                                                        <i class="feather-heart"></i>
+                                                    </a>
+                                                </div>
+                                                <!-- product-action end -->
                                             </div>
+                                            <!-- product-content end -->
                                         </div>
+                                        <!-- product end -->
                                     </div>
+                                    <!-- end sp1 -->
+                                    <!-- ***************************************** -->
+                                    <!-- sp2 -->
                                     <div class="swiper-slide">
+                                        <!-- product start -->
                                         <div class="single-product-wrap">
-                                            <div class="product-image banner-hover">
+                                            <!-- product-img start -->
+                                            <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="assets/img/product/home1-pro-3.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="assets/img/product/home1-pro-4.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-18.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-19.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
                                                 </a>
-                                                <div class="product-action product-cart-btn">
-                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                        <span class="cart-title">
-                                                            <span class="add-c-title">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                <span class="add-title">Add to cart</span>
-                                                            </span>
-                                                        </span>
+                                                <!-- product-action start -->
+                                                <div class="product-action pro-quiqview">
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                        <i class="feather-eye"></i>
                                                     </a>
                                                 </div>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-content">
-                                                    <div class="product-title">
-                                                        <div class="pro-title-price">
-                                                            <h6><a href="product-template.html">Aloe vera plant</a></h6>
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">Rs. 61.00</span>
-                                                                    <span class="old-price">Rs. 69.00</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a class="product-type" href="collection.html">Aloe vera</a>
-                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                        </div>
+                                                <div class="product-cart">
+                                                    <div class="product-action cart-wishlist">
+                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-shopping-bag"></i>
+                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                        </a>
+                                                        <a href="wishlist.html" class="wishlist">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-heart"></i>
+                                                        </a>
                                                     </div>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-img end -->
+                                            <!-- product-content start -->
+                                            <div class="product-content">
+                                                <div class="product-info">
+                                                    <!-- product-title start -->
+                                                    <h6><a href="product-template.html">Túi xách đeo chéo</a></h6>
+                                                    <!-- product-title end -->
+                                                    <!-- product-price start -->
+                                                    <div class="price-box">
+                                                        <span class="new-price">Giá 111.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">Gía cũ 127.000 <u>đ</u></span>
+                                                    </div>
+                                                    <!-- product-price end -->
+                                                    <!-- product-rating start -->
                                                     <div class="product-ratting">
-                                                        <span class="pro-ratting">
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
+                                                        <span class="star-rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
                                                         </span>
                                                     </div>
-                                                    <div class="product-description">
-                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                    </div>
-                                                    <div class="product-action">
-                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                            <span class="tooltip-text">Quickview</span>
-                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                        </a>
-                                                        <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                            <span class="tooltip-text">Add to cart</span>
-                                                            <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                        </a>
-                                                        <a href="wishlist-product.html" class="wishlist">
-                                                            <span class="tooltip-text">Wishlist</span>
-                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                        </a>
-                                                    </div>
+                                                    <!-- product-rating end -->
                                                 </div>
+                                                <!-- product-action start -->
+                                                <div class="product-action">
+                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                        <i class="feather-shopping-bag"></i>
+                                                    </a>
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="wishlist.html" class="wishlist">
+                                                        <i class="feather-heart"></i>
+                                                    </a>
+                                                </div>
+                                                <!-- product-action end -->
                                             </div>
+                                            <!-- product-content end -->
                                         </div>
+                                        <!-- product end -->
                                     </div>
+                                    <!-- end sp2 -->
+                                    <!-- *********************************************** -->
+                                    <!-- sp3 -->
                                     <div class="swiper-slide">
+                                        <!-- product start -->
                                         <div class="single-product-wrap">
-                                            <div class="product-image banner-hover">
+                                            <!-- product-img start -->
+                                            <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="assets/img/product/home1-pro-5.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="assets/img/product/home1-pro-6.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-16.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-31.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
                                                 </a>
-                                                <div class="product-action product-cart-btn">
-                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                        <span class="cart-title">
-                                                            <span class="add-c-title">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                <span class="add-title">Add to cart</span>
-                                                            </span>
-                                                        </span>
+                                                <!-- product-action start -->
+                                                <div class="product-action pro-quiqview">
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                        <i class="feather-eye"></i>
                                                     </a>
                                                 </div>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-content">
-                                                    <div class="product-title">
-                                                        <div class="pro-title-price">
-                                                            <h6><a href="product-template.html">Chinese evergreen</a></h6>
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">Rs. 24.00</span>
-                                                                    <span class="old-price">Rs. 29.00</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a class="product-type" href="collection.html">Evergreen</a>
-                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                        </div>
+                                                <div class="product-cart">
+                                                    <div class="product-action cart-wishlist">
+                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-shopping-bag"></i>
+                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                        </a>
+                                                        <a href="wishlist.html" class="wishlist">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-heart"></i>
+                                                        </a>
                                                     </div>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-img end -->
+                                            <!-- product-content start -->
+                                            <div class="product-content">
+                                                <div class="product-info">
+                                                    <!-- product-title start -->
+                                                    <h6><a href="product-template.html">Túi xách đi biển</a></h6>
+                                                    <!-- product-title end -->
+                                                    <!-- product-price start -->
+                                                    <div class="price-box">
+                                                        <span class="new-price">Giá 121.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">Giá cũ 155.000 <u>đ</u></span>
+                                                    </div>
+                                                    <!-- product-price end -->
+                                                    <!-- product-rating start -->
                                                     <div class="product-ratting">
-                                                        <span class="pro-ratting">
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
+                                                        <span class="star-rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
                                                         </span>
                                                     </div>
-                                                    <div class="product-description">
-                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                    </div>
-                                                    <div class="product-action">
-                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                            <span class="tooltip-text">Quickview</span>
-                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                        </a>
-                                                        <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                            <span class="tooltip-text">Add to cart</span>
-                                                            <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                        </a>
-                                                        <a href="wishlist-product.html" class="wishlist">
-                                                            <span class="tooltip-text">Wishlist</span>
-                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                        </a>
-                                                    </div>
+                                                    <!-- product-rating end -->
                                                 </div>
+                                                <!-- product-action start -->
+                                                <div class="product-action">
+                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                        <i class="feather-shopping-bag"></i>
+                                                    </a>
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="wishlist.html" class="wishlist">
+                                                        <i class="feather-heart"></i>
+                                                    </a>
+                                                </div>
+                                                <!-- product-action end -->
                                             </div>
+                                            <!-- product-content end -->
                                         </div>
+                                        <!-- product end -->
                                     </div>
+                                    <!-- end sp3 -->
+                                    <!-- sp5 -->
                                     <div class="swiper-slide">
+                                        <!-- product start -->
                                         <div class="single-product-wrap">
-                                            <div class="product-image banner-hover">
+                                            <!-- product-img start -->
+                                            <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="assets/img/product/home1-pro-7.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="assets/img/product/home1-pro-8.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
                                                 </a>
-                                                <div class="product-action product-cart-btn">
-                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                        <span class="cart-title">
-                                                            <span class="add-c-title">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                <span class="add-title">Add to cart</span>
-                                                            </span>
-                                                        </span>
+                                                <!-- product-action start -->
+                                                <div class="product-action pro-quiqview">
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                        <i class="feather-eye"></i>
                                                     </a>
                                                 </div>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-content">
-                                                    <div class="product-title">
-                                                        <div class="pro-title-price">
-                                                            <h6><a href="product-template.html">Wheat grass</a></h6>
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">Rs. 21.00</span>
-                                                                    <span class="old-price">Rs. 25.00</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a class="product-type" href="collection.html">Grass</a>
-                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                        </div>
+                                                <div class="product-cart">
+                                                    <div class="product-action cart-wishlist">
+                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-shopping-bag"></i>
+                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                        </a>
+                                                        <a href="wishlist.html" class="wishlist">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-heart"></i>
+                                                        </a>
                                                     </div>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-img end -->
+                                            <!-- product-content start -->
+                                            <div class="product-content">
+                                                <div class="product-info">
+                                                    <!-- product-title start -->
+                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                    <!-- product-title end -->
+                                                    <!-- product-price start -->
+                                                    <div class="price-box">
+                                                        <span class="new-price">Giá 21.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">Giá cũ 25.000 <u>đ</u></span>
+                                                    </div>
+                                                    <!-- product-price end -->
+                                                    <!-- product-rating start -->
                                                     <div class="product-ratting">
-                                                        <span class="pro-ratting">
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
+                                                        <span class="star-rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
                                                         </span>
                                                     </div>
-                                                    <div class="product-description">
-                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                    </div>
-                                                    <div class="product-action">
-                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                            <span class="tooltip-text">Quickview</span>
-                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                        </a>
-                                                        <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                            <span class="tooltip-text">Add to cart</span>
-                                                            <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                        </a>
-                                                        <a href="wishlist-product.html" class="wishlist">
-                                                            <span class="tooltip-text">Wishlist</span>
-                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                        </a>
-                                                    </div>
+                                                    <!-- product-rating end -->
                                                 </div>
+                                                <!-- product-action start -->
+                                                <div class="product-action">
+                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                        <i class="feather-shopping-bag"></i>
+                                                    </a>
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="wishlist.html" class="wishlist">
+                                                        <i class="feather-heart"></i>
+                                                    </a>
+                                                </div>
+                                                <!-- product-action end -->
                                             </div>
+                                            <!-- product-content end -->
                                         </div>
+                                        <!-- product end -->
                                     </div>
+                                    <!-- end sp5 -->
+                                    <!-- sp6 -->
                                     <div class="swiper-slide">
+                                        <!-- product start -->
                                         <div class="single-product-wrap">
-                                            <div class="product-image banner-hover">
+                                            <!-- product-img start -->
+                                            <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="assets/img/product/home1-pro-9.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="assets/img/product/home1-pro-10.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-5.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
                                                 </a>
-                                                <div class="product-action product-cart-btn">
-                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                        <span class="cart-title">
-                                                            <span class="add-c-title">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                <span class="add-title">Add to cart</span>
-                                                            </span>
-                                                        </span>
+                                                <!-- product-action start -->
+                                                <div class="product-action pro-quiqview">
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                        <i class="feather-eye"></i>
                                                     </a>
                                                 </div>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-content">
-                                                    <div class="product-title">
-                                                        <div class="pro-title-price">
-                                                            <h6><a href="product-template.html">Castle cactus</a></h6>
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">Rs. 25.00</span>
-                                                                    <span class="old-price">Rs. 35.00</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a class="product-type" href="collection.html">Castle</a>
-                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                        </div>
+                                                <div class="product-cart">
+                                                    <div class="product-action cart-wishlist">
+                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-shopping-bag"></i>
+                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                        </a>
+                                                        <a href="wishlist.html" class="wishlist">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-heart"></i>
+                                                        </a>
                                                     </div>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-img end -->
+                                            <!-- product-content start -->
+                                            <div class="product-content">
+                                                <div class="product-info">
+                                                    <!-- product-title start -->
+                                                    <h6><a href="product-template.html">Giỏ đựng</a></h6>
+                                                    <!-- product-title end -->
+                                                    <!-- product-price start -->
+                                                    <div class="price-box">
+                                                        <span class="new-price">Giá 90.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">Giá cũ 120.000 <u>đ</u></span>
+                                                    </div>
+                                                    <!-- product-price end -->
+                                                    <!-- product-rating start -->
                                                     <div class="product-ratting">
-                                                        <span class="pro-ratting">
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
+                                                        <span class="star-rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
                                                         </span>
                                                     </div>
-                                                    <div class="product-description">
-                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                    </div>
-                                                    <div class="product-action">
-                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                            <span class="tooltip-text">Quickview</span>
-                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                        </a>
-                                                        <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                            <span class="tooltip-text">Add to cart</span>
-                                                            <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                        </a>
-                                                        <a href="wishlist-product.html" class="wishlist">
-                                                            <span class="tooltip-text">Wishlist</span>
-                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                        </a>
-                                                    </div>
+                                                    <!-- product-rating end -->
                                                 </div>
+                                                <!-- product-action start -->
+                                                <div class="product-action">
+                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                        <i class="feather-shopping-bag"></i>
+                                                    </a>
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="wishlist.html" class="wishlist">
+                                                        <i class="feather-heart"></i>
+                                                    </a>
+                                                </div>
+                                                <!-- product-action end -->
                                             </div>
+                                            <!-- product-content end -->
                                         </div>
+                                        <!-- product end -->
                                     </div>
+                                    <!-- end sp6 -->
+                                    <!-- sp7 -->
                                     <div class="swiper-slide">
+                                        <!-- product start -->
                                         <div class="single-product-wrap">
-                                            <div class="product-image banner-hover">
+                                            <!-- product-img start -->
+                                            <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="assets/img/product/home1-pro-11.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="assets/img/product/home1-pro-12.jpg" class="img-fluid img2 mobile-img2" alt="p2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-21.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-22.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
                                                 </a>
-                                                <div class="product-action product-cart-btn">
-                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                        <span class="cart-title">
-                                                            <span class="add-c-title">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                <span class="add-title">Add to cart</span>
-                                                            </span>
-                                                        </span>
+                                                <!-- product-action start -->
+                                                <div class="product-action pro-quiqview">
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                        <i class="feather-eye"></i>
                                                     </a>
                                                 </div>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-content">
-                                                    <div class="product-title">
-                                                        <div class="pro-title-price">
-                                                            <h6><a href="product-template.html">Bird of paradise</a></h6>
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">Rs. 21.00</span>
-                                                                    <span class="old-price">Rs. 25.00</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a class="product-type" href="collection.html">Paradise</a>
-                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                        </div>
+                                                <div class="product-cart">
+                                                    <div class="product-action cart-wishlist">
+                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-shopping-bag"></i>
+                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                        </a>
+                                                        <a href="wishlist.html" class="wishlist">
+                                                            <span class="tooltip-text">Yêu thích</span>
+                                                            <i class="feather-heart"></i>
+                                                        </a>
                                                     </div>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-img end -->
+                                            <!-- product-content start -->
+                                            <div class="product-content">
+                                                <div class="product-info">
+                                                    <!-- product-title start -->
+                                                    <h6><a href="product-template.html">Giỏ đựng đồ màu sắc</a></h6>
+                                                    <!-- product-title end -->
+                                                    <!-- product-price start -->
+                                                    <div class="price-box">
+                                                        <span class="new-price">Giá 100.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">Giá cũ 110.000 <u>đ</u></span>
+                                                    </div>
+                                                    <!-- product-price end -->
+                                                    <!-- product-rating start -->
                                                     <div class="product-ratting">
-                                                        <span class="pro-ratting">
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
+                                                        <span class="star-rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
                                                         </span>
                                                     </div>
-                                                    <div class="product-description">
-                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                    </div>
-                                                    <div class="product-action">
-                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                            <span class="tooltip-text">Quickview</span>
-                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                        </a>
-                                                        <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                            <span class="tooltip-text">Add to cart</span>
-                                                            <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                        </a>
-                                                        <a href="wishlist-product.html" class="wishlist">
-                                                            <span class="tooltip-text">Wishlist</span>
-                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                        </a>
-                                                    </div>
+                                                    <!-- product-rating end -->
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image banner-hover">
-                                                <a href="product-template.html" class="pro-img">
-                                                    <img src="assets/img/product/home1-pro-13.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="assets/img/product/home1-pro-14.jpg" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action product-cart-btn">
-                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                        <span class="cart-title">
-                                                            <span class="add-c-title">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                <span class="add-title">Add to cart</span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </div>
+                                                <!-- product-action start -->
                                                 <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
+                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                        <i class="feather-shopping-bag"></i>
                                                     </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="wishlist.html" class="wishlist">
+                                                        <i class="feather-heart"></i>
                                                     </a>
                                                 </div>
+                                                <!-- product-action end -->
                                             </div>
-                                            <div class="product-caption">
-                                                <div class="product-content">
-                                                    <div class="product-title">
-                                                        <div class="pro-title-price">
-                                                            <h6><a href="product-template.html">Snake plant</a></h6>
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">Rs. 54.00</span>
-                                                                    <span class="old-price">Rs. 65.00</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a class="product-type" href="collection.html">Snake</a>
-                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-ratting">
-                                                        <span class="pro-ratting">
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                        </span>
-                                                    </div>
-                                                    <div class="product-description">
-                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                    </div>
-                                                    <div class="product-action">
-                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                            <span class="tooltip-text">Quickview</span>
-                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                        </a>
-                                                        <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                            <span class="tooltip-text">Add to cart</span>
-                                                            <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                        </a>
-                                                        <a href="wishlist-product.html" class="wishlist">
-                                                            <span class="tooltip-text">Wishlist</span>
-                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <!-- product-content end -->
                                         </div>
+                                        <!-- product end -->
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image banner-hover">
-                                                <a href="product-template.html" class="pro-img">
-                                                    <img src="assets/img/product/home1-pro-15.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="assets/img/product/home1-pro-16.jpg" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action product-cart-btn">
-                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                        <span class="cart-title">
-                                                            <span class="add-c-title">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                <span class="add-title">Add to cart</span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-content">
-                                                    <div class="product-title">
-                                                        <div class="pro-title-price">
-                                                            <h6><a href="product-template.html">Areca palm</a></h6>
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">Rs. 61.00</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a class="product-type" href="collection.html">Palm</a>
-                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-ratting">
-                                                        <span class="pro-ratting">
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                        </span>
-                                                    </div>
-                                                    <div class="product-description">
-                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                    </div>
-                                                    <div class="product-action">
-                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                            <span class="tooltip-text">Quickview</span>
-                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                        </a>
-                                                        <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                            <span class="tooltip-text">Add to cart</span>
-                                                            <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                        </a>
-                                                        <a href="wishlist-product.html" class="wishlist">
-                                                            <span class="tooltip-text">Wishlist</span>
-                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image banner-hover">
-                                                <a href="product-template.html" class="pro-img">
-                                                    <img src="assets/img/product/home1-pro-17.jpg" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="assets/img/product/home1-pro-18.jpg" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action product-cart-btn">
-                                                    <a href="#add-to-cart" class="add-to-cart">
-                                                        <span class="cart-title">
-                                                            <span class="add-c-title">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                <span class="add-title">Add to cart</span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-content">
-                                                    <div class="product-title">
-                                                        <div class="pro-title-price">
-                                                            <h6><a href="product-template.html">Howea forsteriana</a></h6>
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">Rs. 22.00</span>
-                                                                    <span class="old-price">Rs. 45.00</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a class="product-type" href="collection.html">Howea</a>
-                                                            <a class="product-vendor" href="collection.html">Panno</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-ratting">
-                                                        <span class="pro-ratting">
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                            <i class="fa-regular fa-star"></i>
-                                                        </span>
-                                                    </div>
-                                                    <div class="product-description">
-                                                        <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler...</p>
-                                                    </div>
-                                                    <div class="product-action">
-                                                        <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                            <span class="tooltip-text">Quickview</span>
-                                                            <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                        </a>
-                                                        <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                            <span class="tooltip-text">Add to cart</span>
-                                                            <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                        </a>
-                                                        <a href="wishlist-product.html" class="wishlist">
-                                                            <span class="tooltip-text">Wishlist</span>
-                                                            <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <!-- end sp7 -->
                                 </div>
                                 <div class="collection-button">
-                                    <a href="collection.html" class="btn btn-style">View product</a>
+                                    <a href="collection.html" class="btn btn-style">Xem sản phẩm</a>
                                 </div>
                             </div>
                             <div class="swiper-buttons">
                                 <div class="swiper-buttons-wrap">
-                                    <button class="swiper-prev swiper-prev-new"><span><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="15 18 9 12 15 6"></polyline></svg></span></button>
-                                    <button class="swiper-next swiper-next-new"><span><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="9 18 15 12 9 6"></polyline></svg></span></button>
+                                    <button class="swiper-prev swiper-prev-new"><span><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                                <polyline points="15 18 9 12 15 6"></polyline>
+                                            </svg></span></button>
+                                    <button class="swiper-next swiper-next-new"><span><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                                <polyline points="9 18 15 12 9 6"></polyline>
+                                            </svg></span></button>
                                 </div>
                             </div>
                             <div class="swiper-dots">

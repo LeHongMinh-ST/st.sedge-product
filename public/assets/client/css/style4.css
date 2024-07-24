@@ -4041,6 +4041,18 @@ span.header-sale-lable::before {
     font-size: 12px;
     margin: 0px 5px 0px 0px;
 }
+/* ************************************************************* */
+/* fix */
+.img-pro {
+    height: 434.99px;
+    object-fit: cover;
+    width: 327.5px;
+}
+/* fix */
+/* ****************************************************************** */
+.product-detail-slider .pro-slider .pro-detail-slider .slick-list .slick-slide a img {
+    object-fit: cover;
+}
 
 /*====================================
     product-price css

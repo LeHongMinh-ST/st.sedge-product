@@ -1,7 +1,7 @@
 @extends('client.layouts.master')
 
 @section('title')
-    Contact
+    Liên hệ - Cóincidence
 @endsection
 @section('content')
 <main>

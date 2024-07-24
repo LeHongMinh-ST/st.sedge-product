@@ -350,7 +350,7 @@ button[disabled] {
     padding: 17px 38px;
     background-color: transparent;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     border: 2px solid var(--primary-font-color);
     border-radius: var(--border-radius);
     line-height: 1;
@@ -3865,7 +3865,7 @@ span.header-sale-lable::before {
 
 /* add-to-cart */
 .single-product-wrap .product-image .product-action a.add-to-cart {
-    width: calc(100% - 50px);
+    width: calc(100%);
 }
 .single-product-wrap .product-image .product-action a.add-to-cart span.add-title {
     margin: 0px 0px 0px 10px;
@@ -3983,7 +3983,7 @@ span.header-sale-lable::before {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 0px 0px 0px 30px;
+    /*padding: 0px 0px 0px 30px;*/
     margin-top: 15px;
 }
 .single-product-wrap .product-content h6 {

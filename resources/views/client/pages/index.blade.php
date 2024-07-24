@@ -1,7 +1,7 @@
 @extends('client.layouts.master')
 
 @section('title')
-    cóincidence
+    Cóincidence
 @endsection
 
 @section('content')
@@ -246,13 +246,8 @@
                                                 <div class="product-cart">
                                                     <div class="product-action cart-wishlist">
                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
                                                             <i class="feather-shopping-bag"></i>
                                                             <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -263,7 +258,7 @@
                                             <div class="product-content">
                                                 <div class="product-info">
                                                     <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                    <h6><a href="product-template.html">Dép cói 1</a></h6>
                                                     <!-- product-title end -->
                                                     <!-- product-price start -->
                                                     <div class="price-box">
@@ -291,9 +286,9 @@
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
                                                         <i class="feather-eye"></i>
                                                     </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
-                                                    </a>
+{{--                                                    <a href="wishlist.html" class="wishlist">--}}
+{{--                                                        <i class="feather-heart"></i>--}}
+{{--                                                    </a>--}}
                                                 </div>
                                                 <!-- product-action end -->
                                             </div>
@@ -320,13 +315,8 @@
                                                 <div class="product-cart">
                                                     <div class="product-action cart-wishlist">
                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
                                                             <i class="feather-shopping-bag"></i>
                                                             <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -365,9 +355,6 @@
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
                                                         <i class="feather-eye"></i>
                                                     </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
-                                                    </a>
                                                 </div>
                                                 <!-- product-action end -->
                                             </div>
@@ -394,13 +381,8 @@
                                                 <div class="product-cart">
                                                     <div class="product-action cart-wishlist">
                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
                                                             <i class="feather-shopping-bag"></i>
                                                             <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -438,9 +420,6 @@
                                                     </a>
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
                                                         <i class="feather-eye"></i>
-                                                    </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
                                                     </a>
                                                 </div>
                                                 <!-- product-action end -->
@@ -468,13 +447,8 @@
                                                 <div class="product-cart">
                                                     <div class="product-action cart-wishlist">
                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
                                                             <i class="feather-shopping-bag"></i>
                                                             <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -513,9 +487,6 @@
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
                                                         <i class="feather-eye"></i>
                                                     </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
-                                                    </a>
                                                 </div>
                                                 <!-- product-action end -->
                                             </div>
@@ -542,13 +513,8 @@
                                                 <div class="product-cart">
                                                     <div class="product-action cart-wishlist">
                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
                                                             <i class="feather-shopping-bag"></i>
                                                             <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -587,9 +553,6 @@
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
                                                         <i class="feather-eye"></i>
                                                     </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
-                                                    </a>
                                                 </div>
                                                 <!-- product-action end -->
                                             </div>
@@ -616,13 +579,8 @@
                                                 <div class="product-cart">
                                                     <div class="product-action cart-wishlist">
                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
                                                             <i class="feather-shopping-bag"></i>
                                                             <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -660,9 +618,6 @@
                                                     </a>
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
                                                         <i class="feather-eye"></i>
-                                                    </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
                                                     </a>
                                                 </div>
                                                 <!-- product-action end -->

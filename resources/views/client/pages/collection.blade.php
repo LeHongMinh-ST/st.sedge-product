@@ -1,7 +1,7 @@
 @extends('client.layouts.master')
 
 @section('title')
-    Product List
+     Danh mục sản phẩm - Cóincidence
 @endsection
 
 @section('content')
@@ -108,10 +108,6 @@
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
-                                                                        <a href="wishlist.html" class="wishlist">
-                                                                            <span class="tooltip-text">Yêu thích</span>
-                                                                            <i class="feather-heart"></i>
-                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -159,10 +155,7 @@
                                                                             </span>
                                                                         </span>
                                                                     </a>
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                                    </a>
+
                                                                 </div>
                                                                 <!-- product-action end -->
                                                             </div>
@@ -191,10 +184,6 @@
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
-                                                                        <a href="wishlist.html" class="wishlist">
-                                                                            <span class="tooltip-text">Yêu thích</span>
-                                                                            <i class="feather-heart"></i>
-                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -241,10 +230,6 @@
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
                                                                         </span>
-                                                                    </a>
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
                                                                     </a>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -274,10 +259,6 @@
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
-                                                                        <a href="wishlist.html" class="wishlist">
-                                                                            <span class="tooltip-text">Yêu thích</span>
-                                                                            <i class="feather-heart"></i>
-                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -324,10 +305,6 @@
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
                                                                         </span>
-                                                                    </a>
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
                                                                     </a>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -357,10 +334,6 @@
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
-                                                                        <a href="wishlist.html" class="wishlist">
-                                                                            <span class="tooltip-text">Yêu thích</span>
-                                                                            <i class="feather-heart"></i>
-                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -407,10 +380,6 @@
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
                                                                         </span>
-                                                                    </a>
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
                                                                     </a>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -440,10 +409,6 @@
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
-                                                                        <a href="wishlist.html" class="wishlist">
-                                                                            <span class="tooltip-text">Yêu thích</span>
-                                                                            <i class="feather-heart"></i>
-                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -490,10 +455,6 @@
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
                                                                         </span>
-                                                                    </a>
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
                                                                     </a>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -523,10 +484,6 @@
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
-                                                                        <a href="wishlist.html" class="wishlist">
-                                                                            <span class="tooltip-text">Yêu thích</span>
-                                                                            <i class="feather-heart"></i>
-                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -573,10 +530,6 @@
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
                                                                         </span>
-                                                                    </a>
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
                                                                     </a>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -606,10 +559,6 @@
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
-                                                                        <a href="wishlist.html" class="wishlist">
-                                                                            <span class="tooltip-text">Yêu thích</span>
-                                                                            <i class="feather-heart"></i>
-                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -656,10 +605,6 @@
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
                                                                         </span>
-                                                                    </a>
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
                                                                     </a>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -689,10 +634,6 @@
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
-                                                                        <a href="wishlist.html" class="wishlist">
-                                                                            <span class="tooltip-text">Yêu thích</span>
-                                                                            <i class="feather-heart"></i>
-                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -739,10 +680,6 @@
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
                                                                         </span>
-                                                                    </a>
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
                                                                     </a>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -772,10 +709,6 @@
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
-                                                                        <a href="wishlist.html" class="wishlist">
-                                                                            <span class="tooltip-text">Yêu thích</span>
-                                                                            <i class="feather-heart"></i>
-                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                                 <!-- product-action end -->
@@ -822,10 +755,6 @@
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
                                                                         </span>
-                                                                    </a>
-                                                                    <a href="wishlist-product.html" class="wishlist">
-                                                                        {{-- <span class="tooltip-text">Wishlist</span> --}}
-                                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
                                                                     </a>
                                                                 </div>
                                                                 <!-- product-action end -->

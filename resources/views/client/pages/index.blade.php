@@ -286,9 +286,6 @@
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
                                                         <i class="feather-eye"></i>
                                                     </a>
-{{--                                                    <a href="wishlist.html" class="wishlist">--}}
-{{--                                                        <i class="feather-heart"></i>--}}
-{{--                                                    </a>--}}
                                                 </div>
                                                 <!-- product-action end -->
                                             </div>

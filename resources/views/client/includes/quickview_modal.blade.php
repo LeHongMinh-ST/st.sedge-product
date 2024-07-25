@@ -78,11 +78,7 @@
                                     </div>
                                 </div>
                                 <div class="quickview-buttons">
-                                    <button type="button" onclick="location.href='cart-page.html'" class="btn btn-style">Thêm vào giỏ hàng</button>
-                                    <a href="cart-empty.html">
-                                        <span class="icon"><i class="feather-heart"></i></span>
-                                        <span class="wishlist-text">Yêu thích</span>
-                                    </a>
+                                    <button type="button" onclick="location.href='cart-page.html'" class="btn btn-style3 mt-3">Thêm vào giỏ hàng</button>
                                 </div>
                             </form>
                             <!-- product-title end -->

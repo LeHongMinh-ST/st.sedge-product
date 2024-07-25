@@ -4041,19 +4041,7 @@ span.header-sale-lable::before {
     font-size: 12px;
     margin: 0px 5px 0px 0px;
 }
-/* ************************************************************* */
-/* fix */
-<<<<<<< HEAD
-.img-pro {
-=======
-.product-image .pro-img img {
->>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
-    height: 434.99px;
-    object-fit: cover;
-    width: 327.5px;
-}
-/* fix */
-/* ****************************************************************** */
+
 .product-detail-slider .pro-slider .pro-detail-slider .slick-list .slick-slide a img {
     object-fit: cover;
 }

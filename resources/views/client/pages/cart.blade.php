@@ -204,7 +204,7 @@
                                                 <span class="amount total-price">499.000 <u>đ</u></span>
                                             </div>
                                             <div class="proceed-to-checkout">
-                                                <a href="checkout-style1.html" class="btn btn-style3">Đặt hàng</a>
+                                                <a href="{{route('todo.checkout')}}" class="btn btn-style3">Đặt hàng</a>
                                             </div>
                                         </div>
                                     </div>

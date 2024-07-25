@@ -1,7 +1,7 @@
 @extends('client.layouts.master')
 
 @section('title')
-product-template
+    Chi tiết sản phẩm - Cóincidence
 @endsection
 
 @section('content')
@@ -226,8 +226,8 @@ product-template
                                     <div class="product-info">
                                         <div class="pro-prlb pro-sale">
                                             <div class="price-box">
-                                                <span class="new-price">Giá 21.00</span>
-                                                <span class="old-price">Giá cũ 25.00</span>
+                                                <span class="new-price">210.000 <u>đ</u></span>
+                                                <span class="old-price ms-3">250.000 <u>đ</u></span>
                                                 <span class="percent-count">16</span>
                                             </div>
                                         </div>
@@ -300,24 +300,14 @@ product-template
                                         <div class="product-actions">
                                             <!-- pro-deatail button start -->
                                             <div class="pro-detail-button">
-                                                <button type="button" onclick="location. href='cart-page.html'" class="btn add-to-cart ajax-spin-cart">
+                                                <button type="button" onclick="location. href='{{route('todo.cart')}}'" class="btn-style3 ajax-spin-cart">
                                                     <span class="cart-title">THÊM VÀO GIỎ HÀNG</span>
                                                 </button>
-                                                <a href="cart-empty.html" class="btn btn-cart btn-theme">
+                                                <a href="{{route('todo.checkout')}}" class="btn btn-cart btn-theme">
                                                     <span>MUA NGAY</span>
                                                 </a>
                                             </div>
                                             <!-- pro-deatail button start -->
-                                            <!-- pro-deatail wishlist start -->
-                                            <div class="pro-aff-che">
-                                                <a href="wishlist-product.html" class="wishlist">
-                                                    <span class="wishlist-icon action-wishlist tile-actions--btn wishlist-btn">
-                                                        <span class="add-wishlist"><i class="bi bi-heart"></i></span>
-                                                    </span>
-                                                    <span class="wishlist-text">Thêm vào danh sách yêu thích</span>
-                                                </a>
-                                            </div>
-                                            <!-- pro-deatail wishlist end -->
                                         </div>
                                     </div>
                                     <div class="product-info">
@@ -449,23 +439,17 @@ product-template
                             </div>
                         </div>
                         <div class="collection-wrap">
-                            <div class="collection-slider swiper" id="new-product">
+                            <!-- product-area-title end -->
+                            <div class="collection-slider swiper" id="new-product4">
                                 <div class="swiper-wrapper">
-                                    <!-- ******************************************************************* -->
-                                    <!-- sp1 -->
                                     <div class="swiper-slide">
                                         <!-- product start -->
                                         <div class="single-product-wrap">
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-<<<<<<< HEAD
-                                                    <img src="{{asset("assets/client/img/product/home-pro-26.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-27.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
-=======
-                                                    <img src="{{asset("assets/client/img/product/home-pro-26.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-27.jpg")}}" class="img-fluid img2" alt="p-2">
->>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
+                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -477,258 +461,8 @@ product-template
                                                 <div class="product-cart">
                                                     <div class="product-action cart-wishlist">
                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
                                                             <i class="feather-shopping-bag"></i>
                                                             <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-img end -->
-                                            <!-- product-content start -->
-                                            <div class="product-content">
-                                                <div class="product-info">
-                                                    <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Túi xách thời trang nữ</a></h6>
-                                                    <!-- product-title end -->
-                                                    <!-- product-price start -->
-                                                    <div class="price-box">
-                                                        <span class="new-price">Giá 99.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">Giá cũ 125.000 <u>đ</u></span>
-                                                    </div>
-                                                    <!-- product-price end -->
-                                                    <!-- product-rating start -->
-                                                    <div class="product-ratting">
-                                                        <span class="star-rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star-half-alt"></i>
-                                                        </span>
-                                                    </div>
-                                                    <!-- product-rating end -->
-                                                </div>
-                                                <!-- product-action start -->
-                                                <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
-                                                        <i class="feather-shopping-bag"></i>
-                                                    </a>
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-content end -->
-                                        </div>
-                                        <!-- product end -->
-                                    </div>
-                                    <!-- end sp1 -->
-                                    <!-- ***************************************** -->
-                                    <!-- sp2 -->
-                                    <div class="swiper-slide">
-                                        <!-- product start -->
-                                        <div class="single-product-wrap">
-                                            <!-- product-img start -->
-                                            <div class="product-image">
-                                                <a href="product-template.html" class="pro-img">
-<<<<<<< HEAD
-                                                    <img src="{{asset("assets/client/img/product/home-pro-18.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-19.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
-=======
-                                                    <img src="{{asset("assets/client/img/product/home-pro-18.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-19.jpg")}}" class="img-fluid img2" alt="p-2">
->>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
-                                                </a>
-                                                <!-- product-action start -->
-                                                <div class="product-action pro-quiqview">
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <span class="tooltip-text">Xem sản phẩm</span>
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="product-cart">
-                                                    <div class="product-action cart-wishlist">
-                                                        <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-shopping-bag"></i>
-                                                            <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-img end -->
-                                            <!-- product-content start -->
-                                            <div class="product-content">
-                                                <div class="product-info">
-                                                    <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Túi xách đeo chéo</a></h6>
-                                                    <!-- product-title end -->
-                                                    <!-- product-price start -->
-                                                    <div class="price-box">
-                                                        <span class="new-price">Giá 111.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">Gía cũ 127.000 <u>đ</u></span>
-                                                    </div>
-                                                    <!-- product-price end -->
-                                                    <!-- product-rating start -->
-                                                    <div class="product-ratting">
-                                                        <span class="star-rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star-half-alt"></i>
-                                                        </span>
-                                                    </div>
-                                                    <!-- product-rating end -->
-                                                </div>
-                                                <!-- product-action start -->
-                                                <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
-                                                        <i class="feather-shopping-bag"></i>
-                                                    </a>
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-content end -->
-                                        </div>
-                                        <!-- product end -->
-                                    </div>
-                                    <!-- end sp2 -->
-                                    <!-- *********************************************** -->
-                                    <!-- sp3 -->
-                                    <div class="swiper-slide">
-                                        <!-- product start -->
-                                        <div class="single-product-wrap">
-                                            <!-- product-img start -->
-                                            <div class="product-image">
-                                                <a href="product-template.html" class="pro-img">
-<<<<<<< HEAD
-                                                    <img src="{{asset("assets/client/img/product/home-pro-16.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-31.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
-=======
-                                                    <img src="{{asset("assets/client/img/product/home-pro-16.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-31.jpg")}}" class="img-fluid img2" alt="p-2">
->>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
-                                                </a>
-                                                <!-- product-action start -->
-                                                <div class="product-action pro-quiqview">
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <span class="tooltip-text">Xem sản phẩm</span>
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="product-cart">
-                                                    <div class="product-action cart-wishlist">
-                                                        <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-shopping-bag"></i>
-                                                            <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-img end -->
-                                            <!-- product-content start -->
-                                            <div class="product-content">
-                                                <div class="product-info">
-                                                    <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Túi xách đi biển</a></h6>
-                                                    <!-- product-title end -->
-                                                    <!-- product-price start -->
-                                                    <div class="price-box">
-                                                        <span class="new-price">Giá 121.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">Giá cũ 155.000 <u>đ</u></span>
-                                                    </div>
-                                                    <!-- product-price end -->
-                                                    <!-- product-rating start -->
-                                                    <div class="product-ratting">
-                                                        <span class="star-rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star-half-alt"></i>
-                                                        </span>
-                                                    </div>
-                                                    <!-- product-rating end -->
-                                                </div>
-                                                <!-- product-action start -->
-                                                <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
-                                                        <i class="feather-shopping-bag"></i>
-                                                    </a>
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-content end -->
-                                        </div>
-                                        <!-- product end -->
-                                    </div>
-                                    <!-- end sp3 -->
-                                    <!-- sp5 -->
-                                    <div class="swiper-slide">
-                                        <!-- product start -->
-                                        <div class="single-product-wrap">
-                                            <!-- product-img start -->
-                                            <div class="product-image">
-                                                <a href="product-template.html" class="pro-img">
-<<<<<<< HEAD
-                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
-=======
-                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img2" alt="p-2">
->>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
-                                                </a>
-                                                <!-- product-action start -->
-                                                <div class="product-action pro-quiqview">
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <span class="tooltip-text">Xem sản phẩm</span>
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="product-cart">
-                                                    <div class="product-action cart-wishlist">
-                                                        <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-shopping-bag"></i>
-                                                            <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -743,8 +477,8 @@ product-template
                                                     <!-- product-title end -->
                                                     <!-- product-price start -->
                                                     <div class="price-box">
-                                                        <span class="new-price">Giá 21.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">Giá cũ 25.000 <u>đ</u></span>
+                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
                                                     </div>
                                                     <!-- product-price end -->
                                                     <!-- product-rating start -->
@@ -761,14 +495,11 @@ product-template
                                                 </div>
                                                 <!-- product-action start -->
                                                 <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
                                                         <i class="feather-shopping-bag"></i>
                                                     </a>
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
                                                         <i class="feather-eye"></i>
-                                                    </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
                                                     </a>
                                                 </div>
                                                 <!-- product-action end -->
@@ -777,21 +508,14 @@ product-template
                                         </div>
                                         <!-- product end -->
                                     </div>
-                                    <!-- end sp5 -->
-                                    <!-- sp6 -->
                                     <div class="swiper-slide">
                                         <!-- product start -->
                                         <div class="single-product-wrap">
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-<<<<<<< HEAD
-                                                    <img src="{{asset("assets/client/img/product/home-pro-5.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
-=======
-                                                    <img src="{{asset("assets/client/img/product/home-pro-5.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-3.jpg")}}" class="img-fluid img1" alt="p-1">
                                                     <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-fluid img2" alt="p-2">
->>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -803,13 +527,8 @@ product-template
                                                 <div class="product-cart">
                                                     <div class="product-action cart-wishlist">
                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
                                                             <i class="feather-shopping-bag"></i>
                                                             <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -820,12 +539,12 @@ product-template
                                             <div class="product-content">
                                                 <div class="product-info">
                                                     <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Giỏ đựng</a></h6>
+                                                    <h6><a href="product-template.html">Túi cói</a></h6>
                                                     <!-- product-title end -->
                                                     <!-- product-price start -->
                                                     <div class="price-box">
-                                                        <span class="new-price">Giá 90.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">Giá cũ 120.000 <u>đ</u></span>
+                                                        <span class="new-price">121.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">142.000 <u>đ</u></span>
                                                     </div>
                                                     <!-- product-price end -->
                                                     <!-- product-rating start -->
@@ -839,18 +558,14 @@ product-template
                                                         </span>
                                                     </div>
                                                     <!-- product-rating end -->
-<<<<<<< HEAD
                                                 </div>
                                                 <!-- product-action start -->
                                                 <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
                                                         <i class="feather-shopping-bag"></i>
                                                     </a>
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
                                                         <i class="feather-eye"></i>
-                                                    </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
                                                     </a>
                                                 </div>
                                                 <!-- product-action end -->
@@ -859,16 +574,14 @@ product-template
                                         </div>
                                         <!-- product end -->
                                     </div>
-                                    <!-- end sp6 -->
-                                    <!-- sp7 -->
                                     <div class="swiper-slide">
                                         <!-- product start -->
                                         <div class="single-product-wrap">
                                             <!-- product-img start -->
                                             <div class="product-image">
                                                 <a href="product-template.html" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-21.jpg")}}" class="img-pro img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-22.jpg")}}" class="img-pro img-fluid img2" alt="p-2">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
                                                 </a>
                                                 <!-- product-action start -->
                                                 <div class="product-action pro-quiqview">
@@ -880,13 +593,8 @@ product-template
                                                 <div class="product-cart">
                                                     <div class="product-action cart-wishlist">
                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                            <span class="tooltip-text">Yêu thích</span>
                                                             <i class="feather-shopping-bag"></i>
                                                             <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                        <a href="wishlist.html" class="wishlist">
-                                                            <span class="tooltip-text">Yêu thích</span>
-                                                            <i class="feather-heart"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -897,12 +605,12 @@ product-template
                                             <div class="product-content">
                                                 <div class="product-info">
                                                     <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Giỏ đựng đồ màu sắc</a></h6>
+                                                    <h6><a href="product-template.html">Dép cói</a></h6>
                                                     <!-- product-title end -->
                                                     <!-- product-price start -->
                                                     <div class="price-box">
-                                                        <span class="new-price">Giá 100.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">Giá cũ 110.000 <u>đ</u></span>
+                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
                                                     </div>
                                                     <!-- product-price end -->
                                                     <!-- product-rating start -->
@@ -917,19 +625,13 @@ product-template
                                                     </div>
                                                     <!-- product-rating end -->
                                                 </div>
-=======
-                                                </div>
->>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
                                                 <!-- product-action start -->
                                                 <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
                                                         <i class="feather-shopping-bag"></i>
                                                     </a>
                                                     <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
                                                         <i class="feather-eye"></i>
-                                                    </a>
-                                                    <a href="wishlist.html" class="wishlist">
-                                                        <i class="feather-heart"></i>
                                                     </a>
                                                 </div>
                                                 <!-- product-action end -->
@@ -938,30 +640,213 @@ product-template
                                         </div>
                                         <!-- product end -->
                                     </div>
-<<<<<<< HEAD
-                                    <!-- end sp7 -->
-=======
-                                    <!-- end sp6 -->
+                                    <div class="swiper-slide">
+                                        <!-- product start -->
+                                        <div class="single-product-wrap">
+                                            <!-- product-img start -->
+                                            <div class="product-image">
+                                                <a href="#" class="pro-img">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-3.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-fluid img2" alt="p-2">
+                                                </a>
+                                                <!-- product-action start -->
+                                                <div class="product-action pro-quiqview">
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="product-cart">
+                                                    <div class="product-action cart-wishlist">
+                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                            <i class="feather-shopping-bag"></i>
+                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-img end -->
+                                            <!-- product-content start -->
+                                            <div class="product-content">
+                                                <div class="product-info">
+                                                    <!-- product-title start -->
+                                                    <h6><a href="product-template.html">Túi cói</a></h6>
+                                                    <!-- product-title end -->
+                                                    <!-- product-price start -->
+                                                    <div class="price-box">
+                                                        <span class="new-price">121.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">142.000 <u>đ</u></span>
+                                                    </div>
+                                                    <!-- product-price end -->
+                                                    <!-- product-rating start -->
+                                                    <div class="product-ratting">
+                                                        <span class="star-rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                        </span>
+                                                    </div>
+                                                    <!-- product-rating end -->
+                                                </div>
+                                                <!-- product-action start -->
+                                                <div class="product-action">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
+                                                        <i class="feather-shopping-bag"></i>
+                                                    </a>
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-content end -->
+                                        </div>
+                                        <!-- product end -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <!-- product start -->
+                                        <div class="single-product-wrap">
+                                            <!-- product-img start -->
+                                            <div class="product-image">
+                                                <a href="product-template.html" class="pro-img">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
+                                                </a>
+                                                <!-- product-action start -->
+                                                <div class="product-action pro-quiqview">
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="product-cart">
+                                                    <div class="product-action cart-wishlist">
+                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                            <i class="feather-shopping-bag"></i>
+                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-img end -->
+                                            <!-- product-content start -->
+                                            <div class="product-content">
+                                                <div class="product-info">
+                                                    <!-- product-title start -->
+                                                    <h6><a href="product-template.html">Dép cói</a></h6>
+                                                    <!-- product-title end -->
+                                                    <!-- product-price start -->
+                                                    <div class="price-box">
+                                                        <span class="new-price">111.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
+                                                    </div>
+                                                    <!-- product-price end -->
+                                                    <!-- product-rating start -->
+                                                    <div class="product-ratting">
+                                                        <span class="star-rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                        </span>
+                                                    </div>
+                                                    <!-- product-rating end -->
+                                                </div>
+                                                <!-- product-action start -->
+                                                <div class="product-action">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
+                                                        <i class="feather-shopping-bag"></i>
+                                                    </a>
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-content end -->
+                                        </div>
+                                        <!-- product end -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <!-- product start -->
+                                        <div class="single-product-wrap">
+                                            <!-- product-img start -->
+                                            <div class="product-image">
+                                                <a href="product-template.html" class="pro-img">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-3.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                    <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-fluid img2" alt="p-2">
+                                                </a>
+                                                <!-- product-action start -->
+                                                <div class="product-action pro-quiqview">
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <span class="tooltip-text">Xem sản phẩm</span>
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="product-cart">
+                                                    <div class="product-action cart-wishlist">
+                                                        <a href="javascript:void(0)" class="add-to-cart">
+                                                            <i class="feather-shopping-bag"></i>
+                                                            <span class="add-title">Thêm vào giỏ hàng</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-img end -->
+                                            <!-- product-content start -->
+                                            <div class="product-content">
+                                                <div class="product-info">
+                                                    <!-- product-title start -->
+                                                    <h6><a href="product-template.html">Túi cói</a></h6>
+                                                    <!-- product-title end -->
+                                                    <!-- product-price start -->
+                                                    <div class="price-box">
+                                                        <span class="new-price">121.000 <u>đ</u></span>
+                                                        <span class="old-price ms-3">142.000 <u>đ</u></span>
+                                                    </div>
+                                                    <!-- product-price end -->
+                                                    <!-- product-rating start -->
+                                                    <div class="product-ratting">
+                                                        <span class="star-rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                        </span>
+                                                    </div>
+                                                    <!-- product-rating end -->
+                                                </div>
+                                                <!-- product-action start -->
+                                                <div class="product-action">
+                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
+                                                        <i class="feather-shopping-bag"></i>
+                                                    </a>
+                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
 
->>>>>>> 85594ab (feat: [SSP-12] add UI product-detail)
-                                </div>
-                                <div class="collection-button">
-                                    <a href="collection.html" class="btn btn-style">Xem sản phẩm</a>
-                                </div>
-                            </div>
-                            <div class="swiper-buttons">
-                                <div class="swiper-buttons-wrap">
-                                    <button class="swiper-prev swiper-prev-new"><span><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                                                <polyline points="15 18 9 12 15 6"></polyline>
-                                            </svg></span></button>
-                                    <button class="swiper-next swiper-next-new"><span><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                                                <polyline points="9 18 15 12 9 6"></polyline>
-                                            </svg></span></button>
+                                                </div>
+                                                <!-- product-action end -->
+                                            </div>
+                                            <!-- product-content end -->
+                                        </div>
+                                        <!-- product end -->
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="swiper-dots">
-                                <div class="swiper-pagination swiper-pagination-new"></div>
+                            <!-- product-area-title end -->
+                            <div class="collection-button">
+                                <a href="#" class="btn btn-style3">Xem thêm</a>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>

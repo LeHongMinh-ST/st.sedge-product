@@ -90,9 +90,9 @@
                                                         <div class="single-product-wrap">
                                                             <!-- product-img start -->
                                                             <div class="product-image">
-                                                                <a href="#" class="pro-img">
-                                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
+                                                                <a href="{{route('todo.product')}}" class="pro-img">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-21.jpg")}}" class="img-fluid img1" alt="p-1">
+                                                                    <img src="{{asset("assets/client/img/product/home-pro-22.jpg")}}" class="img-fluid img2" alt="p-2">
                                                                 </a>
                                                                 <!-- product-action start -->
                                                                 <div class="product-action pro-quiqview">

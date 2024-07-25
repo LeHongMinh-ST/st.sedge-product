@@ -1,4 +1,9 @@
 @extends('client.layouts.master')
+
+@section('title')
+    Hóa đơn đặt hàng - Cóincidence
+@endsection
+
 @section('content')
 <main>
     <!-- breadcrumb start -->
@@ -179,7 +184,7 @@
                                     </ul>
                                 </form>
                                 <div class="check-btn enter">
-                                    <a href="order-complete.html" class="btn-style">Xác nhận</a>
+                                    <a href="#" class="btn-style3">Xác nhận</a>
                                 </div>
                             </div>
                         </li>

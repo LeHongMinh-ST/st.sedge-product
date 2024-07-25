@@ -1,4 +1,4 @@
-<section class="footer-area section-ptb">
+<section class="footer-area section-ptb test">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -127,7 +127,7 @@
                                     <a href="#footer-app" class="ftlist-title" data-bs-toggle="collapse">
                                         <span>Download app</span>
                                         <span><i class="fa-solid fa-plus"></i></span>
-                                    </a>             
+                                    </a>
                                     <ul class="app-img-ul collapse" id="footer-app">
                                         <li class="app-image">
                                             <a href="index4.html" class="image">

@@ -320,12 +320,12 @@
 
 
 
-.total1{ 
+.total1{
     margin-top: 20px;
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.2rem;
-} 
+}
 
 /* team content css */
 .about-team .our-team .team-wrap ul.team-ul li.team-li .team-info {
@@ -3716,7 +3716,7 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
 .check-3 ul.check-3-ul li.check-3-li .check-add form ul li label {
     color: var(--heading-font-color);
     margin: 0px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .check-3 ul.check-3-ul li.check-3-li .check-add form ul li input,
 .check-3 ul.check-3-ul li.check-3-li .check-add form ul li select {
@@ -3724,8 +3724,8 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
     height: 45px;
     padding: 8px 12px;
     margin: 10px 0px 0px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
+    border: 1px solid #a6a6a6;
+    border-radius: 2px;
 }
 
 /* Form address client */
@@ -3795,10 +3795,6 @@ ul.pro-submit li.label-info label.box-area input.cust-checkbox:checked ~ span.cu
     text-align: center;
     margin-bottom: 40px;
     margin-top: 20px;
-}
-
-.btn-style {
-    width: 90%;
 }
 
 /*==============================

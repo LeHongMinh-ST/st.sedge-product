@@ -5,16 +5,21 @@ declare(strict_types=1);
 namespace App\Http\Controllers\Admin;
 
 use App\Enums\Status;
+use App\Http\Requests\ProductRequest;
 use App\Models\Category;
 use App\Models\Product;
-use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::with('category')->paginate(5);
-        return view('admin.pages.products.index')->with('products', $products);
+        $query = request('q');
+        $products = Product::with('category');
+        if ($query) {
+            $products = $products->where('name', 'like', '%' . $query . '%');
+        }
+        $products = $products->paginate(5);
+        return view('admin.pages.products.index', compact('products'));
     }
 
     public function create()
@@ -24,17 +29,8 @@ class ProductController extends Controller
         return view('admin.pages.products.create', compact('categories', 'statuses'));
     }
 
-    public function store(Request $request)
+    public function store(ProductRequest $request)
     {
-        $request->validate([
-            'productName' => 'required|string',
-            'descript' => 'required|string',
-            'price' => 'required|numeric|min:0',
-            'thumbnail' => 'required|image|mimes:jpeg,png,jpg',
-            'quantity' => 'required|integer|min:0',
-            'category_id' => 'required|exists:categories,id',
-        ]);
-
         $product = new Product();
         $product->name = $request->input('productName');
         $product->description = $request->input('descript');
@@ -60,18 +56,8 @@ class ProductController extends Controller
         return view('admin.pages.products.update', compact('product', 'categories', 'statuses'));
     }
 
-    public function update(Request $request, string $id)
+    public function update(ProductRequest $request, string $id)
     {
-        $data = $request->validate([
-            'productName' => 'required|string',
-            'descript' => 'required|string',
-            'price' => 'required|numeric|min:0',
-            'thumbnail' => 'nullable|image|mimes:jpeg,png,jpg',
-            'status' => 'required|in:' . implode(',', array_column(Status::cases(), 'value')),
-            'quantity' => 'required|integer|min:0',
-            'category_id' => 'required|exists:categories,id',
-        ]);
-
         $product = Product::findOrFail($id);
         $product->name = $request->input('productName');
         $product->description = $request->input('descript');
@@ -81,11 +67,11 @@ class ProductController extends Controller
             $path = $thumbnail->storeAs('assets/admin/images', $thumbnail->getClientOriginalName(), 'public');
             $product->thumbnail = 'storage/' . $path;
         }
-        if ($data['status'] === Status::OutOfStock->value) {
-            $data['quantity'] = 0;
+        if ($request->input('status') === Status::OutOfStock->value) {
+            $request->merge(['quantity' => 0]);
         }
 
-        $product->update($data);
+        $product->update($request->all());
         $product->category_id = $request->input('category_id');
         $product->save();
 

@@ -42,34 +42,49 @@
                         <div class="mb-3 row">
                             <label for="productName" class="col-sm-2 col-form-label">Tên sản phẩm</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" name="productName" value="">
+                                <input type="text" class="form-control @error('productName') is-invalid @enderror" name="productName" value="{{ old('productName') }}">
+                                @error('productName')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
 
                         <div class="mb-3 row">
                             <label for="descript" class="col-sm-2 col-form-label">Mô tả</label>
                             <div class="col-sm-8">
-                                <textarea rows="3" cols="3" class="form-control" name="descript"></textarea>
+                                <textarea rows="3" cols="3" class="form-control @error('descript') is-invalid @enderror" name="descript">{{ old('descript') }}</textarea>
+                                @error('descript')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
 
                         <div class="mb-3 row">
                             <label for="price" class="col-sm-2 col-form-label">Giá</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" name="price">
+                                <input type="text" class="form-control @error('price') is-invalid @enderror" name="price" value="{{ old('price') }}">
+                                @error('price')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
 
                         <div class="mb-3 row">
                             <label for="thumbnail" class="col-sm-2 col-form-label">Hình ảnh</label>
                             <div class="col-sm-8">
-                                <input type="file" class="form-control" name="thumbnail">
+                                <input type="file" class="form-control @error('thumbnail') is-invalid @enderror" name="thumbnail">
+                                @error('thumbnail')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
                         <div class="mb-3 row">
                             <label for="quantity" class="col-sm-2 col-form-label">Số lượng</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="number" name="quantity" value="5">
+                                <input class="form-control @error('quantity') is-invalid @enderror" type="number" name="quantity" value="{{ old('quantity') }}">
+                                @error('quantity')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
                 </div>
@@ -96,13 +111,16 @@
                     </div>
                     <div class="card-body">
                         @foreach($categories as $category)
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="category_id" value="{{ $category->id }}" id="category{{ $category->id }}">
-                                <label class="form-check-label" for="category{{ $category->id }}">
-                                    {{ $category->name }}
-                                </label>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input @error('category_id') is-invalid @enderror" type="radio" name="category_id" value="{{ $category->id }}" id="category{{ $category->id }}">
+                            <label class="form-check-label" for="category{{ $category->id }}">
+                                {{ $category->name }}
+                            </label>
+                        </div>
                         @endforeach
+                        @error('category_id')
+                        <div class="invalid-feedback d-block">{{ $message }}</div>
+                        @enderror
                     </div>
                 </div>
             </div>

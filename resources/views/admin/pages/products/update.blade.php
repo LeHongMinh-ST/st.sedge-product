@@ -42,21 +42,30 @@
                         <div class="mb-3 row">
                             <label for="productName" class="col-sm-2 col-form-label">Tên sản phẩm</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" name="productName" value="{{ $product->name }}">
+                                <input type="text" class="form-control @error('productName') is-invalid @enderror" name="productName" value="{{ $product->name }}">
+                                @error('productName')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
 
                         <div class="mb-3 row">
                             <label for="descript" class="col-sm-2 col-form-label">Mô tả</label>
                             <div class="col-sm-8">
-                                <textarea rows="3" cols="3" class="form-control" name="descript"> {{ $product->description}}</textarea>
+                                <textarea rows="3" cols="3" class="form-control @error('descript') is-invalid @enderror" name="descript"> {{ $product->description}}</textarea>
+                                @error('descript')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
 
                         <div class="mb-3 row">
                             <label for="price" class="col-sm-2 col-form-label">Giá</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" name="price" value="{{ $product->price}}">
+                                <input type="text" class="form-control @error('price') is-invalid @enderror" name="price" value="{{ $product->price}}">
+                                @error('price')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
 
@@ -70,23 +79,27 @@
                         <div class="mb-3 row">
                             <label for="status" class="col-sm-2 col-form-label">Trạng thái</label>
                             <div class="col-sm-8">
-                            <select class="form-select" name="status">
+                                <select id="status" class="form-select @error('status') is-invalid @enderror" name="status">
                                     <option value="">Chọn trạng thái</option>
                                     @foreach(App\Enums\Status::cases() as $status)
-                                        <option value="{{ $status->value }}" {{ $product->status == $status->value ? 'selected' : '' }}>
-                                            {{ $status->description() }}
-                                        </option>
+                                    <option value="{{ $status->value }}" {{ old('status', $product->status) == $status->value ? 'selected' : '' }}>
+                                        {{ $status->description() }}
+                                    </option>
                                     @endforeach
                                 </select>
+                                @error('status')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
 
                         <div class="mb-3 row">
                             <label for="quantity" class="col-sm-2 col-form-label">Số lượng</label>
                             <div class="col-sm-8">
-                                <!-- <i?nput class="form-control" type="number" name="quantity" value="{{ $product->quantity }}"> -->
-                                <input class="form-control" type="number" name="quantity" value="{{ $product->quantity }}"
-                                {{ $product->status === App\Enums\Status::OutOfStock->value ? 'disabled' : '' }}>
+                                <input class="form-control @error('quantity') is-invalid @enderror" type="number" name="quantity" value="{{ $product->quantity }}" {{ $product->status === App\Enums\Status::OutOfStock->value ? 'disabled' : '' }}>
+                                @error('quantity')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
 
@@ -114,14 +127,17 @@
                         Danh mục
                     </div>
                     <div class="card-body">
-                    @foreach($categories as $category)
+                        @foreach($categories as $category)
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="category_id" value="{{ $category->id }}" id="category{{ $category->id }}" {{ $product->category_id == $category->id ? 'checked' : '' }}>
+                            <input class="form-check-input @error('category_id') is-invalid @enderror" type="radio" name="category_id" value="{{ $category->id }}" id="category{{ $category->id }}" {{ $product->category_id == $category->id ? 'checked' : '' }}>
                             <label class="form-check-label" for="category{{ $category->id }}">
                                 {{ $category->name }}
                             </label>
                         </div>
                         @endforeach
+                        @error('category_id')
+                        <div class="invalid-feedback d-block">{{ $message }}</div>
+                        @enderror
                     </div>
                 </div>
             </div>

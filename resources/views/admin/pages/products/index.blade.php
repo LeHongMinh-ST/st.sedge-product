@@ -51,7 +51,7 @@
                         <div class="content-filter w-50">
                             <div class="row">
                                 <div class="col-12 col-md-8">
-                                    <form action="" method="get" id="form-search">
+                                    <form action="{{ route('admin.products.index') }}" method="get" id="form-search">
                                         @csrf
                                         <div class="form-group">
                                             <label for="user-search-input">Tìm kiếm</label>

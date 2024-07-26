@@ -2462,7 +2462,6 @@ ul.clock li.clock-li .clock-wrap .clock-text {
 /*====================================
     preloader css
 =====================================*/
-
 .preloader {
     position: fixed;
     top: 0;
@@ -2473,46 +2472,34 @@ ul.clock li.clock-li .clock-wrap .clock-text {
     z-index: 555555;
 }
 .loader {
+    width: 65px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 9px solid #0000;
+    border-right-color: rgba(209, 113, 14, 0.68);
+    position: absolute;
+    animation: l24 1s infinite linear;
     display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: var(--primary-font-color);
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    left: 46%;
+    top: 46%;
 }
-.loader::before {
+.loader:before,
+.loader:after {
     content: "";
     position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
+    inset: -8px;
     border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: var(--primary-font-color);
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
-}
-.loader::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: var(--primary-font-color);
-    -webkit-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
-}
+    border: inherit;
+    animation: inherit;
+    animation-duration: 2s;
 
+}
+.loader:after {
+    animation-duration: 4s;
+}
+@keyframes l24 {
+    100% {transform: rotate(1turn)}
+}
 
 /*====================================
     notification-bar css

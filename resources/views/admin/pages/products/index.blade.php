@@ -113,6 +113,10 @@
                                                 <i class="ph-list"></i>
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-end">
+                                                <a href="{{ route('admin.products.show', ['id' => $product->id]) }}" class="dropdown-item">
+                                                    <i class="ph-eye me-2"></i>
+                                                    Xem chi tiết
+                                                </a>
                                                 <form action="{{ route('admin.products.delete', ['id' => $product->id]) }}" method="POST">
                                                     @csrf
                                                     @method('DELETE')

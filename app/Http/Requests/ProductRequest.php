@@ -31,10 +31,12 @@ class ProductRequest extends FormRequest
             'price' => 'required|numeric|min:0',
             'quantity' => 'required|integer|min:0',
             'category_id' => 'required|exists:categories,id',
+
         ];
 
         if (!$this->route('id')) {
             $rules['thumbnail'] = 'required|image|mimes:jpeg,png,jpg';
+            // $rules['gallery'] = 'required|image|mimes:jpeg,png,jpg';
         } else {
             $rules['thumbnail'] = 'nullable|image|mimes:jpeg,png,jpg';
             $rules['status'] = ['required', Rule::in(array_column(Status::cases(), 'value'))];
@@ -58,6 +60,8 @@ class ProductRequest extends FormRequest
             'quantity.min' => 'Số lượng sản phẩm không được âm.',
             'category_id.required' => 'Danh mục sản phẩm là bắt buộc.',
             'status.required' => 'Trạng thái sản phẩm là bắt buộc khi cập nhật.',
+            'gallery.image' => 'Các file phải là hình ảnh.',
+            'gallery.mimes' => 'Các file phải có định dạng jpeg, png hoặc jpg.',
         ];
     }
 }

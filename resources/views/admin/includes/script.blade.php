@@ -12,6 +12,7 @@
 <script src="{{ asset('assets/admin/js/vendor/pickers/daterangepicker.js') }}"></script>
 <script src="{{ asset('assets/admin/js/app.js') }}"></script>
 <script src="{{ asset('assets/admin/js/init.js') }}"></script>
+
 {{--<!-- /theme JS files -->--}}
 
 {{--<!-- JS custom -->--}}

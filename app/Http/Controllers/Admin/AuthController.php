@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\login\LoginRequest;
 
 class AuthController extends Controller
 {
@@ -13,19 +13,8 @@ class AuthController extends Controller
         return view('login.login');
     }
 
-    public function login(Request $request)
+    public function login(LoginRequest $request)
     {
-        $rule = [
-            'username' => 'required',
-            'password' => 'required',
-        ];
-
-        $message = [
-            'username.required' => 'Tài khoản không được để trống!',
-            'password.required' => 'Mật khẩu không dược để trống!'
-        ];
-
-        $request->validate($rule, $message);
         $data = $request->only('username', 'password');
 
         $remember = $request->has('remember');

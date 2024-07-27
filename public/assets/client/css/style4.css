@@ -2616,15 +2616,15 @@ ul.clock li.clock-li .clock-wrap .clock-text {
 
 }
 .main-header .header-top-area .header-area .header-logo {
-    width: 25%;
+    width: 15%;
 }
 .main-header .header-top-area .header-area .header-menu {
-    width: 50%;
+    width: 65%;
     display: flex;
     justify-content: center;
 }
 .main-header .header-top-area .header-area .header-icon {
-    width: 25%;
+    width: 20%;
 }
 @media (max-width: 1199px) {
     .header-top-area {

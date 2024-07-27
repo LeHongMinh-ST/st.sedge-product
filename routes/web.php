@@ -83,6 +83,7 @@ Route::prefix('admin')->middleware('auth')->group(function (): void {
         Route::get('/{id}/edit', [ProductController::class, 'edit'])->name('admin.products.edit');
         Route::put('/{id}/update', [ProductController::class, 'update'])->name('admin.products.update');
         Route::delete('/{id}/delete', [ProductController::class, 'delete'])->name('admin.products.delete');
+        Route::get('/{id}', [ProductController::class, 'show'])->name('admin.products.show');
     });
 });
 Route::get('/product', fn () => view('client.pages.product_template'))->name('todo.product');

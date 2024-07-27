@@ -18,7 +18,7 @@ class ProductController extends Controller
         if ($query) {
             $products = $products->where('name', 'like', '%' . $query . '%');
         }
-        $products = $products->paginate(5);
+        $products = $products->orderBy('id', 'desc')->paginate(5);
         return view('admin.pages.products.index', compact('products'));
     }
 
@@ -45,6 +45,16 @@ class ProductController extends Controller
         $product->category_id = $request->input('category_id');
         $product->save();
 
+        if ($request->hasFile('galleries')) {
+            foreach ($request->file('galleries') as $image) {
+                $path = $image->store('assets/admin/images/galleries', 'public');
+                $product->galeries()->create([
+                    'thumbnail' => 'storage/' . $path
+                ]);
+            }
+        }
+
+
         return redirect()->route('admin.products.index')->with('success', 'Sản phẩm đã được tạo thành công');
     }
 
@@ -56,27 +66,40 @@ class ProductController extends Controller
         return view('admin.pages.products.update', compact('product', 'categories', 'statuses'));
     }
 
+
     public function update(ProductRequest $request, string $id)
     {
         $product = Product::findOrFail($id);
+
         $product->name = $request->input('productName');
         $product->description = $request->input('descript');
         $product->price = $request->input('price');
         if ($request->hasFile('thumbnail')) {
             $thumbnail = $request->file('thumbnail');
-            $path = $thumbnail->storeAs('assets/admin/images', $thumbnail->getClientOriginalName(), 'public');
-            $product->thumbnail = 'storage/' . $path;
+            $filename = time() . '_' . $thumbnail->getClientOriginalName();
+            $path = $thumbnail->storeAs('assets/admin/images', $filename, 'public');
+            $product->thumbnail = 'storage/' . $path . '?v=' . time();
         }
+
+        if ($request->hasFile('galleries')) {
+            foreach ($request->file('galleries') as $image) {
+                $filename = time() . '_' . $image->getClientOriginalName();
+                $path = $image->storeAs('assets/admin/images/galleries', $filename, 'public');
+                $product->galeries()->create([
+                    'thumbnail' => 'storage/' . $path
+                ]);
+            }
+        }
+
         if ($request->input('status') === Status::OutOfStock->value) {
             $request->merge(['quantity' => 0]);
         }
 
-        $product->update($request->all());
+        $product->update($request->except(['thumbnail', 'galleries']));
         $product->category_id = $request->input('category_id');
         $product->save();
 
         return redirect()->route('admin.products.index')->with('success', 'Sản phẩm đã được cập nhật thành công');
-
     }
 
     public function delete(string $id)
@@ -87,4 +110,9 @@ class ProductController extends Controller
         return redirect()->route('admin.products.index')->with('success', 'Sản phẩm đã được xóa thành công');
     }
 
+    public function show($id)
+    {
+        $product = Product::with('category', 'galeries')->findOrFail($id);
+        return view('admin.pages.products.detail', compact('product'));
+    }
 }

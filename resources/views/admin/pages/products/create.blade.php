@@ -70,7 +70,7 @@
                         </div>
 
                         <div class="mb-3 row">
-                            <label for="thumbnail" class="col-sm-2 col-form-label">Hình ảnh</label>
+                            <label for="thumbnail" class="col-sm-2 col-form-label">Ảnh đại diện</label>
                             <div class="col-sm-8">
                                 <input type="file" class="form-control @error('thumbnail') is-invalid @enderror" name="thumbnail">
                                 @error('thumbnail')
@@ -78,6 +78,17 @@
                                 @enderror
                             </div>
                         </div>
+
+                        <div class="mb-3 row">
+                            <label for="galleries" class="col-sm-2 col-form-label">Ảnh bổ sung</label>
+                            <div class="col-sm-8">
+                                <input type="file" class="form-control @error('galleries.*') is-invalid @enderror" name="galleries[]" multiple>
+                                @error('galleries.*')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                        </div>
+
                         <div class="mb-3 row">
                             <label for="quantity" class="col-sm-2 col-form-label">Số lượng</label>
                             <div class="col-sm-8">

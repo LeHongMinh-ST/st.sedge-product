@@ -7,6 +7,7 @@
     <title>Đăng nhập</title>
     <link rel="stylesheet" href="{{ asset('/css/login.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="{{ asset('assets/admin/css/all.min.css') }}" id="stylesheet" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -32,15 +33,15 @@
                 <form class="login-form" action="{{ route('login.post') }}" method="POST">
                     @csrf
                     <label for="username">Tài khoản:</label>
-                    <input type="text" id="username" name="username" placeholder="Tài khoản" value="{{ old('username') }}" class="{{ $errors->has('username') || session('error') ? 'input-error' : '' }}">
-                    @if ($errors->has('username'))
-                        <span class="error">{{ $errors->first('username') }}</span>
-                    @endif
+                    <input type="text" id="username" name="username" placeholder="Tài khoản" value="{{ old('username') }}" class="form-control @error('username') is-invalid @enderror">
+                    @error('username')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                     <label for="password">Mật khẩu:</label>
-                    <input type="password" id="password" name="password" placeholder="Mật khẩu"  value="{{ old('password') }}" class="{{ $errors->has('password') || session('error') ? 'input-error' : '' }}">
-                    @if ($errors->has('password'))
-                        <span class="error">{{ $errors->first('password') }}</span>
-                    @endif
+                    <input type="password" id="password" name="password" placeholder="Mật khẩu"  value="{{ old('password') }}" class="form-control @error('password') is-invalid @enderror">
+                    @error('password')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                     <div class="login-options">
                         <label class="remember-me">
                             <input type="checkbox" name="remember">

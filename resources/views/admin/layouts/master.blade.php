@@ -44,6 +44,7 @@
     <!-- /main content -->
 
 </div>
+@yield('verify')
 <!-- /page content -->
 </body>
 </html>

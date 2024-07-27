@@ -13,6 +13,12 @@
         </div>
 
         <ul class="nav flex-row justify-content-end order-1 order-lg-2">
+            <li>
+                <div class="mt-2 me-4">
+                    <i class="ph-arrow-bend-down-left link-yellow"></i>
+                    <a href="{{ route('todo.home') }}" class="link-yellow">Quay về cửa hàng</a>
+                </div>
+            </li>
             <li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2">
                 <a href="#" class="navbar-nav-link align-items-center rounded-pill p-1" data-bs-toggle="dropdown">
                     <div class="status-indicator-container">
@@ -22,11 +28,11 @@
                     <span class="d-none d-lg-inline-block mx-lg-2">{{ auth()->user()->username }}</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
-                    <a href="#" class="dropdown-item">
-                        <i class="ph-gear me-2"></i>
-                        Tài khoản
-                    </a>
-                    <div class="dropdown-divider"></div>
+{{--                    <a href="#" class="dropdown-item">--}}
+{{--                        <i class="ph-gear me-2"></i>--}}
+{{--                        Tài khoản--}}
+{{--                    </a>--}}
+{{--                    <div class="dropdown-divider"></div>--}}
                     <form action="{{ route('logout') }}" method="get">
                         @csrf
                         <button type="submit" class="dropdown-item">

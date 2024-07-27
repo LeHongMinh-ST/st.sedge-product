@@ -33,7 +33,7 @@
                     <i class="ph-dots-three sidebar-resize-show"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link active">
+                    <a href="{{ route('admin.dashboard') }}" class="nav-link {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
                         <i class="ph-house"></i>
                         <span>
                             Dashboard
@@ -42,11 +42,24 @@
                     </a>
                 </li>
 
+                <li class="nav-item-header">
+                    <div class="text-uppercase fs-sm lh-sm opacity-50 sidebar-resize-hide">Sản phẩm</div>
+                </li>
                 <li class="nav-item">
-                    <a href="{{ route('admin.products.index') }}" class="nav-link active">
+                    <a href="{{ route('admin.products.index') }}" class="nav-link {{ request()->routeIs('admin.products.index') ? 'active' : '' }}">
                         <i class="ph-tote-simple"></i>
                         <span>
                             Sản phẩm
+                            <span class="d-block fw-normal opacity-50">No pending orders</span>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('admin.categories.index') }}" class="nav-link {{ request()->routeIs('admin.categories.index') ?'active' : '' }}">
+                        <i class="ph-stack"></i>
+                        <span>
+                            Danh mục
                             <span class="d-block fw-normal opacity-50">No pending orders</span>
                         </span>
                     </a>

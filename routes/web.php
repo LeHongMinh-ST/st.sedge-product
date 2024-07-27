@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DashbroadController;
 use App\Http\Controllers\Admin\ProductController;
 use Illuminate\Support\Facades\Artisan;
@@ -85,6 +86,15 @@ Route::prefix('admin')->middleware('auth')->group(function (): void {
         Route::get('/{id}/edit', [ProductController::class, 'edit'])->name('admin.products.edit');
         Route::put('/{id}/update', [ProductController::class, 'update'])->name('admin.products.update');
         Route::delete('/{id}/delete', [ProductController::class, 'delete'])->name('admin.products.delete');
+    });
+
+    Route::prefix('/category')->group(function (): void {
+        Route::get('/', [CategoryController::class, 'index'])->name('admin.categories.index');
+        Route::get('/create', [CategoryController::class, 'create'])->name('admin.categories.create');
+        Route::post('/store', [CategoryController::class, 'store'])->name('admin.categories.store');
+        Route::get('/edit/{id}', [CategoryController::class, 'edit'])->name('admin.categories.edit');
+        Route::post('/update/{id}', [CategoryController::class, 'update'])->name('admin.categories.update');
+        Route::delete('/delete/{id}', [CategoryController::class, 'delete'])->name('admin.categories.delete');
     });
 });
 Route::get('/product', fn () => view('client.pages.product_template'))->name('todo.product');

@@ -187,44 +187,15 @@
                 <a href="{{route('todo.blog')}}" class="link-title">
                     <span class="sp-link-title">Blog</span>
                 </a>
-{{--                <div class="menu-dropdown menu-single collapse" id="blogs">--}}
-{{--                    <ul class="ul">--}}
-{{--                        <li class="menusingle-li">--}}
-{{--                            <a href="blog-grid-without.html" class="menusingle-title">--}}
-{{--                                <span class="sp-link-title">Blog grid</span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="menusingle-li">--}}
-{{--                            <a href="blog-grid.html" class="menusingle-title">--}}
-{{--                                <span class="sp-link-title">Blog grid left</span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="menusingle-li">--}}
-{{--                            <a href="blog-grid-right.html" class="menusingle-title">--}}
-{{--                                <span class="sp-link-title">Blog grid right</span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="menusingle-li">--}}
-{{--                            <a href="article-post-without.html" class="menusingle-title">--}}
-{{--                                <span class="sp-link-title">Article post</span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="menusingle-li">--}}
-{{--                            <a href="article-post.html" class="menusingle-title">--}}
-{{--                                <span class="sp-link-title">Article post left</span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="menusingle-li">--}}
-{{--                            <a href="article-post-right.html" class="menusingle-title">--}}
-{{--                                <span class="sp-link-title">Article post right</span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
             </li>
             <li class="menu-link">
                 <a href="{{route('todo.contact')}}" class="link-title">
                     <span class="sp-link-title">Liên hệ</span>
+                </a>
+            </li>
+            <li class="menu-link">
+                <a href="{{route('todo.checkorder')}}" class="link-title">
+                    <span class="sp-link-title">Kiểm tra đơn hàng</span>
                 </a>
             </li>
         </ul>

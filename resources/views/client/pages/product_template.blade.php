@@ -203,20 +203,6 @@
                             <div class="product-details-info">
                                 <div class="pro-nprist">
                                     <div class="product-info">
-                                        <!--  product-ratting start -->
-                                        <div class="product-ratting">
-                                            <span class="pro-ratting">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                            </span>
-                                            <span class="spr-badge-caption">3 Đánh giá</span>
-                                        </div>
-                                        <!--  product-ratting end -->
-                                    </div>
-                                    <div class="product-info">
                                         <!-- product-title start -->
                                         <div class="product-title">
                                             <h2>Dép</h2>
@@ -313,39 +299,6 @@
                                     <div class="product-info">
                                         <div class="form-group">
                                             <a href="#deliver-modal" data-bs-toggle="modal">Giao hàng &amp; Hoàn hàng</a>
-                                            <a href="#que-modal" data-bs-toggle="modal">Đặt câu hỏi</a>
-                                        </div>
-                                    </div>
-                                    <div class="modal fade deliver-modal" id="deliver-modal" tabindex="-1" style="display: none;" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content">
-                                                <div class="modal-body">
-                                                    <button type="button" class="pop-close" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x"></i></button>
-                                                    <div class="delivery-block">
-                                                        <div class="space-block">
-                                                            <h4>Giao hàng</h4>
-                                                            <p>Tất cả các đơn hàng được vận chuyển bằng UPS Express.</p>
-                                                            <p>Luôn miễn phí vận chuyển cho các đơn hàng trên 100.000</p>
-                                                            <p>Tất cả các đơn hàng đều được vận chuyển kèm theo số theo dõi của UPS.</p>
-                                                        </div>
-                                                        <div class="space-block">
-                                                            <h4>Hoàn hàng</h4>
-                                                            <p>Các mặt hàng được trả lại trong vòng 14 ngày kể từ ngày giao hàng ban đầu giống như hàng mới
-                                                                điều kiện sẽ đủ điều kiện để được hoàn tiền đầy đủ hoặc nhận tín dụng của cửa hàng</p>
-                                                            <p>Tiền hoàn lại sẽ được tính trở lại hình thức thanh toán ban đầu được sử dụng để mua hàng.</p>
-                                                            <p>Khách hàng chịu trách nhiệm thanh toán phí vận chuyển khi thực hiện trả lại hàng và
-                                                                Phí vận chuyển/xử lý của giao dịch mua ban đầu sẽ không được hoàn lại.</p>
-                                                            <p>Tất cả các mặt hàng bán đều là giao dịch mua cuối cùng.</p>
-                                                        </div>
-                                                        <div class="space-block">
-                                                            <h4>Hỗ trợ</h4>
-                                                            <p>Hãy liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi hoặc thắc mắc nào khác.</p>
-                                                            <p>Email:<a href="mailto:contact@domain.com">demo@gmail.com</a></p>
-                                                            <p>Phone:<a href="tel:+1(23)456789">+1 (23) 456 789</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                     <!-- que-modal stat -->
@@ -374,20 +327,6 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="ask-form">
-                                                        <h6>Đặt câu hỏi</h6>
-                                                        <form method="post" class="contact-form">
-                                                            <input type="hidden" name="contact[product url]" value="">
-                                                            <div class="form-grp">
-                                                                <input type="text" name="contact[name]" required="" placeholder="Your name*">
-                                                                <input type="text" name="contact[phone]" placeholder="Your phone number">
-                                                                <input type="email" name="contact[email]" required="" placeholder="Your email*">
-                                                                <textarea name="contact[question]" rows="4" required="" placeholder="Your message*"></textarea>
-                                                                <p>* Phần bắt buộc</p>
-                                                                <button type="submit" class="btn-style2">Xác nhận ngay bây giờ</button>
-                                                            </div>
-                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>

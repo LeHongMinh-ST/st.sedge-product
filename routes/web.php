@@ -25,6 +25,8 @@ Route::get('contact', fn () => view('client.pages.contact'))->name('todo.contact
 // Route::get('/product', fn () => view('client.pages.product'))->name('todo.product');
 Route::get('blog', fn () => view('client.pages.blog'))->name('todo.blog');
 Route::get('cart', fn () => view('client.pages.cart'))->name('todo.cart');
+Route::get('article', fn () => view('client.pages.article'))->name('todo.article');
+Route::get('check-order', fn () => view('client.pages.check_order'))->name('todo.checkorder');
 
 // Route::get('link-storage', function (): void {
 //     $targetFolder = storage_path('app/public');

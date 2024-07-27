@@ -30,9 +30,6 @@
                             <ul class="slider-ul">
                                 <li class="slider-li">
                                     <div class="slider-main">
-                                        {{-- <div class="slider-icon-img">
-                                            <img src="{{asset("assets/client/img/slider/home-icon1.png")}}" class="img-fluid" alt="slider-icon1">
-                                    </div> --}}
                                     <div class="service-title">
                                         <h6>Nguyên liệu thiên nhiên</h6>
                                         <p>Cói là một loại cây cỏ mọc ở các vùng đất ngập nước. Nguyên liệu này hoàn toàn từ thiên nhiên, thân thiện với môi trường và có khả năng phân hủy sinh học.</p>
@@ -41,9 +38,6 @@
                         </li>
                         <li class="slider-li">
                             <div class="slider-main">
-                                {{-- <div class="slider-icon-img">
-                                            <img src="{{asset("assets/client/img/slider/home-icon2.png")}}" class="img-fluid" alt="slider-icon2">
-                            </div> --}}
                             <div class="service-title">
                                 <h6>Độ bền cao</h6>
                                 <p>Các sản phẩm từ cói thường có độ bền cao, chịu được tải trọng lớn. Nhờ có cấu trúc sợi chắc chắn, chúng có thể sử dụng trong thời gian dài mà không bị hỏng hóc.</p>
@@ -52,9 +46,6 @@
                     </li>
                     <li class="slider-li">
                         <div class="slider-main">
-                            {{-- <div class="slider-icon-img">
-                                            <img src="{{asset("assets/client/img/slider/home-icon3.png")}}" class="img-fluid" alt="slider-icon3">
-                        </div> --}}
                         <div class="service-title">
                             <h6>Giá trị truyền thống</h6>
                             <p>Sản xuất các sản phẩm từ cói thường gắn liền với các làng nghề truyền thống, góp phần bảo tồn và phát triển văn hóa dân tộc.</p>
@@ -768,187 +759,6 @@
         </div>
     </section>
     <!-- offer-text end -->
-    <!-- test-area start -->
-    {{-- <section class="deal-test section-ptb">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="deal-test-block">
-                        <div class="section-capture">
-                            <div class="section-title">
-                                <span class="sub-title">Our testimonial</span>
-                                <h2><span>Customer love</span></h2>
-                            </div>
-                        </div>
-                        <div class="testi-wrap">
-                            <div class="test-slider swiper" id="test-slider4">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="testi-info">
-                                            <div class="testi-img-author">
-                                                <span class="testi-img">
-                                                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-1.jpg")}}" alt="test-1">
-    </span>
-    <div class="testi-review-block">
-        <span class="testi-review">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </span>
-    </div>
-    </div>
-    <div class="test-img-text">
-        <div class="test-des">
-            <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
-        </div>
-        <div class="testi-block-author">
-            <div class="testi-author">
-                <h2>Lisa resnick</h2>
-                <p class="author-bio">Company ceo</p>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    <div class="swiper-slide">
-        <div class="testi-info">
-            <div class="testi-img-author">
-                <span class="testi-img">
-                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-2.jpg")}}" alt="test-2">
-                </span>
-                <div class="testi-review-block">
-                    <span class="testi-review">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </span>
-                </div>
-            </div>
-            <div class="test-img-text">
-                <div class="test-des">
-                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
-                </div>
-                <div class="testi-block-author">
-                    <div class="testi-author">
-                        <h2>Audie dewey</h2>
-                        <p class="author-bio">Company ceo</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="swiper-slide">
-        <div class="testi-info">
-            <div class="testi-img-author">
-                <span class="testi-img">
-                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-3.jpg")}}" alt="test-3">
-                </span>
-                <div class="testi-review-block">
-                    <span class="testi-review">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </span>
-                </div>
-            </div>
-            <div class="test-img-text">
-                <div class="test-des">
-                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
-                </div>
-                <div class="testi-block-author">
-                    <div class="testi-author">
-                        <h2>Natosha jacobs</h2>
-                        <p class="author-bio">Company ceo</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="swiper-slide">
-        <div class="testi-info">
-            <div class="testi-img-author">
-                <span class="testi-img">
-                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-4.jpg")}}" alt="test-4">
-                </span>
-                <div class="testi-review-block">
-                    <span class="testi-review">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </span>
-                </div>
-            </div>
-            <div class="test-img-text">
-                <div class="test-des">
-                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
-                </div>
-                <div class="testi-block-author">
-                    <div class="testi-author">
-                        <h2>Robert smith</h2>
-                        <p class="author-bio">Company ceo</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="swiper-slide">
-        <div class="testi-info">
-            <div class="testi-img-author">
-                <span class="testi-img">
-                    <img class="img-fluid" src="{{asset("assets/client/img/testi/test-5.jpg")}}" alt="test-5">
-                </span>
-                <div class="testi-review-block">
-                    <span class="testi-review">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </span>
-                </div>
-            </div>
-            <div class="test-img-text">
-                <div class="test-des">
-                    <p>“If you use this site regularly and would like to help keep the site on the internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.”</p>
-                </div>
-                <div class="testi-block-author">
-                    <div class="testi-author">
-                        <h2>Robert smith</h2>
-                        <p class="author-bio">Company ceo</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    <div class="swiper-buttons-wrap">
-        <div class="swiper-buttons">
-            <div class="swiper-buttons-wrap">
-                <button class="swiper-prev swiper-prev-test4">
-                    <span><i class="fa-solid fa-arrow-left"></i></span>
-                </button>
-                <button class="swiper-next swiper-next-test4">
-                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                </button>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section> --}}
-    <!-- test-area end -->
     <!-- instagram start -->
     <section class="instagram-warp section-ptb">
         <div class="container">

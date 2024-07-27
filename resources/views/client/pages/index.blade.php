@@ -59,6 +59,7 @@
         </div>
         </div>
     </section>
+    
     <!-- home-slider end -->
     <!-- banner-grid start -->
     <section class="banner-grid section-pt">
@@ -70,14 +71,14 @@
                             <li class="banner-li">
                                 <div class="banner-wrap banner-hover">
                                     <a href="javascript:void(0)" class="banner-img">
-                                        <img src="{{asset("assets/client/img/banner/home-banner-1.jpg")}}" class="img-fluid" alt="banner1">
+                                        <img src="assets/client/img/banner/home-banner-7.png" class="img-fluid" alt="banner1">
                                     </a>
                                     <div class="banner-wrapper">
                                         <div class="banner-info">
                                             <div class="banner-sub-title">
-                                                <span>Loại sản phẩm</span>
+                                                <span>Loại sản phẩm: Hộp</span>
                                             </div>
-                                            <h2>Tên sản phảm</h2>
+                                            <h2>Đồ gia dụng</h2>
                                             <div class="banner-link">
                                                 <a href="collection.html" class="btn btn-style">Mua ngay</a>
                                             </div>
@@ -88,14 +89,14 @@
                             <li class="banner-li">
                                 <div class="banner-wrap banner-hover">
                                     <a href="javascript:void(0)" class="banner-img">
-                                        <img src="{{asset("assets/client/img/banner/home-banner-2.jpg")}}" class="img-fluid" alt="banner2">
+                                        <img src="assets/client/img/banner/home-banner-6.png" class="img-fluid" alt="banner2">
                                     </a>
                                     <div class="banner-wrapper">
                                         <div class="banner-info">
                                             <div class="banner-sub-title">
-                                                <span>Loại sản phẩm</span>
+                                                <span>Loại sản phẩm: Túi xách</span>
                                             </div>
-                                            <h2>Tên sản phẩm</h2>
+                                            <h2>Túi xách thời trang</h2>
                                             <div class="banner-link">
                                                 <a href="collection.html" class="btn btn-style">Mua ngay</a>
                                             </div>
@@ -193,7 +194,10 @@
                                     <div class="section-title">
                                         <span class="sub-title">Giới thiệu về:</span>
                                         <h2 class="title">Làng cói Kim Sơn - nơi tình yêu dệt nên nghề</h2>
-                                        <p class="description">Trồng cói, đan, dệt các sản phẩm cói đang trở thành nghề truyền thống rất quan trọng ở Kim Sơn. Đây là một nghề không thể thiếu được đối với số đông những người dân lao động. Nghề truyền thống này chưa có cội rễ xa xưa như một số nghề thủ công lâu đời (dệt, thêu, chạm khắc đá, nghề mộc…trong tỉnh), nhưng cũng đã trải qua khá nhiều thế hệ con người.</p>
+                                        <p class="description">Làng nghề cói Kim Sơn, tỉnh Ninh Bình, từ lâu đã nổi tiếng với nghề trồng cói và làm hàng thủ công mỹ nghệ từ cây cói. Cây cói đã có ở vùng đất Kim Sơn gần hai thế kỷ và trải qua cả trăm năm quai đê lấn biển, người dân nơi đây đã tạo nên những cánh đồng cói mênh mông trên những bãi bồi. Sống trong cái nôi của làng nghề cói truyền thống, những người thợ cói Kim Sơn với đôi bàn tay khéo léo, tài hoa đã tạo ra rất nhiều sản phẩm từ cói đáp ứng được những yêu cầu khắt khe của người tiêu dùng trong nước và ngoài nước.
+                                           <br>
+                                            Hiện tất cả các làng, xã của huyện Kim Sơn đều tham gia chế biến cói, trong đó có 20 làng nghề cói được cấp bằng công nhận làng nghề với hơn 5.000 doanh nghiệp, cơ sở và hộ cá thể tham gia trồng cói. Sản phẩm mỹ nghệ chiếu cói Kim Sơn của huyện đã có mặt ở hơn 20 quốc gia và vùng lãnh thổ trên thế giới.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +219,7 @@
                     <div class="collection-category">
                         <div class="section-capture">
                             <div class="section-title">
-                                <h2>Sản phẩm của chúng tôi</h2>
+                                <h2>Sản phẩm nổi bật</h2>
                             </div>
                         </div>
                         <div class="collection-wrap">
@@ -731,14 +735,14 @@
                             <div class="offer-text-title">
                                 <div class="section-capture">
                                     <div class="section-title">
-                                        <span class="sub-title">Tiêu đề 1</span>
-                                        <h2>Tiêu đề 2</h2>
+                                        <span class="sub-title">Video giới thiệu</span>
+                                        <h2>Về làng nghề dệt cói ở Kim Sơn</h2>
                                     </div>
                                 </div>
                             </div>
                             <div class="offer-text-image">
                                 <div class="image-block">
-                                    <a href="https://www.youtube.com/watch?v=jfKfPfyJRdk" class="video-btn play-button popup-youtube">
+                                    <a href="https://www.youtube.com/watch?v=RWxW2x1WsgM" class="video-btn play-button popup-youtube">
                                         <span class="image">
                                             <img src="{{asset("assets/client/img/video/home-video-1.png")}}" class="img-fluid" alt="video">
                                         </span>
@@ -748,7 +752,7 @@
                             </div>
                             <div class="offer-text-desc">
                                 <div class="desc-block">
-                                    <p class="desc">MÔ tả video</p>
+                                    <p class="desc">Để có được một sản phẩm cói mỹ nghệ đạt tiêu chuẩn xuất khẩu, kỹ thuật trồng và sản xuất cói của Kim Sơn cũng khá đặc biệt. Đó là cả một quy trình công phu, tỉ mỉ và chính xác ngay từ lúc trồng cói, thu hoạch cói, chọn cói, chẻ cói, phơi cói, nhuộm cói… cho đến khâu cuối cùng là đan, dệt cói và hoàn thiện sản phẩm.</p>
                                     <a href="about-us-3.html" class="text-btn">Mua ngay</a>
                                 </div>
                             </div>
@@ -764,7 +768,10 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="insta-slider swiper" id="insta-slider4">
+                    <div class="insta-slider swiper pp" id="insta-slider4">
+                        <div class="section-title title2">
+                            <h2>Sản phẩm trưng bày</h2>
+                        </div>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <a href="index4.html">

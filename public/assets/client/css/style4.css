@@ -3043,9 +3043,25 @@ span.header-sale-lable::before {
     }
 }
 
+.fit { 
+    display: flex;
+} 
+
 /*=====================================
     banner css
   ======================================*/
+.banner-info {
+    margin-left: 33px;
+}
+
+.title2{
+    margin-bottom: 35px;
+}
+
+.pp {
+    margin-top: -100px;
+}
+
 .banner-grid .banner-content ul.banner-ul {
     display: flex;
     flex-wrap: wrap;

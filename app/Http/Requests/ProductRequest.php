@@ -62,7 +62,6 @@ class ProductRequest extends FormRequest
             'status.required' => 'Trạng thái sản phẩm là bắt buộc khi cập nhật.',
             'gallery.image' => 'Các file phải là hình ảnh.',
             'gallery.mimes' => 'Các file phải có định dạng jpeg, png hoặc jpg.',
-            'gallery.required' => 'Hình ảnh bổ sung là bắt buộc.',
         ];
     }
 }

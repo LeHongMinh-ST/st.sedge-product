@@ -104,7 +104,6 @@
                                                                 <div class="product-cart">
                                                                     <div class="product-action cart-wishlist">
                                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
@@ -143,13 +142,11 @@
                                                                 <!-- product-action start -->
                                                                 <div class="product-action">
                                                                     <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
                                                                         <span class="pro-action-icon"><i class="feather-eye"></i></span>
                                                                     </a>
                                                                     <a href="#add-to-cart" class="add-to-cart">
                                                                         <span class="cart-title">
                                                                             <span class="add-c-title">
-                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
                                                                                 <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
@@ -180,7 +177,6 @@
                                                                 <div class="product-cart">
                                                                     <div class="product-action cart-wishlist">
                                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
@@ -219,13 +215,11 @@
                                                                 <!-- product-action start -->
                                                                 <div class="product-action">
                                                                     <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
                                                                         <span class="pro-action-icon"><i class="feather-eye"></i></span>
                                                                     </a>
                                                                     <a href="#add-to-cart" class="add-to-cart">
                                                                         <span class="cart-title">
                                                                             <span class="add-c-title">
-                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
                                                                                 <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
@@ -255,7 +249,6 @@
                                                                 <div class="product-cart">
                                                                     <div class="product-action cart-wishlist">
                                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
@@ -294,13 +287,11 @@
                                                                 <!-- product-action start -->
                                                                 <div class="product-action">
                                                                     <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
                                                                         <span class="pro-action-icon"><i class="feather-eye"></i></span>
                                                                     </a>
                                                                     <a href="#add-to-cart" class="add-to-cart">
                                                                         <span class="cart-title">
                                                                             <span class="add-c-title">
-                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
                                                                                 <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
@@ -330,7 +321,6 @@
                                                                 <div class="product-cart">
                                                                     <div class="product-action cart-wishlist">
                                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
@@ -369,13 +359,11 @@
                                                                 <!-- product-action start -->
                                                                 <div class="product-action">
                                                                     <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
                                                                         <span class="pro-action-icon"><i class="feather-eye"></i></span>
                                                                     </a>
                                                                     <a href="#add-to-cart" class="add-to-cart">
                                                                         <span class="cart-title">
                                                                             <span class="add-c-title">
-                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
                                                                                 <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
@@ -405,7 +393,6 @@
                                                                 <div class="product-cart">
                                                                     <div class="product-action cart-wishlist">
                                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
@@ -444,13 +431,11 @@
                                                                 <!-- product-action start -->
                                                                 <div class="product-action">
                                                                     <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
                                                                         <span class="pro-action-icon"><i class="feather-eye"></i></span>
                                                                     </a>
                                                                     <a href="#add-to-cart" class="add-to-cart">
                                                                         <span class="cart-title">
                                                                             <span class="add-c-title">
-                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
                                                                                 <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
@@ -480,7 +465,6 @@
                                                                 <div class="product-cart">
                                                                     <div class="product-action cart-wishlist">
                                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
@@ -519,13 +503,11 @@
                                                                 <!-- product-action start -->
                                                                 <div class="product-action">
                                                                     <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
                                                                         <span class="pro-action-icon"><i class="feather-eye"></i></span>
                                                                     </a>
                                                                     <a href="#add-to-cart" class="add-to-cart">
                                                                         <span class="cart-title">
                                                                             <span class="add-c-title">
-                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
                                                                                 <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
@@ -555,7 +537,6 @@
                                                                 <div class="product-cart">
                                                                     <div class="product-action cart-wishlist">
                                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
@@ -594,13 +575,11 @@
                                                                 <!-- product-action start -->
                                                                 <div class="product-action">
                                                                     <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
                                                                         <span class="pro-action-icon"><i class="feather-eye"></i></span>
                                                                     </a>
                                                                     <a href="#add-to-cart" class="add-to-cart">
                                                                         <span class="cart-title">
                                                                             <span class="add-c-title">
-                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
                                                                                 <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
@@ -630,7 +609,6 @@
                                                                 <div class="product-cart">
                                                                     <div class="product-action cart-wishlist">
                                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
@@ -669,13 +647,11 @@
                                                                 <!-- product-action start -->
                                                                 <div class="product-action">
                                                                     <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
                                                                         <span class="pro-action-icon"><i class="feather-eye"></i></span>
                                                                     </a>
                                                                     <a href="#add-to-cart" class="add-to-cart">
                                                                         <span class="cart-title">
                                                                             <span class="add-c-title">
-                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
                                                                                 <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>
@@ -705,7 +681,6 @@
                                                                 <div class="product-cart">
                                                                     <div class="product-action cart-wishlist">
                                                                         <a href="javascript:void(0)" class="add-to-cart">
-                                                                            {{-- <span class="tooltip-text">Yêu thích</span> --}}
                                                                             <i class="feather-shopping-bag"></i>
                                                                             <span class="add-title">Thêm vào giỏ hàng</span>
                                                                         </a>
@@ -744,13 +719,11 @@
                                                                 <!-- product-action start -->
                                                                 <div class="product-action">
                                                                     <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                        {{-- <span class="tooltip-text">Quickview</span> --}}
                                                                         <span class="pro-action-icon"><i class="feather-eye"></i></span>
                                                                     </a>
                                                                     <a href="#add-to-cart" class="add-to-cart">
                                                                         <span class="cart-title">
                                                                             <span class="add-c-title">
-                                                                                {{-- <span class="tooltip-text">Add to cart</span> --}}
                                                                                 <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
                                                                                 <span class="add-title">Thêm vào giỏ hàng</span>
                                                                             </span>

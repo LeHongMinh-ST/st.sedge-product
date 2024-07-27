@@ -209,7 +209,7 @@
 }
 /************************************* blog-sidebar css end **********************************/
 
-/************************************* article css start *************************************/ 
+/************************************* article css start *************************************/
 /*  blog-post-opt css  */
 .article-blog-post .blog-post-opt {
     margin: 30px 0px 0px;
@@ -219,13 +219,15 @@
 }
 
 /*=============================
-    blog-img css 
+    blog-img css
 ==============================*/
 .article-blog-post .blog-image {
     position: relative;
 }
 .article-blog-post .blog-image a.banner-img img {
     width: 100%;
+    max-height: 500px;
+    object-fit:cover ;
 }
 .article-blog-post .blog-image ul {
     position: absolute;
@@ -236,10 +238,6 @@
     padding: 5px 15px;
 }
 .article-blog-post .blog-image ul li.date-time {
-    color: var(--paragraph-font-color);
-    background-color: var(--body-bgcolor);
-}
-.article-blog-post .blog-image ul li.blog-comment {
     color: var(--body-bgcolor);
     background-color: var(--primary-font-color);
 }
@@ -284,6 +282,10 @@
 /*=============================
     blog-post-content css
 ==============================*/
+.blog-desc{
+    font-size: 1.1rem;
+    color: #0b0909;
+}
 .article-blog-post .blog-post-opt.blog-post-content {
     margin: 17px 0px 0px;
 }
@@ -311,8 +313,8 @@
 @media (max-width: 767px) {
    .article-blog-post .blog-content .blog-wrap-desc blockquote {
     padding: 20px 12px;
-   } 
-} 
+   }
+}
 @media (max-width: 600px) {
     .article-blog-post .blog-content .blog-wrap-desc blockquote {
         font-size: 14px;
@@ -363,7 +365,7 @@
 .blog-share ul.social-icon li {
     margin: 0px 0px 0px 5px;
 }
-.blog-share ul.social-icon li a {  
+.blog-share ul.social-icon li a {
     height: 35px;
     width: 35px;
     display: flex;
@@ -382,8 +384,8 @@
     color: var(--body-bgcolor);
     background-color: #bd081c;
 }
-.blog-share ul.social-icon li a.facebook:hover, 
-.blog-share ul.social-icon li a.twitter:hover, 
+.blog-share ul.social-icon li a.facebook:hover,
+.blog-share ul.social-icon li a.twitter:hover,
 .blog-share ul.social-icon li a.pinterest:hover {
     background-color: var(--primary-font-color);
 }
@@ -444,7 +446,7 @@
     font-size: 20px;
     color: var(--secondary-font-color);
 }
-.review-comment .cmt-info-wrap .comment-info .comment-avtar .review-name .avtar-cmt, 
+.review-comment .cmt-info-wrap .comment-info .comment-avtar .review-name .avtar-cmt,
 .review-comment .cmt-info-wrap .comment-info .comment-avtar .review-name .avtar-cmt .cmt-auth {
     width: 50px;
     height: 50px;
@@ -503,7 +505,7 @@
 .comments-reply-area .form-wrap .form-filed input {
     height: 45px;
 }
-.comments-reply-area .form-wrap .form-filed input, 
+.comments-reply-area .form-wrap .form-filed input,
 .comments-reply-area .form-wrap .form-filed textarea {
     width: 100%;
 }

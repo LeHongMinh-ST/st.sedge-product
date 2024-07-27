@@ -127,19 +127,6 @@
                                         </div>
                                     </div>
                                     <!-- blog-sidebar recent-post end -->
-                                    <!-- blog-sidebar tag start -->
-                                    <div class="blog-post-sidebar blog-tags">
-                                        <h6 class="blog-sidebar-title">Tag</h6>
-                                        <div class="sidebartag">
-                                            <ul class="sidebar-tag">
-                                                <li><a href="#">Tag 1</a></li>
-                                                <li><a href="#">Tag 2</a></li>
-                                                <li><a href="#">Tag 3</a></li>
-                                                <li><a href="#">Tag 4</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- blog-sidebar tag end -->
                                 </div>
                                 <!-- blog sidebar end -->
                             </div>
@@ -153,7 +140,7 @@
                                                             <span class="date">14</span>
                                                             <span class="month">May</span>
                                                         </span>
-                                                    <a href="article-post.html" class="blog-img">
+                                                    <a href="{{route('todo.article')}}" class="blog-img">
                                                         <img src="assets/client/img/blog/home-blog1.jpg" class="img-fluid" alt="blog">
                                                         <span class="blog-icon"><i class="feather-link"></i></span>
                                                     </a>

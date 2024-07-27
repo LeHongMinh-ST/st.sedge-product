@@ -22,7 +22,6 @@
                     <li class="menu-link">
                         <a href="{{route('todo.home')}}" class="link-title" >
                             <span class="sp-link-title">Trang chủ</span>
-                            {{-- <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span> --}}
                         </a>
                     </li>
                     <li class="menu-link">
@@ -205,13 +204,16 @@
                     <li class="menu-link">
                         <a href="{{route('todo.blog')}}" class="link-title" >
                             <span class="sp-link-title">Blog</span>
-{{--                            <span class="menu-arrow"><i class="fa-solid fa-angle-down"></i></span>--}}
                         </a>
                     </li>
                     <li class="menu-link">
                         <a href="{{route('todo.contact')}}" class="link-title" >
                             <span class="sp-link-title">Liên hệ</span>
-                            {{-- <span class="m enu-arrow"><i class="fa-solid fa-angle-down"></i></span> --}}
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="{{route('todo.checkorder')}}" class="link-title" >
+                            <span class="sp-link-title">Kiểm tra đơn hàng</span>
                         </a>
                     </li>
                 </ul>

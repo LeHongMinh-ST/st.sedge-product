@@ -130,17 +130,6 @@ Danh mục sản phẩm - Cóincidence
                                                                     <div class="product-description">
                                                                         <p>{{ $product->description }}</p>
                                                                     </div>
-                                                                    <!-- product-rating start -->
-                                                                    <div class="product-ratting">
-                                                                        <span class="star-rating">
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star-half-alt"></i>
-                                                                        </span>
-                                                                    </div>
-                                                                    <!-- product-rating end -->
                                                                 </div>
                                                                 <!-- product-action start -->
                                                                 <div class="product-action">

@@ -23,4 +23,16 @@ class ShopController extends BaseController
         $product = Product::with('galeries')->findOrFail($id);
         return view('client.pages.product_template', compact('product'));
     }
+
+    public function showMenu()
+    {
+        $categories = Category::all();
+        $products = Product::latest()->take(6)->get();
+        return view('client.includes.header_menu', compact('categories', 'products'));
+    }
+
+    public function quickview($id): void
+    {
+
+    }
 }

@@ -1,7 +1,7 @@
 @extends('client.layouts.master')
 
 @section('title')
-    Chi tiết sản phẩm - {{ $product->name }}
+Chi tiết sản phẩm - {{ $product->name }}
 @endsection
 
 @section('content')
@@ -42,7 +42,7 @@
                                 <div class="product-img-top">
                                     <button class="full-view"><i class="bi bi-arrows-fullscreen"></i></button>
                                     <div class="slider-big slick-slider">
-                                        
+
                                         <div class="slick-slide">
                                             <a href="{{ asset($product->thumbnail) }}" class="product-single">
                                                 <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('{{ asset($product->thumbnail) }}');">
@@ -50,21 +50,23 @@
                                                 </figure>
                                             </a>
                                         </div>
-                                        
+
+
                                     </div>
                                 </div>
                                 <!-- top slick-slider end -->
                                 <!-- small slick-slider start -->
                                 <div class="pro-slider">
                                     <div class="slider-small pro-detail-slider small-slider">
-                                    {{--
+                                        @if (!empty($product->galleries))
                                         @foreach ($product->galleries as $gallery)
                                         <div class="slick-slide">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
                                                 <img src="{{ asset($gallery->image_path) }}" class="img-fluid" alt="{{ $product->name }}">
                                             </a>
                                         </div>
-                                        @endforeach --}}
+                                        @endforeach
+                                        @endif
                                     </div>
                                 </div>
                                 <!-- small slick-slider end -->

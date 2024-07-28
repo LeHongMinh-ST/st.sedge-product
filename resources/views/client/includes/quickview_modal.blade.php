@@ -12,7 +12,7 @@
                         <div class="quick-view-tab">
                             <div class="quick-block">
                                 <div class="quick-image">
-                                    <a href="product-template.html"><img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid" alt="p-1"></a>
+                                    <a href="product-template.html"><img src="{{asset('assets/client/img/product/home-pro-1.jpg')}}" class="img-fluid" alt="p-1"></a>
                                 </div>
                             </div>
                         </div>
@@ -21,18 +21,6 @@
                     <!-- quick-view-content start -->
                     <div class="quick-view-content">
                         <div class="pro-nprist">
-                            <div class="product-ratting">
-                                <span class="spr-badge">
-                                    <span class="pro-ratting">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </span>
-                                    <span class="spr-badge-caption">No reviews</span>
-                                </span>
-                            </div>
                             <!-- product-title start -->
                             <div class="product-title">
                                 <h6>Dép cói</h6>
@@ -55,14 +43,6 @@
                             <form id="add-item-qv" action="https://spacingtech.com/cart/add" method="post">
                                 <div class="quick-view-select">
                                     <div class="quick-view-text">
-                                        {{-- <div class="selector-wrapper">
-                                            <label>Color:</label>
-                                            <select class="single-option-selector" data-option="option1" id="product-color">
-                                                <option value="Green">Green</option>
-                                                <option value="Olive">Olive</option>
-                                                <option value="Silver">Silver</option>
-                                            </select>
-                                        </div> --}}
                                         <div class="selector-wrapper">
                                             <div class="pro-qty-wrap">
                                                 <h6>Số lượng:</h6>

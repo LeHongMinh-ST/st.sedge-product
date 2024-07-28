@@ -5,6 +5,7 @@ declare(strict_types=1);
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashbroadController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Client\ShopController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -18,10 +19,14 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::prefix('')->group(function (): void {
+    Route::get('/', fn () => view('client.pages.index'))->name('todo.home');
+    Route::get('/collection', [ShopController::class, 'index'])->name('todo.collection');
+    Route::get('/product/{id}', [ShopController::class, 'show'])->name('client.product.details');
+    Route::get('contact', fn () => view('client.pages.contact'))->name('todo.contact');
+});
 
-Route::get('/', fn () => view('client.pages.index'))->name('todo.home');
-Route::get('collection', fn () => view('client.pages.collection'))->name('todo.collection');
-Route::get('contact', fn () => view('client.pages.contact'))->name('todo.contact');
+
 // Route::get('/product', fn () => view('client.pages.product'))->name('todo.product');
 Route::get('blog', fn () => view('client.pages.blog'))->name('todo.blog');
 Route::get('cart', fn () => view('client.pages.cart'))->name('todo.cart');

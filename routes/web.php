@@ -21,12 +21,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::prefix('')->group(function (): void {
-    //Route::get('/', [ShopController::class, 'showMenu'])->name('todo.home');
-    Route::get('/', fn () => view('client.pages.index'))->name('todo.home');
+    // Route::get('/', fn () => view('client.pages.index'))->name('todo.home');
+    Route::get('/', [ShopController::class, 'home'])->name('todo.home');
     Route::get('/collection', [ShopController::class, 'index'])->name('todo.collection');
     Route::get('/product/{id}', [ShopController::class, 'show'])->name('client.product.details');
+    Route::get('/product/{id}/quickview', [ShopController::class, 'quickView'])->name('product.quickview');
     Route::get('contact', fn () => view('client.pages.contact'))->name('todo.contact');
-    Route::get('/product/quickview/{id}', [ShopController::class, 'quickview'])->name('product.quickview');
 });
 
 

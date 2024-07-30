@@ -12,7 +12,9 @@
                         <div class="quick-view-tab">
                             <div class="quick-block">
                                 <div class="quick-image">
-                                    <a href="product-template.html"><img src="{{asset('assets/client/img/product/home-pro-1.jpg')}}" class="img-fluid" alt="p-1"></a>
+                                    <a href="{{ route('client.product.details', $product->id) }}">
+                                        <img src="{{ asset($product->thumbnail) }}" class="img-fluid" alt="{{ $product->name }}">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -23,24 +25,26 @@
                         <div class="pro-nprist">
                             <!-- product-title start -->
                             <div class="product-title">
-                                <h6>Dép cói</h6>
+                                <h6>{{ $product->name }}</h6>
                             </div>
                             <!-- product-title end -->
                             <!-- product-price start -->
                             <div class="product-price">
                                 <div class="price-box">
-                                    <span class="new-price">111.000 <u>đ</u></span>
-                                    <span class="old-price ms-3">127.00 <u>đ</u></span>
+                                    <span class="new-price">{{ number_format($product->price, 0, ',', '.') }} <u>đ</u></span>
+                                    @if($product->old_price)
+                                        <span class="old-price ms-3">{{ number_format($product->old_price, 0, ',', '.') }} <u>đ</u></span>
+                                    @endif
                                 </div>
                             </div>
                             <!-- product-price end -->
                             <!-- product-desc start -->
                             <div class="product-desc">
-                                <p>
-                                    Dép cói là một loại dép được làm từ sợi cói, thường được sử dụng trong mùa hè vì sự thoáng mát và thân thiện với môi trường.</p>
+                                <p>{{ $product->description }}</p>
                             </div>
                             <!-- product-desc end -->
-                            <form id="add-item-qv" action="https://spacingtech.com/cart/add" method="post">
+                            <form id="add-item-qv" action="" method="post">
+                                @csrf
                                 <div class="quick-view-select">
                                     <div class="quick-view-text">
                                         <div class="selector-wrapper">
@@ -58,10 +62,9 @@
                                     </div>
                                 </div>
                                 <div class="quickview-buttons">
-                                    <button type="button" onclick="location.href='cart-page.html'" class="btn btn-style3 mt-3">Thêm vào giỏ hàng</button>
+                                    <button type="submit" class="btn btn-style3 mt-3">Thêm vào giỏ hàng</button>
                                 </div>
                             </form>
-                            <!-- product-title end -->
                         </div>
                     </div>
                     <!-- quick-view-content end -->
@@ -70,3 +73,7 @@
         </div>
     </div>
 </div>
+
+
+
+

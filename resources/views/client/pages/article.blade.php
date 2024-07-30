@@ -15,7 +15,7 @@
                             <!-- breadcrumb-list start -->
                             <ul class="breadcrumb-ul">
                                 <li class="breadcrumb-li">
-                                    <a class="breadcrumb-link" href="{{route("todo.home")}}">Trang chủ</a>
+                                    <a class="breadcrumb-link" href="{{route('todo.home')}}">Trang chủ</a>
                                 </li>
                                 <li class="breadcrumb-li">
                                     <span class="breadcrumb-text">Tiêu đề bài viết</span>

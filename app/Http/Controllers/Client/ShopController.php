@@ -13,8 +13,13 @@ class ShopController extends BaseController
 {
     public function index(Request $request)
     {
-        $products = Product::paginate(9);
         $categories = Category::all();
+        $query = Product::query();
+        if ($request->has('categories')) {
+            $query->whereIn('category_id', $request->categories);
+        }
+        $products = $query->paginate(9);
+
         return view('client.pages.collection', compact('products', 'categories'));
     }
 
@@ -24,15 +29,23 @@ class ShopController extends BaseController
         return view('client.pages.product_template', compact('product'));
     }
 
-    public function showMenu()
+    public function quickView($id)
     {
-        $categories = Category::all();
-        $products = Product::latest()->take(6)->get();
-        return view('client.includes.header_menu', compact('categories', 'products'));
+        $product = Product::findOrFail($id);
+        return response()->json([
+            'id' => $product->id,
+            'name' => $product->name,
+            'price' => number_format($product->price, 0, ',', '.'),
+            'thumbnail' => asset($product->thumbnail),
+            'description' => $product->description,
+        ]);
     }
 
-    public function quickview($id): void
+    public function home()
     {
+        $latestProducts = Product::latest()->take(10)->get();
+        $categories = Category::all();
 
+        return view('client.pages.index', compact('latestProducts', 'categories'));
     }
 }

@@ -7,7 +7,7 @@
 @section('content')
 <main id="main-content">
     <!-- home-slider start -->
-    <section class="home-slider-area section-ptb" style="background-image: url('{{asset("assets/client/img/slider/home-bg.jpg")}}" );">
+    <section class="home-slider-area section-ptb" style="background-image: url('{{asset('assets/client/img/slider/home-bg.jpg')}}" );">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -16,13 +16,13 @@
                             <div class="home-slider-title">
                                 <span class="sub-title">Các sản phảm từ cói giảm giá 30% </span>
                                 <h2>Nghề đan cói ở Kim Sơn</h2>
-                                <a href="collection.html" class="btn btn-style">Mua ngay</a>
+                                <a href="{{ route('todo.collection') }}" class="btn btn-style">Mua ngay</a>
                             </div>
                         </div>
                         <div class="slider-block slider-image">
                             <div class="home-slider-img">
                                 <span class="image">
-                                    <img src="{{asset("assets/client/img/slider/home-slider.jpg")}}" class="img-fluid" alt="home-slider">
+                                    <img src="{{asset('assets/client/img/slider/home-slider.jpg')}}" class="img-fluid" alt="home-slider">
                                 </span>
                             </div>
                         </div>
@@ -76,11 +76,11 @@
                                     <div class="banner-wrapper">
                                         <div class="banner-info">
                                             <div class="banner-sub-title">
-                                                <span>Loại sản phẩm: Hộp</span>
+                                                <span>Loại sản phẩm: ĐỒ GIA DỤNG</span>
                                             </div>
                                             <h2>Đồ gia dụng</h2>
                                             <div class="banner-link">
-                                                <a href="collection.html" class="btn btn-style">Mua ngay</a>
+                                                <a href="{{route('todo.collection')}}" class="btn btn-style">Mua ngay</a>
                                             </div>
                                         </div>
                                     </div>
@@ -96,9 +96,9 @@
                                             <div class="banner-sub-title">
                                                 <span>Loại sản phẩm: Túi xách</span>
                                             </div>
-                                            <h2>Túi xách thời trang</h2>
+                                            <h2>Túi xách</h2>
                                             <div class="banner-link">
-                                                <a href="collection.html" class="btn btn-style">Mua ngay</a>
+                                                <a href="{{route('todo.collection')}}" class="btn btn-style">Mua ngay</a>
                                             </div>
                                         </div>
                                     </div>
@@ -178,14 +178,14 @@
     </section>
     <!-- our-service end -->
     <!-- home-about start -->
-    <section class="about-area" style="background-image: url('{{asset("assets/client/img/banner/home-about-bg.jpg")}}" );">
+    <section class="about-area" style="background-image: url('{{asset('assets/client/img/banner/home-about-bg.jpg')}});">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="about-wrapper">
                         <div class="about-img about-wrap">
                             <div class="about-img-block">
-                                <img src="{{asset("assets/client/img/banner/about-banner.png")}}" class="img-fluid" alt="about-banner">
+                                <img src="{{asset('assets/client/img/banner/about-banner.png')}}" class="img-fluid" alt="about-banner">
                             </div>
                         </div>
                         <div class="about-info about-wrap">
@@ -202,7 +202,7 @@
                                 </div>
                             </div>
                             <div class="about-info-btn">
-                                <a href="#" class="btn btn-style">Xem thêm</a>
+                                <a href="{{route('todo.blog')}}" class="btn btn-style">Xem thêm</a>
                             </div>
                         </div>
                     </div>
@@ -219,415 +219,43 @@
                     <div class="collection-category">
                         <div class="section-capture">
                             <div class="section-title">
-                                <h2>Sản phẩm nổi bật</h2>
+                                <h2>Sản phẩm mới ra mắt</h2>
                             </div>
                         </div>
                         <div class="collection-wrap">
                             <!-- product-area-title end -->
                             <div class="collection-slider swiper" id="new-product4">
                                 <div class="swiper-wrapper">
+                                @foreach($latestProducts as $product)
                                     <div class="swiper-slide">
                                         <!-- product start -->
                                         <div class="single-product-wrap">
-                                            <!-- product-img start -->
                                             <div class="product-image">
-                                                <a href="product-template.html" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
+                                                <a href="{{ route('client.product.details', $product->id) }}" class="pro-img">
+                                                    <img src="{{ asset($product->thumbnail) }}" class="img-fluid img1" alt="{{ $product->name }}">
+                                                    <img src="{{ asset($product->thumbnail) }}" class="img-fluid img2" alt="{{ $product->name }}">
                                                 </a>
-                                                <!-- product-action start -->
-                                                <div class="product-action pro-quiqview">
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <span class="tooltip-text">Xem sản phẩm</span>
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="product-cart">
-                                                    <div class="product-action cart-wishlist">
-                                                        <a href="javascript:void(0)" class="add-to-cart">
-                                                            <i class="feather-shopping-bag"></i>
-                                                            <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- product-action end -->
                                             </div>
-                                            <!-- product-img end -->
-                                            <!-- product-content start -->
                                             <div class="product-content">
                                                 <div class="product-info">
-                                                    <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Dép cói 1</a></h6>
-                                                    <!-- product-title end -->
-                                                    <!-- product-price start -->
+                                                    <h6><a href="{{ route('todo.collection', $product->id) }}">{{ $product->name }}</a></h6>
                                                     <div class="price-box">
-                                                        <span class="new-price">111.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
+                                                        <span class="new-price">{{ number_format($product->price, 0, ',', '.') }} <u>đ</u></span>
+                                                        @if($product->old_price)
+                                                            <span class="old-price ms-3">{{ number_format($product->old_price, 0, ',', '.') }} <u>đ</u></span>
+                                                        @endif
                                                     </div>
-                                                    <!-- product-price end -->
-                                                    <!-- product-rating start -->
-                                                    <div class="product-ratting">
-                                                        <span class="star-rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star-half-alt"></i>
-                                                        </span>
-                                                    </div>
-                                                    <!-- product-rating end -->
                                                 </div>
-                                                <!-- product-action start -->
-                                                <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
-                                                        <i class="feather-shopping-bag"></i>
-                                                    </a>
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- product-action end -->
                                             </div>
-                                            <!-- product-content end -->
                                         </div>
                                         <!-- product end -->
                                     </div>
-                                    <div class="swiper-slide">
-                                        <!-- product start -->
-                                        <div class="single-product-wrap">
-                                            <!-- product-img start -->
-                                            <div class="product-image">
-                                                <a href="product-template.html" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-3.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-fluid img2" alt="p-2">
-                                                </a>
-                                                <!-- product-action start -->
-                                                <div class="product-action pro-quiqview">
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <span class="tooltip-text">Xem sản phẩm</span>
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="product-cart">
-                                                    <div class="product-action cart-wishlist">
-                                                        <a href="javascript:void(0)" class="add-to-cart">
-                                                            <i class="feather-shopping-bag"></i>
-                                                            <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-img end -->
-                                            <!-- product-content start -->
-                                            <div class="product-content">
-                                                <div class="product-info">
-                                                    <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Túi cói</a></h6>
-                                                    <!-- product-title end -->
-                                                    <!-- product-price start -->
-                                                    <div class="price-box">
-                                                        <span class="new-price">121.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">142.000 <u>đ</u></span>
-                                                    </div>
-                                                    <!-- product-price end -->
-                                                    <!-- product-rating start -->
-                                                    <div class="product-ratting">
-                                                        <span class="star-rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star-half-alt"></i>
-                                                        </span>
-                                                    </div>
-                                                    <!-- product-rating end -->
-                                                </div>
-                                                <!-- product-action start -->
-                                                <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
-                                                        <i class="feather-shopping-bag"></i>
-                                                    </a>
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-content end -->
-                                        </div>
-                                        <!-- product end -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- product start -->
-                                        <div class="single-product-wrap">
-                                            <!-- product-img start -->
-                                            <div class="product-image">
-                                                <a href="product-template.html" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
-                                                </a>
-                                                <!-- product-action start -->
-                                                <div class="product-action pro-quiqview">
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <span class="tooltip-text">Xem sản phẩm</span>
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="product-cart">
-                                                    <div class="product-action cart-wishlist">
-                                                        <a href="javascript:void(0)" class="add-to-cart">
-                                                            <i class="feather-shopping-bag"></i>
-                                                            <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-img end -->
-                                            <!-- product-content start -->
-                                            <div class="product-content">
-                                                <div class="product-info">
-                                                    <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Dép cói</a></h6>
-                                                    <!-- product-title end -->
-                                                    <!-- product-price start -->
-                                                    <div class="price-box">
-                                                        <span class="new-price">111.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
-                                                    </div>
-                                                    <!-- product-price end -->
-                                                    <!-- product-rating start -->
-                                                    <div class="product-ratting">
-                                                        <span class="star-rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star-half-alt"></i>
-                                                        </span>
-                                                    </div>
-                                                    <!-- product-rating end -->
-                                                </div>
-                                                <!-- product-action start -->
-                                                <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
-                                                        <i class="feather-shopping-bag"></i>
-                                                    </a>
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-content end -->
-                                        </div>
-                                        <!-- product end -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- product start -->
-                                        <div class="single-product-wrap">
-                                            <!-- product-img start -->
-                                            <div class="product-image">
-                                                <a href="#" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-3.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-fluid img2" alt="p-2">
-                                                </a>
-                                                <!-- product-action start -->
-                                                <div class="product-action pro-quiqview">
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <span class="tooltip-text">Xem sản phẩm</span>
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="product-cart">
-                                                    <div class="product-action cart-wishlist">
-                                                        <a href="javascript:void(0)" class="add-to-cart">
-                                                            <i class="feather-shopping-bag"></i>
-                                                            <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-img end -->
-                                            <!-- product-content start -->
-                                            <div class="product-content">
-                                                <div class="product-info">
-                                                    <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Túi cói</a></h6>
-                                                    <!-- product-title end -->
-                                                    <!-- product-price start -->
-                                                    <div class="price-box">
-                                                        <span class="new-price">121.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">142.000 <u>đ</u></span>
-                                                    </div>
-                                                    <!-- product-price end -->
-                                                    <!-- product-rating start -->
-                                                    <div class="product-ratting">
-                                                        <span class="star-rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star-half-alt"></i>
-                                                        </span>
-                                                    </div>
-                                                    <!-- product-rating end -->
-                                                </div>
-                                                <!-- product-action start -->
-                                                <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
-                                                        <i class="feather-shopping-bag"></i>
-                                                    </a>
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-content end -->
-                                        </div>
-                                        <!-- product end -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- product start -->
-                                        <div class="single-product-wrap">
-                                            <!-- product-img start -->
-                                            <div class="product-image">
-                                                <a href="product-template.html" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-1.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-2.jpg")}}" class="img-fluid img2" alt="p-2">
-                                                </a>
-                                                <!-- product-action start -->
-                                                <div class="product-action pro-quiqview">
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <span class="tooltip-text">Xem sản phẩm</span>
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="product-cart">
-                                                    <div class="product-action cart-wishlist">
-                                                        <a href="javascript:void(0)" class="add-to-cart">
-                                                            <i class="feather-shopping-bag"></i>
-                                                            <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-img end -->
-                                            <!-- product-content start -->
-                                            <div class="product-content">
-                                                <div class="product-info">
-                                                    <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Dép cói</a></h6>
-                                                    <!-- product-title end -->
-                                                    <!-- product-price start -->
-                                                    <div class="price-box">
-                                                        <span class="new-price">111.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">127.000 <u>đ</u></span>
-                                                    </div>
-                                                    <!-- product-price end -->
-                                                    <!-- product-rating start -->
-                                                    <div class="product-ratting">
-                                                        <span class="star-rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star-half-alt"></i>
-                                                        </span>
-                                                    </div>
-                                                    <!-- product-rating end -->
-                                                </div>
-                                                <!-- product-action start -->
-                                                <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
-                                                        <i class="feather-shopping-bag"></i>
-                                                    </a>
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-content end -->
-                                        </div>
-                                        <!-- product end -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- product start -->
-                                        <div class="single-product-wrap">
-                                            <!-- product-img start -->
-                                            <div class="product-image">
-                                                <a href="product-template.html" class="pro-img">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-3.jpg")}}" class="img-fluid img1" alt="p-1">
-                                                    <img src="{{asset("assets/client/img/product/home-pro-4.jpg")}}" class="img-fluid img2" alt="p-2">
-                                                </a>
-                                                <!-- product-action start -->
-                                                <div class="product-action pro-quiqview">
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <span class="tooltip-text">Xem sản phẩm</span>
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="product-cart">
-                                                    <div class="product-action cart-wishlist">
-                                                        <a href="javascript:void(0)" class="add-to-cart">
-                                                            <i class="feather-shopping-bag"></i>
-                                                            <span class="add-title">Thêm vào giỏ hàng</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-img end -->
-                                            <!-- product-content start -->
-                                            <div class="product-content">
-                                                <div class="product-info">
-                                                    <!-- product-title start -->
-                                                    <h6><a href="product-template.html">Túi cói</a></h6>
-                                                    <!-- product-title end -->
-                                                    <!-- product-price start -->
-                                                    <div class="price-box">
-                                                        <span class="new-price">121.000 <u>đ</u></span>
-                                                        <span class="old-price ms-3">142.000 <u>đ</u></span>
-                                                    </div>
-                                                    <!-- product-price end -->
-                                                    <!-- product-rating start -->
-                                                    <div class="product-ratting">
-                                                        <span class="star-rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star-half-alt"></i>
-                                                        </span>
-                                                    </div>
-                                                    <!-- product-rating end -->
-                                                </div>
-                                                <!-- product-action start -->
-                                                <div class="product-action">
-                                                    <a href="javascript:void(0)" class="add-to-cart cart-width">
-                                                        <i class="feather-shopping-bag"></i>
-                                                    </a>
-                                                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view">
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- product-action end -->
-                                            </div>
-                                            <!-- product-content end -->
-                                        </div>
-                                        <!-- product end -->
-                                    </div>
-
+                                @endforeach
                                 </div>
                             </div>
                             <!-- product-area-title end -->
                             <div class="collection-button">
-                                <a href="#" class="btn btn-style">Xem thêm</a>
+                                <a href="{{route('todo.collection')}}" class="btn btn-style">Xem thêm</a>
                             </div>
                         </div>
                     </div>
@@ -753,7 +381,7 @@
                             <div class="offer-text-desc">
                                 <div class="desc-block">
                                     <p class="desc">Để có được một sản phẩm cói mỹ nghệ đạt tiêu chuẩn xuất khẩu, kỹ thuật trồng và sản xuất cói của Kim Sơn cũng khá đặc biệt. Đó là cả một quy trình công phu, tỉ mỉ và chính xác ngay từ lúc trồng cói, thu hoạch cói, chọn cói, chẻ cói, phơi cói, nhuộm cói… cho đến khâu cuối cùng là đan, dệt cói và hoàn thiện sản phẩm.</p>
-                                    <a href="about-us-3.html" class="text-btn">Mua ngay</a>
+                                    <a href="{{route('todo.collection')}}" class="text-btn">Mua ngay</a>
                                 </div>
                             </div>
                         </div>
@@ -762,84 +390,10 @@
             </div>
         </div>
     </section>
-    <!-- offer-text end -->
-    <!-- instagram start -->
-    <section class="instagram-warp section-ptb">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="insta-slider swiper pp" id="insta-slider4">
-                        <div class="section-title title2">
-                            <h2>Sản phẩm trưng bày</h2>
-                        </div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="index4.html">
-                                    <img src="{{asset("assets/client/img/insta/home-insta-1.jpg")}}" class="img-fluid" alt="insta2">
-                                    <div class="insta-icon">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="index4.html">
-                                    <img src="{{asset("assets/client/img/insta/home-insta-2.jpg")}}" class="img-fluid" alt="insta3">
-                                    <div class="insta-icon">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="index4.html">
-                                    <img src="{{asset("assets/client/img/insta/home-insta-3.jpg")}}" class="img-fluid" alt="insta4">
-                                    <div class="insta-icon">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="index4.html">
-                                    <img src="{{asset("assets/client/img/insta/home-insta-4.jpg")}}" class="img-fluid" alt="insta5">
-                                    <div class="insta-icon">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="index4.html">
-                                    <img src="{{asset("assets/client/img/insta/home-insta-5.jpg")}}" class="img-fluid" alt="insta6">
-                                    <div class="insta-icon">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="index4.html" class="banner-hover">
-                                    <img src="{{asset("assets/client/img/insta/home-insta-6.jpg")}}" class="img-fluid" alt="insta7">
-                                    <div class="insta-icon">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="index4.html">
-                                    <img src="{{asset("assets/client/img/insta/home-insta-7.jpg")}}" class="img-fluid" alt="insta1">
-                                    <div class="insta-icon">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- instagram end -->
 </main>
 
 <!-- quickview modal start -->
-@include('client.includes.quickview_modal')
+
 <!-- quickview modal end -->
 
 @endsection

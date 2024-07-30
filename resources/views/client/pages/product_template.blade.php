@@ -15,7 +15,10 @@ Chi tiết sản phẩm - {{ $product->name }}
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-ul">
                             <li class="breadcrumb-li">
-                                <a class="breadcrumb-link" href="">Trang chủ</a>
+                                <a class="breadcrumb-link" href="{{route('todo.home')}}">Trang chủ</a>
+                            </li>
+                            <li class="breadcrumb-li">
+                                <a class="breadcrumb-link" href="{{route('todo.collection')}}">Sản phẩm</a>
                             </li>
                             <li class="breadcrumb-li">
                                 <span class="breadcrumb-text">{{ $product->name }}</span>
@@ -50,7 +53,15 @@ Chi tiết sản phẩm - {{ $product->name }}
                                                 </figure>
                                             </a>
                                         </div>
-
+                                        @foreach ($product->galeries as $gallery)
+                                        <div class="slick-slide">
+                                            <a href="{{ asset($gallery->thumbnail) }}" class="product-single">
+                                                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url('{{ asset($gallery->thumbnail) }}');">
+                                                    <img src="{{ asset($gallery->thumbnail) }}" class="img-fluid" alt="{{ $product->name }}">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        @endforeach
 
                                     </div>
                                 </div>
@@ -58,11 +69,11 @@ Chi tiết sản phẩm - {{ $product->name }}
                                 <!-- small slick-slider start -->
                                 <div class="pro-slider">
                                     <div class="slider-small pro-detail-slider small-slider">
-                                        @if (!empty($product->galleries))
-                                        @foreach ($product->galleries as $gallery)
+                                        @if (!empty($product->galeries))
+                                        @foreach ($product->galeries as $gallery)
                                         <div class="slick-slide">
                                             <a href="javascript:void(0)" class="product-single--thumbnail">
-                                                <img src="{{ asset($gallery->image_path) }}" class="img-fluid" alt="{{ $product->name }}">
+                                                <img src="{{ asset($gallery->thumbnail) }}" class="img-fluid" alt="{{ $product->name }}">
                                             </a>
                                         </div>
                                         @endforeach
@@ -94,9 +105,9 @@ Chi tiết sản phẩm - {{ $product->name }}
                                     <div class="product-info">
                                         <div class="product-inventory">
                                             <div class="stock-inventory stock-more">
-                                                <p class="text-success">Bạn hãy nhanh tay! còn lại
-                                                    <span class="available-stock bg-success">{{ $product->quantity }}</span>
-                                                    <span>sản phẩm trong kho!</span>
+                                                <p class="text-success">Bạn ơi hãy nhanh tay! còn lại
+                                                <span class="available-stock {{ $product->quantity == 0 ? 'bg-danger' : 'bg-success' }}">{{ $product->quantity }}</span>
+                                                <span>sản phẩm trong kho!</span>
                                                 </p>
                                             </div>
                                             <div class="product-variant">
@@ -145,62 +156,6 @@ Chi tiết sản phẩm - {{ $product->name }}
                                     <div class="product-info">
                                         <div class="form-group">
                                             <a href="#deliver-modal" data-bs-toggle="modal">Giao hàng & Hoàn hàng</a>
-                                        </div>
-                                    </div>
-                                    <!-- que-modal start -->
-                                    <div class="modal fade que-modal" id="que-modal" aria-modal="true" tabindex="-1" role="dialog">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content">
-                                                <div class="modal-body">
-                                                    <button type="button" class="pop-close" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x"></i></button>
-                                                    <div class="product-form-list">
-                                                        <div class="single-product-wrap">
-                                                            <div class="product-image">
-                                                                <a class="pro-img" href="{{ route('client.product.details', $product->id) }}">
-                                                                    <img class="img-fluid img1 resp-img1" src="{{ asset('assets/client/img/product/home-pro-12.jpg') }}" alt="p-1">
-                                                                    <img class="img-fluid img2 resp-img2" src="{{ asset('assets/client/img/product/home-pro-13.jpg') }}" alt="p-2">
-                                                                </a>
-                                                            </div>
-                                                            <div class="product-content">
-                                                                <div class="pro-title-price">
-                                                                    <h6><a href="{{ route('client.product.details', $product->id) }}">Nón</a></h6>
-                                                                    <div class="product-price">
-                                                                        <div class="price-box">
-                                                                            <span class="new-price">Giá 44.00</span>
-                                                                            <span class="old-price">Giá cũ 49.00</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- que-modal end -->
-                                    <div class="product-info">
-                                        <p><span>🚚</span> Mặt hàng sẽ được giao vào hoặc trước <span id="ten-days-ahead">ngày 3 tháng 3 năm 2024</span></p>
-                                    </div>
-                                    <div class="product-info">
-                                        <div class="share-icons">
-                                            <h6>Chia sẻ qua:</h6>
-                                            <div class="pro-social">
-                                                <ul class="social-icon">
-                                                    <li>
-                                                        <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://web.telegram.org/" class="telegram"><i class="fab fa-telegram"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://in.pinterest.com/" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
                                         </div>
                                     </div>
                                     <!-- product detail end -->

@@ -37,7 +37,6 @@
                         <i class="ph-house"></i>
                         <span>
                             Dashboard
-                            <span class="d-block fw-normal opacity-50">Bảng điều khiển</span>
                         </span>
                     </a>
                 </li>
@@ -50,7 +49,6 @@
                         <i class="ph-tote-simple"></i>
                         <span>
                             Sản phẩm
-                            <span class="d-block fw-normal opacity-50">Danh sách sản phẩm</span>
                         </span>
                     </a>
                 </li>
@@ -70,11 +68,29 @@
                         <i class="ph-newspaper"></i>
                         <span>
                             Bài viết
-                            <span class="d-block fw-normal opacity-50">Quản lý bài viết</span>
                         </span>
                     </a>
                 </li>
 
+                <li class="nav-item-header">
+                    <div class="text-uppercase fs-sm lh-sm opacity-50 sidebar-resize-hide">Đơn hàng</div>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.orders.pending.index') }}" class="nav-link {{ request()->routeIs('admin.orders.pending.index') ?'active' : '' }}">
+                        <i class="ph-shopping-bag"></i>
+                        <span>
+                            Đơn hàng chờ duyệt
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.orders.index') }}" class="nav-link {{ request()->routeIs('admin.orders.index') ?'active' : '' }}">
+                        <i class="ph-shopping-cart"></i>
+                        <span>
+                            Tất cả đơn hàng
+                        </span>
+                    </a>
+                </li>
             </ul>
         </div>
         <!-- /main navigation -->

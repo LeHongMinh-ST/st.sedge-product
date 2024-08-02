@@ -49,6 +49,7 @@ class Product extends Model
             'quantity',
             'price',
             'total',
+            'thumbnail',
         ]);
     }
 

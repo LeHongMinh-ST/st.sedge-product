@@ -6,7 +6,9 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DashbroadController;
 use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Client\CheckoutController;
 use App\Http\Controllers\Client\ShopController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
@@ -33,6 +35,9 @@ Route::prefix('')->group(function (): void {
     Route::get('/blog/{id}', [ShopController::class, 'detailBlog'])->name('client.blog.detail');
     Route::get('contact', fn () => view('client.pages.contact'))->name('todo.contact');
 
+    Route::prefix('/checkout')->group(function (): void {
+        Route::get('/', [CheckoutController::class, 'index'])->name('todo.checkout');
+    });
 });
 
 
@@ -121,7 +126,10 @@ Route::prefix('admin')->middleware('auth')->group(function (): void {
         Route::get('/{id}', [PostController::class, 'show'])->name('admin.post.show');
         Route::post('/upload-image', [PostController::class, 'uploadImage'])->name('admin.post.upload-image');
     });
+    Route::prefix('/order')->group(function (): void {
+        Route::get('/', [OrderController::class, 'index'])->name('admin.orders.index');
+        Route::get('/pending', [OrderController::class, 'indexPending'])->name('admin.orders.pending.index');
+    });
 });
-Route::get('/product', fn () => view('client.pages.product_template'))->name('todo.product');
-Route::get('/checkout', fn () => view('client.pages.checkout'))->name('todo.checkout');
+
 Route::get('/product', fn () => view('client.pages.product_template'))->name('todo.product');

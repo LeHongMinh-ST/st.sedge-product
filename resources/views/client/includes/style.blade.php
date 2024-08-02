@@ -30,3 +30,4 @@
 {{-- css custom --}}
 @yield('style_custom')
 {{-- css custom --}}
+@livewireStyles

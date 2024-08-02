@@ -20,3 +20,4 @@
 {{-- js_custom --}}
 @yield('script_custom')
 {{-- js_custom --}}
+@livewireScripts

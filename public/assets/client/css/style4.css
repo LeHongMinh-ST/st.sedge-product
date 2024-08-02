@@ -1874,7 +1874,7 @@ ul.payment-icon li a svg {
     drawer-empty css
 =====================================*/
 .cart-drawer form.drawer-contents .drawer-cart-empty {
-    display: none;
+    /*display: none;*/
     height: 100%;
 }
 .cart-drawer form.drawer-contents .drawer-cart-empty .drawer-scrollable {
@@ -2096,7 +2096,7 @@ ul.cart-items li.cart-item .cart-item-sub .cart-qty-price-remove .cart-item-pric
     margin: 0px 0px 0px auto;
 }
 ul.cart-items li.cart-item .cart-item-sub .cart-qty-price-remove .cart-item-price span.cart-price {
-    display: none;
+    /*display: none;*/
     color: var(--primary-font-color);
 }
 ul.cart-items li.cart-item .cart-item-sub .cart-qty-price-remove .cart-item-remove {
@@ -3043,9 +3043,9 @@ span.header-sale-lable::before {
     }
 }
 
-.fit { 
+.fit {
     display: flex;
-} 
+}
 
 /*=====================================
     banner css

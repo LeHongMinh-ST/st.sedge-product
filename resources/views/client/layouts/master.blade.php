@@ -35,7 +35,8 @@
         @include('client.includes.search_popup')
         <!-- search-popup end -->
         <!-- cart-drawer start -->
-        @include('client.includes.cart_drawer')
+        @livewire('client.component.cart')
+{{--        @include('client.includes.cart_drawer')--}}
         <!-- cart-drawer end -->
         <!-- bg-scren start -->
         <div class="bg-screen"></div>

@@ -5,6 +5,7 @@ declare(strict_types=1);
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DashbroadController;
+use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Client\ShopController;
 use Illuminate\Support\Facades\Artisan;
@@ -26,14 +27,17 @@ Route::prefix('')->group(function (): void {
     Route::get('/collection', [ShopController::class, 'index'])->name('todo.collection');
     Route::get('/product/{id}', [ShopController::class, 'show'])->name('client.product.details');
     Route::get('/product/{id}/quickview', [ShopController::class, 'quickView'])->name('product.quickview');
+    Route::get('/blog', [ShopController::class, 'blog'])->name('client.blog');
+    Route::get('/blog/{id}', [ShopController::class, 'detailBlog'])->name('client.blog.detail');
     Route::get('contact', fn () => view('client.pages.contact'))->name('todo.contact');
+
 });
 
 
 // Route::get('/product', fn () => view('client.pages.product'))->name('todo.product');
-Route::get('blog', fn () => view('client.pages.blog'))->name('todo.blog');
+
 Route::get('cart', fn () => view('client.pages.cart'))->name('todo.cart');
-Route::get('article', fn () => view('client.pages.article'))->name('todo.article');
+//Route::get('article', fn () => view('client.pages.article'))->name('todo.article');
 Route::get('check-order', fn () => view('client.pages.check_order'))->name('todo.checkorder');
 
 // Route::get('link-storage', function (): void {
@@ -103,6 +107,17 @@ Route::prefix('admin')->middleware('auth')->group(function (): void {
         Route::get('/edit/{id}', [CategoryController::class, 'edit'])->name('admin.categories.edit');
         Route::post('/update/{id}', [CategoryController::class, 'update'])->name('admin.categories.update');
         Route::delete('/delete/{id}', [CategoryController::class, 'delete'])->name('admin.categories.delete');
+    });
+
+    Route::prefix('/post')->group(function (): void {
+        Route::get('/', [PostController::class, 'index'])->name('admin.post.index');
+        Route::get('/create', [PostController::class, 'create'])->name('admin.post.create');
+        Route::post('/store', [PostController::class, 'store'])->name('admin.post.store');
+        Route::get('{id}/edit', [PostController::class, 'edit'])->name('admin.post.edit');
+        Route::put('{id}/update', [PostController::class, 'update'])->name('admin.post.update');
+        Route::delete('{id}/delete', [PostController::class, 'delete'])->name('admin.post.delete');
+        Route::get('/{id}', [PostController::class, 'show'])->name('admin.post.show');
+        Route::post('/upload-image', [PostController::class, 'uploadImage'])->name('admin.post.upload-image');
     });
 });
 Route::get('/product', fn () => view('client.pages.product_template'))->name('todo.product');

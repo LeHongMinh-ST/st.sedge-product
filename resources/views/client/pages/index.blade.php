@@ -202,7 +202,7 @@
                                 </div>
                             </div>
                             <div class="about-info-btn">
-                                <a href="{{route('todo.blog')}}" class="btn btn-style">Xem thêm</a>
+                                <a href="{{route('client.blog')}}" class="btn btn-style">Xem thêm</a>
                             </div>
                         </div>
                     </div>

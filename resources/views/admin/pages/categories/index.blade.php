@@ -82,10 +82,10 @@
                             <table class="table table-bordered">
                                 <thead>
                                 <tr>
-                                    <th class="text-center" width="4%">#</th>
-                                    <th class="text-center" width="10%">Tên danh mục</th>
-                                    <th class="text-center" width="20%">Mô tả</th>
-                                    <th class="text-center" width="6%">Hành động</th>
+                                    <th class="text-center" >#</th>
+                                    <th class="text-center" >Tên danh mục</th>
+                                    <th class="text-center" >Mô tả</th>
+                                    <th class="text-center" >Hành động</th>
                                 </tr>
                                 </thead>
                                 <tbody>

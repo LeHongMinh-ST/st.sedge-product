@@ -38,7 +38,8 @@
         ImageResize,
         ImageInsert,
         ImageUpload,
-        AutoImage
+        AutoImage,
+        SimpleUploadAdapter
     } from 'ckeditor5';
     
     // Thêm CSS cho hình ảnh responsive
@@ -67,14 +68,14 @@
         .create(document.querySelector('#editor'), {
             plugins: [
                 Essentials, Bold, Italic, Font, Paragraph, Alignment,
-                Image, ImageToolbar, ImageCaption, ImageStyle, ImageResize, ImageInsert, ImageUpload, AutoImage, ImageResponsivePlugin
+                Image, ImageToolbar, ImageCaption, ImageStyle, ImageResize, ImageInsert, ImageUpload, AutoImage, ImageResponsivePlugin, SimpleUploadAdapter
             ],
             toolbar: {
                 items: [
                     'undo', 'redo', '|', 'bold', 'italic', '|',
                     'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', '|',
                     'alignment:left', 'alignment:center', 'alignment:right', 'alignment:justify', '|',
-                    'imageUpload', 'imageInsert', 'blockQuote'
+                    'imageInsert', 'blockQuote'
                 ]
             },
             image: {

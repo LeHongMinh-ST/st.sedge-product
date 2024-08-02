@@ -80,6 +80,7 @@
                             <thead>
                                 <tr>
                                     <th class="" >#</th>
+                                    <th class="" >Ảnh đại diện bài viết</th>
                                     <th class="" >Tiêu đề</th>
                                     <th class="" >Nội dung</th>
                                     <th class="" >Người đăng</th>
@@ -90,6 +91,7 @@
                                 <tr>
                                     @foreach($posts as $post)
                                     <td>{{ $post->id }}</td>
+                                    <td><img src="{{ asset($post->thumbnail) }}" width="50"></td>
                                     <td>{{ $post->title }}</td>
                                     <td>{!! Str::limit(strip_tags($post->content), 100, '...') !!}</td>
                                     <td>{{ $post->user ? $post->user->fullname : 'Không có người đăng' }}</td>

@@ -40,6 +40,11 @@ class PostController extends Controller
     {
         $post = new Post();
         $post->title = $request->input('title');
+        if ($request->hasFile('thumbnail')) {
+            $thumbnail = $request->file('thumbnail');
+            $path = $thumbnail->storeAs('assets/admin/images/postThumbnail', $thumbnail->getClientOriginalName(), 'public');
+            $post->thumbnail = 'storage/' . $path;
+        }
         $post->content = $this->processContent($request->input('content'));
         $post->user_id = Auth::id();
         $post->save();
@@ -58,6 +63,12 @@ class PostController extends Controller
     {
         $post = Post::findOrFail($id);
         $post->title = $request->input('title');
+        if ($request->hasFile('thumbnail')) {
+            $thumbnail = $request->file('thumbnail');
+            $filename = time() . '_' . $thumbnail->getClientOriginalName();
+            $path = $thumbnail->storeAs('assets/admin/images/postThumbnail', $filename, 'public');
+            $post->thumbnail = 'storage/' . $path . '?v=' . time();
+        }
         $post->content = $this->processContent($request->input('content'));
         $post->save();
 

@@ -47,7 +47,7 @@
                                     <div class="sidbar-inner sidbar-inner-wrap">
                                         <div class="post-image">
                                             <a href="{{ route('client.blog.detail', $recentPost->id) }}" class="banner-img">
-                                                <img src="{{ asset('assets/client/img/blog/blog-bg.jpg') }}" class="img-fluid" alt="blog">
+                                                <img src="{{ asset($recentPost->thumbnail) }}" class="img-fluid" alt="blog">
                                             </a>
                                         </div>
                                         <div class="recent-blog-content">
@@ -127,7 +127,7 @@
                                                 <span class="month">{{ $otherPost->formatted_month }}</span>
                                             </span>
                                             <a href="{{ route('client.blog.detail', $otherPost->id) }}" class="blog-img">
-                                                <img src="{{ asset('assets/client/img/blog/home-blog1.jpg') }}" class="img-fluid" alt="blog">
+                                                <img src="{{ asset($otherPost->thumbnail) }}" class="img-fluid" alt="blog">
                                                 <span class="blog-icon"><i class="feather-link"></i></span>
                                             </a>
                                         </div>

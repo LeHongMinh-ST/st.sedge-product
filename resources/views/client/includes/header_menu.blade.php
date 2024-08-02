@@ -12,7 +12,7 @@
                 </a>
             </li>
             <li class="menu-link">
-                <a href="{{route('todo.blog')}}" class="link-title">
+                <a href="{{route('client.blog')}}" class="link-title">
                     <span class="sp-link-title">Blog</span>
                 </a>
             </li>

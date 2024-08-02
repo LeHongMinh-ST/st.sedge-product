@@ -37,7 +37,7 @@
                         <i class="ph-house"></i>
                         <span>
                             Dashboard
-                            <span class="d-block fw-normal opacity-50">No pending orders</span>
+                            <span class="d-block fw-normal opacity-50">Bảng điều khiển</span>
                         </span>
                     </a>
                 </li>
@@ -50,7 +50,7 @@
                         <i class="ph-tote-simple"></i>
                         <span>
                             Sản phẩm
-                            <span class="d-block fw-normal opacity-50">No pending orders</span>
+                            <span class="d-block fw-normal opacity-50">Danh sách sản phẩm</span>
                         </span>
                     </a>
                 </li>
@@ -60,7 +60,17 @@
                         <i class="ph-stack"></i>
                         <span>
                             Danh mục
-                            <span class="d-block fw-normal opacity-50">No pending orders</span>
+                            <span class="d-block fw-normal opacity-50">Danh mục sản phẩm</span>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('admin.post.index') }}" class="nav-link {{ request()->routeIs('admin.post.index') ?'active' : '' }}">
+                        <i class="ph-newspaper"></i>
+                        <span>
+                            Bài viết
+                            <span class="d-block fw-normal opacity-50">Quản lý bài viết</span>
                         </span>
                     </a>
                 </li>

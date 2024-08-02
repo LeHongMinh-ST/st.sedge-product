@@ -4,8 +4,15 @@
 <link href="{{ asset('assets/admin/css/all.min.css') }}" id="stylesheet" rel="stylesheet" type="text/css">
 <link href="{{ asset('assets/admin/css/noty/noty.min.css') }}" id="stylesheet" rel="stylesheet" type="text/css">
 
-<link href="{{ asset('assets/admin/js/vendor/uploaders/dropzone.min.css') }}" rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.2/ckeditor5.css" />
+<style>
+    .img-responsive {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+</style>
 {{--@vite(['resources/css/app.scss'])--}}
 <!-- /global stylesheets -->
 

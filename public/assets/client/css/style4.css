@@ -295,6 +295,7 @@ button[disabled] {
 
 /* btn-style1 */
 .btn-style {
+    user-select: none;
     color: var(--body-bgcolor);
     font-size: 16px;
     padding: 14px 40px;
@@ -328,6 +329,7 @@ button[disabled] {
     font-weight: 500;
     border: 2px none var(--heading-font-color);
     border-radius: var(--border-radius);
+    user-select: none;
     webkit-transition: color 0.3s ease-in-out,background-color 0.3s ease-in-out,border-color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
     -o-transition: color 0.3s ease-in-out,background-color 0.3s ease-in-out,border-color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
     transition: color 0.3s ease-in-out,background-color 0.3s ease-in-out,border-color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
@@ -345,6 +347,7 @@ button[disabled] {
 
 /* btn-style3 */
 .btn-style3 {
+    user-select: none;
     color: var(--primary-font-color);
     font-size: 16px;
     padding: 17px 38px;
@@ -1874,7 +1877,7 @@ ul.payment-icon li a svg {
     drawer-empty css
 =====================================*/
 .cart-drawer form.drawer-contents .drawer-cart-empty {
-    display: none;
+    /*display: none;*/
     height: 100%;
 }
 .cart-drawer form.drawer-contents .drawer-cart-empty .drawer-scrollable {
@@ -2096,7 +2099,7 @@ ul.cart-items li.cart-item .cart-item-sub .cart-qty-price-remove .cart-item-pric
     margin: 0px 0px 0px auto;
 }
 ul.cart-items li.cart-item .cart-item-sub .cart-qty-price-remove .cart-item-price span.cart-price {
-    display: none;
+    /*display: none;*/
     color: var(--primary-font-color);
 }
 ul.cart-items li.cart-item .cart-item-sub .cart-qty-price-remove .cart-item-remove {
@@ -3043,9 +3046,9 @@ span.header-sale-lable::before {
     }
 }
 
-.fit { 
+.fit {
     display: flex;
-} 
+}
 
 /*=====================================
     banner css

@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
         counter js
     ==============================*/
 
-    
+
     $('.count-number').counterUp({
         delay: 10,
         time: 1000
@@ -22,7 +22,7 @@ jQuery(document).ready(function() {
             fixedContentPos: false
     });
 
-    /*============================== 
+    /*==============================
         magnificPopup js
     ==============================*/
     $('.full-view').on('click', function () {
@@ -89,12 +89,12 @@ jQuery(document).ready(function() {
     /*====================================
         cart-drawer js
     ====================================*/
-    $(".cart-wrapper a.js-cart-drawer,  .bottom-menu-wrapper a.bottom-menu-cart, a.add-to-cart").on("click", function() {
+    $(".cart-wrapper a.js-cart-drawer").on("click", function() {
         $("#cart-drawer").addClass('active');
         $(".bg-screen").addClass('active');
         $("body").addClass('hidden');
     });
-    $(".drawer-close button.drawer-close-btn").on("click", function() {
+    $(".drawer-close button.drawer-close-btn").click(function() {
         $("#cart-drawer").removeClass('active');
         $(".bg-screen").removeClass('active');
         $("body").removeClass('hidden');
@@ -110,13 +110,13 @@ jQuery(document).ready(function() {
         $("body").removeClass('hidden');
         });
         $('#trigger-overlay').on('click', function(){
-        $(".overlay").addClass('open'); 
+        $(".overlay").addClass('open');
     });
 
     $('.overlay-close').on('click', function(){
-        $(".overlay").removeClass('open');  
+        $(".overlay").removeClass('open');
     });
-    
+
     /*===================================
         product-short js
     ===================================*/
@@ -131,7 +131,7 @@ jQuery(document).ready(function() {
         }
     });
 
-    /*========================================== 
+    /*==========================================
         Minus and Plus Btn js
     ==========================================*/
     $('.dec').on("click",function () {
@@ -142,7 +142,7 @@ jQuery(document).ready(function() {
         $input.change();
         return false;
     });
-    
+
     $('.inc').on("click",function () {
         var $input = $(this).parent().find('input');
         $input.val(parseInt($input.val()) + 1);
@@ -150,7 +150,7 @@ jQuery(document).ready(function() {
         return false;
     });
 
-    /*============================== 
+    /*==============================
         quickview slider js
     ==============================*/
     var galleryThumbs = new Swiper(".gallery-thumbs", {
@@ -223,7 +223,7 @@ function zoom(e){
 /*====================================
    home-1  text-replace js
 ====================================*/
-if($('ul.offer-text-ul li.offer-text-li').length){  
+if($('ul.offer-text-ul li.offer-text-li').length){
     addEventListener('DOMContentLoaded', (event) => {
         var slides = document.querySelectorAll('ul.offer-text-ul li.offer-text-li');
         var currentSlide = 0;
@@ -233,8 +233,8 @@ if($('ul.offer-text-ul li.offer-text-li').length){
           currentSlide = (currentSlide+1)%slides.length;
           slides[currentSlide].className = 'offer-text-li show';
         }
-    }); 
-}  
+    });
+}
 
 /*==============================
     read-agree js
@@ -254,10 +254,10 @@ $('label.box-area, .read-agree').on('click', function () {
 $('.list-change-view').on("click",function () {
     event.preventDefault();
     var data_grid = $(this).attr('data-grid-view');
-    if ($('.special-product').hasClass('grid-1') || 
-        $('.special-product').hasClass('grid-2') || 
-        $('.special-product').hasClass('grid-3') || 
-        $('.special-product').hasClass('grid-4')) 
+    if ($('.special-product').hasClass('grid-1') ||
+        $('.special-product').hasClass('grid-2') ||
+        $('.special-product').hasClass('grid-3') ||
+        $('.special-product').hasClass('grid-4'))
     {
         $('.special-product').removeClass('grid-1');
         $('.special-product').removeClass('grid-2');
@@ -1882,7 +1882,7 @@ function initializeClock(id, endtime) {
             }
         }
     });
-            
+
     /*==============================
         home-1 testimonial-slider js
     ==============================*/
@@ -1911,7 +1911,7 @@ function initializeClock(id, endtime) {
     });
 
     /*====================================
-       home-2 test-slider  
+       home-2 test-slider
     ====================================*/
     var swiper = new Swiper('.swiper#test-slider2', {
         loop: false,
@@ -2040,7 +2040,7 @@ function initializeClock(id, endtime) {
         $(visibleSlides).first().prev().css('opacity', 0);
         $(visibleSlides).last().next().css('opacity', 0);
         $('.slick-active').removeClass( "highlight" );
-        $('.slick-active').last().addClass( "highlight" ); 
+        $('.slick-active').last().addClass( "highlight" );
     }
 
     $(setSlideVisibility());
@@ -2054,7 +2054,7 @@ function initializeClock(id, endtime) {
     });
 
     /*====================================
-       home-4 test-slider  
+       home-4 test-slider
     ====================================*/
     var swiper = new Swiper('.swiper#test-slider4', {
         loop: false,
@@ -2146,7 +2146,7 @@ function initializeClock(id, endtime) {
     });
 
     /*====================================
-       home-5 test-slider  
+       home-5 test-slider
     ====================================*/
     var swiper = new Swiper('.swiper#test-slider5', {
         slidesPerView: 3,
@@ -2243,7 +2243,7 @@ function initializeClock(id, endtime) {
         }
     });
 
-    /*==================================== 
+    /*====================================
         home-1 blog-template js
     ====================================*/
     var swiper = new Swiper('.swiper#home1-blog', {
@@ -2431,7 +2431,7 @@ function initializeClock(id, endtime) {
     });
 
     /*====================================
-       home-4 insta-slider  
+       home-4 insta-slider
     ====================================*/
     var swiper = new Swiper('.swiper#insta-slider4', {
         loop: false,
@@ -2627,7 +2627,7 @@ function initializeClock(id, endtime) {
     });
 
     /*====================================
-        product-style-1 js  
+        product-style-1 js
     ====================================*/
     $('.slider-big').slick({
         slidesToShow: 1,
@@ -2658,7 +2658,7 @@ function initializeClock(id, endtime) {
     });
 
     /*====================================
-        product-style-2 js  
+        product-style-2 js
     ====================================*/
     $('.style2-slider-big').slick({
         slidesToShow: 1,
@@ -2694,7 +2694,7 @@ function initializeClock(id, endtime) {
     });
 
     /*====================================
-        product-style-3 js  
+        product-style-3 js
     ====================================*/
     $('.style3-slider-small').slick({
         slidesToShow: 1,
@@ -2734,7 +2734,7 @@ function initializeClock(id, endtime) {
     });
 
     /*====================================
-        product-style-4 js  
+        product-style-4 js
     ====================================*/
     $('.style4-slider-big').slick({
         slidesToShow: 1,
@@ -2770,7 +2770,7 @@ function initializeClock(id, endtime) {
     });
 
     /*====================================
-        product-style-5 js  
+        product-style-5 js
     ====================================*/
     $('.style5-slider-small').slick({
         slidesToShow: 1,
@@ -2783,7 +2783,7 @@ function initializeClock(id, endtime) {
     });
 
     /*====================================
-        product-style-6 js  
+        product-style-6 js
     ====================================*/
     $('.slider-big-6').slick({
         slidesToShow: 1,
@@ -2814,7 +2814,7 @@ function initializeClock(id, endtime) {
     });
 
     /*====================================
-        product-style-7 js  
+        product-style-7 js
     ====================================*/
     $('.slider-big-7').slick({
         slidesToShow: 1,

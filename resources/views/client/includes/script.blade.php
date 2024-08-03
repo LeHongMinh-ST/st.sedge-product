@@ -20,3 +20,17 @@
 {{-- js_custom --}}
 @yield('script_custom')
 {{-- js_custom --}}
+@livewireScripts
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.addEventListener('livewire:init', () => {
+        Livewire.on('post-created', (event) => {
+            Swal.fire({
+                title: "Đặt hàng thành công!",
+                icon: "success",
+                showConfirmButton: false,
+                timer:2000,
+            });
+        });
+    });
+</script>

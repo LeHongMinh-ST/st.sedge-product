@@ -43,28 +43,28 @@
                                 <p>{{ $product->description }}</p>
                             </div>
                             <!-- product-desc end -->
-                            <form id="add-item-qv" action="" method="post">
-                                @csrf
-                                <div class="quick-view-select">
-                                    <div class="quick-view-text">
-                                        <div class="selector-wrapper">
-                                            <div class="pro-qty-wrap">
-                                                <h6>Số lượng:</h6>
-                                                <div class="product-quantity">
-                                                    <div class="cart-plus-minus">
-                                                        <button class="dec qtybutton minus"><i class="fa-solid fa-minus"></i></button>
-                                                        <input value="1" type="text" name="quantity" pattern="[0-9]*">
-                                                        <button class="inc qtybutton plus"><i class="fa-solid fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quickview-buttons">
-                                    <button type="submit" class="btn btn-style3 mt-3">Thêm vào giỏ hàng</button>
-                                </div>
-                            </form>
+{{--                            <form id="add-item-qv" action="" method="post">--}}
+{{--                                @csrf--}}
+{{--                                <div class="quick-view-select">--}}
+{{--                                    <div class="quick-view-text">--}}
+{{--                                        <div class="selector-wrapper">--}}
+{{--                                            <div class="pro-qty-wrap">--}}
+{{--                                                <h6>Số lượng:</h6>--}}
+{{--                                                <div class="product-quantity">--}}
+{{--                                                    <div class="cart-plus-minus">--}}
+{{--                                                        <button class="dec qtybutton minus"><i class="fa-solid fa-minus"></i></button>--}}
+{{--                                                        <input value="1" type="text" name="quantity" pattern="[0-9]*">--}}
+{{--                                                        <button class="inc qtybutton plus"><i class="fa-solid fa-plus"></i></button>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="quickview-buttons">--}}
+{{--                                    <button type="submit" class="btn btn-style3 mt-3">Thêm vào giỏ hàng</button>--}}
+{{--                                </div>--}}
+{{--                            </form>--}}
                         </div>
                     </div>
                     <!-- quick-view-content end -->

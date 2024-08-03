@@ -18,6 +18,7 @@ return new class () extends Migration {
             $table->bigInteger('product_id');
             $table->bigInteger('quantity');
             $table->bigInteger('price');
+            $table->string('thumbnail')->nullable();
             $table->integer('total');
             $table->timestamps();
         });

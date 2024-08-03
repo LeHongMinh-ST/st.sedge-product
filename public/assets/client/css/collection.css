@@ -650,8 +650,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 27px 0px 0px;
-    padding: 0px 0px 28px;
+    /*margin: 27px 0px 0px;*/
+    /*padding: 0px 0px 28px;*/
     border-bottom: 1px solid var(--border-color);
 }
 

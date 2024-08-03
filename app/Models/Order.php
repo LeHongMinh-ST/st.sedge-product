@@ -33,6 +33,27 @@ class Order extends Model
         'status' => OrderStatus::class,
     ];
 
+    public function getStatusTextAttribute()
+    {
+        return match ($this->status) {
+            OrderStatus::Pending => '<span class="badge bg-primary bg-opacity-20 text-primary">Đang chờ duyệt</span>',
+            OrderStatus::Approved => '<span class="badge bg-primary bg-opacity-20 text-success">Đã duyệt</span>',
+            OrderStatus::Shipping => '<span class="badge bg-warning bg-opacity-20 text-info">Đang giao hàng</span>',
+            OrderStatus::Completed => '<span class="badge bg-success bg-opacity-20 text-success">Đã hoàn thành</span>',
+            OrderStatus::Canceled => '<span class="badge bg-danger bg-opacity-20 text-danger">Đã hủy</span>',
+        };
+    }
+
+    public function getStatusClientAttribute()
+    {
+        return match ($this->status) {
+            OrderStatus::Pending => '<span class="badge bg-primary bg-opacity-20 px-3 py-2 text-light">Đang chờ duyệt</span>',
+            OrderStatus::Approved => '<span class="badge bg-primary bg-opacity-20 px-3 py-2 text-light">Đã duyệt</span>',
+            OrderStatus::Shipping => '<span class="badge bg-warning bg-opacity-20 px-3 py-2 text-light">Đang giao hàng</span>',
+            OrderStatus::Completed => '<span class="badge bg-success bg-opacity-20 px-3 py-2 text-light">Đã hoàn thành</span>',
+            OrderStatus::Canceled => '<span class="badge bg-danger bg-opacity-20 px-3 py-2 text-light">Đã hủy</span>',
+        };
+    }
 
     public function products()
     {
@@ -40,6 +61,7 @@ class Order extends Model
             'quantity',
             'price',
             'total',
+            'thumbnail',
         ]);
     }
 }

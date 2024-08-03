@@ -5,4 +5,5 @@
     <title>Hệ thống quản lý</title>
     @include('admin.includes.script')
     @include('admin.includes.style')
+    <link rel="shortcut icon" href="{{asset("assets/client/img/logo/logo-1.png")}}" type="image/x-icon">
 </head>

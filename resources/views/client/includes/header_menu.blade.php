@@ -2,13 +2,13 @@
     <div class="main-wrap">
         <ul class="main-menu">
             <li class="menu-link">
-                <a href="{{route('todo.home')}}" class="link-title">
+                <a href="{{route('todo.home')}}" class="link-title " >
                     <span class="sp-link-title">Trang chủ</span>
                 </a>
             </li>
             <li class="menu-link">
                 <a href="{{ route('todo.collection') }}" class="link-title">
-                    <span class="sp-link-title">Sản phẩm<span class="header-sale-lable">Sale</span></span>
+                    <span class="sp-link-title">Sản phẩm</span></span>
                 </a>
             </li>
             <li class="menu-link">

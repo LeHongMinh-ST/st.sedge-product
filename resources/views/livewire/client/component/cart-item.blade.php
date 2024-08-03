@@ -63,17 +63,10 @@
             <span class="drawer-subtotal">Tổng tiền</span>
             <span class="drawer-totalprice">{{ number_format($subtotal, 0, ',', '.') }}<u>đ</u></span>
         </div>
-        <div class="drawer-block drawer-ship-text">
-            <label class="box-area">
-                <span class="text">Tôi đã đọc và đồng ý với <a href="terms-condition.html"> điều khoản &amp; điều kiện.</a></span>
-                <input type="checkbox" class="cust-checkbox">
-                <span class="cust-check"></span>
-            </label>
-        </div>
         <div class="drawer-block drawer-cart-checkout">
             <div class="cart-checkout-btn">
                 <button type="button" onclick="location.href='{{route('todo.cart')}}'" name="checkout" class="btn btn-style">Xem giỏ hàng</button>
-                <button type="button" onclick="location.href='checkout-style1.html'" class="checkout btn btn-style2 disabled">Mua hàng</button>
+                <button type="button" onclick="location.href='{{ route('todo.cart') }}'" class="checkout btn btn-style2">Mua hàng</button>
             </div>
         </div>
     </div>

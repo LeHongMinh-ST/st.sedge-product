@@ -9,6 +9,8 @@ use Livewire\Component;
 
 class CartCount extends Component
 {
+    protected $listeners = ['refreshCart' => '$refresh'];
+
     public function render()
     {
         $cartQuantity = CartModel::instance()->content()->count();

@@ -37,6 +37,7 @@ class CartItem extends Component
         $product = Product::find($id);
         CartModel::instance()
             ->add($product->id, $product->name, 1, $product->price, ['thumbnail' => $product->thumbnail]);
+        //        $product->quantity = $product->quantity - 1;
         $this->dispatch('refreshCart');
     }
 

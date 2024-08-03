@@ -46,7 +46,7 @@
                     <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview" data-product-id="{{ $product->id }}">
                         <span class="pro-action-icon"><i class="feather-eye"></i></span>
                     </a>
-                    <a href="#add-to-cart" class="add-to-cart" data-product-id="{{ $product->id }}">
+                    <a wire:click="handleAddToCart({{ $product->id }})" class="add-to-cart" data-product-id="{{ $product->id }}">
                         <span class="cart-title">
                             <span class="add-c-title">
                                 <span class="cart-icon"><i class="feather-shopping-bag"></i></span>

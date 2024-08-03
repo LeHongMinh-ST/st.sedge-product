@@ -80,9 +80,8 @@ class CheckoutInfo extends Component
         ];
     }
 
-    public function checkout(Request $request): void
+    public function checkout(Request $request)
     {
-
         $this->validate();
 
         $cart = CartModel::instance()->content();
@@ -111,6 +110,9 @@ class CheckoutInfo extends Component
 
         $order->products()->attach($dataProduct);
         CartModel::instance()->destroy();
+        $this->dispatch('post-created');
+
+        return redirect()->route('todo.checkorder');
 
     }
 

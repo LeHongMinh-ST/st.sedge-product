@@ -5,6 +5,5 @@
 @endsection
 @section('content')
     @livewire('client.cart')
-    @include('client/includes/quickview_modal')
 @endsection
 

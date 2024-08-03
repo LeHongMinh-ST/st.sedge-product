@@ -64,7 +64,21 @@
         </ul>
         <div class="check-btn enter">
             <a href="{{ route('todo.cart') }}" class="btn-style2 me-4">Quay lại</a>
-            <button type="submit" class="btn-style">Xác nhận</button>
+            <button id="btn-order" type="submit" class="btn-style">Đặt hàng</button>
         </div>
     </form>
 </div>
+
+{{--@script--}}
+{{--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>--}}
+{{--<script>--}}
+{{--    $wire.on('post-created', () => {--}}
+{{--        Swal.fire({--}}
+{{--            title: "Đặt hàng thành công!",--}}
+{{--            icon: "success",--}}
+{{--            showConfirmButton: false,--}}
+{{--            timer:2000,--}}
+{{--        });--}}
+{{--    });--}}
+{{--</script>--}}
+{{--@endscript--}}

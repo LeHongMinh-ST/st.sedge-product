@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Livewire\Admin\Component;
 
+use App\Enums\OrderStatus;
 use App\Models\Order;
 use Livewire\Component;
 
@@ -23,7 +24,8 @@ class OrderItem extends Component
 
     public function handleChangeApprove($id): void
     {
-        $this->dispatch('changeApprove', $id);
-        $this->dispatch('refresh');
+        $order = Order::find($id);
+        $order->status = OrderStatus::Approved;
+        $order->save();
     }
 }

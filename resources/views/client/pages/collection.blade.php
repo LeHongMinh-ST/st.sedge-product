@@ -40,11 +40,6 @@ Danh mục sản phẩm - Cóincidence
                                 <div class="product-filter without-sidebar">
                                     <button class="filter-button" type="button"><i class="fa-solid fa-filter"></i><span>Danh mục</span></button>
                                 </div>
-                                <div class="product-view-mode">
-                                    <!-- shop-item-filter-list start -->
-                                    <a href="javascript:void(0)" class="list-change-view grid-three active" data-grid-view="3"><i class="fa-solid fa-border-all"></i></a>
-                                    <!-- shop-item-filter-list end -->
-                                </div>
                             </div>
                             <!-- shop-top-bar end -->
                             <!-- special-product start -->
@@ -145,8 +140,6 @@ Danh mục sản phẩm - Cóincidence
                                                 </div>
                                                 <br>
                                                 <button type="submit" class="btn btn-style">Lọc</button>
-
-
                                             </form>
                                         </div>
                                         <!-- filter-form end -->
@@ -206,7 +199,7 @@ Danh mục sản phẩm - Cóincidence
                 }
             }
         });
-        
+
     </script>
 </main>
 <!-- quickview modal start -->

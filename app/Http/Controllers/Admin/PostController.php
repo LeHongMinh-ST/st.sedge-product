@@ -11,7 +11,6 @@ use DOMXPath;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
@@ -95,11 +94,15 @@ class PostController extends Controller
 
         if ($request->hasFile('upload')) {
             $file = $request->file('upload');
-            $fileName = Str::random(40) . '.' . $file->getClientOriginalExtension();
-            $folder = 'assets/admin/images/postimg';
+            $fileName = time() . '_' . $file->getClientOriginalName();
+            $folder = 'upload/postimg';
 
-            $filePath = $file->storeAs($folder, $fileName, 'public');
-            $url = Storage::url($filePath);
+            if (!Storage::exists($folder)) {
+                Storage::makeDirectory($folder, 0775, true);
+            }
+
+            $path = $file->storeAs($folder, $fileName);
+            $url = asset($path) . '?v=' . time();
 
             return response()->json([
                 'url' => $url,
@@ -111,7 +114,7 @@ class PostController extends Controller
         return response()->json([
             'uploaded' => false,
             'error' => [
-                'message' => 'Không thể tải lên tệp tin123456'
+                'message' => 'Không thể tải lên tệp tin'
             ]
         ], 400);
     }

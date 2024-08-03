@@ -37,8 +37,8 @@ class ProductController extends Controller
         $product->price = $request->input('price');
         if ($request->hasFile('thumbnail')) {
             $thumbnail = $request->file('thumbnail');
-            $path = $thumbnail->storeAs('assets/admin/images', $thumbnail->getClientOriginalName(), 'public');
-            $product->thumbnail = 'storage/' . $path;
+            $path = $thumbnail->storeAs('upload/productThumbnail', $thumbnail->getClientOriginalName());
+            $product->thumbnail = $path;
         }
         $product->status = Status::InStock;
         $product->quantity = $request->input('quantity');
@@ -47,9 +47,9 @@ class ProductController extends Controller
 
         if ($request->hasFile('galleries')) {
             foreach ($request->file('galleries') as $image) {
-                $path = $image->store('assets/admin/images/galleries', 'public');
+                $path = $image->store('upload/galleries');
                 $product->galeries()->create([
-                    'thumbnail' => 'storage/' . $path
+                    'thumbnail' => $path
                 ]);
             }
         }
@@ -77,16 +77,16 @@ class ProductController extends Controller
         if ($request->hasFile('thumbnail')) {
             $thumbnail = $request->file('thumbnail');
             $filename = time() . '_' . $thumbnail->getClientOriginalName();
-            $path = $thumbnail->storeAs('assets/admin/images', $filename, 'public');
-            $product->thumbnail = 'storage/' . $path . '?v=' . time();
+            $path = $thumbnail->storeAs('upload/productThumbnail', $filename);
+            $product->thumbnail = $path . '?v=' . time();
         }
 
         if ($request->hasFile('galleries')) {
             foreach ($request->file('galleries') as $image) {
                 $filename = time() . '_' . $image->getClientOriginalName();
-                $path = $image->storeAs('assets/admin/images/galleries', $filename, 'public');
+                $path = $image->storeAs('upload/galleries', $filename);
                 $product->galeries()->create([
-                    'thumbnail' => 'storage/' . $path
+                    'thumbnail' => $path
                 ]);
             }
         }

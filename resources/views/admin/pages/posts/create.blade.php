@@ -19,7 +19,6 @@
                 <span class="breadcrumb-item active">Thêm mới</span>
             </div>
         </div>
-
     </div>
 </div>
 @endsection
@@ -44,6 +43,16 @@
                             <div class="col-sm-10">
                                 <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}">
                                 @error('title')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="thumbnail" class="col-sm-2 col-form-label">Ảnh đại diện bài viết</label>
+                            <div class="col-sm-10">
+                                <input type="file" class="form-control @error('thumbnail') is-invalid @enderror" name="thumbnail">
+                                @error('thumbnail')
                                 <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>

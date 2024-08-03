@@ -643,6 +643,5 @@
         </section>
         <!-- product end -->
     </main>
-    @include('client/includes/quickview_modal')
 @endsection
 

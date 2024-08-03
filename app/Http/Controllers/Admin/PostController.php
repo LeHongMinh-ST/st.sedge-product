@@ -8,6 +8,7 @@ use App\Http\Requests\PostRequest;
 use App\Models\Post;
 use DOMDocument;
 use DOMXPath;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -40,6 +41,11 @@ class PostController extends Controller
     {
         $post = new Post();
         $post->title = $request->input('title');
+        if ($request->hasFile('thumbnail')) {
+            $thumbnail = $request->file('thumbnail');
+            $path = $thumbnail->storeAs('assets/admin/images/postThumbnail', $thumbnail->getClientOriginalName(), 'public');
+            $post->thumbnail = 'storage/' . $path;
+        }
         $post->content = $this->processContent($request->input('content'));
         $post->user_id = Auth::id();
         $post->save();
@@ -58,6 +64,12 @@ class PostController extends Controller
     {
         $post = Post::findOrFail($id);
         $post->title = $request->input('title');
+        if ($request->hasFile('thumbnail')) {
+            $thumbnail = $request->file('thumbnail');
+            $filename = time() . '_' . $thumbnail->getClientOriginalName();
+            $path = $thumbnail->storeAs('assets/admin/images/postThumbnail', $filename, 'public');
+            $post->thumbnail = 'storage/' . $path . '?v=' . time();
+        }
         $post->content = $this->processContent($request->input('content'));
         $post->save();
 
@@ -78,15 +90,15 @@ class PostController extends Controller
         return view('admin.pages.posts.detail', compact('post'));
     }
 
-    public function uploadImage(PostRequest $request)
+    public function uploadImage(Request $request)
     {
+
         if ($request->hasFile('upload')) {
             $file = $request->file('upload');
             $fileName = Str::random(40) . '.' . $file->getClientOriginalExtension();
-            $folder = 'admin/images/postimg';
+            $folder = 'assets/admin/images/postimg';
 
-            $filePath = $file->storeAs($folder, $fileName);
-
+            $filePath = $file->storeAs($folder, $fileName, 'public');
             $url = Storage::url($filePath);
 
             return response()->json([
@@ -99,7 +111,7 @@ class PostController extends Controller
         return response()->json([
             'uploaded' => false,
             'error' => [
-                'message' => 'Không thể tải lên tệp tin'
+                'message' => 'Không thể tải lên tệp tin123456'
             ]
         ], 400);
     }

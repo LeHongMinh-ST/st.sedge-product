@@ -50,6 +50,16 @@
                         </div>
 
                         <div class="mb-3 row">
+                            <label for="thumbnail" class="col-sm-2 col-form-label">Ảnh đại diện bài viết</label>
+                            <div class="col-sm-10">
+                                <input type="file" class="form-control @error('thumbnail') is-invalid @enderror" name="thumbnail">
+                                @error('thumbnail')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
                             <label for="content" class="col-sm-2 col-form-label">Nội dung bài viết</label>
                             <div class="col-sm-10">
                                 <textarea name="content" id="editor" class="form-control  @error('content') is-invalid @enderror">{{ $post->content}}</textarea>

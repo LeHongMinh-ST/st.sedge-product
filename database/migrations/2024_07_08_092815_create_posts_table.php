@@ -16,6 +16,7 @@ return new class () extends Migration {
             $table->id();
             $table->string('title', 255);
             $table->text('content');
+            $table->string('thumbnail');
             $table->bigInteger('user_id');
             $table->timestamps();
         });

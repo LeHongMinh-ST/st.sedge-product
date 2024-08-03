@@ -47,11 +47,11 @@ Route::get('cart', fn () => view('client.pages.cart'))->name('todo.cart');
 //Route::get('article', fn () => view('client.pages.article'))->name('todo.article');
 Route::get('check-order', fn () => view('client.pages.check_order'))->name('todo.checkorder');
 
- Route::get('link-storage', function (): void {
-     $targetFolder = storage_path('app/public');
-     $link = $_SERVER['DOCUMENT_ROOT'] . '/storage';
-     symlink($targetFolder, $link);
- });
+Route::get('link-storage', function (): void {
+    $targetFolder = storage_path('app/public');
+    $link = $_SERVER['DOCUMENT_ROOT'] . '/storage';
+    symlink($targetFolder, $link);
+});
 
 // Clear application cache:
 Route::get('/op-cache', function () {

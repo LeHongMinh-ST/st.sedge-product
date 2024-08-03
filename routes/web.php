@@ -53,6 +53,10 @@ Route::get('link-storage', function (): void {
     symlink($targetFolder, $link);
 });
 
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});
+
 // Clear application cache:
 Route::get('/op-cache', function () {
     Artisan::call('optimize:clear');

@@ -44,7 +44,7 @@ Blog - Cóincidence
                                     <div class="sidbar-inner sidbar-inner-wrap">
                                         <div class="post-image">
                                             <a href="{{ route('client.blog.detail', $post->id) }}" class="banner-img">
-                                                <img src="{{$post->thumbnail}}" class="img-fluid" alt="blog-bg">
+                                                <img src="{{asset($post->thumbnail)}}" class="img-fluid" alt="blog-bg">
                                             </a>
                                         </div>
                                         <div class="recent-blog-content">
@@ -72,7 +72,7 @@ Blog - Cóincidence
                                                     <span class="month">{{ $post->formatted_month }}</span>
                                                 </span>
                                                 <a href="{{route('client.blog.detail', $post->id)}}" class="blog-img">
-                                                    <img src="{{$post->thumbnail}}" class="img-fluid" alt="blog">
+                                                    <img src="{{asset($post->thumbnail)}}" class="img-fluid" alt="blog">
                                                     <span class="blog-icon"><i class="feather-link"></i></span>
                                                 </a>
                                             </div>

@@ -96,9 +96,9 @@ class PostController extends Controller
         if ($request->hasFile('upload')) {
             $file = $request->file('upload');
             $fileName = Str::random(40) . '.' . $file->getClientOriginalExtension();
-            $folder = 'assets/admin/images/postimg';
+            $folder = 'upload/postimg';
 
-            $filePath = $file->storeAs($folder, $fileName, 'public');
+            $filePath = $file->storeAs($folder, $fileName, );
             $url = Storage::url($filePath);
 
             return response()->json([

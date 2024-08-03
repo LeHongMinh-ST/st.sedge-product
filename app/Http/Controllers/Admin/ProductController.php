@@ -37,7 +37,7 @@ class ProductController extends Controller
         $product->price = $request->input('price');
         if ($request->hasFile('thumbnail')) {
             $thumbnail = $request->file('thumbnail');
-            $path = $thumbnail->storeAs('assets/admin/images', $thumbnail->getClientOriginalName(), 'public');
+            $path = $thumbnail->storeAs('upload/imagesProduct', $thumbnail->getClientOriginalName(), 'public');
             $product->thumbnail = 'storage/' . $path;
         }
         $product->status = Status::InStock;
@@ -47,9 +47,9 @@ class ProductController extends Controller
 
         if ($request->hasFile('galleries')) {
             foreach ($request->file('galleries') as $image) {
-                $path = $image->store('assets/admin/images/galleries', 'public');
+                $pathGallery = $image->store('upload/galleries');
                 $product->galeries()->create([
-                    'thumbnail' => 'storage/' . $path
+                    'thumbnail' => $pathGallery
                 ]);
             }
         }
@@ -77,16 +77,16 @@ class ProductController extends Controller
         if ($request->hasFile('thumbnail')) {
             $thumbnail = $request->file('thumbnail');
             $filename = time() . '_' . $thumbnail->getClientOriginalName();
-            $path = $thumbnail->storeAs('assets/admin/images', $filename, 'public');
-            $product->thumbnail = 'storage/' . $path . '?v=' . time();
+            $path = $thumbnail->storeAs('upload/imagesProduct', $filename);
+            $product->thumbnail =  $path . '?v=' . time();
         }
 
         if ($request->hasFile('galleries')) {
             foreach ($request->file('galleries') as $image) {
                 $filename = time() . '_' . $image->getClientOriginalName();
-                $path = $image->storeAs('assets/admin/images/galleries', $filename, 'public');
+                $pathGallery = $image->storeAs('upload/galleries', $filename);
                 $product->galeries()->create([
-                    'thumbnail' => 'storage/' . $path
+                    'thumbnail' => $pathGallery
                 ]);
             }
         }

@@ -43,8 +43,8 @@ class PostController extends Controller
         $post->title = $request->input('title');
         if ($request->hasFile('thumbnail')) {
             $thumbnail = $request->file('thumbnail');
-            $path = $thumbnail->storeAs('assets/admin/images/postThumbnail', $thumbnail->getClientOriginalName(), 'public');
-            $post->thumbnail = 'storage/' . $path;
+            $path = $thumbnail->storeAs('upload/postThumbnail', $thumbnail->getClientOriginalName(), 'public');
+            $post->thumbnail =  $path;
         }
         $post->content = $this->processContent($request->input('content'));
         $post->user_id = Auth::id();
@@ -67,8 +67,8 @@ class PostController extends Controller
         if ($request->hasFile('thumbnail')) {
             $thumbnail = $request->file('thumbnail');
             $filename = time() . '_' . $thumbnail->getClientOriginalName();
-            $path = $thumbnail->storeAs('assets/admin/images/postThumbnail', $filename, 'public');
-            $post->thumbnail = 'storage/' . $path . '?v=' . time();
+            $path = $thumbnail->storeAs('upload/postThumbnail', $filename, 'public');
+            $post->thumbnail =  $path . '?v=' . time();
         }
         $post->content = $this->processContent($request->input('content'));
         $post->save();

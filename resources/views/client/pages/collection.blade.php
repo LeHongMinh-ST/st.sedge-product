@@ -155,6 +155,7 @@ Danh mục sản phẩm - Cóincidence
     <!-- collection end -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+
             // Xử lý sự kiện click cho các nút quick-view
             document.querySelectorAll('.quick-view').forEach(button => {
                 button.addEventListener('click', function(event) {
@@ -203,7 +204,9 @@ Danh mục sản phẩm - Cóincidence
     </script>
 </main>
 <!-- quickview modal start -->
-@include('client.includes.quickview_modal')
+@if($products->total() > 0)
+    @include('client.includes.quickview_modal')
+@endif
 <!-- quickview modal end -->
 @endsection
 

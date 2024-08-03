@@ -53,7 +53,7 @@ Route::get('link-storage', function (): void {
     symlink($targetFolder, $link);
 });
 
-Route::get('/linkstorage', function () {
+Route::get('/linkstorage', function (): void {
     Artisan::call('storage:link');
 });
 

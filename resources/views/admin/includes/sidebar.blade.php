@@ -58,11 +58,12 @@
                         <i class="ph-stack"></i>
                         <span>
                             Danh mục
-                            <span class="d-block fw-normal opacity-50">Danh mục sản phẩm</span>
                         </span>
                     </a>
                 </li>
-
+                <li class="nav-item-header">
+                    <div class="text-uppercase fs-sm lh-sm opacity-50 sidebar-resize-hide">Bài viết</div>
+                </li>
                 <li class="nav-item">
                     <a href="{{ route('admin.post.index') }}" class="nav-link {{ request()->routeIs('admin.post.index') ?'active' : '' }}">
                         <i class="ph-newspaper"></i>

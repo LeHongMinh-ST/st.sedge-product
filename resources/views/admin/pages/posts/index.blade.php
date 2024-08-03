@@ -76,7 +76,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="content-table">
-                        <table class="table table-striped table-responsive">
+                        <table class="table table-bordered table-responsive">
                             <thead>
                                 <tr>
                                     <th class="" >#</th>
@@ -128,7 +128,7 @@
                         <div class="d-flex justify-content-end">
 
                             <div class="pagination">
-                            {{ $posts->links() }}   
+                            {{ $posts->links() }}
                             </div>
                         </div>
                     </div>

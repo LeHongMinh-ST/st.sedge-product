@@ -15,7 +15,7 @@
             <div class="d-flex">
                 <div class="breadcrumb py-2">
                     <a href="#" class="breadcrumb-item"><i class="ph-house"></i></a>
-                    <span class="breadcrumb-item active">Đơn hàng</span>
+                    <span class="breadcrumb-item active">Đơn hàng chờ duyệt</span>
                 </div>
             </div>
 

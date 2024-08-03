@@ -21,6 +21,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+// Route::post('/upload-image', [PostController::class, 'uploadImage'])->name('post.upload-image');
 Route::prefix('')->group(function (): void {
     // Route::get('/', fn () => view('client.pages.index'))->name('todo.home');
     Route::get('/', [ShopController::class, 'home'])->name('todo.home');

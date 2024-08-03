@@ -16,7 +16,7 @@
             <li>
                 <div class="mt-2 me-4">
                     <i class="ph-arrow-bend-down-left link-yellow"></i>
-                    <a href="{{ route('todo.home') }}" class="link-yellow">Quay về cửa hàng</a>
+                    <a href="{{ route('todo.home') }}" class="link-yellow">Trang chủ</a>
                 </div>
             </li>
             <li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2">

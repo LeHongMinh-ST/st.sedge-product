@@ -45,6 +45,13 @@ return [
             'visibility' => 'public',
             'throw' => false,
         ],
+        'public_prod' => [
+            'driver' => 'local',
+            'root' => $_SERVER['DOCUMENT_ROOT'],
+            'url' => env('APP_URL') . '/',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
 
         's3' => [
             'driver' => 's3',

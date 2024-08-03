@@ -31,9 +31,6 @@
         <!-- mobile-menu start -->
         @include('client.includes.mobile_menu')
         <!-- mobile-menu end -->
-        <!-- search-popup start -->
-        @include('client.includes.search_popup')
-        <!-- search-popup end -->
         <!-- cart-drawer start -->
         @livewire('client.component.cart')
 {{--        @include('client.includes.cart_drawer')--}}

@@ -265,7 +265,7 @@
     </section>
     <!-- product-category end -->
     <!-- home-service start -->
-    <section class="home-service-area section-ptb">
+    <!-- <section class="home-service-area section-ptb">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -351,7 +351,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- home-service end -->
     <!-- offer-text start -->
     <section class="offer-text-area section-pb">

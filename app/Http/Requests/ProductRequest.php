@@ -35,10 +35,10 @@ class ProductRequest extends FormRequest
         ];
 
         if (!$this->route('id')) {
-            $rules['thumbnail'] = 'required|image|mimes:jpeg,png,jpg';
+            $rules['thumbnail'] = 'required|image|mimes:jpeg,png,jpg|max:1024';
             // $rules['gallery'] = 'required|image|mimes:jpeg,png,jpg';
         } else {
-            $rules['thumbnail'] = 'nullable|image|mimes:jpeg,png,jpg';
+            $rules['thumbnail'] = 'nullable|image|mimes:jpeg,png,jpg|max:1024';
             $rules['status'] = ['required', Rule::in(array_column(Status::cases(), 'value'))];
         }
 
@@ -55,6 +55,8 @@ class ProductRequest extends FormRequest
             'price.numeric' => 'Giá sản phẩm phải là số.',
             'thumbnail.required' => 'Ảnh sản phẩm là bắt buộc khi thêm mới.',
             'thumbnail.image' => 'Ảnh sản phẩm phải là một hình ảnh.',
+            'thumbnail.max' => 'Ảnh sản phẩm không được vượt quá 1MB.',
+            'thumbnail.mimes' => 'Các file phải có định dạng jpeg, png hoặc jpg.',
             'quantity.required' => 'Số lượng sản phẩm là bắt buộc.',
             'quantity.integer' => 'Số lượng sản phẩm phải là số nguyên.',
             'quantity.min' => 'Số lượng sản phẩm không được âm.',
@@ -62,6 +64,7 @@ class ProductRequest extends FormRequest
             'status.required' => 'Trạng thái sản phẩm là bắt buộc khi cập nhật.',
             'gallery.image' => 'Các file phải là hình ảnh.',
             'gallery.mimes' => 'Các file phải có định dạng jpeg, png hoặc jpg.',
+            'gallery.max' => 'Ảnh trong bộ sưu tập không được vượt quá 1MB.',
         ];
     }
 }

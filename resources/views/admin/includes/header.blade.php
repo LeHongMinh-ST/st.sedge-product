@@ -7,8 +7,8 @@
         </div>
 
         <div class="navbar-brand flex-1 flex-lg-0">
-            <a href="index.html" class="d-inline-flex align-items-center">
-                <img src="{{ asset('assets/admin/images/coi4.jpg') }}" alt="" style="width:180px">
+            <a href="{{ route('admin.dashboard') }}" class="d-inline-flex align-items-center">
+                <img src="{{ asset('assets/admin/images/coi4.jpg') }}" alt="" style="width:180px" >
             </a>
         </div>
 

@@ -14,7 +14,7 @@
                     <div class="home-slider-info">
                         <div class="slider-block slider-title">
                             <div class="home-slider-title">
-                                <span class="sub-title">Các sản phảm từ cói giảm giá 30% </span>
+                                <span class="sub-title">Các sản phẩm từ cói giảm giá 30% </span>
                                 <h2>Nghề đan cói ở Kim Sơn</h2>
                                 <a href="{{ route('todo.collection') }}" class="btn btn-style">Mua ngay</a>
                             </div>
@@ -140,7 +140,7 @@
                                     </a>
                                     <div class="service-text">
                                         <h6>Hoàn tiền</h6>
-                                        <p>100% Nếu sản phầm không chính xác</p>
+                                        <p>100% Nếu sản phẩm không chính xác</p>
                                     </div>
                                 </div>
                             </li>

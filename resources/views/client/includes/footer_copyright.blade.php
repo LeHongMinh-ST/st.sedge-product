@@ -29,13 +29,13 @@
                                     </a>
                                     <ul class="ftlink-ul collapse" id="footer-my-account">
                                         <li class="ftlink-li">
-                                            <a href="about-us.html">Email: </a>
+                                            <a href="">Email: </a>
                                         </li>
                                         <li class="ftlink-li">
-                                            <a href="contact-us.html">Địa chỉ: </a>
+                                            <a href="">Địa chỉ: </a>
                                         </li>
                                         <li class="ftlink-li">
-                                            <a href="faq.html">Số điện thoại</a>
+                                            <a href="">Số điện thoại</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -51,16 +51,16 @@
                                     </a>
                                     <ul class="ftlink-ul collapse" id="footer-extras">
                                         <li class="ftlink-li">
-                                            <a href="cart-page.html">Giới thiệu</a>
+                                            <a href="">Giới thiệu</a>
                                         </li>
                                         <li class="ftlink-li">
-                                            <a href="about-us-2.html">Chính sách bảo mật</a>
+                                            <a href="">Chính sách bảo mật</a>
                                         </li>
                                         <li class="ftlink-li">
-                                            <a href="contact-us-2.html">Điều khoản</a>
+                                            <a href="">Điều khoản</a>
                                         </li>
                                         <li class="ftlink-li">
-                                            <a href="Privacy-policy-2.html">Sitemap</a>
+                                            <a href="">Sitemap</a>
                                         </li>
                                     </ul>
                                 </li>

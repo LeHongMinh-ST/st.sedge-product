@@ -3767,8 +3767,14 @@ span.header-sale-lable::before {
 
 }
 .single-product-wrap .product-image a.pro-img img{
-    /*display: block;*/
-    min-height: 100%;
+    
+    height: 400px;
+}
+@media (max-width: 767px) {
+    .single-product-wrap .product-image a.pro-img img{
+    
+        height: 530px;
+    }
 }
 .single-product-wrap .product-image a.pro-img::after {
     content: "";
@@ -5113,4 +5119,5 @@ span.header-sale-lable::before {
 .blog-post .blog-content a.blog-tag h6 {
     font-size: 18px;
 }
+
 

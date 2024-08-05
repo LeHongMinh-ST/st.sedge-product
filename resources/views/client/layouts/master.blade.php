@@ -47,6 +47,6 @@
         {{-- @include('client.includes.bottom_menu')' --}}
         <!-- bottom-menu end -->
         <!-- jquery js -->
-        @include('client.includes.script')'
+        @include('client.includes.script')
     </body>
 </html>

@@ -50,10 +50,10 @@ Danh mục sản phẩm - Cóincidence
                                             <div class="collection-wrap">
                                                 <ul class="product-view-ul">
                                                     @foreach($products as $product)
-                                                        <li class="pro-item-li">
-                                                            <livewire:client.product-item :$product :key="$product->id">
-                                                        <li>
-                                                    @endforeach
+                                                    <li class="pro-item-li">
+                                                        <livewire:client.product-item :$product :key="$product->id">
+                                                    <li>
+                                                        @endforeach
                                                 </ul>
                                             </div>
 
@@ -155,14 +155,10 @@ Danh mục sản phẩm - Cóincidence
     <!-- collection end -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-
-            // Xử lý sự kiện click cho các nút quick-view
             document.querySelectorAll('.quick-view').forEach(button => {
                 button.addEventListener('click', function(event) {
                     event.preventDefault();
-
-                    var productId = this.dataset.productId;
-
+                    var productId = this.getAttribute('data-product-id');
                     fetch(`/product/${productId}/quickview`)
                         .then(response => response.json())
                         .then(data => {
@@ -170,10 +166,7 @@ Danh mục sản phẩm - Cóincidence
                             document.querySelector('#quickview .product-price .new-price').textContent = data.price + ' đ';
                             document.querySelector('#quickview .quick-image img').src = data.thumbnail;
                             document.querySelector('#quickview .product-desc p').textContent = data.description;
-
-                            // Cập nhật liên kết cho hình ảnh trong quick view
                             document.querySelector('#quickview .quick-image a').href = `/product/${productId}`;
-
                             var quickviewModal = new bootstrap.Modal(document.getElementById('quickview'));
                             quickviewModal.show();
                         })
@@ -181,7 +174,6 @@ Danh mục sản phẩm - Cóincidence
                 });
             });
 
-            // Xử lý việc đóng modal và xóa overlay
             var quickviewElement = document.getElementById('quickview');
             if (quickviewElement) {
                 quickviewElement.addEventListener('hidden.bs.modal', function() {
@@ -189,7 +181,6 @@ Danh mục sản phẩm - Cóincidence
                 });
             }
 
-            // Hàm tiện ích để xóa các thuộc tính modal và overlay
             function cleanupModalEffects() {
                 document.body.classList.remove('modal-open');
                 document.body.style.removeProperty('overflow');
@@ -200,35 +191,34 @@ Danh mục sản phẩm - Cóincidence
                 }
             }
         });
-
     </script>
 </main>
 <!-- quickview modal start -->
 @if($products->total() > 0)
-    @include('client.includes.quickview_modal')
+@include('client.includes.quickview_modal')
 @endif
 <!-- quickview modal end -->
 @endsection
 
 @section('script_custom')
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        document.addEventListener('click', function(event) {
-            if (event.target.closest('.add-to-cart')) {
-                Swal.fire({
-                    title: "Thêm sản phẩm thành công!",
-                    icon: "success",
-                    showCancelButton: true,
-                    cancelButtonText: "Mua hàng tiếp",
-                    confirmButtonText: "Đến giỏ hàng",
-                    cancelButtonColor: "#d33",
-                }).then((result) => {
-                    /* Read more about isConfirmed, isDenied below */
-                    if (result.isConfirmed) {
-                        window.location.href = "{{ route('todo.cart') }}";
-                    }
-                });
-            }
-        });
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.addEventListener('click', function(event) {
+        if (event.target.closest('.add-to-cart')) {
+            Swal.fire({
+                title: "Thêm sản phẩm thành công!",
+                icon: "success",
+                showCancelButton: true,
+                cancelButtonText: "Mua hàng tiếp",
+                confirmButtonText: "Đến giỏ hàng",
+                cancelButtonColor: "#d33",
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    window.location.href = "{{ route('todo.cart') }}";
+                }
+            });
+        }
+    });
+</script>
 @endsection

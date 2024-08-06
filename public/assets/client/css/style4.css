@@ -3771,9 +3771,8 @@ span.header-sale-lable::before {
     height: 400px;
 }
 @media (max-width: 767px) {
-    .single-product-wrap .product-image a.pro-img img{
-    
-        height: 530px;
+    .single-product-wrap .product-image a.img-height img{
+        height: 300px !important;
     }
 }
 .single-product-wrap .product-image a.pro-img::after {

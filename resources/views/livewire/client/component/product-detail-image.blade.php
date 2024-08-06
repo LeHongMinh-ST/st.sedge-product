@@ -21,22 +21,24 @@
                         </a>
                     </div>
                 @endforeach
-
             </div>
         </div>
         <!-- top slick-slider end -->
         <!-- small slick-slider start -->
         <div class="pro-slider">
             <div class="slider-small pro-detail-slider small-slider">
-                @if (!empty($product->galeries))
-                    @foreach ($product->galeries as $gallery)
-                        <div class="slick-slide">
-                            <a href="javascript:void(0)" class="product-single--thumbnail">
-                                <img src="{{ asset($gallery->thumbnail) }}" class="img-fluid" alt="{{ $product->name }}">
-                            </a>
-                        </div>
-                    @endforeach
-                @endif
+                <div class="slick-slide">
+                    <a href="javascript:void(0)" class="product-single--thumbnail">
+                        <img src="{{ asset($product->thumbnail) }}" class="img-fluid" alt="{{ $product->name }}">
+                    </a>
+                </div>
+                @foreach ($product->galeries as $gallery)
+                    <div class="slick-slide">
+                        <a href="javascript:void(0)" class="product-single--thumbnail">
+                            <img src="{{ asset($gallery->thumbnail) }}" class="img-fluid" alt="{{ $product->name }}">
+                        </a>
+                    </div>
+                @endforeach
             </div>
         </div>
         <!-- small slick-slider end -->

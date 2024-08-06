@@ -231,7 +231,7 @@
                                         <!-- product start -->
                                         <div class="single-product-wrap">
                                             <div class="product-image">
-                                                <a href="{{ route('client.product.details', $product->id) }}" class="pro-img">
+                                                <a href="{{ route('client.product.details', $product->id) }}" class="pro-img img-height">
                                                     <img src="{{ asset($product->thumbnail) }}" class="img-fluid img1" alt="{{ $product->name }}">
                                                     <img src="{{ asset($product->thumbnail) }}" class="img-fluid img2" alt="{{ $product->name }}">
                                                 </a>

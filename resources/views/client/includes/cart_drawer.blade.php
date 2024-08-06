@@ -1,5 +1,5 @@
 <div class="cart-drawer" id="cart-drawer">
-    <form action="https://spacingtech.com/cart" method="post" class="drawer-contents">
+    <form class="drawer-contents">
         <div class="drawer-fixed-header">
             <div class="drawer-header">
                 <h6 class="drawer-header-title">Giỏ hàng</h6>
@@ -11,7 +11,6 @@
         <div class="drawer-cart-empty">
             <div class="drawer-scrollable">
                 <h2>Chưa có sản phẩm nào trong giỏ hàng.</h2>
-                <a href="https://spacingtech.com/collections/all" class="btn btn-style2">Qauy trở lại cửa hàng</a>
             </div>
         </div>
         <div class="drawer-inner">

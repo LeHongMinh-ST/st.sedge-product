@@ -11,7 +11,7 @@
                         </div>
                         <div class="cart-item-details">
                             <div class="cart-item-name">
-                                <a href="product-template.html">{{$item->name}}</a>
+                                <a href="{{ route('client.product.details', ['id' => $item->id]) }}">{{$item->name}}</a>
                             </div>
                             <div class="cart-pro-info">
                                 <div class="cart-qty-price">

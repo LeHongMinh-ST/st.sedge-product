@@ -52,7 +52,7 @@
                                                     <!-- cart-img end -->
                                                     <!-- cart-title start -->
                                                     <div class="item-text">
-                                                        <a href="#">{{ $item->name }}</a>
+                                                        <a href="{{ route('client.product.details', ['id' => $item->id]) }}">{{ $item->name }}</a>
 
                                                         <span class="item-option">
                                                                 <span class="item-price">Giá: {{ number_format($item->price, 0, ',', '.') }} <u>đ</u></span>

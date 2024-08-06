@@ -22,7 +22,7 @@
                 </div>
                 <!-- header -->
                 <div class="login-header">
-                    <h1>Chào mừng đến bạn với CÓINCIDENCE <i class="fa-solid fa-check"></i></h1>
+                    <h1>Chào mừng đến bạn với CÓINCIDENCE</h1>
                 </div>
                 @if (session('error'))
                 <div class="error-center">

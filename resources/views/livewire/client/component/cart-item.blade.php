@@ -26,7 +26,7 @@
                                         <div class="js-qty-wrapper">
                                             <div class="js-qty-wrap">
                                                 <button wire:click="decreasement('{{$item->rowId }}')" type="button" class="js-qty-adjust ju-qty-adjust-minus"><span><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
-                                                <input wire:change="changeInput('{{ $item->rowId }}', $event.target.value)" type="text" class="js-qty-num" name="name" value="{{ $item->qty }}" pattern="[0-9]*">
+                                                <input wire:change="changeInput('{{ $item->rowId }}', $event.target.value)" type="number" class="js-qty-num" name="name" value="{{ $item->qty }}" pattern="[0-9]*">
                                                 <button wire:click="increasement('{{$item->rowId }}')" type="button" class="js-qty-adjust ju-qty-adjust-plus">
                                                         <span>
                                                             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">

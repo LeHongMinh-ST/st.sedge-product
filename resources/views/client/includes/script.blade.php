@@ -34,3 +34,14 @@
         });
     });
 </script>
+<script>
+    document.addEventListener('livewire:init', () => {
+        Livewire.on('error-quantity', (event) => {
+            Swal.fire({
+                icon: "error",
+                title: "Thông báo",
+                text: "Số lượng sản phẩm trong kho không đủ!",
+            });
+        });
+    });
+</script>

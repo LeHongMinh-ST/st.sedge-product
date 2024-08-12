@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\States\Order;
 
-class OrderRefundedState implements OrderState
+class OrderReturnedState implements OrderState
 {
     public function toApproved(OrderContext $context): void
     {

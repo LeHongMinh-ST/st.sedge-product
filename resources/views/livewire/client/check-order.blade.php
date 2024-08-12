@@ -39,6 +39,7 @@
                                         <td>{{ $order->address }}</td>
                                         <td>{!! $order->statusClient !!}</td>
                                         <td>{{ number_format($order->total, 0, ',', '.') }} VNĐ</td>
+                                        <td><a href="{{ route('todo.orderdetail',['id' => $order->id]) }}"><i class="feather-eye"></i></a></td>
                                     </tr>
                                 @endforeach
                                 </tbody>

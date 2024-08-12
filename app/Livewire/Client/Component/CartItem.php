@@ -37,7 +37,6 @@ class CartItem extends Component
         $product = Product::find($id);
         CartModel::instance()
             ->add($product->id, $product->name, 1, $product->price, ['thumbnail' => $product->thumbnail]);
-        //        $product->quantity = $product->quantity - 1;
         $this->dispatch('refreshCart');
     }
 
@@ -45,6 +44,11 @@ class CartItem extends Component
     {
         $item = CartModel::instance()->get($rowId);
         CartModel::instance()->update($rowId, $item->qty + 1);
+        $quantity = Product::find($item->id)->quantity;
+        if ($item->qty > $quantity) {
+            $item->qty = $quantity;
+            $this->dispatch('error-quantity');
+        }
         $this->dispatch('refreshCart');
     }
 
@@ -65,10 +69,26 @@ class CartItem extends Component
         $this->dispatch('refreshCart');
     }
 
+    //    public function changeInput($rowId, $value): void
+    //    {
+    //        $item = CartModel::instance()->get($rowId);
+    //        if ($value > 0) {
+    //            CartModel::instance()->update($rowId, $value);
+    //        } else {
+    //            CartModel::instance()->update($rowId, 1);
+    //        }
+    //        $this->dispatch('refreshCart');
+    //    }
+
     public function changeInput($rowId, $value): void
     {
         $item = CartModel::instance()->get($rowId);
+        $quantity = Product::find($item->id)->quantity;
         if ($value > 0) {
+            if ($value > $quantity) {
+                $value = $quantity;
+                $this->dispatch('error-quantity');
+            }
             CartModel::instance()->update($rowId, $value);
         } else {
             CartModel::instance()->update($rowId, 1);

@@ -41,7 +41,7 @@
         AutoImage,
         SimpleUploadAdapter
     } from 'ckeditor5';
-    
+
     // Thêm CSS cho hình ảnh responsive
     const style = document.createElement('style');
     style.innerHTML = `
@@ -115,3 +115,27 @@
 {{--<!-- JS custom -->--}}
 @yield('script_custom')
 {{--<!-- /JS custom  -->--}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.addEventListener('livewire:init', () => {
+        Livewire.on('order-cancel', (id) => {
+            Swal.fire({
+                title: "Bạn có chắc hủy đơn hàng này không?",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Có, hủy đơn!",
+                cancelButtonText: "Không!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Livewire.dispatch('confirmCancel', id);
+                    Swal.fire({
+                        title: "Hủy đơn thành công!",
+                        icon: "success"
+                    });
+                }
+            });
+        });
+    });
+</script>

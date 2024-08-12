@@ -8,7 +8,7 @@ use App\States\Order\OrderApprovedState;
 use App\States\Order\OrderCanceledState;
 use App\States\Order\OrderCompletedState;
 use App\States\Order\OrderPendingState;
-use App\States\Order\OrderRefundedState;
+use App\States\Order\OrderReturnedState;
 use App\States\Order\OrderShippingState;
 
 enum OrderStatus: string
@@ -17,8 +17,9 @@ enum OrderStatus: string
     case Approved = 'approved';
     case Shipping = 'shipping';
     case Completed = 'completed';
-    case Refunded = 'refunded';
     case Canceled = 'canceled';
+
+    case Returned = 'returned';
 
     public function description(): string
     {
@@ -27,8 +28,8 @@ enum OrderStatus: string
             self::Approved => 'Đã xác nhận',
             self::Shipping => 'Đang giao hàng',
             self::Completed => 'Đã hoàn thành',
-            self::Refunded => 'Đã hoàn tiền',
             self::Canceled => 'Đã hủy',
+            self::Returned => 'Đã hoàn hàng',
         };
     }
 
@@ -39,7 +40,7 @@ enum OrderStatus: string
             self::Approved => OrderApprovedState::class,
             self::Shipping => OrderShippingState::class,
             self::Completed => OrderCompletedState::class,
-            self::Refunded => OrderRefundedState::class,
+            self::Returned => OrderReturnedState::class,
             self::Canceled => OrderCanceledState::class,
         };
     }

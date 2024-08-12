@@ -29,21 +29,27 @@
                             <i class="ph-list"></i>
                         </a>
                         <ul class="form-control dropdown-menu dropdown-menu-end">
-                            @if($order->status->value == OrderStatus::Pending->value)
+                            @if($order->status == OrderStatus::Pending)
                             <li>
                                 <a wire:click="handleChangeApprove({{ $order->id }})" href="" class="dropdown-item">
                                     <i class="ph-paper-plane-tilt me-2"></i>
-                                    Phê duyệt
+                                    Xác nhận
                                 </a>
                             </li>
                             <li class="dropdown-divider"></li>
                             @endif
                             <li>
-                                <a href="" class="dropdown-item text-danger">
+                                <a wire:click="handleChangeCancel({{ $order->id }})" class="dropdown-item text-danger">
                                     <i class="ph-file-x me-2"></i>
                                     Hủy đơn
                                 </a>
                             </li>
+                             <li>
+                                 <a href="{{ route('admin.orders.show', $order->id) }}" class="dropdown-item">
+                                     <i class="ph-eye me-2"></i>
+                                     Xem chi tiết
+                                 </a>
+                             </li>
                         </ul>
                     </div>
                 </td>

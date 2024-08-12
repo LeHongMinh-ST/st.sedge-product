@@ -36,7 +36,7 @@
                                             <span class="cart-count">
                                                     <span class="cart-counter">{{ $cartQuantity }}</span>
                                                     <span class="cart-item-title ms-1">Sản phẩm</span>
-                                                </span>
+                                            </span>
                                         </div>
                                         <div class="item-wrap">
                                             @foreach($cart as $item)

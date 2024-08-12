@@ -6,7 +6,7 @@
                     <li class="noti-wrap noti-call-wrap">
                         <div class="noti-call">
                             <div class="calltext">
-                                <p><a href="#">SĐT : +84 123 456 7890</a></p>
+                                <p><a href="#">SĐT : 0336725712</a></p>
                             </div>
                         </div>
                     </li>

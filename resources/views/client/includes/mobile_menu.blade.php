@@ -12,7 +12,7 @@
                 </span>
                 <div class="info-text">
                     <span class="label">SĐT: </span>
-                    <p><a href="tel:(021)245368" class="info-link">+84 123 456 7890</a></p>
+                    <p><a href="tel:0336725712" class="info-link">0336725712</a></p>
                 </div>
             </div>
         </div>

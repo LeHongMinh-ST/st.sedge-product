@@ -4281,7 +4281,7 @@ span.header-sale-lable::before {
     margin: -30px 0px 0px -30px;
 }
 .footer-area ul.footer-ul li.footer-li {
-    width: calc(25% - 30px);
+    width: calc(33.33% - 30px);
     margin: 30px 0px 0px 30px;
 }
 @media (max-width: 1199px) {

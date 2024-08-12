@@ -13,7 +13,11 @@
                                 <ul class="ftcontact-ul">
                                     <li class="ftcontact-li">
                                         <div class="footer-desc">
-                                            <p class="desc">Mô tả...</p>
+                                            <p class="desc">
+                                            Dự án giới thiệu, phổ biến 
+                                            và hiện đại hoá những sản phẩm cói 
+                                            thủ công của các nghệ nhân Kim Sơn
+                                            </p>
                                         </div>
                                     </li>
                                 </ul>
@@ -29,43 +33,19 @@
                                     </a>
                                     <ul class="ftlink-ul collapse" id="footer-my-account">
                                         <li class="ftlink-li">
-                                            <a href="">Email: </a>
+                                            <a href="mailto:coincidenceninhbinh@gmail.com">Email: coincidenceninhbinh@gmail.com</a>
                                         </li>
                                         <li class="ftlink-li">
-                                            <a href="">Địa chỉ: </a>
+                                            <a href="">Địa chỉ: Huyện Kim Sơn,tỉnh Ninh Bình</a>
                                         </li>
                                         <li class="ftlink-li">
-                                            <a href="">Số điện thoại</a>
+                                            <a href="tel:0336725712">Số điện thoại: 0336725712</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li class="footer-li">
-                            <ul class="ftlist-ul">
-                                <li class="ftlist-li">
-                                    <h6 class="ftlist-title">Thông tin</h6>
-                                    <a href="#footer-extras" class="ftlist-title" data-bs-toggle="collapse" aria-expanded="false">
-                                        <span>Thông tin</span>
-                                        <span><i class="fa-solid fa-plus"></i></span>
-                                    </a>
-                                    <ul class="ftlink-ul collapse" id="footer-extras">
-                                        <li class="ftlink-li">
-                                            <a href="">Giới thiệu</a>
-                                        </li>
-                                        <li class="ftlink-li">
-                                            <a href="">Chính sách bảo mật</a>
-                                        </li>
-                                        <li class="ftlink-li">
-                                            <a href="">Điều khoản</a>
-                                        </li>
-                                        <li class="ftlink-li">
-                                            <a href="">Sitemap</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+
                         <li class="footer-li footer-contact">
                             <ul class="ftlist-ul">
                                 <li class="ftlist-li">
@@ -77,22 +57,19 @@
                                     <ul class="ftcontact-ul collapse" id="footer-store-address">
                                         <li class="ftcontact-li">
                                             <div class="ft-contact-add">
-                                                <p class="ft-contact-text">7266 Courtland st.</p>
+                                                <p class="ft-contact-text">Địa chỉ: Số 1, Hoàng Minh Giám, Cầu Giấy, Hà Nội</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="ftcontact-li">
+                                            <div class="ft-contact-add">
+                                                <a href="mailto:plthaotrang@gmail.com" class="ft-contact-address">Email: plthaotrang@gmail.com</a>
                                             </div>
                                         </li>
                                         <li class="ftcontact-li">
                                             <div class="ft-contact-add">
-                                                <p class="ft-contact-text">owings mills, md 12</p>
-                                            </div>
-                                        </li>
-                                        <li class="ftcontact-li">
-                                            <div class="ft-contact-add">
-                                                <a href="mailto:demo@demo.com" class="ft-contact-address">demo@demo.com</a>
-                                            </div>
-                                        </li>
-                                        <li class="ftcontact-li">
-                                            <div class="ft-contact-add">
-                                                <a href="#" class="ft-contact-address">(000) 123 456 7890</a>
+                                                <a href="tel:0336725712" class="ft-contact-address">Số điện thoại: 0336725712</a> &nbsp;
+                                                <p>(Ms. Thảo Trang)</p>
                                             </div>
                                         </li>
                                     </ul>

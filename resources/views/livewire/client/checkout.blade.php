@@ -4,12 +4,12 @@
         @foreach($cart as $item)
         <li>
             <div class="check-pro-img">
-                <a href="product-template.html">
+                <a href="{{ route('client.product.details', ['id' => $item->id]) }}">
                     <img src="{{ asset($item->options->thumbnail) }}" class="img-fluid" alt="cart-1">
                 </a>
             </div>
             <div class="check-content">
-                <a href="product-template.html">{{ $item->name }}</a>
+                <a href="{{ route('client.product.details', ['id' => $item->id]) }}">{{ $item->name }}</a>
 
                 <div class="check-qty-pric">
                     <span class="check-qty">Số lượng: {{ $item->qty }}</span>

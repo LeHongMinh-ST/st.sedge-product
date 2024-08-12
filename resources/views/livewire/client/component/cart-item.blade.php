@@ -5,7 +5,7 @@
                 <li class="cart-item">
                     <div class="cart-item-info">
                         <div class="cart-item-image">
-                            <a href="product-template.html">
+                            <a href="{{ route('client.product.details', ['id' => $item->id]) }}">
                                 <img src="{{ asset($item->options->thumbnail) }}" class="img-fluid" alt="{{ $item->name }}">
                             </a>
                         </div>

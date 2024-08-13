@@ -36,7 +36,7 @@
                     <a href="{{ route('admin.dashboard') }}" class="nav-link {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
                         <i class="ph-house"></i>
                         <span>
-                            Dashboard
+                            Bảng điều khiển
                         </span>
                     </a>
                 </li>

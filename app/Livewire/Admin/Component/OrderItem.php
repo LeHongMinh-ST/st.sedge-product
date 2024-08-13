@@ -11,7 +11,8 @@ use Livewire\Component;
 class OrderItem extends Component
 {
     protected $listeners = [
-        'refresh' => '$refresh'
+        'refresh' => '$refresh',
+        'confirmCancel' => 'handleConfirmCancel',
     ];
 
     public function render()
@@ -26,6 +27,18 @@ class OrderItem extends Component
     {
         $order = Order::find($id);
         $order->status = OrderStatus::Approved;
+        $order->save();
+    }
+
+    public function handleChangeCancel($id): void
+    {
+        $this->dispatch('order-cancel', $id);
+    }
+
+    public function handleConfirmCancel($id): void
+    {
+        $order = Order::find($id);
+        $order->status = OrderStatus::Canceled;
         $order->save();
     }
 }

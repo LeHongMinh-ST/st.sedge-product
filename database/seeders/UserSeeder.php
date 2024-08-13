@@ -17,9 +17,9 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             'username' => 'admin',
             'password' => bcrypt('123456aA@'),
-            'email' => 'nguyenphuongnam12a9@gmail.com',
-            'phone_number' => '0123456789',
-            'fullname' => 'Nguyen Phuong Nam',
+            'email' => 'plthaotrang@gmail.com',
+            'phone_number' => '0336725712',
+            'fullname' => 'Phạm Lê Thảo Trang',
         ]);
     }
 }

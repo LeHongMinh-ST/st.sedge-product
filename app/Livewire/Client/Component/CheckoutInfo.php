@@ -112,7 +112,7 @@ class CheckoutInfo extends Component
         CartModel::instance()->destroy();
         $this->dispatch('post-created');
 
-        return redirect()->route('todo.checkorder');
+        return redirect()->route('todo.checkout.success', ['id' => $order->id]);
 
     }
 

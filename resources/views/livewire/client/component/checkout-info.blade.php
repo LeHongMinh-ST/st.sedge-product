@@ -69,16 +69,3 @@
     </form>
 </div>
 
-{{--@script--}}
-{{--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>--}}
-{{--<script>--}}
-{{--    $wire.on('post-created', () => {--}}
-{{--        Swal.fire({--}}
-{{--            title: "Đặt hàng thành công!",--}}
-{{--            icon: "success",--}}
-{{--            showConfirmButton: false,--}}
-{{--            timer:2000,--}}
-{{--        });--}}
-{{--    });--}}
-{{--</script>--}}
-{{--@endscript--}}

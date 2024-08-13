@@ -22,7 +22,7 @@
                 </a>
             </li>
             <li class="menu-link">
-                <a href="{{route('todo.checkorder')}}" class="link-title">
+                <a href="{{ route('todo.checkorder',['phone' => null]) }}" class="link-title">
                     <span class="sp-link-title">Kiểm tra đơn hàng</span>
                 </a>
             </li>

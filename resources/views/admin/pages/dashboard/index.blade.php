@@ -5,7 +5,7 @@
         <div class="page-header-content d-lg-flex">
             <div class="d-flex">
                 <h4 class="page-title mb-0">
-                    Dashboard
+                    Bảng điều khiển
                 </h4>
             </div>
 
@@ -15,7 +15,7 @@
             <div class="d-flex">
                 <div class="breadcrumb py-2">
                     <a href="#" class="breadcrumb-item"><i class="ph-house"></i></a>
-                    <span class="breadcrumb-item active">Dashboard</span>
+                    <span class="breadcrumb-item active">Bảng điều khiển</span>
                 </div>
             </div>
 

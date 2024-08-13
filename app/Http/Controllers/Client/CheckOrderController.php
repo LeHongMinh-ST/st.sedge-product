@@ -8,19 +8,19 @@ use App\Models\Order;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Carbon;
 
-class CheckoutController extends BaseController
+class CheckOrderController extends BaseController
 {
     public function index()
     {
-        return view('client.pages.checkout');
+        return view('client.pages.check_order');
     }
 
-    public function success($id)
+    public function orderDetail($id)
     {
         $order = Order::find($id);
         $order->order_date = Carbon::parse($order->order_date)->format('d-m-Y H:i:s');
         $products = $order->products;
-        return view('client.pages.order-completed')->with([
+        return view('client.pages.order-detail', [
             'order' => $order,
             'products' => $products
         ]);

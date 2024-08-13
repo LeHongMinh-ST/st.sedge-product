@@ -11,10 +11,9 @@ use Livewire\Component;
 class OrderItemAll extends Component
 {
     protected $listeners = [
-        'changeApprove' => 'changeApprove',
-        'refresh' => '$refresh'
+        'confirmCancel' => 'confirmCancel',
+        'changeCancel' => 'changeCancel'
     ];
-
     public function render()
     {
         $orders = Order::query()->paginate(10);
@@ -30,6 +29,39 @@ class OrderItemAll extends Component
     {
         $order = Order::find($id);
         $order->status = OrderStatus::Approved;
+        $order->save();
+    }
+
+    public function changeCancel($id): void
+    {
+        $this->dispatch('order-cancel', $id);
+    }
+
+    public function confirmCancel($id): void
+    {
+        $order = Order::find($id);
+        $order->status = OrderStatus::Canceled;
+        $order->save();
+    }
+
+    public function changeShipping($id): void
+    {
+        $order = Order::find($id);
+        $order->status = OrderStatus::Shipping;
+        $order->save();
+    }
+
+    public function changeComplete($id): void
+    {
+        $order = Order::find($id);
+        $order->status = OrderStatus::Completed;
+        $order->save();
+    }
+
+    public function changeReturn($id): void
+    {
+        $order = Order::find($id);
+        $order->status = OrderStatus::Returned;
         $order->save();
     }
 }

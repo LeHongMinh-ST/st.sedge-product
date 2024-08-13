@@ -58,22 +58,21 @@
                                     <span class="order-span">Trạng thái: {!! $order->StatusClient !!}</span>
                                 </li>
                                 <li class="pay">
-                                    <div>
-                                        <span class="text-muted">Chi tiết sản phầm:
-                                            <b class="text-muted d-flex ">
-                                                <span>{{ $products->count() }}</span>
-                                                <span>sản phẩm</span>
-                                            </b>
-                                        </span>
+                                    <div class="d-flex justify-content-between me-3 mb-3 text-muted fw-bolder">
+                                        <span>Chi tiết sản phẩm:</span>
+                                        <div>
+                                            <span class="text-primary">{{ $products->count() }}</span>
+                                            <span>sản phẩm</span>
+                                        </div>
                                     </div>
-                                    <table class="table table-striped table-hover">
+                                    <table class="table table-striped table-hover text-center" style="vertical-align: middle">
                                         <thead>
                                         <tr>
                                             <th width="100px"></th>
                                             <th>Sản phẩm</th>
-                                            <th class="text-center">Đơn giá</th>
-                                            <th class="text-center">Số lượng</th>
-                                            <th class="text-center">Tạm tính</th>
+                                            <th>Đơn giá</th>
+                                            <th>Số lượng</th>
+                                            <th>Tạm tính</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -87,9 +86,9 @@
                                                 <td>
                                                     <h6>{{ $product->name }}</h6>
                                                 </td>
-                                                <td class="text-center">{{ number_format($product->pivot->price) }} VNĐ</td>
-                                                <td class="text-center">{{ $product->pivot->quantity }}</td>
-                                                <td class="text-center">{{ number_format($product->pivot->price * $product->pivot->quantity) }} VNĐ</td>
+                                                <td>{{ number_format($product->pivot->price) }} VNĐ</td>
+                                                <td>{{ $product->pivot->quantity }}</td>
+                                                <td>{{ number_format($product->pivot->price * $product->pivot->quantity) }} VNĐ</td>
                                             </tr>
                                         @endforeach
                                         </tbody>

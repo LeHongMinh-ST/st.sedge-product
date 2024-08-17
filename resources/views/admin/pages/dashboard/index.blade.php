@@ -56,7 +56,7 @@
                     </div>
                     <div class="darker-bg mt-auto">
                         <a href="{{route('admin.products.index')}}" class="text-white d-flex justify-content-between align-items-center">
-                            <span>More info</span>
+                            <span>Xem chi tiết</span>
                             <i class="ph-arrow-right"></i>
                         </a>
                     </div>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="darker-bg mt-auto">
                         <a href="{{route('admin.categories.index')}}" class="text-white d-flex justify-content-between align-items-center">
-                            <span>More info</span>
+                            <span>Xem chi tiết</span>
                             <i class="ph-arrow-right"></i>
                         </a>
                     </div>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="darker-bg mt-auto">
                         <a href="{{route('admin.post.index')}}" class="text-white d-flex justify-content-between align-items-center">
-                            <span>More info</span>
+                            <span>Xem chi tiết</span>
                             <i class="ph-arrow-right"></i>
                         </a>
                     </div>
@@ -122,7 +122,7 @@
                     </div>
                     <div class="darker-bg mt-auto">
                         <a href="{{route('admin.orders.index')}}" class="text-white d-flex justify-content-between align-items-center">
-                            <span>More info</span>
+                            <span>Xem chi tiết</span>
                             <i class="ph-arrow-right"></i>
                         </a>
                     </div>

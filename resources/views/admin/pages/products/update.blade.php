@@ -162,3 +162,30 @@
 
 </div>
 @endsection
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const inputs = document.querySelectorAll('form input:not([type="radio"]), form textarea, form select');
+        const categoryRadios = document.querySelectorAll('input[name="category_id"]');
+        const categoryErrorMessage = document.querySelector('.card-body .invalid-feedback.d-block');
+
+        inputs.forEach(input => {
+            input.addEventListener('input', function() {
+                this.classList.remove('is-invalid');
+                const errorElement = this.closest('.col-sm-8')?.querySelector('.invalid-feedback');
+                if (errorElement) {
+                    errorElement.classList.remove('d-block');
+                }
+            });
+        });
+
+        categoryRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                categoryRadios.forEach(r => r.classList.remove('is-invalid'));
+                if (categoryErrorMessage) {
+                    categoryErrorMessage.classList.remove('d-block');
+                }
+            });
+        });
+    });
+</script>

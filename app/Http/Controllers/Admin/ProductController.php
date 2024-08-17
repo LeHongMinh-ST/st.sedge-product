@@ -54,6 +54,8 @@ class ProductController extends Controller
             }
         }
 
+        //$request->session()->forget(['selectedFile', 'selectedGalleries']);
+
 
         return redirect()->route('admin.products.index')->with('success', 'Sản phẩm đã được tạo thành công');
     }

@@ -48,10 +48,21 @@
                             </div>
                         </div>
 
-                        <div class="mb-3 row">
+                        <!-- <div class="mb-3 row">
                             <label for="thumbnail" class="col-sm-2 col-form-label">Ảnh đại diện bài viết</label>
                             <div class="col-sm-10">
                                 <input type="file" class="form-control @error('thumbnail') is-invalid @enderror" name="thumbnail">
+                                @error('thumbnail')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                        </div> -->
+
+                        <div class="mb-3 row">
+                            <label for="thumbnail" class="col-sm-2 col-form-label">Ảnh đại diện bài viết</label>
+                            <div class="col-sm-10">
+                                <input type="file" class="form-control @error('thumbnail') is-invalid @enderror" name="thumbnail" id="thumbnailInput" onchange="handleFileSelect(this, 'thumbnailPreview')">
+                                <img id="thumbnailPreview" class="img-thumbnail mt-2" width="150" style="display: none;">
                                 @error('thumbnail')
                                 <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -90,3 +101,84 @@
 
 </div>
 @endsection
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const inputs = document.querySelectorAll('form input:not([type="file"]), form textarea');
+        const thumbnailInput = document.getElementById('thumbnailInput');
+        const thumbnailPreview = document.getElementById('thumbnailPreview');
+
+        if (sessionStorage.getItem('selectedFile')) {
+            const fileData = JSON.parse(sessionStorage.getItem('selectedFile'));
+            const file = dataURLtoFile(fileData.dataURL, fileData.name);
+
+            const dataTransfer = new DataTransfer();
+            dataTransfer.items.add(file);
+            thumbnailInput.files = dataTransfer.files;
+
+            thumbnailPreview.src = fileData.dataURL;
+            thumbnailPreview.style.display = 'block';
+        }
+
+        inputs.forEach(input => {
+            input.addEventListener('input', function() {
+                if (this.classList.contains('is-invalid')) {
+                    this.classList.remove('is-invalid');
+                }
+                const errorElement = this.nextElementSibling;
+                if (errorElement && errorElement.classList.contains('invalid-feedback')) {
+                    errorElement.style.display = 'none';
+                }
+            });
+        });
+
+    });
+
+    function handleFileSelect(input, previewId) {
+        const preview = document.getElementById(previewId);
+        const file = input.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+
+                sessionStorage.setItem('selectedFile', JSON.stringify({
+                    name: file.name,
+                    dataURL: e.target.result
+                }));
+            };
+            reader.readAsDataURL(file);
+        } else {
+            preview.style.display = 'none';
+            sessionStorage.removeItem('selectedFile');
+        }
+    }
+
+    function dataURLtoFile(dataURL, filename) {
+        var arr = dataURL.split(','),
+            mime = arr[0].match(/:(.*?);/)[1],
+            bstr = atob(arr[1]),
+            n = bstr.length,
+            u8arr = new Uint8Array(n);
+        while (n--) {
+            u8arr[n] = bstr.charCodeAt(n);
+        }
+        return new File([u8arr], filename, {
+            type: mime
+        });
+    }
+    if (clearStorage) {
+        sessionStorage.removeItem('selectedFile');
+        const thumbnailPreview = document.getElementById('thumbnailPreview');
+        if (thumbnailPreview) {
+            thumbnailPreview.src = '';
+            thumbnailPreview.style.display = 'none';
+        }
+        const thumbnailInput = document.getElementById('thumbnailInput');
+        if (thumbnailInput) {
+            thumbnailInput.value = '';
+        }
+    }
+</script>

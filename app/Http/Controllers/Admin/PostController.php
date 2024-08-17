@@ -50,6 +50,13 @@ class PostController extends Controller
         $post->user_id = Auth::id();
         $post->save();
 
+        //  $request->session()->forget('selectedFile');
+        // if ($post->save()) {
+        //     $request->session()->forget('selectedFile');
+        //     return redirect()->route('admin.post.index')
+        //         ->with('success', 'Bài viết đã được tạo thành công')
+        //         ->with('clearStorage', true);
+        // }
         return redirect()->route('admin.post.index')->with('success', 'Bài viết đã được tạo thành công.');
     }
 

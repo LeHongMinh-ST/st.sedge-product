@@ -41,6 +41,8 @@
                 }
             }
         }).show();
+        sessionStorage.removeItem('selectedFile');
+        sessionStorage.removeItem('selectedGalleries');
     </script>
     @endif
     <div class="row">

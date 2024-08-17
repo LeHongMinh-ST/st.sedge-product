@@ -41,6 +41,7 @@
                 }
             }
         }).show();
+        sessionStorage.removeItem('selectedFile');
     </script>
     @endif
     <div class="row">

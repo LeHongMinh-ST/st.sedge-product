@@ -45,7 +45,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div>
-                                    <h5 class="text-uppercase text-semibold">Đơn hàng #{{ $order->code }}</h5>
+                                    <h5 class="text-uppercase text-semibold">Đơn hàng: <span class="text-primary">#{{ $order->code }}</span> </h5>
                                     <ul class="list-condensed list-unstyled">
                                         <li>Ngày: <span class="text-semibold">{{ $order->order_date }}</span></li>
                                     </ul>

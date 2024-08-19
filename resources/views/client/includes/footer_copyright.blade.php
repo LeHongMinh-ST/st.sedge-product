@@ -14,8 +14,8 @@
                                     <li class="ftcontact-li">
                                         <div class="footer-desc">
                                             <p class="desc">
-                                            Dự án giới thiệu, phổ biến 
-                                            và hiện đại hoá những sản phẩm cói 
+                                            Dự án giới thiệu, phổ biến
+                                            và hiện đại hoá những sản phẩm cói
                                             thủ công của các nghệ nhân Kim Sơn
                                             </p>
                                         </div>
@@ -36,10 +36,10 @@
                                             <a href="mailto:coincidenceninhbinh@gmail.com">Email: coincidenceninhbinh@gmail.com</a>
                                         </li>
                                         <li class="ftlink-li">
-                                            <a href="">Địa chỉ: Huyện Kim Sơn,tỉnh Ninh Bình</a>
+                                            <a target="_blank" href="https://maps.app.goo.gl/7U7wb3JMC4AGLsjAA">Địa chỉ: Huyện Kim Sơn,tỉnh Ninh Bình</a>
                                         </li>
                                         <li class="ftlink-li">
-                                            <a href="tel:0336725712">Số điện thoại: 0336725712</a>
+                                            <a style="user-select: text" href="tel:0336725712" class="ft-contact-address">Số điện thoại: 0336725712</a> &nbsp;
                                         </li>
                                     </ul>
                                 </li>
@@ -68,7 +68,7 @@
                                         </li>
                                         <li class="ftcontact-li">
                                             <div class="ft-contact-add">
-                                                <a href="tel:0336725712" class="ft-contact-address">Số điện thoại: 0336725712</a> &nbsp;
+                                                <a href="tel:0336725712" class="ft-contact-address">Số điện thoại: 0336725712 </a> &nbsp;
                                                 <p>(Ms. Thảo Trang)</p>
                                             </div>
                                         </li>

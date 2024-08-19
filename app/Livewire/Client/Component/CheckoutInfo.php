@@ -83,7 +83,6 @@ class CheckoutInfo extends Component
     public function checkout(Request $request)
     {
         $this->validate();
-
         $cart = CartModel::instance()->content();
         $dataProduct = [];
 

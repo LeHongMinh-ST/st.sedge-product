@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\DashbroadController;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Client\CheckOrderController;
 use App\Http\Controllers\Client\CheckoutController;
 use App\Http\Controllers\Client\ShopController;
@@ -100,6 +101,7 @@ Route::prefix('login')->group(function (): void {
     Route::get('/', [AuthController::class, 'showLoginForm'])->name('login');
     Route::post('/post', [AuthController::class, 'login'])->name('login.post');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('/reset-password/{token}', [AuthController::class, 'resetPasswordShow'])->name('reset-password');
 });
 
 
@@ -138,6 +140,12 @@ Route::prefix('admin')->middleware('auth')->group(function (): void {
         Route::get('/', [OrderController::class, 'index'])->name('admin.orders.index');
         Route::get('/pending', [OrderController::class, 'indexPending'])->name('admin.orders.pending.index');
         Route::get('/show/{id}', [OrderController::class, 'show'])->name('admin.orders.show');
+    });
+
+    Route::prefix('/user')->group(function (): void {
+        Route::get('/', [UserController::class, 'index'])->name('admin.users.index');
+        Route::get('/edit/{id}', [UserController::class, 'edit'])->name('admin.users.edit');
+        Route::get('/reset-password/{id}', [UserController::class, 'resetPassword'])->name('admin.users.reset-password');
     });
 });
 

@@ -14,17 +14,9 @@
         <div class="page-header-content d-lg-flex border-top">
             <div class="d-flex">
                 <div class="breadcrumb py-2">
-                    <a href="#" class="breadcrumb-item"><i class="ph-house"></i></a>
-                    <span class="breadcrumb-item {{ request()->routeIs('admin.orders.index') ?'active' : '' }}">
-                        <a class="text-black" href="{{ route('admin.orders.index') }}">
-                            Tất cả đơn hàng
-                        </a>
-                    </span>
-                    <span class="breadcrumb-item {{ request()->routeIs('admin.orders.show', ['id' => $order->id ?? '']) ? 'active' : '' }}">
-                        <a href="{{ route('admin.orders.show', ['id' => $order->id]) }}">
-                            Xem chi tiết đơn hàng
-                        </a>
-                    </span>
+                    <a href="{{ route('admin.dashboard') }}" class="breadcrumb-item"><i class="ph-house"></i></a>
+                    <a href="{{ route('admin.orders.index') }}" class="breadcrumb-item active">Tất cả đơn hàng</a>
+                    <span class="breadcrumb-item active">Xem chi tiết đơn hàng</span>
                 </div>
             </div>
 

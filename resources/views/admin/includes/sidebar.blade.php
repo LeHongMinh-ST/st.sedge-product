@@ -92,6 +92,18 @@
                         </span>
                     </a>
                 </li>
+
+                <li class="nav-item-header">
+                    <div class="text-uppercase fs-sm lh-sm opacity-50 sidebar-resize-hide">Hệ thống</div>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.users.index') }}" class="nav-link {{ request()->routeIs('admin.users.index') ?'active' : '' }}">
+                        <i class="ph-user-gear"></i>
+                        <span>
+                            Tài khoản
+                        </span>
+                    </a>
+                </li>
             </ul>
         </div>
         <!-- /main navigation -->

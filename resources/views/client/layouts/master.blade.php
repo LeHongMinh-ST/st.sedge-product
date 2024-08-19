@@ -4,11 +4,18 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="A best stylish, creative, modern responsive template for different eCommerce business or industries." />
-        <meta name="keywords" content="food template, bakery products, html, eCommerce html template,plants, organic food, restaurant, live tree, responsive, pizza, burger, furniture, mobile, watches, electronics, computers accessories, toys, jewellery, restaurant accessories" />
-        <meta name="author" content="spacingtech_webify">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="{{asset("assets/client/img/logo/logo-1.png")}}" type="image/x-icon">
+
+        <meta name="description" content="Khám phá những sản phẩm đồ thủ công từ tre mang đậm chất truyền thống và thân thiện với môi trường. Giỏ tre, đèn tre trang trí, bàn ghế tre và nhiều hơn nữa.">
+        <meta name="keywords" content="đồ thủ công, sản phẩm tre, đồ thủ công tre, giỏ tre, đèn tre, bàn ghế tre, sản phẩm truyền thống, đồ trang trí tre">
+        <meta name="author" content="Cóinsidence">
+        <meta property="og:title" content="Đồ Thủ Công Tre - Sản Phẩm Truyền Thống & Thân Thiện Với Môi Trường">
+        <meta property="og:description" content="Những sản phẩm từ tre chất lượng, được làm thủ công và mang lại sự tinh tế cho không gian sống của bạn.">
+        <meta property="og:image" content="link_đến_hình_ảnh_của_sản_phẩm_chính.jpg">
+        <meta property="og:url" content="link_đến_trang_web_của_bạn">
+        <meta property="og:type" content="website">
+
         <!-- title -->
         <title>@yield('title')</title>
         <!-- favicon -->

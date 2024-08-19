@@ -7,8 +7,7 @@
                 <input wire:model.live="fullname" type="text" name="fullname" placeholder="Nhập họ và tên" value="{{ old('fullname') }}">
             </li>
             @error('fullname')
-            <label id="error-thumbnail" class="validation-error-label text-danger"
-                   for="thumbnail">{{ $message }}</label>
+            <label id="error-fullname" class="validation-error-label text-danger">{{ $message }}</label>
             @enderror
             <li>
                 <label>Địa chỉ Email</label>
@@ -19,8 +18,7 @@
                 <input wire:model.live="phone_number" type="text" name="phone_number" placeholder="Nhập số điện thoại" value="{{ old('phone_number') }}">
             </li>
             @error('phone_number')
-            <label id="error-thumbnail" class="validation-error-label text-danger"
-                   for="thumbnail">{{ $message }}</label>
+            <label id="error-phone_number" class="validation-error-label text-danger">{{ $message }}</label>
             @enderror
 {{--            <li>--}}
 {{--                <label>Chọn Tỉnh / Thành phố</label>--}}
@@ -54,8 +52,7 @@
                 <input wire:model.live="address" type="text" name="address" placeholder="Nhập địa chỉ đặt hàng" value="{{ old('address') }}">
             </li>
             @error('address')
-            <label id="error-thumbnail" class="validation-error-label text-danger"
-                   for="thumbnail">{{ $message }}</label>
+            <label id="error-address" class="validation-error-label text-danger">{{ $message }}</label>
             @enderror
             <li>
                 <label>Ghi chú</label>

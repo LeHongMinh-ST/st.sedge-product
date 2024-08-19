@@ -30,30 +30,43 @@
                 </div>
                 @endif
                 <!-- form  -->
-                <form class="login-form" action="{{ route('login.post') }}" method="POST">
-                    @csrf
-                    <label for="username">Tài khoản:</label>
-                    <input type="text" id="username" name="username" placeholder="Tài khoản" value="{{ old('username') }}" class="form-control @error('username') is-invalid @enderror">
-                    @error('username')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                    <label for="password">Mật khẩu:</label>
-                    <input type="password" id="password" name="password" placeholder="Mật khẩu"  value="{{ old('password') }}" class="form-control @error('password') is-invalid @enderror">
-                    @error('password')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                    <div class="login-options">
-                        <label class="remember-me">
-                            <input type="checkbox" name="remember">
-                            Ghi nhớ mật khẩu
-                        </label>
-                        <a href="#">Quên mật khẩu?</a>
-                    </div>
-                    <button type="submit">Đăng nhập</button>
-                </form>
+                <livewire:login.login />
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.addEventListener('livewire:init', () => {
+        Livewire.on('openForgotPassword', async () => {
+            const {value: email} = await Swal.fire({
+                title: "Nhập email của bạn",
+                input: "email",
+                inputLabel: "Mật khẩu mới sẽ được gửi đến email của bạn",
+                inputPlaceholder: "Nhập email",
+            });
+            if (email) {
+                Livewire.dispatch('checkEmail', [email]);
+                Swal.fire(`Đã gửi thông báo đến: ${email}`);
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('livewire:init', () => {
+        Livewire.on('checkEmailError', (event) => {
+            Swal.fire({
+                title: 'Lỗi!',
+                text: 'Email không tồn tại!',
+                icon: 'error',
+                confirmButtonText: 'Nhập lại'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Livewire.dispatch('openForgotPassword');
+                }
+            });
+        });
+    });
+</script>
 </body>
 
 </html>

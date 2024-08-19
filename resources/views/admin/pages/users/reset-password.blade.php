@@ -5,7 +5,7 @@
         <div class="page-header-content d-lg-flex">
             <div class="d-flex">
                 <h4 class="page-title mb-0">
-                    Đơn hàng
+                    Tài khoản hệ thống
                 </h4>
             </div>
 
@@ -15,7 +15,8 @@
             <div class="d-flex">
                 <div class="breadcrumb py-2">
                     <a href="{{ route('admin.dashboard') }}" class="breadcrumb-item"><i class="ph-house"></i></a>
-                    <span class="breadcrumb-item active">Đơn hàng chờ duyệt</span>
+                    <a href="{{ route('admin.users.index') }}" class="breadcrumb-item active">Tài khoản hệ thống</a>
+                    <span class="breadcrumb-item active">Đổi mật khẩu</span>
                 </div>
             </div>
 
@@ -26,12 +27,7 @@
 @section('page-content')
     <div class="content">
         <!-- Content -->
-        <div class="row">
-            <livewire:admin.component.order-item />
-        </div>
+        <livewire:admin.user.user-reset-password />
         <!-- /content -->
     </div>
 @endsection
-
-
-

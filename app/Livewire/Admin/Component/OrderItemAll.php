@@ -10,13 +10,17 @@ use Livewire\Component;
 
 class OrderItemAll extends Component
 {
+    public $search;
+
     protected $listeners = [
         'confirmCancel' => 'confirmCancel',
         'changeCancel' => 'changeCancel'
     ];
     public function render()
     {
-        $orders = Order::query()->paginate(10);
+        $orders = Order::query()
+            ->search($this->search)
+            ->paginate(10);
         return view(
             'livewire.admin.component.order-item-all',
             [

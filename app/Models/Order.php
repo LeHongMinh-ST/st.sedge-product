@@ -66,4 +66,18 @@ class Order extends Model
             'thumbnail',
         ]);
     }
+
+    public function scopeSearch($query, $search)
+    {
+        if ($search) {
+            $query->where('code', 'like', '%' . $search . '%')
+                ->orWhere('phone_number', 'like', '%' . $search . '%')
+                ->orWhere('fullname', 'like', '%' . $search . '%')
+                ->orWhere('note', 'like', '%' . $search . '%')
+                ->orWhere('total', 'like', '%' . $search . '%')
+                ->orWhere('order_date', 'like', '%' . $search . '%');
+        }
+
+        return $query;
+    }
 }

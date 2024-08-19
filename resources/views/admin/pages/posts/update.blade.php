@@ -14,8 +14,8 @@
     <div class="page-header-content d-lg-flex border-top">
         <div class="d-flex">
             <div class="breadcrumb py-2">
-                <a href="#" class="breadcrumb-item"><i class="ph-house"></i></a>
-                <span class="breadcrumb-item active">Bài viết</span>
+                <a href="{{ route('admin.dashboard') }}" class="breadcrumb-item"><i class="ph-house"></i></a>
+                <a href="{{ route('admin.post.index') }}" class="breadcrumb-item active">Bài viết</a>
                 <span class="breadcrumb-item active">Cập nhật</span>
             </div>
         </div>

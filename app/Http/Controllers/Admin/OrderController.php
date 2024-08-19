@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Order;
+use App\Models\User;
 use Illuminate\Support\Carbon;
 
 class OrderController extends Controller
@@ -23,9 +24,11 @@ class OrderController extends Controller
         $order = Order::find($id);
         $order->order_date = Carbon::parse($order->order_date)->format('d-m-Y H:i:s');
         $products = $order->products;
+        $user = User::where('username', 'admin')->first();
         return view('admin.pages.orders.order-show', [
             'order' => $order,
-            'products' => $products
+            'products' => $products,
+            'user' => $user
         ]);
     }
 }

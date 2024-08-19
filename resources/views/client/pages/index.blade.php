@@ -238,7 +238,7 @@
                                             </div>
                                             <div class="product-content">
                                                 <div class="product-info">
-                                                    <h6><a href="{{ route('todo.collection', $product->id) }}">{{ $product->name }}</a></h6>
+                                                    <h6><a href="{{ route('client.product.details', $product->id) }}">{{ $product->name }}</a></h6>
                                                     <div class="price-box">
                                                         <span class="new-price">{{ number_format($product->price, 0, ',', '.') }} <u>đ</u></span>
                                                         @if($product->old_price)

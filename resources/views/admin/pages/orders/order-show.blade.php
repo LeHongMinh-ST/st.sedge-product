@@ -40,7 +40,7 @@
                                 <ul class="list-unstyled">
                                     <li><h6 class="mb-0 mt-2">Cửa hàng Cóincidence</h6></li>
                                     <li>Địa chỉ shop: Huyện Kim Sơn, tỉnh Ninh Bình</li>
-                                    <li>Số điện thoại : +84 123 456 7890</li>
+                                    <li>Số điện thoại : {{ $user->phone_number }}</li>
                                 </ul>
                             </div>
                             <div class="col-md-6 col-lg-4">

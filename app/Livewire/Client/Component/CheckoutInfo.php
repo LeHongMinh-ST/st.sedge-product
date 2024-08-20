@@ -31,8 +31,13 @@ class CheckoutInfo extends Component
     #[Validate(as: 'ghi chú')]
     public $note;
 
+    #[Validate(as: 'tỉnh/thành phố')]
     public $provinceId;
+
+    #[Validate(as: 'quận/huyện')]
     public $districtId;
+
+    #[Validate(as: 'phường/xã')]
     public $wardId;
     public $districts = [];
     public $wards = [];
@@ -82,6 +87,9 @@ class CheckoutInfo extends Component
                 }
             ],
             'address' => 'required',
+            'provinceId' => 'required|not_in:0',
+            'districtId' => 'required|not_in:0',
+            'wardId' => 'required|not_in:0',
         ];
     }
 
@@ -91,7 +99,10 @@ class CheckoutInfo extends Component
             'fullname.required' => 'Họ và tên không được để trống',
             'phone_number.required' => 'Số điện thoại không được để trống',
             'phone_number.regex' => 'Số điện thoại không đúng định dạng',
-            'address.required' => 'Địa chỉ không được để trống',
+            'address.required' => 'Địa chỉ cụ thể không được để trống',
+            'provinceId.not_in' => 'Tỉnh/Thành phố không được để trống',
+            'districtId.not_in' => 'Quận/Huyện không được để trống',
+            'wardId.not_in' => 'Phường/Xã không được để trống',
         ];
     }
 

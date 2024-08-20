@@ -23,29 +23,38 @@
             <li>
                 <label>Chọn Tỉnh / Thành phố</label>
                 <select wire:model.live="provinceId" class="form-select form-select-sm mb-3 select" id="city" aria-label=".form-select-sm">
-                    <option value="" selected>Tỉnh / Thành phố</option>
+                    <option value="0" selected>Tỉnh / Thành phố</option>
                     @foreach($provinces as $province)
                         <option value="{{ $province->id }}">{{ $province->name }}</option>
                     @endforeach
                 </select>
+                @error('provinceId')
+                <label id="error-provinceId" class="validation error-label text-danger">{{ $message }}</label>
+                @enderror
             </li>
             <li>
                 <label>Chọn Quận / Huyện </label>
                 <select wire:model.live="districtId" class="form-select form-select-sm mb-3 select" id="district" aria-label=".form-select-sm">
-                    <option value="" selected>Quận / Huyện</option>
+                    <option value="0" selected>Quận / Huyện</option>
                     @foreach($districts as $district)
                         <option value="{{ $district->id }}">{{ $district->name }}</option>
                     @endforeach
                 </select>
+                @error('districtId')
+                <label id="error-districtId" class="validation error-label text-danger">{{ $message }}</label>
+                @enderror
             </li>
             <li>
                 <label>Chọn Xã / Phường </label>
                 <select wire:model.live="wardId" class="form-select form-select-sm select" id="ward" aria-label=".form-select-sm">
-                    <option value="" selected>Xã / Phường</option>
+                    <option value="0" selected>Xã / Phường</option>
                     @foreach($wards as $ward)
                         <option value="{{ $ward->id }}">{{ $ward->name }}</option>
                     @endforeach
                 </select>
+                @error('wardId')
+                <label id="error-wardId" class="validation error-label text-danger">{{ $message }}</label>
+                @enderror
             </li>
             <li>
                 <label>Chi tiết địa chỉ nhận hàng</label>

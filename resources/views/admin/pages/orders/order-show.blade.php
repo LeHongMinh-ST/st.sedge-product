@@ -60,7 +60,7 @@
                                 <span class="text-muted mt-2">Nơi nhận: </span>
                                 <ul class="list-unstyled">
                                     <li><h6 class="mb-0 mt-2">{{ $order->fullname }}</h6></li>
-                                    <li>Địa chỉ: {{ $order->address }}</li>
+                                    <li>Địa chỉ: {{ $order->address }}, {{ $ward }}, {{ $district }}, {{ $province }}</li>
                                     <li>Số điện thoại: {{ $order->phone_number }}</li>
                                 </ul>
                             </div>

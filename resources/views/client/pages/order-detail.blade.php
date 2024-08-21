@@ -58,7 +58,11 @@
                                     </div>
                                     <div class="text-wrap">
                                         <span class="order-span d-inline-block">Địa chỉ:</span>
+                                        @if($ward == null && $district == null && $province == null)
+                                            <span class="d-inline">{{ $order->address }}</span>
+                                        @else
                                         <span class="d-inline">{{ $order->address }}, {{ $ward }}, {{ $district }}, {{ $province }}</span>
+                                        @endif
                                     </div>
                                     <div class="text-wrap">
                                         <span class="order-span d-inline-block">Số điện thoại:</span>

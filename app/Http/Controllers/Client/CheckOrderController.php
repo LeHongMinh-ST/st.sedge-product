@@ -22,9 +22,9 @@ class CheckOrderController extends BaseController
     {
         $order = Order::find($id);
         $order->order_date = Carbon::parse($order->order_date)->format('d-m-Y H:i:s');
-        $province = Province::whereId($order->province_id)->firstOrFail()->name;
-        $district = District::whereId($order->district_id)->firstOrFail()->name;
-        $ward = Ward::whereId($order->ward_id)->firstOrFail()->name;
+        $province = $order->province_id ? Province::whereId($order->province_id)->firstOrFail()->name : '';
+        $district = $order->district_id ? District::whereId($order->district_id)->firstOrFail()->name : '';
+        $ward = $order->ward_id ? Ward::whereId($order->ward_id)->firstOrFail()->name : '';
         $products = $order->products;
         return view('client.pages.order-detail', [
             'order' => $order,

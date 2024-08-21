@@ -36,7 +36,11 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $order->code }}</td>
                                         <td>{{ $order->order_date }}</td>
-                                        <td>{{ $order->address }}</td>
+                                        @if(!$order->province_name && !$order->district_name && !$order->ward_name)
+                                            <td>{{ $order->address }}</td>
+                                        @else
+                                        <td>{{ $order->address }}, {{ $order->ward_name }}, {{  $order->district_name }}, {{  $order->province_name }}</td>
+                                        @endif
                                         <td>{!! $order->statusClient !!}</td>
                                         <td>{{ number_format($order->total, 0, ',', '.') }} VNĐ</td>
                                         <td><a href="{{ route('todo.orderdetail',['id' => $order->id]) }}"><i class="feather-eye"></i></a></td>

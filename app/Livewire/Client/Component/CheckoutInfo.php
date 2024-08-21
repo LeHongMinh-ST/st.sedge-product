@@ -31,16 +31,23 @@ class CheckoutInfo extends Component
     #[Validate(as: 'ghi chú')]
     public $note;
 
+    #[Validate(as: 'tỉnh/thành phố')]
     public $provinceId;
+
+    #[Validate(as: 'quận/huyện')]
     public $districtId;
+
+    #[Validate(as: 'phường/xã')]
     public $wardId;
     public $districts = [];
     public $wards = [];
 
     public function render()
     {
-        //        $provinces = Province::query()->get();
-        return view('livewire.client.component.checkout-info');
+        $provinces = Province::query()->get();
+        return view('livewire.client.component.checkout-info')->with([
+            'provinces' => $provinces
+        ]);
     }
 
     public function mount()
@@ -50,8 +57,21 @@ class CheckoutInfo extends Component
         if ($cartCount <= 0) {
             return redirect()->route('todo.cart');
         }
-        //        $this->districts = District::query()->where('provinceId', $this->province_id)->get();
-        //        $this->wards = Ward::query()->where('districtId', $this->district_id)->get();
+    }
+
+    public function updatedProvinceId($value): void
+    {
+        $this->provinceId = $value;
+        $this->districtId = null;
+        $this->wardId = null;
+        $this->districts = District::query()->where('province_id', $this->provinceId)->get();
+    }
+
+    public function updatedDistrictId($value): void
+    {
+        $this->districtId = $value;
+        $this->wardId = null;
+        $this->wards = Ward::query()->where('district_id', $this->districtId)->get();
     }
 
     public function rules(): array
@@ -67,6 +87,9 @@ class CheckoutInfo extends Component
                 }
             ],
             'address' => 'required',
+            'provinceId' => 'required|not_in:0',
+            'districtId' => 'required|not_in:0',
+            'wardId' => 'required|not_in:0',
         ];
     }
 
@@ -76,7 +99,10 @@ class CheckoutInfo extends Component
             'fullname.required' => 'Họ và tên không được để trống',
             'phone_number.required' => 'Số điện thoại không được để trống',
             'phone_number.regex' => 'Số điện thoại không đúng định dạng',
-            'address.required' => 'Địa chỉ không được để trống',
+            'address.required' => 'Địa chỉ cụ thể không được để trống',
+            'provinceId.not_in' => 'Tỉnh/Thành phố không được để trống',
+            'districtId.not_in' => 'Quận/Huyện không được để trống',
+            'wardId.not_in' => 'Phường/Xã không được để trống',
         ];
     }
 
@@ -101,6 +127,9 @@ class CheckoutInfo extends Component
         $order->phone_number = $this->phone_number;
         $order->address = $this->address;
         $order->note = $this->note;
+        $order->province_id = $this->provinceId;
+        $order->district_id = $this->districtId;
+        $order->ward_id = $this->wardId;
         $order->status = OrderStatus::Pending;
         $order->code = $this->generateUniqueCode();
         $order->order_date = now()->setTimezone('Asia/Ho_Chi_Minh');

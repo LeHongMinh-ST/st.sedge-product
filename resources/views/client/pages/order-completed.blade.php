@@ -13,7 +13,7 @@
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-ul">
                             <li class="breadcrumb-li">
-                                <a class="breadcrumb-link" href="index.html">Trang chủ</a>
+                                <a class="breadcrumb-link" href="{{ route('todo.home') }}l">Trang chủ</a>
                             </li>
                             <li class="breadcrumb-li">
                                 <span class="breadcrumb-text">Đặt hàng</span>

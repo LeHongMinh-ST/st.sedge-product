@@ -13,10 +13,10 @@
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-ul">
                             <li class="breadcrumb-li">
-                                <a class="breadcrumb-link" href="index.html">Trang chủ</a>
+                                <a class="breadcrumb-link" href="{{ route('todo.home') }}">Trang chủ</a>
                             </li>
                             <li class="breadcrumb-li">
-                                <span class="breadcrumb-text">Kiểm tra đơn hàng</span>
+                                <a href="{{ route('todo.checkorder') }}" class="breadcrumb-link">Kiểm tra đơn hàng</a>
                             </li>
                             <li class="breadcrumb-li">
                                 <span class="breadcrumb-text">Chi tiết đơn hàng </span>
@@ -52,9 +52,22 @@
                         <div class="order-delivery">
                             <ul class="delivery-payment">
                                 <li class="delivery">
-                                    <h6>Tên khách hàng: <span>{{ $order->fullname }}</span></h6>
-                                    <span class="order-span">Địa chỉ: {{ $order->address }}</span>
-                                    <span class="order-span">Số điện thoại: {{ $order->phone_number }}</span>
+                                    <div class="text-wrap">
+                                        <h6 class="d-inline-block">Tên khách hàng: </h6>
+                                        <span class="d-inline"> {{ $order->fullname }}</span>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <span class="order-span d-inline-block">Địa chỉ:</span>
+                                        @if($ward == null && $district == null && $province == null)
+                                            <span class="d-inline">{{ $order->address }}</span>
+                                        @else
+                                        <span class="d-inline">{{ $order->address }}, {{ $ward }}, {{ $district }}, {{ $province }}</span>
+                                        @endif
+                                    </div>
+                                    <div class="text-wrap">
+                                        <span class="order-span d-inline-block">Số điện thoại:</span>
+                                        <span class="d-inline">{{ $order->phone_number }}</span>
+                                    </div>
                                     <span class="order-span">Trạng thái: {!! $order->StatusClient !!}</span>
                                 </li>
                                 <li class="pay">

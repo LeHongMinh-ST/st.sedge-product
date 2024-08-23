@@ -32,7 +32,7 @@
                                         <span><i class="fa-solid fa-plus"></i></span>
                                     </a>
                                     <ul class="ftlink-ul collapse" id="footer-my-account">
-                                        <li class="ftlink-li">
+                                        {{-- <li class="ftlink-li">
                                             <a href="mailto:coincidenceninhbinh@gmail.com">Email: coincidenceninhbinh@gmail.com</a>
                                         </li>
                                         <li class="ftlink-li">
@@ -40,7 +40,8 @@
                                         </li>
                                         <li class="ftlink-li">
                                             <a style="user-select: text" href="tel:0336725712" class="ft-contact-address">Số điện thoại: 0336725712</a> &nbsp;
-                                        </li>
+                                        </li>--}}
+                                        <img src="{{asset('assets/client/img/footer/image_1.png')}}" alt="" style="object-fit: cover;width: 85%;margin-top: 10px">
                                     </ul>
                                 </li>
                             </ul>
@@ -55,7 +56,7 @@
                                         <span><i class="fa-solid fa-plus"></i></span>
                                     </a>
                                     <ul class="ftcontact-ul collapse" id="footer-store-address">
-                                        <li class="ftcontact-li">
+                                        {{-- <li class="ftcontact-li">
                                             <div class="ft-contact-add">
                                                 <p class="ft-contact-text">Địa chỉ: Số 1, Hoàng Minh Giám, Cầu Giấy, Hà Nội</p>
                                             </div>
@@ -71,7 +72,8 @@
                                                 <a href="tel:0336725712" class="ft-contact-address">Số điện thoại: 0336725712 </a> &nbsp;
                                                 <p>(Ms. Thảo Trang)</p>
                                             </div>
-                                        </li>
+                                        </li> --}}
+                                        <img src="{{asset('assets/client/img/footer/image_2.png')}}" alt="" style="object-fit: cover;width: 107%; margin-top: 10px">
                                     </ul>
                                 </li>
                             </ul>

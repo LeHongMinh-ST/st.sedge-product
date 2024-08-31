@@ -89,7 +89,7 @@
             padding: 2px 5px;
             border-radius: 3px;
             font-size: 0.75rem;
-            transform: translateY(-50%); /* Fine-tune vertical positioning */
+            transform: translateY(-30%); /* Fine-tune vertical positioning */
         }
     </style>
 @endsection

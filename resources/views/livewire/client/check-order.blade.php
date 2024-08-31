@@ -51,7 +51,7 @@
                                         @else
                                         <td>{{ $order->address }}, {{ $order->ward_name }}, {{  $order->district_name }}, {{  $order->province_name }}</td>
                                         @endif
-                                        <td>{!! $order->statusClient !!}</td>
+                                        <td class="text-center">{!! $order->statusClient !!}</td>
                                         <td>{{ number_format($order->total, 0, ',', '.') }} VNĐ</td>
                                         <td><a href="{{ route('todo.orderdetail',['id' => $order->id]) }}"><i class="feather-eye"></i></a></td>
                                     </tr>
@@ -79,7 +79,6 @@
             padding: 2px 5px;
             border-radius: 3px;
             font-size: 0.75rem;
-            transform: translateY(-50%); /* Fine-tune vertical positioning */
         }
     </style>
 

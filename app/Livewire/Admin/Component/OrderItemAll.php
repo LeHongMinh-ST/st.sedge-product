@@ -6,6 +6,7 @@ namespace App\Livewire\Admin\Component;
 
 use App\Enums\OrderStatus;
 use App\Models\Order;
+use Illuminate\Support\Carbon;
 use Livewire\Component;
 
 class OrderItemAll extends Component
@@ -20,7 +21,20 @@ class OrderItemAll extends Component
     {
         $orders = Order::query()
             ->search($this->search)
+            ->orderBy('id', 'desc')
             ->paginate(10);
+
+        foreach ($orders as $order) {
+            $orderDate = Carbon::parse($order->order_date)->toDateString();
+            $currentDate = Carbon::now()->setTimezone('Asia/Ho_Chi_Minh')->toDateString();
+
+            if ($currentDate === $orderDate) {
+                $order->newOrder = 1;
+            } else {
+                $order->newOrder = 0;
+            }
+        }
+
         return view(
             'livewire.admin.component.order-item-all',
             [

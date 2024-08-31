@@ -13,7 +13,7 @@
             </li>
             <li class="menu-link">
                 <a href="{{route('client.blog')}}" class="link-title">
-                    <span class="sp-link-title">Blog</span>
+                    <span class="sp-link-title">Bài viết</span>
                 </a>
             </li>
 {{--            <li class="menu-link">--}}

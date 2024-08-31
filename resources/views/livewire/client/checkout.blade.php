@@ -1,5 +1,5 @@
 <div class="check-pro">
-    <h2>1. Sản phẩm có trong giỏ hàng ({{ $cartQuantity }})</h2>
+    <h2 id="check-3-cat">1. Sản phẩm có trong giỏ hàng ({{ $cartQuantity }})</h2>
     <ul class="check-ul font-size">
         @foreach($cart as $item)
         <li>

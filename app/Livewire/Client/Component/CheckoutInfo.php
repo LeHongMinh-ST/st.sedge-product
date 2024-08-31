@@ -42,6 +42,13 @@ class CheckoutInfo extends Component
     public $districts = [];
     public $wards = [];
 
+
+    protected $listeners = [
+        'changeProvince' => 'updatedProvinceId',
+        'changeDistrict' => 'updatedDistrictId',
+        'changeWard' => 'updatedWardId',
+    ];
+
     public function render()
     {
         $provinces = Province::query()->get();
@@ -65,6 +72,11 @@ class CheckoutInfo extends Component
         $this->districtId = null;
         $this->wardId = null;
         $this->districts = District::query()->where('province_id', $this->provinceId)->get();
+
+        $this->dispatch(
+            'reloadDistrict',
+            districts: $this->districts
+        );
     }
 
     public function updatedDistrictId($value): void
@@ -72,6 +84,16 @@ class CheckoutInfo extends Component
         $this->districtId = $value;
         $this->wardId = null;
         $this->wards = Ward::query()->where('district_id', $this->districtId)->get();
+
+        $this->dispatch(
+            'reloadWard',
+            wards: $this->wards
+        );
+    }
+
+    public function updatedWardId($value): void
+    {
+        $this->wardId = $value;
     }
 
     public function rules(): array
@@ -82,7 +104,7 @@ class CheckoutInfo extends Component
                 'required',
                 function ($attribute, $value, $fail) {
                     if (!preg_match("/^[0-9]{10}$/", $value)) {
-                        return $fail('số điện thoại chưa đúng định dạng ');
+                        return $fail('Số điện thoại chưa đúng định dạng ');
                     }
                 }
             ],

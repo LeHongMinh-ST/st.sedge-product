@@ -20,7 +20,17 @@
                     <tbody>
                     @foreach($orders as $order)
                         <tr>
-                            <td class="text-center">{{ $loop->iteration }}</td>
+                            <td class="text-center">{{ $loop->index + 1 + $orders->perPage() * ($orders->currentPage() - 1)  }}</td>
+                            @if($order->newOrder)
+                                <td class="d-flex justify-content-center">
+                                    <a href="{{ route('admin.orders.show',['id'=>$order->id]) }}">#{{ $order->code }}</a>
+                                    <sup>
+                                        <p class="badge mt-1">Mới</p>
+                                    </sup>
+                                </td>
+                            @else
+                                <td><a href="{{ route('admin.orders.show',['id'=>$order->id]) }}">#{{ $order->code }}</a></td>
+                            @endif
                             <td><a href="{{ route('admin.orders.show',['id'=>$order->id]) }}">#{{ $order->code }}</a></td>
                             <td>{{ $order->fullname}}</td>
                             <td><b>{{ number_format($order->total, 0, ',', '.') }} VNĐ</b></td>
@@ -34,7 +44,7 @@
                                     <ul class="form-control dropdown-menu dropdown-menu-end">
                                         @if($order->status == OrderStatus::Pending)
                                             <li>
-                                                <a wire:click="handleChangeApprove({{ $order->id }})" href="" class="dropdown-item">
+                                                <a wire:click="handleChangeApprove({{ $order->id }})" class="dropdown-item">
                                                     <i class="ph-paper-plane-tilt me-2"></i>
                                                     Xác nhận
                                                 </a>
@@ -70,3 +80,16 @@
         </div>
     </div>
 </div>
+
+@section('style_custom')
+    <style>
+        .badge {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            transform: translateY(-50%); /* Fine-tune vertical positioning */
+        }
+    </style>
+@endsection

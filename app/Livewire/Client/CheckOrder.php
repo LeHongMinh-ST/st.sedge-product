@@ -10,11 +10,13 @@ use Kjmtrue\VietnamZone\Models\District;
 use Kjmtrue\VietnamZone\Models\Province;
 use Kjmtrue\VietnamZone\Models\Ward;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class CheckOrder extends Component
 {
-    public $phoneNumber;
-    public $orders = [];
+    use WithPagination;
+    public $phoneNumber = '0983562383';
+    public $orders;
 
     public function mount(): void
     {
@@ -22,21 +24,35 @@ class CheckOrder extends Component
         if ($phone) {
             $this->phoneNumber = $phone;
             $this->search();
+        } else {
+            $this->orders = collect();
         }
     }
 
     public function search(): void
     {
         if ($this->phoneNumber) {
-            $this->orders = Order::where('phone_number', $this->phoneNumber)->get()->map(function ($order) {
+            $this->orders = Order::where('phone_number', $this->phoneNumber)->orderByDesc('id')->get();
+
+            foreach ($this->orders as $order) {
                 $order->order_date = Carbon::parse($order->order_date)->format('d-m-Y H:i:s');
                 $order->province_name = Province::whereId($order->province_id)->value('name');
                 $order->district_name = District::whereId($order->district_id)->value('name');
                 $order->ward_name = Ward::whereId($order->ward_id)->value('name');
-                return $order;
-            });
+
+                //                dd(Carbon::parse($order->order_date)->toDateString());
+                //                dd(Carbon::now()->setTimezone('Asia/Ho_Chi_Minh')->toDateString()== Carbon::parse($order->order_date)->toDateString());
+                $orderDate = Carbon::parse($order->order_date)->toDateString();
+                $currentDate = Carbon::now()->setTimezone('Asia/Ho_Chi_Minh')->toDateString();
+
+                if ($currentDate === $orderDate) {
+                    $order->newOrder = 1;
+                } else {
+                    $order->newOrder = 0;
+                }
+            }
         } else {
-            $this->orders = [];
+            $this->orders = collect();
         }
     }
 

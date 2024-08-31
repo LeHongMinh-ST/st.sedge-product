@@ -95,7 +95,7 @@
                             <tbody>
                                 @foreach($products as $product)
                                 <tr>
-                                    <td>{{ $product->id }}</td>
+                                    <td>{{ $loop->index + 1 + $products->perPage() * ($products->currentPage() - 1) }}</td>
                                     <td>{{ $product->name }}</td>
                                     <td>{{ $product->description }}</td>
                                     <td>{{ number_format($product->price, 0, ',', '.') }} ₫</td>
@@ -139,8 +139,7 @@
                             </tbody>
                         </table>
 
-                        <div class="d-flex justify-content-end">
-
+                        <div class="d-flex justify-content-end mt-2">
                             <div class="pagination">
                                 {{ $products->links() }}
                             </div>

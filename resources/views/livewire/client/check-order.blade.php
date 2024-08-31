@@ -19,7 +19,7 @@
                             <h6>Đơn hàng của bạn</h6>
                         </div>
                         @if ($phoneNumber)
-                            <table class="table table-hover table-responsive table-striped text-center">
+                            <table class="table table-hover table-responsive table text-center">
                                 <thead>
                                 <tr>
                                     <th>STT</th>
@@ -28,13 +28,23 @@
                                     <th>Địa chỉ</th>
                                     <th>Tình trạng</th>
                                     <th>Tổng tiền</th>
+                                    <th>Chi tiết</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($orders as $order)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $order->code }}</td>
+                                        @if($order->newOrder)
+                                            <td class="order-code">
+                                                <a class="text-primary" href="{{ route('todo.orderdetail',['id' => $order->id]) }}">#{{ $order->code }}</a>
+                                                <sup>
+                                                    <p class="badge text-light">Mới</p>
+                                                </sup>
+                                            </td>
+                                        @else
+                                            <td><a class="text-primary" href="{{ route('todo.orderdetail',['id' => $order->id]) }}">#{{ $order->code }}</a></td>
+                                        @endif
                                         <td>{{ $order->order_date }}</td>
                                         @if(!$order->province_name && !$order->district_name && !$order->ward_name)
                                             <td>{{ $order->address }}</td>
@@ -58,3 +68,19 @@
         </div>
     </div>
 </div>
+
+@section('style_custom')
+    <style>
+        .badge {
+            top: -50%; /* Adjust this value to move the badge higher or lower */
+            right: 0;
+            background-color: #ff0000;
+            color: #fff;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            transform: translateY(-50%); /* Fine-tune vertical positioning */
+        }
+    </style>
+
+@endsection

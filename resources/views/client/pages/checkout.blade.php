@@ -34,15 +34,15 @@
             <div class="row">
                 <div class="col">
                     <h2 class="check-3-title">Thông tin thanh toán sản phẩm</h2>
-                    <ul class="check-3-ul">
-                        <li class="check-3-li ck-cat">
+                    <div class="row check-3-ul">
+                        <div class="col-md-5 ck-cat">
                             @livewire('client.checkout')
-                        </li>
+                        </div>
                         <!-- form 2 -->
-                        <li class="check-3-li ck-address">
+                        <div class="col-md-7 ck-address">
                             @livewire('client.component.checkout-info')
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,17 +55,6 @@
 @section('style_custom')
     <style>
         /* CSS cho thông báo lỗi */
-        .invalid-feedback {
-            display: block;
-            color: red;
-            font-size: 0.875em;
-            margin-top: 0.25rem;
-        }
-
-        .is-invalid {
-            border-color: red !important;
-        }
-
         .form-control {
             display: block;
             width: 100%;
@@ -104,6 +93,16 @@
             transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         }
 
+        #check-3-cat {
+            font-size: 18px;
+            padding: 15px;
+            background-color: var(--extra-bgcolor);
+            line-height: 1;
+        }
+
+        .selection {
+            width: 100%;
+        }
     </style>
 @endsection
 

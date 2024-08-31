@@ -15,7 +15,7 @@ use Livewire\WithPagination;
 class CheckOrder extends Component
 {
     use WithPagination;
-    public $phoneNumber = '0983562383';
+    public $phoneNumber = '';
     public $orders;
 
     public function mount(): void

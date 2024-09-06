@@ -37,9 +37,4 @@ class UserIndex extends Component
     {
         User::destroy($this->userId);
     }
-
-    public function checkAdmin(): void
-    {
-        $this->dispatch('check');
-    }
 }

@@ -144,6 +144,8 @@ Route::prefix('admin')->middleware('auth')->group(function (): void {
 
     Route::prefix('/user')->group(function (): void {
         Route::get('/', [UserController::class, 'index'])->name('admin.users.index');
+        Route::get('/show/{id}', [UserController::class, 'show'])->name('admin.users.profile');
+        Route::get('/create', [UserController::class, 'create'])->name('admin.users.create');
         Route::get('/edit/{id}', [UserController::class, 'edit'])->name('admin.users.edit');
         Route::get('/reset-password/{id}', [UserController::class, 'resetPassword'])->name('admin.users.reset-password');
     });

@@ -83,16 +83,14 @@
         </div>
         <div class="col-md-3 col-12">
             <div class="card mb-3">
-                <div class="card">
-                    <div class="card-header bold">
+                <div class="card-header bold">
                         <i class="ph-gear-six"></i>
                         Hành động
                     </div>
-                    <div class="card-body d-flex align-items-center gap-1">
+                <div class="card-body d-flex align-items-center gap-1">
                         <button type="submit" class="btn btn-primary"><i class="ph-floppy-disk"></i> Lưu</button>
                         <a href="{{route('admin.post.index')}}" type="button" class="btn btn-warning"><i class="ph-arrow-counter-clockwise"></i> Trở lại</a>
                     </div>
-                </div>
             </div>
         </div>
         </form>

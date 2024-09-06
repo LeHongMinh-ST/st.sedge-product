@@ -42,36 +42,26 @@
                     }
                 }).show();
             </script>
+        @elseif(session('error'))
+            <script>
+                new Noty({
+                    type: 'error',
+                    layout: 'topRight',
+                    text: "{{ session('error') }}",
+                    timeout: 2000,
+                    progressBar: true,
+                    callbacks: {
+                        onTemplate: function() {
+                            this.barDom.innerHTML = '<div class="noty_body" style="background: #e7515a; color: #ffffff;">' + this.options.text + '</div>';
+                            this.barDom.style.backgroundColor = 'transparent';
+                        }
+                    }
+                }).show();
+            </script>
         @endif
         <div class="row">
             <livewire:admin.user.user-index />
         </div>
         <!-- /content -->
     </div>
-@endsection
-
-@section('script_custom')
-    <script>
-        document.addEventListener('livewire:init', () => {
-            Livewire.on('openDeleteModel', (event) => {
-                Swal.fire({
-                    title: "Bạn có chắc xóa tài khoản này không?",
-                    icon: "warning",
-                    showCancelButton: true,
-                    confirmButtonColor: "#3085d6",
-                    cancelButtonColor: "#d33",
-                    confirmButtonText: "Có, xóa!",
-                    cancelButtonText: "Không!"
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        Livewire.dispatch('confirmDelete');
-                        Swal.fire({
-                            title: "Xóa tài khoản thành công!",
-                            icon: "success"
-                        });
-                    }
-                });
-            });
-        });
-    </script>
 @endsection

@@ -73,6 +73,10 @@ class OrderItemAll extends Component
     {
         $order = Order::find($id);
         $order->status = OrderStatus::Completed;
+        foreach ($order->products as $product) {
+            $product->quantity = $product->quantity - $product->pivot->quantity;
+            $product->save();
+        }
         $order->save();
     }
 

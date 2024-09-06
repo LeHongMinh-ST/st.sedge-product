@@ -43,6 +43,22 @@
         }).show();
         sessionStorage.removeItem('selectedFile');
     </script>
+    @elseif(session('error'))
+    <script>
+        new Noty({
+            type: 'error',
+            layout: 'topRight',
+            text: "{{ session('error') }}",
+            timeout: 2000,
+            progressBar: true,
+            callbacks: {
+                onTemplate: function() {
+                    this.barDom.innerHTML = '<div class="noty_body" style="background: #e7515a; color: #ffffff;">' + this.options.text + '</div>';
+                    this.barDom.style.backgroundColor = 'transparent';
+                }
+            }
+        }).show();
+    </script>
     @endif
     <div class="row">
         <div class="col">

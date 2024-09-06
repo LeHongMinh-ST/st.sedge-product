@@ -10,14 +10,17 @@ use Livewire\Component;
 class UserIndex extends Component
 {
     public $userId;
+    public $search;
 
     protected $listeners = [
-        'comfirmDelete' => 'comfirmDelete'
+        'confirmDelete' => 'confirmDelete',
     ];
 
     public function render()
     {
-        $users = User::query()->paginate(10);
+        $users = User::query()
+            ->search($this->search)
+            ->paginate(10);
 
         return view('livewire.admin.user.user-index', [
             'users' => $users
@@ -30,8 +33,13 @@ class UserIndex extends Component
         $this->dispatch('openDeleteModel');
     }
 
-    public function comfirmDelete(): void
+    public function confirmDelete(): void
     {
         User::destroy($this->userId);
+    }
+
+    public function checkAdmin(): void
+    {
+        $this->dispatch('check');
     }
 }

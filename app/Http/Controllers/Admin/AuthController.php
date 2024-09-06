@@ -17,15 +17,14 @@ class AuthController extends Controller
 
     public function login(LoginRequest $request)
     {
-        $data = $request->only('username', 'password');
+        $data = $request->only('email', 'password');
 
         $remember = $request->has('remember');
 
         if  (auth()->attempt($data, $remember)) {
             return redirect()->route('admin.dashboard');
         }
-        return redirect()->back()->with('error', 'Tài khoản hoặc mật khẩu không đúng!');
-
+        return redirect()->back()->with('error', 'Email hoặc mật khẩu không đúng!');
     }
 
     public function logout()

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\Admin;
 
+use App\Enums\Role;
 use App\Enums\Status;
 use App\Http\Requests\ProductRequest;
 use App\Models\Category;
@@ -43,6 +44,7 @@ class ProductController extends Controller
         $product->status = Status::InStock;
         $product->quantity = $request->input('quantity');
         $product->category_id = $request->input('category_id');
+        $product->user_id = auth()->id();
         $product->save();
 
         if ($request->hasFile('galleries')) {
@@ -56,18 +58,27 @@ class ProductController extends Controller
 
         //$request->session()->forget(['selectedFile', 'selectedGalleries']);
 
-
         return redirect()->route('admin.products.index')->with('success', 'Sản phẩm đã được tạo thành công');
     }
 
     public function edit($id)
     {
         $product = Product::findOrFail($id);
-        $categories = Category::all();
-        $statuses = Status::cases();
-        return view('admin.pages.products.update', compact('product', 'categories', 'statuses'));
-    }
 
+        if (Role::SuperAdmin === auth()->user()->role) {
+            $categories = Category::all();
+            $statuses = Status::cases();
+            return view('admin.pages.products.update', compact('product', 'categories', 'statuses'));
+        }
+
+        if (Role::Admin === auth()->user()->role && $product->user_id === auth()->id()) {
+            $categories = Category::all();
+            $statuses = Status::cases();
+            return view('admin.pages.products.update', compact('product', 'categories', 'statuses'));
+        }
+
+        return redirect()->route('admin.products.index')->with('error', 'Bạn không có quyền chỉnh sửa sản phẩm này');
+    }
 
     public function update(ProductRequest $request, string $id)
     {
@@ -107,9 +118,18 @@ class ProductController extends Controller
     public function delete(string $id)
     {
         $product = Product::findOrFail($id);
-        $product->delete();
 
-        return redirect()->route('admin.products.index')->with('success', 'Sản phẩm đã được xóa thành công');
+        if (Role::SuperAdmin === auth()->user()->role) {
+            $product->delete();
+            return redirect()->route('admin.products.index')->with('success', 'Sản phẩm đã được xóa thành công');
+        }
+
+        if (Role::Admin === auth()->user()->role && $product->user_id === auth()->id()) {
+            $product->delete();
+            return redirect()->route('admin.products.index')->with('success', 'Sản phẩm đã được xóa thành công');
+        }
+
+        return redirect()->route('admin.products.index')->with('error', 'Bạn không có quyền xóa sản phẩm này');
     }
 
     public function show($id)

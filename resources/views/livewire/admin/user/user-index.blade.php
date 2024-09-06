@@ -139,17 +139,5 @@
                 });
             });
         });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            Livewire.on('check', () => {
-                Swal.fire({
-                    position: "top-end",
-                    icon: "error",
-                    title: "Bạn không có quyền thực hiện chức năng này!",
-                    showConfirmButton: false,
-                    timer: 2000
-                });
-            });
-        });
     </script>
 @endsection

@@ -25,14 +25,14 @@
                         <img src="{{ asset('assets/admin/images/avatar.jpg') }}" class="w-32px h-32px rounded-pill" alt="">
                         <span class="status-indicator bg-success"></span>
                     </div>
-                    <span class="d-none d-lg-inline-block mx-lg-2">{{ auth()->user()->username }}</span>
+                    <span class="d-none d-lg-inline-block mx-lg-2 text-info">{{ auth()->user()->fullname }}</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
-{{--                    <a href="#" class="dropdown-item">--}}
-{{--                        <i class="ph-gear me-2"></i>--}}
-{{--                        Tài khoản--}}
-{{--                    </a>--}}
-{{--                    <div class="dropdown-divider"></div>--}}
+                    <a href="{{ route('admin.users.profile',['id' => auth()->id()]) }}" class="dropdown-item">
+                        <i class="ph-gear me-2"></i>
+                        Tài khoản
+                    </a>
+                    <div class="dropdown-divider"></div>
                     <form action="{{ route('logout') }}" method="get">
                         @csrf
                         <button type="submit" class="dropdown-item">

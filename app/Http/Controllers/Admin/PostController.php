@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\Admin;
 
+use App\Enums\Role;
 use App\Http\Requests\PostRequest;
 use App\Models\Post;
 use DOMDocument;
@@ -63,7 +64,13 @@ class PostController extends Controller
     public function edit($id)
     {
         $post = Post::findOrFail($id);
-        return view('admin.pages.posts.update', compact('post'));
+        if (Role::SuperAdmin === auth()->user()->role) {
+            return view('admin.pages.posts.update', compact('post'));
+        }
+        if (Role::Admin === auth()->user()->role && $post->user_id === auth()->id()) {
+            return view('admin.pages.posts.update', compact('post'));
+        }
+        return redirect()->route('admin.post.index')->with('error', 'Bạn không có quyền chỉnh sửa bài viết này');
     }
 
 
@@ -86,9 +93,16 @@ class PostController extends Controller
     public function delete(string $id)
     {
         $post = Post::findOrFail($id);
-        $post->delete();
+        if (Role::SuperAdmin === auth()->user()->role) {
+            $post->delete();
+            return redirect()->route('admin.post.index')->with('success', 'Bài viết đã được xóa thành công');
+        }
+        if (Role::Admin === auth()->user()->role && $post->user_id === auth()->id()) {
+            $post->delete();
+            return redirect()->route('admin.post.index')->with('success', 'Bài viết đã được xóa thành công');
+        }
 
-        return redirect()->route('admin.post.index')->with('success', 'Bài viết đã được xóa thành công.');
+        return redirect()->route('admin.post.index')->with('error', 'Bạn không có quyền xóa bài viết này');
     }
 
     public function show($id)

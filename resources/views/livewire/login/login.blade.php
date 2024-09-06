@@ -1,8 +1,8 @@
 <form class="login-form" action="{{ route('login.post') }}" method="POST">
     @csrf
-    <label for="username">Tài khoản:</label>
-    <input type="text" id="username" name="username" placeholder="Tài khoản" value="{{ old('username') }}" class="form-control @error('username') is-invalid @enderror">
-    @error('username')
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Email" value="{{ old('email') }}" class="form-control @error('email') is-invalid @enderror">
+    @error('email')
     <div class="invalid-feedback">{{ $message }}</div>
     @enderror
     <label for="password">Mật khẩu:</label>

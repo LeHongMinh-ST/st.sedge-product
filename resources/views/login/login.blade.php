@@ -46,7 +46,7 @@
             });
             if (email) {
                 Livewire.dispatch('checkEmail', [email]);
-                Swal.fire(`Đã gửi thông báo đến: ${email}`);
+                    Swal.fire(`Đã gửi thông báo đến: ${email}`);
             }
         });
     });

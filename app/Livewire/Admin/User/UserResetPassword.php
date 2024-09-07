@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace App\Livewire\Admin\User;
 
+use App\Enums\Role;
 use App\Models\User;
-use Hash;
+use Illuminate\Support\Facades\Hash;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
@@ -22,31 +23,39 @@ class UserResetPassword extends Component
 
     public $id;
     public $password;
+    public $user;
     public function render()
     {
-        return view('livewire.admin.user.user-reset-password');
+        return view('livewire.admin.user.user-reset-password')->with('user', $this->user);
     }
 
     public function mount(): void
     {
         $this->id = request()->id;
-        $this->password = User::where('id', $this->id)->first()->password;
+        $this->user = User::find($this->id);
+        $this->password = $this->user->password;
     }
 
     public function rules()
     {
-        return [
-            'oldPassword' => [
+        $rules = [
+            'newPassword' => 'required',
+            'confirmPassword' => 'required|same:newPassword',
+        ];
+
+        // Nếu người dùng không phải là SuperAdmin, yêu cầu nhập mật khẩu cũ
+        if (Role::SuperAdmin !== auth()->user()->role) {
+            $rules['oldPassword'] = [
                 'required',
                 function ($attribute, $value, $fail) {
                     if (!Hash::check($value, $this->password)) {
                         return $fail('Mật khẩu cũ không đúng');
                     }
                 }
-            ],
-            'newPassword' => 'required',
-            'confirmPassword' => 'required|same:newPassword',
-        ];
+            ];
+        }
+
+        return $rules;
     }
 
     public function messages()

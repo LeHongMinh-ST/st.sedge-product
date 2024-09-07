@@ -24,7 +24,7 @@ class UserController extends Controller
 
     public function show($id)
     {
-        if (auth()->id() === $id) {
+        if (auth()->id() === (int)$id) {
             return view('admin.pages.users.profile')->with('id', $id);
         }
 
@@ -36,7 +36,7 @@ class UserController extends Controller
         if (Role::SuperAdmin === auth()->user()->role) {
             return view('admin.pages.users.edit')->with('id', $id);
         }
-        if (Role::Admin === auth()->user()->role && $id === auth()->id()) {
+        if (Role::Admin === auth()->user()->role && (int)$id === auth()->id()) {
             return view('admin.pages.users.edit')->with('id', $id);
         }
 
@@ -48,7 +48,7 @@ class UserController extends Controller
         if (Role::SuperAdmin === auth()->user()->role) {
             return view('admin.pages.users.reset-password');
         }
-        if (Role::Admin === auth()->user()->role && $id === auth()->id()) {
+        if (Role::Admin === auth()->user()->role && (int)$id === auth()->id()) {
             return view('admin.pages.users.reset-password');
         }
 

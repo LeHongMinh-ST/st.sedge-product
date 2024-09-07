@@ -1,4 +1,7 @@
 <div class="row">
+    @php
+        use App\Enums\Role;
+    @endphp
     <div class="col-md-9">
         <div class="card">
             <div class="card-header bold">
@@ -7,6 +10,10 @@
             </div>
 
             <div class="card-body">
+                <div class="text-muted mb-3">
+                    Tài khoản của: <span class="text-primary">{{ $user->fullname }}</span>
+                </div>
+                @if(auth()->user()->role == Role::Admin)
                 <div class="form-group">
                     <label class="form-label">
                         Mật khẩu cũ: <span class="text-danger">*</span>
@@ -18,6 +25,7 @@
                         @enderror
                     </div>
                 </div>
+                @endif
                 <div class="form-group mt-2">
                     <label class="form-label">
                         Mât khẩu mới: <span class="text-danger">*</span>

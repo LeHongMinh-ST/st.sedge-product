@@ -27,12 +27,12 @@ class OrderItemAll extends Component
         foreach ($orders as $order) {
             $orderDate = Carbon::parse($order->order_date)->toDateString();
             $currentDate = Carbon::now()->setTimezone('Asia/Ho_Chi_Minh')->toDateString();
-
             if ($currentDate === $orderDate) {
                 $order->newOrder = 1;
             } else {
                 $order->newOrder = 0;
             }
+            $order->order_date = Carbon::parse($order->order_date)->format('d-m-Y H:i:s');
         }
 
         return view(

@@ -31,6 +31,8 @@ class OrderItem extends Component
             } else {
                 $order->newOrder = 0;
             }
+
+            $order->order_date = Carbon::parse($order->order_date)->format('d-m-Y H:i:s');
         }
 
         return view('livewire.admin.component.order-item', [

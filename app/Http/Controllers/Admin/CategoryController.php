@@ -12,6 +12,7 @@ use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -39,6 +40,7 @@ class CategoryController extends Controller
         $category->name = $request->name;
         $category->description = $request->description;
         $category->user_id = auth()->id();
+        $category->slug = Str::slug($request->name . '-' . $category->id);
         $category->save();
 
         return redirect()->route('admin.categories.index')->with('success', 'Danh mục đã được tạo thành công');
@@ -63,6 +65,8 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $category->name = $request->name;
         $category->description = $request->description;
+        $category->slug = Str::slug($request->name . '-' . $category->id);
+
         $category->save();
 
         return redirect()->route('admin.categories.index')->with('success', 'Danh mục đã được cập nhật thành công');

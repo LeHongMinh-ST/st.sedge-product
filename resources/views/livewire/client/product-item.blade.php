@@ -1,13 +1,13 @@
 <div class="single-product-wrap">
             <!-- product-img start -->
             <div class="product-image">
-                <a href="{{route('client.product.details', $product->id)}}" class="pro-img">
+                <a href="{{route('client.product.details', ['slug'=>$product->slug])}}" class="pro-img">
                     <img src="{{ asset($product->thumbnail) }}" class="img-fluid img1" alt="{{ $product->name }}">
                     <img src="{{ asset($product->thumbnail) }}" class="img-fluid img2" alt="{{ $product->name }}">
                 </a>
                 <!-- product-action start -->
                 <div class="product-action pro-quiqview">
-                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view" data-product-id="{{ $product->id }}">
+                    <a href="#quickview" data-bs-toggle="modal" data-bs-target="#quickview" class="quick-view" data-product-id="{{ $product->id }}" data-product-slug="{{ $product->slug }}">
                         <span class="tooltip-text">Xem sản phẩm</span>
                         <i class="feather-eye"></i>
                     </a>
@@ -27,7 +27,7 @@
             <div class="product-content">
                 <div class="product-info">
                     <!-- product-title start -->
-                    <h6><a href="{{ route('client.product.details', $product->id) }}">{{ $product->name }}</a></h6>
+                    <h6><a href="{{ route('client.product.details', $product->slug) }}">{{ $product->name }}</a></h6>
                     <!-- product-title end -->
                     <!-- product-price start -->
                     <div class="price-box">

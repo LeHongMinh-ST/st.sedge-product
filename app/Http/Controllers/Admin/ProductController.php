@@ -9,6 +9,7 @@ use App\Enums\Status;
 use App\Http\Requests\ProductRequest;
 use App\Models\Category;
 use App\Models\Product;
+use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {
@@ -45,6 +46,7 @@ class ProductController extends Controller
         $product->quantity = $request->input('quantity');
         $product->category_id = $request->input('category_id');
         $product->user_id = auth()->id();
+        $product->slug = Str::slug($request->input('productName') . '-' . $product->id);
         $product->save();
 
         if ($request->hasFile('galleries')) {
@@ -110,6 +112,7 @@ class ProductController extends Controller
 
         $product->update($request->except(['thumbnail', 'galleries']));
         $product->category_id = $request->input('category_id');
+        $product->slug = Str::slug($request->input('productName') . '-' . $product->id);
         $product->save();
 
         return redirect()->route('admin.products.index')->with('success', 'Sản phẩm đã được cập nhật thành công');

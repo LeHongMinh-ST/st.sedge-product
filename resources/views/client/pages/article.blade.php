@@ -46,13 +46,13 @@
                                     @foreach($recentPosts as $recentPost)
                                     <div class="sidbar-inner sidbar-inner-wrap">
                                         <div class="post-image">
-                                            <a href="{{ route('client.blog.detail', $recentPost->id) }}" class="banner-img">
+                                            <a href="{{ route('client.blog.detail', $recentPost->slug) }}" class="banner-img">
                                                 <img src="{{ asset($recentPost->thumbnail) }}" class="img-fluid" alt="blog">
                                             </a>
                                         </div>
                                         <div class="recent-blog-content">
                                             <h6>
-                                                <a href="{{ route('client.blog.detail', $recentPost->id) }}">{{ $recentPost->title }}</a>
+                                                <a href="{{ route('client.blog.detail', $recentPost->slug) }}">{{ $recentPost->title }}</a>
                                             </h6>
                                             <span>{{ $recentPost->formatted_date }}</span>
                                         </div>
@@ -126,13 +126,13 @@
                                                 <span class="date">{{ $otherPost->created_at->format('d') }}</span>
                                                 <span class="month">{{ $otherPost->formatted_month }}</span>
                                             </span>
-                                            <a href="{{ route('client.blog.detail', $otherPost->id) }}" class="blog-img">
+                                            <a href="{{ route('client.blog.detail', $otherPost->slug) }}" class="blog-img">
                                                 <img src="{{ asset($otherPost->thumbnail) }}" class="img-fluid" alt="blog">
                                                 <span class="blog-icon"><i class="feather-link"></i></span>
                                             </a>
                                         </div>
                                         <div class="blog-content">
-                                            <a href="{{ route('client.blog.detail', $otherPost->id) }}" class="blog-tag">
+                                            <a href="{{ route('client.blog.detail', $otherPost->slug) }}" class="blog-tag">
                                                 <h6>{{ $otherPost->title }}</h6>
                                             </a>
                                         </div>

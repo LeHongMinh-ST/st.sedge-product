@@ -45,14 +45,14 @@
                                                 <li class="item-info">
                                                     <!-- cart-img start -->
                                                     <div class="item-img">
-                                                        <a href="{{ route('client.product.details', ['id' => $item->id]) }}">
+                                                        <a href="{{ route('client.product.details', ['slug' => $item->slug]) }}">
                                                             <img src="{{ asset($item->options->thumbnail) }}" class="img-fluid" alt="{{ $item->name }}}">
                                                         </a>
                                                     </div>
                                                     <!-- cart-img end -->
                                                     <!-- cart-title start -->
                                                     <div class="item-text">
-                                                        <a href="{{ route('client.product.details', ['id' => $item->id]) }}">{{ $item->name }}</a>
+                                                        <a href="{{ route('client.product.details', ['slug' => $item->slug]) }}">{{ $item->name }}</a>
 
                                                         <span class="item-option">
                                                                 <span class="item-price">Giá: {{ number_format($item->price, 0, ',', '.') }} <u>đ</u></span>

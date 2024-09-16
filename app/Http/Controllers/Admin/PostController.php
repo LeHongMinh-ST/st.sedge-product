@@ -48,6 +48,7 @@ class PostController extends Controller
             $post->thumbnail = $path;
         }
         $post->content = $this->processContent($request->input('content'));
+        $post->slug = Str::slug($request->input('title') . '-' . $post->id);
         $post->user_id = Auth::id();
         $post->save();
 
@@ -85,6 +86,7 @@ class PostController extends Controller
             $post->thumbnail =  $path . '?v=' . time();
         }
         $post->content = $this->processContent($request->input('content'));
+        $post->slug = Str::slug($request->input('title') . '-' . $post->id);
         $post->save();
 
         return redirect()->route('admin.post.index')->with('success', 'Bài viết đã được cập nhật thành công.');

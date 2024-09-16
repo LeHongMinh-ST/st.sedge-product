@@ -37,13 +37,13 @@
                                         <td>{{ $loop->iteration }}</td>
                                         @if($order->newOrder)
                                             <td class="order-code">
-                                                <a class="text-primary" href="{{ route('todo.orderdetail',['id' => $order->id]) }}">#{{ $order->code }}</a>
+                                                <a class="text-primary" href="{{ route('todo.orderdetail',['slug' => $order->slug]) }}">#{{ $order->code }}</a>
                                                 <sup>
                                                     <p class="badge text-light">Mới</p>
                                                 </sup>
                                             </td>
                                         @else
-                                            <td><a class="text-primary" href="{{ route('todo.orderdetail',['id' => $order->id]) }}">#{{ $order->code }}</a></td>
+                                            <td><a class="text-primary" href="{{ route('todo.orderdetail',['slug' => $order->slug]) }}">#{{ $order->code }}</a></td>
                                         @endif
                                         <td>{{ $order->order_date }}</td>
                                         @if(!$order->province_name && !$order->district_name && !$order->ward_name)
@@ -53,7 +53,7 @@
                                         @endif
                                         <td class="text-center">{!! $order->statusClient !!}</td>
                                         <td>{{ number_format($order->total, 0, ',', '.') }} VNĐ</td>
-                                        <td><a href="{{ route('todo.orderdetail',['id' => $order->id]) }}"><i class="feather-eye"></i></a></td>
+                                        <td><a href="{{ route('todo.orderdetail',['slug' => $order->slug]) }}"><i class="feather-eye"></i></a></td>
                                     </tr>
                                 @endforeach
                                 </tbody>

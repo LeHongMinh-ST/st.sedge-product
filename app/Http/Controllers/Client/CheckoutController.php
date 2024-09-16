@@ -15,8 +15,9 @@ class CheckoutController extends BaseController
         return view('client.pages.checkout');
     }
 
-    public function success($id)
+    public function success($slug)
     {
+        $id = (int) mb_substr(strchr($slug, '-'), 1);
         $order = Order::find($id);
         $order->order_date = Carbon::parse($order->order_date)->format('d-m-Y H:i:s');
         $products = $order->products;

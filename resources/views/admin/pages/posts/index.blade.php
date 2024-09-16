@@ -107,7 +107,7 @@
                             <tbody>
                                 <tr>
                                     @foreach($posts as $post)
-                                    <td>{{ $post->id }}</td>
+                                    <td>{{ $loop->index + 1 + $posts->perPage() * ($posts->currentPage() - 1) }}</td>
                                     <td><img src="{{ asset($post->thumbnail) }}" width="50"></td>
                                     <td>{{ $post->title }}</td>
                                     <td>{!! Str::limit(strip_tags($post->content), 100, '...') !!}</td>

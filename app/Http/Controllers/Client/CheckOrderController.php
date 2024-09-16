@@ -18,8 +18,9 @@ class CheckOrderController extends BaseController
         return view('client.pages.check_order');
     }
 
-    public function orderDetail($id)
+    public function orderDetail($slug)
     {
+        $id = (int) mb_substr(strchr($slug, '-'), 1);
         $order = Order::find($id);
         $order->order_date = Carbon::parse($order->order_date)->format('d-m-Y H:i:s');
         $province = $order->province_id ? Province::whereId($order->province_id)->firstOrFail()->name : '';

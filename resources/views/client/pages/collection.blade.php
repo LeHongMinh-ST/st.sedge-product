@@ -158,6 +158,7 @@ Danh mục sản phẩm - Cóincidence
             document.querySelectorAll('.quick-view').forEach(button => {
                 button.addEventListener('click', function(event) {
                     event.preventDefault();
+                    var productSlug = this.getAttribute('data-product-slug');
                     var productId = this.getAttribute('data-product-id');
                     fetch(`/product/${productId}/quickview`)
                         .then(response => response.json())
@@ -166,7 +167,7 @@ Danh mục sản phẩm - Cóincidence
                             document.querySelector('#quickview .product-price .new-price').textContent = data.price + ' đ';
                             document.querySelector('#quickview .quick-image img').src = data.thumbnail;
                             document.querySelector('#quickview .product-desc p').textContent = data.description;
-                            document.querySelector('#quickview .quick-image a').href = `/product/${productId}`;
+                            document.querySelector('#quickview .quick-image a').href = `/san-pham/${productSlug}`;
                             var quickviewModal = new bootstrap.Modal(document.getElementById('quickview'));
                             quickviewModal.show();
                         })

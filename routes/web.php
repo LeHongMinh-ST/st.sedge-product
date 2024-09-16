@@ -30,26 +30,26 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('')->group(function (): void {
     // Route::get('/', fn () => view('client.pages.index'))->name('todo.home');
     Route::get('/', [ShopController::class, 'home'])->name('todo.home');
-    Route::get('/collection', [ShopController::class, 'index'])->name('todo.collection');
-    Route::get('/product/{id}', [ShopController::class, 'show'])->name('client.product.details');
+    Route::get('/danh-sach-san-pham', [ShopController::class, 'index'])->name('todo.collection');
+    Route::get('/san-pham/{slug}', [ShopController::class, 'show'])->name('client.product.details');
     Route::get('/product/{id}/quickview', [ShopController::class, 'quickView'])->name('product.quickview');
-    Route::get('/blog', [ShopController::class, 'blog'])->name('client.blog');
-    Route::get('/blog/{id}', [ShopController::class, 'detailBlog'])->name('client.blog.detail');
+    Route::get('/bai-viet', [ShopController::class, 'blog'])->name('client.blog');
+    Route::get('/bai-viet/{slug}', [ShopController::class, 'detailBlog'])->name('client.blog.detail');
     Route::get('contact', fn () => view('client.pages.contact'))->name('todo.contact');
 
-    Route::prefix('/checkout')->group(function (): void {
+    Route::prefix('/dat-hang')->group(function (): void {
         Route::get('/', [CheckoutController::class, 'index'])->name('todo.checkout');
-        Route::get('/success/{id}', [CheckoutController::class, 'success'])->name('todo.checkout.success');
+        Route::get('/dat-hang-thanh-cong/{slug}', [CheckoutController::class, 'success'])->name('todo.checkout.success');
     });
 
-    Route::get('check-order/{phone?}', [CheckOrderController::class,'index'])->name('todo.checkorder');
-    Route::get('order-detail/{id}', [CheckOrderController::class,'orderDetail'])->name('todo.orderdetail');
+    Route::get('kiem-tra-don-hang/{phone?}', [CheckOrderController::class,'index'])->name('todo.checkorder');
+    Route::get('chi-tiet-don-hang/{slug}', [CheckOrderController::class,'orderDetail'])->name('todo.orderdetail');
 });
 
 
 // Route::get('/product', fn () => view('client.pages.product'))->name('todo.product');
 
-Route::get('cart', fn () => view('client.pages.cart'))->name('todo.cart');
+Route::get('gio-hang', fn () => view('client.pages.cart'))->name('todo.cart');
 //Route::get('article', fn () => view('client.pages.article'))->name('todo.article');
 
 Route::get('link-storage', function (): void {

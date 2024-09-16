@@ -24,8 +24,9 @@ class ShopController extends BaseController
         return view('client.pages.collection', compact('products', 'categories'));
     }
 
-    public function show($id)
+    public function show($slug)
     {
+        $id = (int) mb_substr(mb_strrchr($slug, '-'), 1);
         $product = Product::with('galeries')->findOrFail($id);
         return view('client.pages.product_template', compact('product'));
     }
@@ -60,8 +61,9 @@ class ShopController extends BaseController
         return view('client.pages.blog', compact('posts', 'recentPosts'));
     }
 
-    public function detailBlog($id)
+    public function detailBlog($slug)
     {
+        $id = (int) mb_substr(mb_strrchr($slug, '-'), 1);
         $post = Post::findOrFail($id);
         $monthInVietnamese = $this->getVietnameseMonth($post->created_at->format('M'));
         $formattedDate = $post->created_at->format('d') . ' ' . $monthInVietnamese . ' ' . $post->created_at->format('Y');

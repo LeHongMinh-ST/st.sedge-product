@@ -23,6 +23,9 @@ class CartItem extends Component
     {
         $cart = CartModel::instance()->content();
         $subtotal = CartModel::instance()->subtotal(0, '', '');
+        foreach ($cart as $item) {
+            $item->slug = Product::find($item->id)->slug;
+        }
         return view(
             'livewire.client.component.cart-item',
             [

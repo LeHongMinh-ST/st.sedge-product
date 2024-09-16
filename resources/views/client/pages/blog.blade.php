@@ -43,13 +43,13 @@ Blog - Cóincidence
                                     @foreach($recentPosts as $post)
                                     <div class="sidbar-inner sidbar-inner-wrap">
                                         <div class="post-image">
-                                            <a href="{{ route('client.blog.detail', $post->id) }}" class="banner-img">
+                                            <a href="{{ route('client.blog.detail', $post->slug) }}" class="banner-img">
                                                 <img src="{{asset($post->thumbnail)}}" class="img-fluid" alt="blog-bg">
                                             </a>
                                         </div>
                                         <div class="recent-blog-content">
                                             <h6>
-                                                <a href="{{ route('client.blog.detail', $post->id) }}">{{ $post->title }}</a>
+                                                <a href="{{ route('client.blog.detail', $post->slug) }}">{{ $post->title }}</a>
                                             </h6>
                                             <span>{{ $post->formatted_date }}</span>
                                         </div>
@@ -71,13 +71,13 @@ Blog - Cóincidence
                                                     <span class="date">{{ $post->created_at->format('d') }}</span>
                                                     <span class="month">{{ $post->formatted_month }}</span>
                                                 </span>
-                                                <a href="{{route('client.blog.detail', $post->id)}}" class="blog-img">
+                                                <a href="{{route('client.blog.detail', $post->slug)}}" class="blog-img">
                                                     <img src="{{asset($post->thumbnail)}}" class="img-fluid" alt="blog">
                                                     <span class="blog-icon"><i class="feather-link"></i></span>
                                                 </a>
                                             </div>
                                             <div class="blog-content">
-                                                <a href="{{ route('client.blog.detail', $post->id) }}" class="blog-tag">
+                                                <a href="{{ route('client.blog.detail', $post->slug) }}" class="blog-tag">
                                                     <h6>{{ $post->title }}</h6>
                                                 </a>
                                             </div>

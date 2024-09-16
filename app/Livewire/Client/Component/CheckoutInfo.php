@@ -8,6 +8,7 @@ use App\Enums\OrderStatus;
 use App\Models\Order;
 use Gloudemans\Shoppingcart\Facades\Cart as CartModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Kjmtrue\VietnamZone\Models\District;
 use Kjmtrue\VietnamZone\Models\Province;
 use Kjmtrue\VietnamZone\Models\Ward;
@@ -158,11 +159,14 @@ class CheckoutInfo extends Component
         $order->total = (int)str_replace(',', '', CartModel::instance()->subtotal());
         $order->save();
 
+        $order->slug = Str::slug($order->code . '-' . $order->id);
+        $order->save();
+
         $order->products()->attach($dataProduct);
         CartModel::instance()->destroy();
         $this->dispatch('post-created');
 
-        return redirect()->route('todo.checkout.success', ['id' => $order->id]);
+        return redirect()->route('todo.checkout.success', ['slug' => $order->slug]);
 
     }
 

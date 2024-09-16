@@ -5,13 +5,13 @@
                 <li class="cart-item">
                     <div class="cart-item-info">
                         <div class="cart-item-image">
-                            <a href="{{ route('client.product.details', ['id' => $item->id]) }}">
+                            <a href="{{ route('client.product.details', ['slug' => $item->slug]) }}">
                                 <img src="{{ asset($item->options->thumbnail) }}" class="img-fluid" alt="{{ $item->name }}">
                             </a>
                         </div>
                         <div class="cart-item-details">
                             <div class="cart-item-name">
-                                <a href="{{ route('client.product.details', ['id' => $item->id]) }}">{{$item->name}}</a>
+                                <a href="{{ route('client.product.details', ['slug' => $item->slug]) }}">{{$item->name}}</a>
                             </div>
                             <div class="cart-pro-info">
                                 <div class="cart-qty-price">

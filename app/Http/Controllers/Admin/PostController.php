@@ -48,8 +48,9 @@ class PostController extends Controller
             $post->thumbnail = $path;
         }
         $post->content = $this->processContent($request->input('content'));
-        $post->slug = Str::slug($request->input('title') . '-' . $post->id);
         $post->user_id = Auth::id();
+        $post->save();
+        $post->slug = Str::slug($request->input('title') . '-' . $post->id);
         $post->save();
 
         //  $request->session()->forget('selectedFile');

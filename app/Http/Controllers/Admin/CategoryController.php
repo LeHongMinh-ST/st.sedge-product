@@ -65,8 +65,9 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $category->name = $request->name;
         $category->description = $request->description;
-        $category->slug = Str::slug($request->name . '-' . $category->id);
 
+        $category->save();
+        $category->slug = Str::slug($request->name . '-' . $category->id);
         $category->save();
 
         return redirect()->route('admin.categories.index')->with('success', 'Danh mục đã được cập nhật thành công');

@@ -40,6 +40,7 @@ class CategoryController extends Controller
         $category->name = $request->name;
         $category->description = $request->description;
         $category->user_id = auth()->id();
+        $category->save();
         $category->slug = Str::slug($request->name . '-' . $category->id);
         $category->save();
 
@@ -65,8 +66,6 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $category->name = $request->name;
         $category->description = $request->description;
-
-        $category->save();
         $category->slug = Str::slug($request->name . '-' . $category->id);
         $category->save();
 

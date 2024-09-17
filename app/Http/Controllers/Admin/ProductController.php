@@ -46,6 +46,7 @@ class ProductController extends Controller
         $product->quantity = $request->input('quantity');
         $product->category_id = $request->input('category_id');
         $product->user_id = auth()->id();
+        $product->save();
         $product->slug = Str::slug($request->input('productName') . '-' . $product->id);
         $product->save();
 
@@ -112,7 +113,6 @@ class ProductController extends Controller
 
         $product->update($request->except(['thumbnail', 'galleries']));
         $product->category_id = $request->input('category_id');
-        $product->save();
         $product->slug = Str::slug($request->input('productName') . '-' . $product->id);
         $product->save();
 

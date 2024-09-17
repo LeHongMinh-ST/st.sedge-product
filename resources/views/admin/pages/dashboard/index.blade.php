@@ -130,5 +130,100 @@
             </div>
         </div>
     </div>
+
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Thống kê đơn hàng</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="orderChart" height="100"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Thống kê doanh thu theo tháng</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="revenueChart" height="100"></canvas>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script>
+    const ctx = document.getElementById('orderChart').getContext('2d');
+    const orderChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            //labels: {!! json_encode($months) !!},  
+            datasets: [{
+                label: 'Số lượng đơn hàng',
+                data: {!! json_encode($ordersPerMonth) !!},  
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const ctx = document.getElementById('revenueChart').getContext('2d');
+        
+        const sortedRevenueData = {!! json_encode($revenuePerMonth) !!};
+        const sortedMonths = Object.keys(sortedRevenueData).sort((a, b) => a - b);  
+        const sortedValues = sortedMonths.map(month => sortedRevenueData[month]);   
+
+        const chartData = {
+            labels: sortedMonths,  
+            datasets: [{
+                label: 'Doanh thu',
+                data: sortedValues,  
+                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderWidth: 2,
+                fill: true,
+                tension: 0.4  
+            }]
+        };
+
+        const config = {
+            type: 'line',
+            data: chartData,
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Tháng'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Doanh thu (VND)'
+                        },
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+
+        const revenueChart = new Chart(ctx, config);
+    });
+</script>
+
 @endsection

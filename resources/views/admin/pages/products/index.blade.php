@@ -117,7 +117,7 @@
                                     <td>{{ number_format($product->price, 0, ',', '.') }} ₫</td>
                                     <td><img src="{{ asset($product->thumbnail) }}" alt="{{ $product->name }}" width="50"></td>
                                     <td>
-                                        @if($product->status == \App\Enums\Status::InStock)
+                                        @if($product->quantity != 0)
                                         <span class="badge bg-success bg-opacity-20 text-success">Còn hàng</span>
                                         @else
                                         <span class="badge bg-danger">Hết hàng</span>

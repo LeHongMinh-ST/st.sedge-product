@@ -41,7 +41,7 @@
                                         <li class="ftlink-li">
                                             <a style="user-select: text" href="tel:0336725712" class="ft-contact-address">Số điện thoại: 0336725712</a> &nbsp;
                                         </li>--}}
-                                        <img src="{{asset('assets/client/img/footer/image_1.png')}}" alt="" style="object-fit: cover;width: 85%;margin-top: 10px">
+                                        <img src="{{asset('assets/client/img/footer/footer1.png')}}" alt="" style="object-fit: cover;width: 85%;margin-top: 10px">
                                     </ul>
                                 </li>
                             </ul>
@@ -73,7 +73,7 @@
                                                 <p>(Ms. Thảo Trang)</p>
                                             </div>
                                         </li> --}}
-                                        <img src="{{asset('assets/client/img/footer/image_2.png')}}" alt="" style="object-fit: cover;width: 107%; margin-top: 10px">
+                                        <img src="{{asset('assets/client/img/footer/footer2.png')}}" alt="" style="object-fit: cover;width: 107%; margin-top: 10px">
                                     </ul>
                                 </li>
                             </ul>
@@ -110,10 +110,10 @@
                                     <ul class="app-img-ul collapse" id="footer-app">
                                         <li class="app-image">
                                             <a href="index4.html" class="image">
-                                                <img src="img/footer/home4-footer1.jpg" class="img-fluid" alt="footer1">
+                                                <img src="img/footer/footer1.png" class="img-fluid" alt="footer1">
                                             </a>
                                             <a href="index4.html" class="image">
-                                                <img src="img/footer/home4-footer2.jpg" class="img-fluid" alt="footer2">
+                                                <img src="img/footer/footer2.png" class="img-fluid" alt="footer2">
                                             </a>
                                         </li>
                                     </ul>

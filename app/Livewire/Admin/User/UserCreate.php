@@ -20,6 +20,8 @@ class UserCreate extends Component
     #[Validate(as: 'số điện thoại')]
     public $phone_number;
 
+    #[Validate(as: 'mật khẩu')]
+    public $password;
     public function render()
     {
         return view('livewire.admin.user.user-create');
@@ -33,7 +35,7 @@ class UserCreate extends Component
             'fullname' => $this->fullname,
             'email' => $this->email,
             'phone_number' => $this->phone_number,
-            'password' => bcrypt('123456'),
+            'password' => bcrypt($this->password),
             'role' => Role::Admin,
         ]);
 
@@ -55,6 +57,7 @@ class UserCreate extends Component
                     }
                 }
             ],
+            'password' => 'required',
         ];
     }
 
@@ -66,6 +69,7 @@ class UserCreate extends Component
             'email.email' => 'Email không đúng định dạng',
             'email.unique' => 'Email đã tồn tại',
             'phone_number.required' => 'Số điện thoại không được để trống',
+            'password.required' => 'Mật khẩu không được để trống',
         ];
     }
 }

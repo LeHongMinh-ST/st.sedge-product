@@ -67,7 +67,7 @@
     </div>
     <div class="email-body">
         <h3>Xin chào {{ $user->fullname }}</h3>
-        <p>Bạn nhận được email này vì chúng tôi đã nhận được yêu cầu đặt lại mật khẩu cho tài khoản của bạn.</p>
+        <p>Bạn nhận được email này vì hệ thống đã nhận được yêu cầu đặt lại mật khẩu cho tài khoản của bạn.</p>
         <p>Nếu bạn không yêu cầu đặt lại mật khẩu, bạn không cần thực hiện thêm hành động nào nữa.</p>
         <p>Bấm vào đây để đặt lại mật khâu mới:</p>
         <div style="justify-content: center">

@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\DashbroadController;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\SystemEmailController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Client\CheckOrderController;
 use App\Http\Controllers\Client\CheckoutController;
@@ -148,6 +149,12 @@ Route::prefix('admin')->middleware('auth')->group(function (): void {
         Route::get('/create', [UserController::class, 'create'])->name('admin.users.create');
         Route::get('/edit/{id}', [UserController::class, 'edit'])->name('admin.users.edit');
         Route::get('/reset-password/{id}', [UserController::class, 'resetPassword'])->name('admin.users.reset-password');
+    });
+
+    Route::prefix('/system-email')->group(function (): void {
+        Route::get('/', [SystemEmailController::class, 'index'])->name('admin.system-email.index');
+        Route::get('/create', [SystemEmailController::class, 'create'])->name('admin.system-email.create');
+        Route::get('/edit/{id}', [SystemEmailController::class, 'edit'])->name('admin.system-email.edit');
     });
 });
 

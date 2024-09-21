@@ -104,6 +104,16 @@
                         </span>
                     </a>
                 </li>
+                @if(auth()->user()->role == \App\Enums\Role::SuperAdmin)
+                <li class="nav-item">
+                    <a href="{{ route('admin.system-email.index') }}" class="nav-link {{ request()->routeIs('admin.system-email.index') ?'active' : '' }}">
+                        <i class="ph-twitch-logo"></i>
+                        <span>
+                            Email hệ thống
+                        </span>
+                    </a>
+                </li>
+                @endif
             </ul>
         </div>
         <!-- /main navigation -->

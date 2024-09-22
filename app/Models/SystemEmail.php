@@ -23,7 +23,6 @@ class SystemEmail extends Model
     {
         if ($search) {
             $query->where('mail_username', 'like', '%' . $search . '%')
-                ->orWhere('mail_from_address', 'like', '%' . $search . '%')
                 ->orWhere('mail_from_name', 'like', '%' . $search . '%');
         }
     }

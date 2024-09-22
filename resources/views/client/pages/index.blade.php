@@ -59,7 +59,7 @@
         </div>
         </div>
     </section>
-    
+
     <!-- home-slider end -->
     <!-- banner-grid start -->
     <section class="banner-grid section-pt">
@@ -231,14 +231,14 @@
                                         <!-- product start -->
                                         <div class="single-product-wrap">
                                             <div class="product-image">
-                                                <a href="{{ route('client.product.details', $product->id) }}" class="pro-img img-height">
+                                                <a href="{{ route('client.product.details', $product->slug) }}" class="pro-img img-height">
                                                     <img src="{{ asset($product->thumbnail) }}" class="img-fluid img1" alt="{{ $product->name }}">
                                                     <img src="{{ asset($product->thumbnail) }}" class="img-fluid img2" alt="{{ $product->name }}">
                                                 </a>
                                             </div>
                                             <div class="product-content">
                                                 <div class="product-info">
-                                                    <h6><a href="{{ route('client.product.details', $product->id) }}">{{ $product->name }}</a></h6>
+                                                    <h6><a href="{{ route('client.product.details', $product->slug) }}">{{ $product->name }}</a></h6>
                                                     <div class="price-box">
                                                         <span class="new-price">{{ number_format($product->price, 0, ',', '.') }} <u>đ</u></span>
                                                         @if($product->old_price)

@@ -43,7 +43,7 @@
                 </div>
                 <!-- product-action start -->
                 <div class="product-action">
-                    <a href="#quickview" class="quick-view" data-bs-toggle="modal" data-bs-target="#quickview" data-product-id="{{ $product->id }}">
+                    <a href="#quickview" class="quick-view" data-bs-toggle="modal" data-bs-target="#quickview" data-product-id="{{ $product->id }}" data-product-slug="{{ $product->slug }}">
                         <span class="pro-action-icon"><i class="feather-eye"></i></span>
                     </a>
                     <a wire:click="handleAddToCart({{ $product->id }})" class="add-to-cart" data-product-id="{{ $product->id }}">

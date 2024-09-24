@@ -53,7 +53,7 @@ Danh mục sản phẩm - Cóincidence
                                                     <li class="pro-item-li">
                                                         <livewire:client.product-item :$product :key="$product->id">
                                                     <li>
-                                                        @endforeach
+                                                    @endforeach
                                                 </ul>
                                             </div>
 

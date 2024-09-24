@@ -12,7 +12,7 @@
                         <div class="quick-view-tab">
                             <div class="quick-block">
                                 <div class="quick-image">
-                                    <a href="{{ route('client.product.details', $product->id) }}">
+                                    <a href="{{ route('client.product.details',['slug'=>$product->slug]) }}">
                                         <img src="{{ asset($product->thumbnail) }}" class="img-fluid" alt="{{ $product->name }}">
                                     </a>
                                 </div>

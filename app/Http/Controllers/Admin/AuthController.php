@@ -35,11 +35,11 @@ class AuthController extends Controller
 
     public function resetPasswordShow($token)
     {
-        $token = DB::table('password_reset')->where('token', $token)->first();
-        if (!$token) {
+        $resetToken = DB::table('password_reset')->where('token', $token)->first();
+        if (!$resetToken) {
             return redirect()->route('login');
         }
-        $user = User::where('email', $token->email)->first();
+        $user = User::where('email', $resetToken->email)->first();
         return view('login.reset-password', compact('user'));
     }
 }
